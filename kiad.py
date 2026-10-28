@@ -83,6 +83,7 @@ def rewrite(out: Path, slug: str):
 
 
 def publish():
+    subprocess.run([sys.executable, ROOT / "scripts" / "demo-audit.py"], check=True)
     conf = load()
     keep = {"index.html", "robots.txt", "404.html"}
     for p in SITE.iterdir():  # régi kiadások törlése a site/-ból (git-ben visszakereshető)

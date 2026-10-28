@@ -38,12 +38,17 @@ a címeket csak az adott bolt tulajdonosa kapja meg, és elutasítás után a de
 és jóváhagyott képek kellenek.
 
 ## Vezérlő: `/vezerlo` (jelszavas)
-Csak a kiküldés követésére szolgál: ki van soron, kinek megy, a titkos demólink, a kiküldés dátuma, a 3 napos határidő és a válasz.
-Adat: `vezerlo/adat.json`. A demólinkek a `kiadas.json`-ból jönnek.
+A felületen közvetlenül jelölhető a kiküldés, módosítható a határidő és a státusz. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
+
+**Kötelező Coolify-beállítás az adatok tartós megőrzéséhez:** Persistent Storage, célútvonal: `/data`. A Dockerfile `VOLUME /data` deklarációja helyben jelzi az írható adatkönyvtárat, de a redeploy utáni megőrzést a Coolify névvel kezelt tárhelye biztosítja.
+
+A vezérlő mutatja a demó forrásának utolsó módosítását és a második körös auditot is. Ezt a `scripts/demo-audit.py` készíti a `vezerlo/demo-audit.json` fájlba; a `kiad.py` minden kiadás előtt automatikusan frissíti.
+
+Parancssorból továbbra is használható:
 ```sh
 python3 vezerlo.py                          # összesítő
 python3 vezerlo.py fonalam kikuldve         # ma kiküldve, határidő = +3 munkanap-igazítva
 python3 vezerlo.py fonalam valaszolt "érdekli, hívjam"
 python3 vezerlo.py fonalam nem              # utána: kiad.py --le fonalam
 ```
-Jelszó: Coolify → Environment Variables → `VEZERLO_JELSZO` (felhasználó: `dani`, vagy `VEZERLO_FELHASZNALO`). Ha nincs beállítva, a vezérlő zárva marad.
+Jelszó: Coolify → Environment Variables → `VEZERLO_JELSZO`. Ha nincs beállítva, a vezérlő zárva marad.

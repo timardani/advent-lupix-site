@@ -8,7 +8,7 @@ Használat:
   python3 vezerlo.py <id> teendo "szöveg"         # következő lépés
 
 Állapotok: elokeszites, review, kuldheto, tartalek, kikuldve, valaszolt,
-foglalt, nyert, nem, lejart, kizart
+foglalt, nyert, nem, nem_reagal, lejart, kizart
 - kikuldve: kiküldés = ma, határidő = +3 nap (hétvégén/ünnepen a köv. munkanap)
 - valaszolt / foglalt / nyert / nem: válasz dátuma = ma (ha még üres)
 Utána: git add -A && git commit -m "vezérlő: …" && git push
@@ -19,7 +19,7 @@ from pathlib import Path
 
 F = Path(__file__).resolve().parent / "vezerlo" / "adat.json"
 ALLAPOTOK = {"elokeszites", "review", "kuldheto", "tartalek", "kikuldve", "valaszolt",
-             "foglalt", "nyert", "nem", "lejart", "kizart"}
+             "foglalt", "nyert", "nem", "nem_reagal", "lejart", "kizart"}
 UNNEP = {"2026-10-23", "2026-11-01", "2026-12-24", "2026-12-25", "2026-12-26"}
 
 
