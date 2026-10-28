@@ -37,7 +37,7 @@ button{font:inherit;font-size:12px;padding:3px 9px;border:1px solid var(--line);
 <header>
  <h1>Adventi vezérlő</h1>
  <div class="meta" id="meta">Betöltés…</div>
- <div class="tools"><label><input type="checkbox" id="lezart"> Lezártak mutatása</label></div>
+ <div class="tools"><label><input type="checkbox" id="lezart"> Lezártak mutatása</label> <button type="button" onclick="document.cookie='vezerlo=; Path=/; Max-Age=0';location.href='/belepes/'">Kilépés</button></div>
 </header>
 <main id="app"></main>
 <script>
@@ -82,7 +82,7 @@ function render(){const mutat=document.getElementById('lezart').checked;
  document.getElementById('app').innerHTML=h}
 document.addEventListener('click',e=>{const u=e.target.dataset?.copy;if(u){navigator.clipboard.writeText(u).then(()=>{e.target.textContent='Másolva';setTimeout(()=>e.target.textContent='Másolás',1500)})}});
 document.getElementById('lezart').addEventListener('change',render);
-Promise.all([fetch('adat.json',{cache:'no-store'}).then(r=>r.json()),fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]}))])
+Promise.all([fetch('adat.json',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw 0}return r.json()}),fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]}))])
  .then(([a,k])=>{adat=a;for(const d of k.demok)linkek[d.demo]=d.slug;render()})
  .catch(e=>{document.getElementById('app').innerHTML=`<p class="err">Nem sikerült betölteni: ${esc(e.message)}</p>`});
 </script>
