@@ -36,3 +36,14 @@ A demókban a boltok nyilvános termékfotói és neve szerepel engedély nélk�
 a címeket csak az adott bolt tulajdonosa kapja meg, és elutasítás után a demót le kell venni.
 Éles kampány (fizető ügyfél) nem ide kerül: ahhoz valódi kupon, szerveroldali napi zár
 és jóváhagyott képek kellenek.
+
+## Vezérlő: `/vezerlo` (jelszavas)
+Csak a kiküldés követésére szolgál: ki van soron, kinek megy, a titkos demólink, a kiküldés dátuma, a 3 napos határidő és a válasz.
+Adat: `vezerlo/adat.json`. A demólinkek a `kiadas.json`-ból jönnek.
+```sh
+python3 vezerlo.py                          # összesítő
+python3 vezerlo.py fonalam kikuldve         # ma kiküldve, határidő = +3 munkanap-igazítva
+python3 vezerlo.py fonalam valaszolt "érdekli, hívjam"
+python3 vezerlo.py fonalam nem              # utána: kiad.py --le fonalam
+```
+Jelszó: Coolify → Environment Variables → `VEZERLO_JELSZO` (felhasználó: `dani`, vagy `VEZERLO_FELHASZNALO`). Ha nincs beállítva, a vezérlő zárva marad.
