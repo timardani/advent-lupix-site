@@ -22,7 +22,7 @@ CONF = ROOT / "kiadas.json"
 DOMAIN = "https://advent.lupix.hu"
 TEXT_EXT = {".html", ".js", ".css", ".json", ".svg", ".webmanifest"}
 STATIC_KEEP = {"index.html", "app.js", "style.css", "fonts.css", "fonts", "assets",
-               "favicon.svg", "products-data.js"}  # statikus (nem Vite) demóknál
+               "favicon.svg", "products-data.js", "offers-data.js"}  # statikus (nem Vite) demóknál
 SRC_DIRS = ("src", "data", "public", "index.html")
 
 

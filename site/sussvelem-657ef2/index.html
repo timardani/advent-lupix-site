@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#3a2219">
+  <meta name="description" content="24 nap, 24 kiszaggatott meglepetés: adventi sütőkellék-naptár a Süss Velem kínálatából.">
+  <meta property="og:title" content="Süss Velem · Adventi szaggatónaptár">
+  <meta property="og:description" content="Minden decemberi napon kiszaggatsz egy mézeskalácsot – alatta a napi ajánlat lapul.">
+  <meta property="og:image" content="assets/product-24.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Süss Velem · Adventi szaggatónaptár</title>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="g-ginger" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4894a"/><stop offset=".6" stop-color="#b8692f"/><stop offset="1" stop-color="#94501f"/></linearGradient>
+      <radialGradient id="g-hole" cx=".5" cy=".42" r=".7"><stop offset="0" stop-color="#4a3328"/><stop offset="1" stop-color="#261711"/></radialGradient>
+      <linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f4f2"/><stop offset=".45" stop-color="#a9aeb3"/><stop offset=".55" stop-color="#d9dcdf"/><stop offset="1" stop-color="#7d8389"/></linearGradient>
+    </defs>
+  </svg>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="Süss Velem adventi naptár"><span class="wm-mark" aria-hidden="true">✳</span>Süss Velem</a>
+    <a class="top-link" href="https://www.sussvelem.com/unnepek/karacsony-207/karacsonyi-sutes-kellekei-266" target="_blank" rel="noopener noreferrer">Webáruház ↗</a>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Adventi szaggatónaptár · 2026</p>
+      <h1>24 nap, <em>24 kiszaggatott</em> meglepetés</h1>
+      <p class="lead">Minden reggel szaggass ki egy mézeskalácsot. Alatta a napi sütőkellék és a csak aznap élő kuponkód lapul.</p>
+    </section>
+    <div id="presenter" class="presenter" hidden>
+      <label for="day-select">Bemutató · melyik nap legyen „ma”?</label>
+      <select id="day-select"></select>
+      <small>Javasolt akció és kód – élesítés előtt a bolt hozza létre.</small>
+    </div>
+    <section class="tray-wrap" aria-labelledby="tray-title">
+      <h2 id="tray-title" class="sr-only">A 24 napos tepsi</h2>
+      <div class="tray">
+        <div class="dough-sheet" id="board"></div>
+      </div>
+      <p class="hint" id="hint"></p>
+    </section>
+  </main>
+  <footer>
+    <p>Független ajánlati koncepció a Süss Velem részére · az árak és a készlet a webáruházban ellenőrizendők.</p>
+  </footer>
+
+  <dialog id="reveal" aria-labelledby="reveal-title">
+    <div class="sheet">
+      <div class="sheet-top"><span id="m-day">07. nap</span><button type="button" class="close" id="close" aria-label="Bezárás">✕</button></div>
+      <div id="cut-stage" class="cut-stage">
+        <p class="cut-title" id="cut-title">Szaggasd ki a mai csillagot!</p>
+        <div class="cut-dough" id="cut-dough">
+          <svg class="cut-marks" id="cut-marks" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <div class="cutter" id="cutter" role="button" tabindex="0" aria-label="Szaggató – húzd a tésztára, vagy nyomj Entert a kiszaggatáshoz"></div>
+          <div class="piece" id="piece" aria-hidden="true"></div>
+        </div>
+        <div class="cut-actions"><span>Húzd a szaggatót a tésztára, vagy bökj oda.</span><button type="button" class="btn-cut" id="btn-cut">Kiszaggatom</button></div>
+      </div>
+      <div id="prod-stage" class="prod-stage" hidden>
+        <div class="photo">
+          <img id="p-img" alt="" width="300" height="300">
+          <div class="badge" id="badge" aria-hidden="true"></div>
+        </div>
+        <h2 id="reveal-title"></h2>
+        <div class="deal" id="deal"></div>
+        <div class="coupon" id="coupon"></div>
+        <a id="p-link" class="shop-link" target="_blank" rel="noopener noreferrer">Megnézem a webáruházban ↗</a>
+      </div>
+    </div>
+  </dialog>
+  <script src="products-data.js"></script>
+  <script src="offers-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

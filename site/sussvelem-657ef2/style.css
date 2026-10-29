@@ -1,0 +1,154 @@
+:root{
+  --cocoa:#3a2219;--cocoa2:#5a3426;--dough:#f2dfbf;--dough2:#e8cfa6;--ginger:#b8692f;--icing:#fffaf2;
+  --berry:#b3302a;--pine:#2f5a46;--gold:#d9a441;--ink:#2a1a13;
+  --serif:'Fraunces',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:
+  radial-gradient(1200px 500px at 50% -10%,#6b3a28 0,transparent 70%),
+  linear-gradient(#3a2219,#2a1812 60%,#24140f);min-height:100vh;overflow-x:hidden}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+a{color:inherit}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;max-width:980px;margin:0 auto;color:var(--icing)}
+.wordmark{font-family:var(--serif);font-weight:600;font-size:20px;text-decoration:none;display:flex;gap:8px;align-items:center}
+.wm-mark{color:var(--gold)}
+.top-link{font-size:13px;font-weight:600;text-decoration:none;border:1px solid rgba(255,250,242,.35);padding:7px 12px;border-radius:99px}
+
+.hero{max-width:640px;margin:0 auto;padding:18px 20px 8px;text-align:center;color:var(--icing)}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 10px}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,8vw,52px);line-height:1.05;margin:0 0 12px}
+.hero h1 em{font-style:italic;color:#f0b77a}
+.lead{font-size:16px;line-height:1.5;margin:0 auto;max-width:460px;color:#ecd9c4}
+
+.presenter{max-width:720px;margin:16px 12px 0;min-width:0;padding:10px 14px;display:grid;gap:6px;background:rgba(255,250,242,.08);border:1px dashed rgba(255,250,242,.3);border-radius:12px;color:var(--icing);font-size:13px}
+.presenter select{font:inherit;font-size:15px;padding:8px;border-radius:8px;border:0;width:100%;min-width:0}
+@media(min-width:744px){.presenter{margin:16px auto 0}}
+.presenter small{opacity:.75}
+
+/* ---------- tepsi + kinyújtott tészta ---------- */
+.tray-wrap{max-width:860px;margin:18px auto 0;padding:0 12px}
+.tray{padding:12px;border-radius:22px;background:linear-gradient(145deg,#8a8f94,#4b5056 40%,#6c7277);box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.35),inset 0 -3px 6px rgba(0,0,0,.4)}
+.dough-sheet{display:grid;grid-template-columns:repeat(4,1fr);gap:6px 8px;padding:16px 12px;border-radius:44% 40% 46% 42%/8% 7% 9% 8%;
+  background:
+    radial-gradient(circle at 20% 30%,rgba(255,255,255,.55) 0 1px,transparent 2px) 0 0/23px 29px,
+    radial-gradient(circle at 70% 60%,rgba(160,110,60,.18) 0 1px,transparent 2px) 0 0/31px 37px,
+    radial-gradient(120% 80% at 30% 20%,#f8e9cf,var(--dough) 55%,var(--dough2));
+  box-shadow:inset 0 -6px 14px rgba(150,100,50,.25),inset 0 4px 10px rgba(255,255,255,.6)}
+@media(min-width:700px){.dough-sheet{grid-template-columns:repeat(6,1fr);gap:10px 14px;padding:24px 22px}}
+
+.cookie{position:relative;aspect-ratio:1;border:0;background:none;padding:6%;margin:0;font:inherit;cursor:default;-webkit-tap-highlight-color:transparent}
+.cookie svg{position:absolute;inset:6%;width:88%;height:88%;overflow:visible}
+.cookie .n{position:relative;font-family:var(--serif);font-weight:600;font-size:clamp(17px,4.8vw,26px);line-height:1}
+/* jövő: nyers tésztán csak a szaggató nyoma */
+.s-future .ck path{fill:rgba(255,255,255,.18);stroke:#c49a68;stroke-width:2.2;stroke-dasharray:5 4;vector-effect:non-scaling-stroke}
+.s-future .n{color:#b88d5c}
+/* elmúlt: kiszaggatott lyuk, látszik a tepsi */
+.s-past .ck path{fill:url(#g-hole);stroke:#d9bb8e;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.s-past .ck{filter:drop-shadow(0 1px 0 rgba(255,255,255,.7))}
+.s-past .n{color:#e6cfae;text-decoration:line-through;text-decoration-thickness:2px;font-size:clamp(14px,3.8vw,20px)}
+.lock{position:absolute;right:4%;bottom:4%;width:22%;height:22%}
+.lock svg{position:static;width:100%;height:100%;fill:#a88a72}
+/* ma: kisült, mázas mézeskalács */
+.s-today{cursor:pointer}.s-today>*{animation:bob 2.6s ease-in-out infinite}
+.s-today .ck path,.piece .ck path,.badge .ck path{fill:url(#g-ginger);stroke:#8a4818;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.s-today .ck{filter:drop-shadow(0 6px 6px rgba(80,40,10,.45)) drop-shadow(0 0 14px rgba(255,210,120,.75))}
+.icing{transform:scale(.8);transform-origin:50% 52%}
+.icing path{fill:none;stroke:var(--icing);stroke-width:2.6;stroke-dasharray:1 5;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.s-today .n,.piece .n{color:var(--icing);text-shadow:0 1px 0 #7a3e14,0 0 6px rgba(90,40,10,.6)}
+.cpn{position:absolute;top:-2%;right:-2%;width:30%;aspect-ratio:1;border-radius:50%;background:var(--berry);color:#fff;font-weight:700;font-size:clamp(11px,3vw,15px);display:grid;place-items:center;box-shadow:0 2px 4px rgba(0,0,0,.35);border:2px solid var(--icing)}
+.s-today:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:12px}
+@keyframes bob{50%{translate:0 -3px;rotate:-2deg}}
+.hint{text-align:center;color:#f0d9bd;font-size:15px;margin:14px 0 0}
+footer{max-width:640px;margin:36px auto 0;padding:0 20px 30px;text-align:center;color:#a98b78;font-size:12px}
+
+/* ---------- felugró ---------- */
+dialog{border:0;padding:0;background:transparent;max-width:460px;width:100%;max-height:100dvh;margin:auto}
+dialog::backdrop{background:rgba(25,12,8,.72);backdrop-filter:blur(3px)}
+.sheet{position:relative;background:#fbf3e6;border-radius:20px;max-height:min(100dvh,860px);overflow:auto;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+@media(max-width:520px){dialog{max-width:none;height:100dvh}.sheet{border-radius:0;height:100dvh;max-height:none}}
+.sheet-top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--cocoa);color:var(--icing);font-family:var(--serif);font-weight:600;font-size:17px}
+.close{border:0;background:rgba(255,255,255,.12);color:#fff;width:34px;height:34px;border-radius:50%;font-size:16px;cursor:pointer}
+
+.cut-stage{padding:16px}
+.cut-title{font-family:var(--serif);font-size:24px;font-weight:600;text-align:center;margin:4px 0 12px}
+.cut-dough{position:relative;height:min(58vh,380px);border-radius:18px;touch-action:none;overflow:hidden;cursor:crosshair;
+  background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.55) 0 1px,transparent 2px) 0 0/23px 29px,radial-gradient(circle at 70% 60%,rgba(160,110,60,.18) 0 1px,transparent 2px) 0 0/31px 37px,radial-gradient(120% 90% at 30% 20%,#f8e9cf,var(--dough) 55%,var(--dough2));
+  box-shadow:inset 0 -6px 14px rgba(150,100,50,.25),0 0 0 8px #c9a679}
+.cut-marks{position:absolute;inset:0;width:100%;height:100%}
+.cut-marks .hole{fill:url(#g-hole);stroke:#d9bb8e;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.cutter,.piece{position:absolute;width:44%;max-width:170px;aspect-ratio:1;transform:translate(-50%,-50%)}
+.cutter{cursor:grab;transition:transform .22s ease;z-index:2;filter:drop-shadow(0 10px 8px rgba(70,40,15,.4))}
+.cutter.move{transition:left .26s ease,top .26s ease,transform .22s}
+.cutter:active{cursor:grabbing}
+.cutter:focus-visible{outline:3px solid var(--gold);outline-offset:6px;border-radius:12px}
+.cutter svg{width:100%;height:100%;overflow:visible}
+.steel path{fill:rgba(255,255,255,.08);stroke:url(#g-steel);stroke-width:7;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.cutter:not(.press){animation:hover 1.8s ease-in-out infinite}
+@keyframes hover{50%{transform:translate(-50%,-56%)}}
+.cutter.press{transform:translate(-50%,-50%) scale(.92)}
+.cutter.gone{opacity:0;transition:opacity .25s}
+.piece{opacity:0;pointer-events:none;display:grid;place-items:center;z-index:3}
+.piece svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.piece .ck path{fill:#f2dfbf;transition:fill .6s}
+.piece .icing{opacity:0;transition:opacity .4s .3s}
+.piece .n{position:relative;opacity:0;transition:opacity .4s .3s;font-family:var(--serif);font-weight:600;font-size:34px}
+.piece.lift{opacity:1;animation:lift .9s cubic-bezier(.2,.8,.3,1) forwards}
+.piece.baked .ck path{fill:url(#g-ginger)}
+.piece.baked .icing,.piece.baked .n{opacity:1}
+@keyframes lift{to{transform:translate(-50%,-78%) rotate(-8deg) scale(1.12);filter:drop-shadow(0 18px 14px rgba(70,40,15,.45))}}
+.cut-actions{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:16px;font-size:14px;color:#6b4a35}
+.btn-cut{flex:none;border:0;background:var(--berry);color:#fff;font:inherit;font-weight:700;font-size:15px;padding:12px 18px;border-radius:99px;cursor:pointer;box-shadow:0 4px 0 #7d1e19}
+
+/* ---------- termék + akció ---------- */
+.prod-stage{padding:12px 16px 22px}
+.revealed .prod-stage{animation:rise .5s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.photo{position:relative;height:clamp(120px,27vh,230px);border-radius:16px;background:#fff;display:grid;place-items:center;box-shadow:0 0 0 6px #f0dfc4}
+.photo{padding:8px}
+.photo img{display:block;height:100%;width:auto;max-width:100%;object-fit:contain;border-radius:10px;min-height:0}
+.badge{position:absolute;right:-6px;top:-10px;width:clamp(84px,25vw,108px);aspect-ratio:1;display:grid;place-items:center;z-index:1}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 6px 6px rgba(70,35,10,.45))}
+.badge span{position:relative;display:grid;text-align:center;color:var(--icing);line-height:1;text-shadow:0 1px 0 #6b3510}
+.badge strong{font-family:var(--serif);font-size:clamp(22px,6.4vw,28px)}
+.badge.long strong{font-size:clamp(17px,5vw,22px)}
+.badge small{font-size:11px;font-weight:700;letter-spacing:.04em;margin-top:2px}
+.badge.gold svg{filter:drop-shadow(0 0 0 #fff) drop-shadow(0 0 3px var(--gold)) drop-shadow(0 6px 6px rgba(70,35,10,.45))}
+.revealed .badge{animation:drop .55s cubic-bezier(.3,1.4,.5,1) .25s both}
+@keyframes drop{from{opacity:0;transform:translateY(-40px) rotate(-25deg) scale(1.3)}}
+.prod-stage h2{font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.15;margin:14px 0 8px}
+.deal{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.eq{display:flex;align-items:center;gap:4px}
+.eq i{font-style:normal;font-weight:700;color:#8a6a55}
+.tile{position:relative;width:54px;height:54px;border-radius:10px;background:#fff;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.tile img{width:88%;height:88%;object-fit:contain}
+.tile b{position:absolute;bottom:-7px;left:50%;transform:translateX(-50%);font-size:9.5px;background:var(--berry);color:#fff;padding:2px 5px;border-radius:5px;white-space:nowrap}
+.tile.free b{background:var(--pine)}
+.truck svg{width:70%;fill:#6b4a35}
+.price{display:grid;justify-items:end;line-height:1.1}
+.price strong{font-family:var(--serif);font-size:28px;color:var(--berry)}
+.price s{color:#8a6a55;font-size:15px}
+.price .note{font-size:13px;color:#6b4a35}
+
+/* kupon: cakkos szélű receptkártya */
+.coupon{margin-top:16px;padding:16px 18px;background:var(--icing);position:relative;border-radius:6px;
+  -webkit-mask:radial-gradient(circle 7px at 0 50%,transparent 98%,#000) 0 0/51% 18px repeat-y,radial-gradient(circle 7px at 100% 50%,transparent 98%,#000) 100% 0/51% 18px repeat-y;
+  mask:radial-gradient(circle 7px at 0 50%,transparent 98%,#000) 0 0/51% 18px repeat-y,radial-gradient(circle 7px at 100% 50%,transparent 98%,#000) 100% 0/51% 18px repeat-y;
+  box-shadow:inset 0 0 0 2px #ecd4b0}
+.c-kicker{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--berry)}
+.c-title{font-family:var(--serif);font-size:24px;line-height:1.1;margin:4px 0}
+.c-detail{margin:0 0 10px;font-size:14px;color:#5a4030}
+.c-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:stretch}
+.c-code{font-family:ui-monospace,Menlo,monospace;font-size:clamp(17px,5vw,21px);font-weight:700;letter-spacing:.06em;white-space:nowrap;border:2px dashed #c49a68;border-radius:10px;padding:9px 10px;text-align:center;align-self:center;overflow:hidden}
+.copy{border:0;border-radius:10px;background:var(--cocoa);color:#fff;font:inherit;font-weight:700;font-size:15px;padding:0 16px;cursor:pointer;min-height:46px}
+.copy.done{background:var(--pine)}
+.c-exp{align-self:center;font-weight:700;color:#8a6a55}
+.c-cond{font-size:13px;color:#6b4a35;margin:10px 0 4px}
+.c-timer{margin:0;font-size:15px;font-weight:600;color:var(--berry)}
+.c-timer .t{font-variant-numeric:tabular-nums}
+.coupon.expired{opacity:.7}.coupon.expired .c-code{text-decoration:line-through}
+.shop-link{display:block;text-align:center;margin-top:16px;padding:14px;border-radius:99px;background:var(--berry);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 4px 0 #7d1e19}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
