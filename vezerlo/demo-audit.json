@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-10-29T14:23:36+01:00",
+  "generalva": "2026-10-29T14:52:28+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-10-27T22:43+01:00",
@@ -96,6 +96,11 @@
         "nincs kuponmásolás",
         "nincs igazolt nagy, vizuális akció és ár"
       ]
+    },
+    "szatocska": {
+      "frissitve": "2026-10-29T14:52+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "tiszafonal": {
       "frissitve": "2026-10-23T23:08+02:00",
