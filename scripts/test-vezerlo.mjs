@@ -81,7 +81,7 @@ if (!copied.plain.includes('November 2. estig várok a válaszára')) throw new 
 for (const bold of ['Röviden a lényeg:', 'Ár: 100 000 Ft az idei adventre, vagy 160 000 Ft korlátlan, több éves használatra.', 'Kategóriánként csak egy webshopnak adom el.']) {
   if (!copied.html.includes(`<strong>${bold}</strong>`)) throw new Error(`a félkövér kiemelés hiányzik: ${bold}`);
 }
-if ((copied.html.match(/<li>/g) || []).length !== 4) throw new Error('a levél négy pontja nem került a formázott változatba');
+if ((copied.html.match(/<li>/g) || []).length !== 5) throw new Error('a levél öt pontja nem került a formázott változatba');
 await page.locator('#kereses').fill('gyongyver.szekely@biokiskert.hu');
 if (await page.locator('.shop').count() !== 1 || !await page.locator('.shop', { hasText: 'BioKiskert' }).isVisible()) throw new Error('e-mail keresés hibás');
 await page.locator('#kereses').fill('');
