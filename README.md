@@ -38,11 +38,15 @@ a címeket csak az adott bolt tulajdonosa kapja meg, és elutasítás után a de
 és jóváhagyott képek kellenek.
 
 ## Vezérlő: `/vezerlo` (jelszavas)
-A felületen közvetlenül jelölhető a kiküldés, módosítható a határidő és a státusz. A Lista mellett Kanban nézet is választható a Kész demo, Elküldve, Második keresés, Érdekli és OFF oszlopokkal. A Kanban-kártyák áthúzhatók, kategóriára szűrhetők, és közvetlenül szerkeszthető rajtuk a következő teendő, a határidő és a részletes státusz. A rendszer kiemeli a sürgős/lejárt kártyákat, mutatja az oszlopban töltött napokat, és a mostantól végzett státuszváltások előzményeit is naplózza. Minden sikeres mentésről böngészőbeli biztonsági másolat is készül; ha a szerver egy redeploy után régebbi adatokkal indul, a felület felajánlja ennek visszaállítását. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
+A `vezerlo/adat.json` az ügyfél-, kategória- és kontaktadatok központi forrása. Deploykor a belső API ebből hozzáadja az új kategóriákat és boltokat, illetve frissíti a statikus kontaktadatokat, de a `/data/adat.json` fájlban már vezetett státuszokat, kiküldési és határidő-dátumokat, teendőket és előzményeket megőrzi.
+
+A Lista kompakt ügyfélkártyákat, keresést, kategória- és státuszszűrést, valamint négy gyors összesítőt mutat. A részletek kinyitása után szerkeszthető a kiküldés dátuma, a határidő, a státusz és a következő teendő. A kiküldési dátum módosításakor a háromnapos, hétvégét kerülő határidő automatikusan újraszámolódik. A Kanban kizárólag áttekintő nézet: az öt oszlopban csak az ügyfélnevek jelennek meg, ott nincs szerkesztés vagy áthúzás.
+
+Minden sikeres mentésről böngészőbeli biztonsági másolat is készül; ha a szerver egy redeploy után régebbi adatokkal indul, a felület felajánlja ennek visszaállítását. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
 
 **Kötelező Coolify-beállítás az adatok tartós megőrzéséhez:** Persistent Storage, célútvonal: `/data`. A Dockerfile `VOLUME /data` deklarációja helyben jelzi az írható adatkönyvtárat, de a redeploy utáni megőrzést a Coolify névvel kezelt tárhelye biztosítja.
 
-A vezérlő mutatja a demó forrásának utolsó módosítását és a második körös auditot is. Ezt a `scripts/demo-audit.py` készíti a `vezerlo/demo-audit.json` fájlba; a `kiad.py` minden kiadás előtt automatikusan frissíti.
+A vezérlő mutatja a demó forrásának utolsó módosítását is. Ezt a `scripts/demo-audit.py` készíti a `vezerlo/demo-audit.json` fájlba; a `kiad.py` minden kiadás előtt automatikusan frissíti.
 
 Parancssorból továbbra is használható:
 ```sh

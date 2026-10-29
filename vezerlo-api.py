@@ -19,12 +19,36 @@ ALLAPOTOK = {
     "foglalt", "nyert", "nem", "nem_reagal", "lejart", "kizart",
 }
 VALASZ_ALLAPOTOK = {"valaszolt", "foglalt", "nyert", "nem"}
+DINAMIKUS_BOLT_MEZOK = {
+    "allapot", "kikuldve", "hatarido", "valasz_datum", "teendo",
+    "allapot_datum", "elozmenyek",
+}
 
 
 def init_data():
     DATA.parent.mkdir(parents=True, exist_ok=True)
     if not DATA.exists():
         shutil.copy2(SEED, DATA)
+        return
+
+    # A seed a központi ügyfél- és kontaktadat-forrás. Friss deploynál az új
+    # boltok/kategóriák bekerülnek, a /data-ban vezetett értékesítési állapot,
+    # dátumok és előzmények viszont változatlanul megmaradnak.
+    seed = json.loads(SEED.read_text("utf-8"))
+    live = json.loads(DATA.read_text("utf-8"))
+    current = {b.get("id"): b for b in live.get("boltok", [])}
+    merged_shops = []
+    for base in seed.get("boltok", []):
+        merged = dict(base)
+        old = current.get(base.get("id"), {})
+        for key in DINAMIKUS_BOLT_MEZOK:
+            if key in old:
+                merged[key] = old[key]
+        merged_shops.append(merged)
+    seed["boltok"] = merged_shops
+    seed["frissitve"] = live.get("frissitve", seed.get("frissitve"))
+    if seed != live:
+        save_data(seed)
 
 
 def load_data():
@@ -46,8 +70,8 @@ def save_data(adat):
             os.unlink(name)
 
 
-def default_deadline(today):
-    deadline = today + timedelta(days=3)
+def default_deadline(sent_date):
+    deadline = sent_date + timedelta(days=3)
     while deadline.weekday() >= 5:
         deadline += timedelta(days=1)
     return deadline.isoformat()
@@ -132,6 +156,11 @@ class Handler(BaseHTTPRequestHandler):
                 elif isinstance(sent, str):
                     try:
                         bolt["kikuldve"] = valid_date(sent)
+                        # A kézzel javított kiküldési dátumhoz tartozó határidő
+                        # is automatikusan újraszámolódik. Üres dátum törli azt.
+                        bolt["hatarido"] = default_deadline(date.fromisoformat(sent)) if sent else ""
+                        if sent and bolt.get("allapot") in {"elokeszites", "review", "kuldheto", "tartalek"}:
+                            bolt["allapot"] = "kikuldve"
                     except ValueError:
                         return self.send_json(400, {"hiba": "Érvénytelen kiküldési dátum."})
                 else:
