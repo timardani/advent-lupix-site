@@ -61,9 +61,9 @@ await page.route('http://vez.test/**', async route => {
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 await page.goto('http://vez.test/vezerlo/', { waitUntil: 'networkidle' });
-if (!await page.getByText('17 kategória').isVisible()) throw new Error('kategóriaszám hiányzik');
-if (!await page.getByText('18 ügyfél/jelölt').isVisible()) throw new Error('ügyfélszám hiányzik');
-if (await page.locator('.cat').count() !== 17) throw new Error('nem látszik mind a 17 kategória');
+if (!await page.getByText('20 kategória').isVisible()) throw new Error('kategóriaszám hiányzik');
+if (!await page.getByText('21 ügyfél/jelölt').isVisible()) throw new Error('ügyfélszám hiányzik');
+if (await page.locator('.cat').count() !== 20) throw new Error('nem látszik mind a 20 kategória');
 for (const name of ['BioKiskert','Demeter Chocolate','Csakajósör','Chilimánia']) {
   if (!await page.locator('.shop', { hasText: name }).isVisible()) throw new Error(`új ügyfél hiányzik: ${name}`);
 }
@@ -110,4 +110,4 @@ if (await page.locator('.kanban-card').count() !== 2) throw new Error('Kanban ka
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kanban.png', import.meta.url).pathname, fullPage: true });
 await browser.close();
-console.log(`✓ vezérlő: 17 kategória, 18 ügyfél, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
+console.log(`✓ vezérlő: 20 kategória, 21 ügyfél, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
