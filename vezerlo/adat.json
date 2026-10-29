@@ -81,6 +81,10 @@
     {
       "nev": "Kisállat / állategészségügy",
       "sor": "Gazdipro"
+    },
+    {
+      "nev": "Bűvészet / bűvésztrükkök",
+      "sor": "Damien White Bűvészbolt"
     }
   ],
   "boltok": [
@@ -419,6 +423,22 @@
       "kapcsolat_minoseg": "Ügyfélszolgálati cím, tulajdonos nem igazolt",
       "teendo": "Tulajdonosi elérés igazolása megkeresés előtt",
       "megjegyzes": "blocked:prospect; demó kész (helyi), nincs élő link"
+    },
+    {
+      "kikuldve": "",
+      "hatarido": "",
+      "valasz_datum": "",
+      "id": "buveszbolt",
+      "bolt": "Damien White Bűvészbolt",
+      "kategoria": "Bűvészet / bűvésztrükkök",
+      "demo": "buveszbolt",
+      "allapot": "elokeszites",
+      "kinek": "",
+      "email": "",
+      "telefon": "",
+      "kapcsolat_minoseg": "Ellenőrzendő",
+      "teendo": "Tulajdonosi elérés és kapcsolati adatok felkutatása",
+      "megjegyzes": "Demó kész és élő titkos linken"
     }
   ]
 }
