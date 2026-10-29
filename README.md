@@ -42,6 +42,8 @@ A `vezerlo/adat.json` az ügyfél-, kategória- és kontaktadatok központi forr
 
 A Lista kompakt ügyfélkártyákat, keresést, kategória- és státuszszűrést, valamint négy gyors összesítőt mutat. A részletek kinyitása után szerkeszthető a kiküldés dátuma, a határidő, a státusz és a következő teendő. A kiküldési dátum módosításakor a háromnapos, hétvégét kerülő határidő automatikusan újraszámolódik. A Kanban kizárólag áttekintő nézet: az öt oszlopban csak az ügyfélnevek jelennek meg, ott nincs szerkesztés vagy áthúzás.
 
+A részletek között az **E-mail másolása** gomb az adott bolt nevével, élő demólinkjével és határidejével kitöltött teljes megkeresést teszi a vágólapra. A három kiemelt sor félkövér marad a formázott beillesztést támogató levelezőkben; a vágólap sima szöveges változatot is kap. Ha a boltnál még nincs határidő, a vezérlő a másolás napjától számított három napot használja, hétvége esetén a következő hétfőt.
+
 Minden sikeres mentésről böngészőbeli biztonsági másolat is készül; ha a szerver egy redeploy után régebbi adatokkal indul, a felület felajánlja ennek visszaállítását. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
 
 **Kötelező Coolify-beállítás az adatok tartós megőrzéséhez:** Persistent Storage, célútvonal: `/data`. A Dockerfile `VOLUME /data` deklarációja helyben jelzi az írható adatkönyvtárat, de a redeploy utáni megőrzést a Coolify névvel kezelt tárhelye biztosítja.

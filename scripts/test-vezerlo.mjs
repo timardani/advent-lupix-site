@@ -7,6 +7,7 @@ const { chromium } = require('playwright-core');
 const root = new URL('../', import.meta.url);
 const seedData = JSON.parse(readFileSync(new URL('vezerlo/adat.json', root), 'utf8'));
 let data = structuredClone(seedData);
+data.boltok.find(x => x.id === 'horgaszzona').hatarido = '2026-11-02';
 const audit = readFileSync(new URL('vezerlo/demo-audit.json', root), 'utf8');
 const releases = readFileSync(new URL('kiadas.json', root), 'utf8');
 const html = readFileSync(new URL('vezerlo/index.html', root), 'utf8');
@@ -20,6 +21,20 @@ const deadline = sent => {
 
 const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+await page.addInitScript(() => {
+  class TestClipboardItem { constructor(items) { this.items = items; } }
+  window.ClipboardItem = TestClipboardItem;
+  Object.defineProperty(navigator, 'clipboard', { value: {
+    write: async entries => {
+      const items = entries[0].items;
+      window.__copiedEmail = {
+        html: await items['text/html'].text(),
+        plain: await items['text/plain'].text(),
+      };
+    },
+    writeText: async text => { window.__copiedText = text; },
+  }});
+});
 await page.route('http://vez.test/**', async route => {
   const url = new URL(route.request().url());
   if (url.pathname === '/vezerlo/' || url.pathname === '/vezerlo/index.html') return route.fulfill({ contentType: 'text/html; charset=utf-8', body: html });
@@ -53,6 +68,20 @@ for (const name of ['BioKiskert','Demeter Chocolate','Csakajósör','Chilimánia
   if (!await page.locator('.shop', { hasText: name }).isVisible()) throw new Error(`új ügyfél hiányzik: ${name}`);
 }
 if (!await page.locator('.shop', { hasText: 'Chilimánia' }).getByText('nincs e-mail').isVisible()) throw new Error('hiányos kontakt jelzése nem látszik');
+const horgaszCard = page.locator('.shop', { has: page.locator('.name', { hasText: 'Horgász-Zóna' }) });
+await horgaszCard.locator('summary').click();
+const emailButton = horgaszCard.getByRole('button', { name: 'E-mail másolása' });
+if (!await emailButton.isVisible()) throw new Error('az e-mail másoló gomb nem látszik');
+await emailButton.click();
+await page.waitForFunction(() => document.querySelector('[data-copy-email="horgaszzona"]')?.textContent.includes('Kimásolva'));
+const copied = await page.evaluate(() => window.__copiedEmail);
+if (!copied?.plain.includes('Kedves Horgász-Zóna!')) throw new Error('a boltnév nem került a levélbe');
+if (!copied.plain.includes('http://vez.test/horgaszzona-8d4bdb/?bemutato=1')) throw new Error('a demólink nem került a levélbe');
+if (!copied.plain.includes('November 2. estig várok a válaszára')) throw new Error('a határidő nem került a levélbe');
+for (const bold of ['Röviden a lényeg:', 'Ár: 100 000 Ft az idei adventre, vagy 160 000 Ft korlátlan, több éves használatra.', 'Kategóriánként csak egy webshopnak adom el.']) {
+  if (!copied.html.includes(`<strong>${bold}</strong>`)) throw new Error(`a félkövér kiemelés hiányzik: ${bold}`);
+}
+if ((copied.html.match(/<li>/g) || []).length !== 4) throw new Error('a levél négy pontja nem került a formázott változatba');
 await page.locator('#kereses').fill('gyongyver.szekely@biokiskert.hu');
 if (await page.locator('.shop').count() !== 1 || !await page.locator('.shop', { hasText: 'BioKiskert' }).isVisible()) throw new Error('e-mail keresés hibás');
 await page.locator('#kereses').fill('');
@@ -81,4 +110,4 @@ if (await page.locator('.kanban-card').count() !== 2) throw new Error('Kanban ka
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kanban.png', import.meta.url).pathname, fullPage: true });
 await browser.close();
-console.log(`✓ vezérlő: 17 kategória, 18 ügyfél, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
+console.log(`✓ vezérlő: 17 kategória, 18 ügyfél, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
