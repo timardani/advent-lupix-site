@@ -38,7 +38,7 @@ a címeket csak az adott bolt tulajdonosa kapja meg, és elutasítás után a de
 és jóváhagyott képek kellenek.
 
 ## Vezérlő: `/vezerlo` (jelszavas)
-A felületen közvetlenül jelölhető a kiküldés, módosítható a határidő és a státusz. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
+A felületen közvetlenül jelölhető a kiküldés, módosítható a határidő és a státusz. A Lista mellett Kanban nézet is választható a Kész demo, Elküldve, Második keresés, Érdekli és OFF oszlopokkal. A Kanban-kártyák áthúzhatók, kategóriára szűrhetők, és közvetlenül szerkeszthető rajtuk a következő teendő, a határidő és a részletes státusz. A rendszer kiemeli a sürgős/lejárt kártyákat, mutatja az oszlopban töltött napokat, és a mostantól végzett státuszváltások előzményeit is naplózza. Minden sikeres mentésről böngészőbeli biztonsági másolat is készül; ha a szerver egy redeploy után régebbi adatokkal indul, a felület felajánlja ennek visszaállítását. A változásokat a konténer belső API-ja a `/data/adat.json` fájlba menti. Az első induláskor a `vezerlo/adat.json` az alapadat.
 
 **Kötelező Coolify-beállítás az adatok tartós megőrzéséhez:** Persistent Storage, célútvonal: `/data`. A Dockerfile `VOLUME /data` deklarációja helyben jelzi az írható adatkönyvtárat, de a redeploy utáni megőrzést a Coolify névvel kezelt tárhelye biztosítja.
 

@@ -4,7 +4,7 @@ import json
 import os
 import shutil
 import tempfile
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
@@ -93,7 +93,7 @@ class Handler(BaseHTTPRequestHandler):
             payload = json.loads(self.rfile.read(size))
             if not isinstance(payload, dict) or not isinstance(payload.get("id"), str):
                 return self.send_json(400, {"hiba": "Hiányzó boltazonosító."})
-            allowed = {"id", "kikuldve", "hatarido", "allapot"}
+            allowed = {"id", "kikuldve", "hatarido", "allapot", "teendo"}
             if set(payload) - allowed:
                 return self.send_json(400, {"hiba": "Nem támogatott mező."})
 
@@ -103,6 +103,7 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send_json(404, {"hiba": "Nincs ilyen bolt."})
 
             today = date.today()
+            old_status = bolt.get("allapot", "")
             if "allapot" in payload:
                 status = payload["allapot"]
                 if status not in ALLAPOTOK:
@@ -117,18 +118,24 @@ class Handler(BaseHTTPRequestHandler):
 
             if "kikuldve" in payload:
                 sent = payload["kikuldve"]
-                if not isinstance(sent, bool):
-                    return self.send_json(400, {"hiba": "A kiküldés jelölése csak igen/nem lehet."})
-                if sent:
-                    bolt["kikuldve"] = bolt.get("kikuldve") or today.isoformat()
-                    if bolt.get("allapot") in {"elokeszites", "review", "kuldheto", "tartalek"}:
-                        bolt["allapot"] = "kikuldve"
-                    if not bolt.get("hatarido"):
-                        bolt["hatarido"] = default_deadline(today)
+                if isinstance(sent, bool):
+                    if sent:
+                        bolt["kikuldve"] = bolt.get("kikuldve") or today.isoformat()
+                        if bolt.get("allapot") in {"elokeszites", "review", "kuldheto", "tartalek"}:
+                            bolt["allapot"] = "kikuldve"
+                        if not bolt.get("hatarido"):
+                            bolt["hatarido"] = default_deadline(today)
+                    else:
+                        bolt["kikuldve"] = ""
+                        if bolt.get("allapot") == "kikuldve":
+                            bolt["allapot"] = "kuldheto"
+                elif isinstance(sent, str):
+                    try:
+                        bolt["kikuldve"] = valid_date(sent)
+                    except ValueError:
+                        return self.send_json(400, {"hiba": "Érvénytelen kiküldési dátum."})
                 else:
-                    bolt["kikuldve"] = ""
-                    if bolt.get("allapot") == "kikuldve":
-                        bolt["allapot"] = "kuldheto"
+                    return self.send_json(400, {"hiba": "Érvénytelen kiküldési dátum."})
 
             if "hatarido" in payload:
                 if not isinstance(payload["hatarido"], str):
@@ -137,6 +144,24 @@ class Handler(BaseHTTPRequestHandler):
                     bolt["hatarido"] = valid_date(payload["hatarido"])
                 except ValueError:
                     return self.send_json(400, {"hiba": "Érvénytelen határidő."})
+
+            if "teendo" in payload:
+                task = payload["teendo"]
+                if not isinstance(task, str) or len(task) > 500:
+                    return self.send_json(400, {"hiba": "Érvénytelen következő teendő."})
+                bolt["teendo"] = task.strip()
+
+            if bolt.get("allapot") != old_status:
+                bolt["allapot_datum"] = today.isoformat()
+                history = bolt.setdefault("elozmenyek", [])
+                if not isinstance(history, list):
+                    history = bolt["elozmenyek"] = []
+                history.append({
+                    "datum": datetime.now().astimezone().isoformat(timespec="seconds"),
+                    "innen": old_status,
+                    "ide": bolt["allapot"],
+                })
+                del history[:-100]
 
             save_data(adat)
             self.send_json(200, adat)

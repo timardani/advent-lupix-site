@@ -14,7 +14,7 @@ foglalt, nyert, nem, nem_reagal, lejart, kizart
 Utána: git add -A && git commit -m "vezérlő: …" && git push
 """
 import json, sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 F = Path(__file__).resolve().parent / "vezerlo" / "adat.json"
@@ -44,6 +44,7 @@ def main():
     if not b:
         sys.exit(f"Nincs ilyen id: {a[0]}  (lista: python3 vezerlo.py)")
     mit, szoveg = a[1], (a[2] if len(a) > 2 else "")
+    regi_allapot = b["allapot"]
     if mit == "megj":
         b["megjegyzes"] = szoveg
     elif mit == "teendo":
@@ -60,6 +61,14 @@ def main():
             b["megjegyzes"] = szoveg
     else:
         sys.exit(f"Ismeretlen állapot: {mit}\n{__doc__}")
+    if b["allapot"] != regi_allapot:
+        b["allapot_datum"] = ma.isoformat()
+        b.setdefault("elozmenyek", []).append({
+            "datum": datetime.now().astimezone().isoformat(timespec="seconds"),
+            "innen": regi_allapot,
+            "ide": b["allapot"],
+        })
+        b["elozmenyek"] = b["elozmenyek"][-100:]
     adat["frissitve"] = ma.isoformat()
     F.write_text(json.dumps(adat, ensure_ascii=False, indent=1) + "\n", "utf-8")
     print(f"✓ {b['bolt']}: {b['allapot']}" + (f", határidő {b['hatarido']}" if b["hatarido"] else ""))
