@@ -40,7 +40,8 @@ function badge(a){const[t,c]=S[a]||[a,'#888'];return `<span class="badge" style=
 function options(selected){return Object.entries(S).map(([v,[label]])=>`<option value="${v}"${v===selected?' selected':''}>${esc(label)}</option>`).join('')}
 function deadlineText(b){if(!b.hatarido)return 'nincs határidő';const d=nap(b.hatarido,ma);return d<0?`lejárt ${-d} napja`:d===0?'ma jár le':d===1?'holnap jár le':`${d} nap van hátra`}
 function demoUrl(b){const slug=linkek[b.demo];return slug?`${location.origin}/${slug}/?bemutato=1`:''}
-function emailDeadline(b){if(b.hatarido)return b.hatarido;const d=new Date(`${ma}T12:00:00Z`);d.setUTCDate(d.getUTCDate()+3);while([0,6].includes(d.getUTCDay()))d.setUTCDate(d.getUTCDate()+1);return d.toISOString().slice(0,10)}
+const UNNEP=new Set(['2026-10-23','2026-11-01','2026-12-24','2026-12-25','2026-12-26']);
+function emailDeadline(b){if(b.kikuldve&&b.hatarido)return b.hatarido;const d=new Date(`${ma}T12:00:00Z`);d.setUTCDate(d.getUTCDate()+3);while([0,6].includes(d.getUTCDay())||UNNEP.has(d.toISOString().slice(0,10)))d.setUTCDate(d.getUTCDate()+1);return d.toISOString().slice(0,10)}
 function emailDeadlineHu(b){const text=new Intl.DateTimeFormat('hu-HU',{month:'long',day:'numeric',timeZone:'Europe/Budapest'}).format(new Date(`${emailDeadline(b)}T12:00:00Z`));return text.charAt(0).toLocaleUpperCase('hu')+text.slice(1)}
 function emailContent(b,url){const deadline=emailDeadlineHu(b),shop=b.bolt;const items=[
 `December 1–24. között a vásárlói, követői minden nap kinyitnak egy ablakot. Mögötte egy termék van a boltjából és egy kuponkód, ami csak aznap éjfélig él. Ez egy különleges kampány, amiért szívesen visszajönnek akár mindennap.`,
