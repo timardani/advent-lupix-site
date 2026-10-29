@@ -1,8 +1,13 @@
 {
-  "generalva": "2026-10-29T12:40:50+01:00",
+  "generalva": "2026-10-29T13:49:30+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-10-27T22:43+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "biokiskert": {
+      "frissitve": "2026-10-29T13:42+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -12,7 +17,7 @@
       "hianyok": []
     },
     "csakajosor": {
-      "frissitve": "2026-10-29T12:40+01:00",
+      "frissitve": "2026-10-29T12:45+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
