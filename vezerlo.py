@@ -18,7 +18,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 F = Path(__file__).resolve().parent / "vezerlo" / "adat.json"
-ALLAPOTOK = {"elokeszites", "review", "kuldheto", "tartalek", "kikuldve", "valaszolt",
+ALLAPOTOK = {"keszul", "lezart", "elokeszites", "review", "kuldheto", "tartalek", "kikuldve", "valaszolt",
              "foglalt", "nyert", "nem", "nem_reagal", "lejart", "kizart"}
 UNNEP = {"2026-10-23", "2026-11-01", "2026-12-24", "2026-12-25", "2026-12-26"}
 

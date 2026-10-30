@@ -17,7 +17,10 @@ MAX_BODY = 16_384
 ALLAPOTOK = {
     "elokeszites", "review", "kuldheto", "tartalek", "kikuldve", "valaszolt",
     "foglalt", "nyert", "nem", "nem_reagal", "lejart", "kizart",
+    # 2026-10-30: egyszerűsített 5 státusz (a régiek visszafelé kompatibilisek)
+    "keszul", "lezart",
 }
+ELOTTE = {"elokeszites", "review", "kuldheto", "tartalek", "keszul"}
 VALASZ_ALLAPOTOK = {"valaszolt", "foglalt", "nyert", "nem"}
 DINAMIKUS_BOLT_MEZOK = {
     "allapot", "kikuldve", "hatarido", "valasz_datum", "teendo",
@@ -25,7 +28,7 @@ DINAMIKUS_BOLT_MEZOK = {
 }
 # Dani által a felületen kézzel beírható kapcsolati adatok. Ha a /data-ban
 # már nem üres, az marad; ha üres, a seed (kutatásból jövő) érték érvényes.
-KEZI_MEZOK = {"kinek", "email", "telefon", "megjegyzes"}
+KEZI_MEZOK = {"kinek", "email", "telefon", "megjegyzes", "weboldal"}
 
 
 def init_data():
@@ -151,7 +154,7 @@ class Handler(BaseHTTPRequestHandler):
                 if isinstance(sent, bool):
                     if sent:
                         bolt["kikuldve"] = bolt.get("kikuldve") or today.isoformat()
-                        if bolt.get("allapot") in {"elokeszites", "review", "kuldheto", "tartalek"}:
+                        if bolt.get("allapot") in ELOTTE:
                             bolt["allapot"] = "kikuldve"
                         if not bolt.get("hatarido"):
                             bolt["hatarido"] = default_deadline(today)
@@ -165,7 +168,7 @@ class Handler(BaseHTTPRequestHandler):
                         # A kézzel javított kiküldési dátumhoz tartozó határidő
                         # is automatikusan újraszámolódik. Üres dátum törli azt.
                         bolt["hatarido"] = default_deadline(date.fromisoformat(sent)) if sent else ""
-                        if sent and bolt.get("allapot") in {"elokeszites", "review", "kuldheto", "tartalek"}:
+                        if sent and bolt.get("allapot") in ELOTTE:
                             bolt["allapot"] = "kikuldve"
                     except ValueError:
                         return self.send_json(400, {"hiba": "Érvénytelen kiküldési dátum."})

@@ -50,7 +50,7 @@ await page.route('http://vez.test/**', async route => {
     if ('kikuldve' in changes) {
       shop.kikuldve = changes.kikuldve;
       shop.hatarido = deadline(changes.kikuldve);
-      if (changes.kikuldve && ['elokeszites','review','kuldheto','tartalek'].includes(shop.allapot)) shop.allapot = 'kikuldve';
+      if (changes.kikuldve && ['elokeszites','review','kuldheto','tartalek','keszul'].includes(shop.allapot)) shop.allapot = 'kikuldve';
       delete changes.kikuldve;
     }
     Object.assign(shop, changes);
@@ -113,7 +113,7 @@ await page.screenshot({ path: new URL('../screenshots/vezerlo-mobile.png', impor
 await page.setViewportSize({ width: 1440, height: 900 });
 await page.getByRole('button', { name: 'Kanban' }).click();
 if (await page.locator('.kanban-col').count() !== 5) throw new Error('nem öt Kanban-oszlop jelent meg');
-for (const name of ['Kész demo','Elküldve','Második keresés','Érdekli','OFF']) if (!await page.locator('.kanban-head', { hasText: name }).isVisible()) throw new Error(`Kanban-oszlop hiányzik: ${name}`);
+for (const name of ['Készül','Küldhető','Kiküldve','Nyert','Lezárt']) if (!await page.locator('.kanban-head', { hasText: name }).isVisible()) throw new Error(`Kanban-oszlop hiányzik: ${name}`);
 if (await page.locator('.kanban-card [data-field]').count()) throw new Error('a Kanbanban szerkeszthető mező maradt');
 if (await page.locator('.kanban-card[draggable="true"]').count()) throw new Error('a Kanban továbbra is húzható');
 const kanbanTexts = await page.locator('.kanban-card').allTextContents();
