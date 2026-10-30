@@ -134,5 +134,18 @@ await page.setViewportSize({ width: 390, height: 844 });
 if (await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)) throw new Error('kategóriaoldal túlcsordul mobilon');
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kategoriak.png', import.meta.url).pathname });
 console.log(`✓ kategóriaoldal: ${catCount} kártya`);
+// Éjszakai (fekete) mód: kapcsoló, megmarad oldalváltáskor, fekete háttér.
+await page.locator('#tema').click();
+if (await page.evaluate(() => document.documentElement.dataset.theme) !== 'dark') throw new Error('éjszakai mód nem kapcsol be');
+await page.screenshot({ path: new URL('../screenshots/vezerlo-kategoriak-ejszakai.png', import.meta.url).pathname });
+await page.goto('http://vez.test/vezerlo/', { waitUntil: 'networkidle' });
+await page.setViewportSize({ width: 1280, height: 900 });
+const darkBg = await page.evaluate(() => [document.documentElement.dataset.theme, getComputedStyle(document.body).backgroundColor, document.getElementById('tema').textContent]);
+if (darkBg[0] !== 'dark' || darkBg[1] !== 'rgb(10, 10, 11)' || !darkBg[2].includes('Nappali')) throw new Error('éjszakai mód nem marad meg: ' + darkBg.join(' | '));
+await page.screenshot({ path: new URL('../screenshots/vezerlo-ejszakai.png', import.meta.url).pathname });
+await page.locator('#tema').click();
+if (await page.evaluate(() => document.documentElement.dataset.theme) !== 'light') throw new Error('nappali mód nem kapcsol vissza');
+if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
+console.log('✓ éjszakai mód: kapcsoló, megmaradás, visszaváltás');
 await browser.close();
 console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);

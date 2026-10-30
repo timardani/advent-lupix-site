@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<script>(function(){try{var t=localStorage.getItem("vezerlo-tema");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})()</script>
 <title>Kategóriák – Adventi vezérlő</title>
 <style>
 :root{--bg:#f4f1ec;--card:#fff;--ink:#1d1b18;--mut:#6b665e;--line:#e4dfd6;--accent:#9b2c2c;--ok:#166534;--blue:#1f4e8c}
@@ -25,13 +26,23 @@ li .n{font-weight:650}li.done .n{text-decoration:line-through;color:var(--mut)}
 .lbl{color:var(--mut);font-size:11px;margin-top:6px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
 .ask{margin-top:8px;width:100%}
 @media(max-width:700px){.grid{grid-template-columns:1fr}}
+
+html[data-theme=dark]{--bg:#0a0a0b;--card:#16161a;--ink:#ececee;--mut:#9b9ba3;--line:#2a2a31;--accent:#f87171;--ok:#4ade80;--warn:#fbbf24;--blue:#7fa8ff;color-scheme:dark}
+html[data-theme=dark] .view-switch{background:#1d1d22}html[data-theme=dark] .view-switch button{color:var(--ink)}html[data-theme=dark] .view-switch button.active{background:#2e2e36;box-shadow:none}
+html[data-theme=dark] .plain-button,html[data-theme=dark] .copy-addr{background:#1d1d22;color:var(--ink);border-color:#34343c}
+html[data-theme=dark] input,html[data-theme=dark] select{background:#111114!important;border-color:#34343c!important;color:var(--ink)!important}html[data-theme=dark] .ed{background:transparent!important;border-color:transparent!important}html[data-theme=dark] .ed:hover{border-color:var(--line)!important}html[data-theme=dark] .ed:focus{background:#111114!important;border-color:var(--blue)!important}
+html[data-theme=dark] .mini .missing{background:#3a0d19;color:#fda4af}html[data-theme=dark] .empty{background:#ffffff06;border-color:#34343c}
+html[data-theme=dark] .recovery{background:#2a1a08;border-color:#b45309;color:#fed7aa}
+html[data-theme=dark] .kanban-col{background:#111114;border-color:#25252b}html[data-theme=dark] .count{background:#26262d}html[data-theme=dark] .kanban-card{background:var(--card)}
+html[data-theme=dark] .cat.otlet{border-left-color:#475569}html[data-theme=dark] .shop.done{opacity:.5}
+.theme-btn{white-space:nowrap}
 </style>
 </head>
 <body>
 <header>
  <h1>Kategóriák és jelöltek</h1>
  <div class="meta" id="meta">Betöltés…</div>
- <div class="tools"><a class="plain-button" href="./">← Vezérlő</a><input id="q" type="search" placeholder="Keresés kategóriára vagy boltra"><select id="f"><option value="">Mind</option><option value="szabad">Szabad (nincs nyitott levél)</option><option value="var">Válaszra várunk</option><option value="otlet">Csak kutatás, nincs demó</option></select><span id="msg" class="meta"></span></div>
+ <div class="tools"><a class="plain-button" href="./">← Vezérlő</a><input id="q" type="search" placeholder="Keresés kategóriára vagy boltra"><select id="f"><option value="">Mind</option><option value="szabad">Szabad (nincs nyitott levél)</option><option value="var">Válaszra várunk</option><option value="otlet">Csak kutatás, nincs demó</option></select><span id="msg" class="meta"></span><button type="button" class="plain-button theme-btn" id="tema" aria-pressed="false">🌙 Éjszakai</button></div>
 </header>
 <main id="app"></main>
 <script>
@@ -74,5 +85,6 @@ Promise.all([fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>{if(!r.ok||r.
 .then(([a,k,ku])=>{adat=a;for(const x of k.demok)linkek[x.demo]=x.slug;kut=ku.kategoriak||[];render()})
 .catch(e=>{document.getElementById('app').innerHTML=`<p class="meta">Nem sikerült betölteni: ${esc(e.message)}</p>`});
 </script>
+<script>(function(){var b=document.getElementById("tema"),r=document.documentElement;function u(){var k=r.dataset.theme==="dark";b.textContent=k?"☀️ Nappali":"🌙 Éjszakai";b.setAttribute("aria-pressed",k)}b.addEventListener("click",function(){r.dataset.theme=r.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("vezerlo-tema",r.dataset.theme)}catch(e){}u()});u()})()</script>
 </body>
 </html>

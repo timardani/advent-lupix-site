@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<script>(function(){try{var t=localStorage.getItem("vezerlo-tema");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})()</script>
 <title>Adventi vezérlő</title>
 <style>
 :root{--bg:#f4f1ec;--card:#fff;--ink:#1d1b18;--mut:#6b665e;--line:#e4dfd6;--accent:#9b2c2c;--ok:#166534;--warn:#b45309;--blue:#1f4e8c}
@@ -18,13 +19,23 @@ details.info{margin-top:6px;border-top:1px solid var(--line);padding-top:6px}det
 .empty{background:#ffffff80;border:1px dashed #d7d0c5;border-radius:9px;padding:9px;color:var(--mut);font-size:12px}.recovery{max-width:1416px;margin:7px auto;padding:10px 12px;background:#fff7ed;border:1px solid #f59e0b;border-radius:10px;color:#7c2d12}.recovery strong{display:block}.recovery button{margin:5px 5px 0 0}
 .kanban-wrap{overflow-x:auto;padding-bottom:10px}.kanban{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:8px;min-width:940px;align-items:start}.kanban-col{background:#ebe7df;border:1px solid #ddd6ca;border-radius:11px;padding:8px;min-height:180px}.kanban-head{display:flex;justify-content:space-between;font-weight:700;padding:1px 2px 7px}.count{background:#fff;color:var(--mut);border-radius:999px;min-width:22px;text-align:center;font-size:11px;padding:1px 6px}.kanban-cards{display:flex;flex-direction:column;gap:5px}.kanban-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-weight:700;font-size:13px;overflow-wrap:anywhere}.kanban-note{color:var(--mut);font-size:11px;margin:0 0 8px}
 @media(max-width:700px){.summary{grid-template-columns:1fr 1fr}.filters{grid-template-columns:1fr}.shop-grid{grid-template-columns:1fr}.kanban{grid-template-columns:repeat(5,82vw);min-width:calc(410vw + 32px)}.kanban-col{scroll-snap-align:start}.kanban-wrap{scroll-snap-type:x mandatory}.dl{grid-template-columns:1fr}.dl dt{margin-top:4px}}
-.shop-link{color:inherit;text-decoration:none}.shop-link:hover{text-decoration:underline}</style>
+.shop-link{color:inherit;text-decoration:none}.shop-link:hover{text-decoration:underline}
+html[data-theme=dark]{--bg:#0a0a0b;--card:#16161a;--ink:#ececee;--mut:#9b9ba3;--line:#2a2a31;--accent:#f87171;--ok:#4ade80;--warn:#fbbf24;--blue:#7fa8ff;color-scheme:dark}
+html[data-theme=dark] .view-switch{background:#1d1d22}html[data-theme=dark] .view-switch button{color:var(--ink)}html[data-theme=dark] .view-switch button.active{background:#2e2e36;box-shadow:none}
+html[data-theme=dark] .plain-button,html[data-theme=dark] .copy-addr{background:#1d1d22;color:var(--ink);border-color:#34343c}
+html[data-theme=dark] input,html[data-theme=dark] select{background:#111114!important;border-color:#34343c!important;color:var(--ink)!important}html[data-theme=dark] .ed{background:transparent!important;border-color:transparent!important}html[data-theme=dark] .ed:hover{border-color:var(--line)!important}html[data-theme=dark] .ed:focus{background:#111114!important;border-color:var(--blue)!important}
+html[data-theme=dark] .mini .missing{background:#3a0d19;color:#fda4af}html[data-theme=dark] .empty{background:#ffffff06;border-color:#34343c}
+html[data-theme=dark] .recovery{background:#2a1a08;border-color:#b45309;color:#fed7aa}
+html[data-theme=dark] .kanban-col{background:#111114;border-color:#25252b}html[data-theme=dark] .count{background:#26262d}html[data-theme=dark] .kanban-card{background:var(--card)}
+html[data-theme=dark] .cat.otlet{border-left-color:#475569}html[data-theme=dark] .shop.done{opacity:.5}
+.theme-btn{white-space:nowrap}
+</style>
 </head>
 <body>
 <header>
  <h1>Adventi vezérlő</h1>
  <div class="meta" id="meta">Betöltés…</div>
- <div class="tools"><div class="view-switch" aria-label="Nézet"><button type="button" id="list-view">Lista</button><button type="button" id="kanban-view">Kanban</button></div><label id="lezart-wrap"><input type="checkbox" id="lezart" checked> Lezártak is</label><span class="save" id="save" aria-live="polite"></span><a class="plain-button" href="kategoriak.html">Kategóriák és jelöltek →</a><button type="button" class="plain-button" id="logout">Kilépés</button></div>
+ <div class="tools"><div class="view-switch" aria-label="Nézet"><button type="button" id="list-view">Lista</button><button type="button" id="kanban-view">Kanban</button></div><label id="lezart-wrap"><input type="checkbox" id="lezart" checked> Lezártak is</label><span class="save" id="save" aria-live="polite"></span><a class="plain-button" href="kategoriak.html">Kategóriák és jelöltek →</a><button type="button" class="plain-button theme-btn" id="tema" aria-pressed="false">🌙 Éjszakai</button><button type="button" class="plain-button" id="logout">Kilépés</button></div>
 </header>
 <div class="recovery" id="recovery" hidden><strong>Korábbi helyi mentést találtam</strong>A szerver adatai eltérnek a böngészőben megőrzött példánytól. Ez redeploy utáni adatvesztés jele lehet.<br><button type="button" class="plain-button" id="restore-backup">Helyi mentés visszaállítása</button><button type="button" class="plain-button" id="dismiss-backup">A szerveradat megtartása</button></div>
 <main id="app"></main>
@@ -83,5 +94,6 @@ document.addEventListener('input',e=>{if(e.target.id==='kereses'){localStorage.s
 document.getElementById('list-view').addEventListener('click',()=>setView('list'));document.getElementById('kanban-view').addEventListener('click',()=>setView('kanban'));document.getElementById('logout').addEventListener('click',()=>{document.cookie='vezerlo=; Path=/; Max-Age=0';location.href='/belepes/'});document.getElementById('restore-backup').addEventListener('click',restoreBackup);document.getElementById('dismiss-backup').addEventListener('click',()=>{pendingBackup=null;document.getElementById('recovery').hidden=true;backup(adat)});
 Promise.all([fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw new Error('Nincs belépve')}return r.json()}),fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]})),fetch('demo-audit.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:{}}).catch(()=>({demok:{}}))]).then(([a,k,d])=>{adat=a;audit=d;for(const x of k.demok)linkek[x.demo]=x.slug;checkBackup(adat);render()}).catch(e=>{document.getElementById('app').innerHTML=`<p class="err">Nem sikerült betölteni: ${esc(e.message)}</p>`});
 </script>
+<script>(function(){var b=document.getElementById("tema"),r=document.documentElement;function u(){var k=r.dataset.theme==="dark";b.textContent=k?"☀️ Nappali":"🌙 Éjszakai";b.setAttribute("aria-pressed",k)}b.addEventListener("click",function(){r.dataset.theme=r.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("vezerlo-tema",r.dataset.theme)}catch(e){}u()});u()})()</script>
 </body>
 </html>
