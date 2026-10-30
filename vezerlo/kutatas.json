@@ -62,7 +62,7 @@
      "name": "Verdena.hu",
      "url": "https://verdena.hu",
      "priority": "B",
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Virág-Online",
@@ -164,7 +164,7 @@
      "name": "Teapalota / Lucky Matcha",
      "url": null,
      "priority": "B",
-     "status": null
+     "status": "ellenőrizendő – kapcsolat lezárult 2026-10-30"
     }
    ]
   },
@@ -182,7 +182,7 @@
      "name": "Teavolution",
      "url": "https://teavolution.eu",
      "priority": "A",
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Vörös Oroszlán Teaház",
@@ -206,7 +206,7 @@
      "name": "Teapalota / Lucky Matcha",
      "url": "https://teapalota.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – kapcsolat lezárult 2026-10-30"
     }
    ]
   },
@@ -590,7 +590,7 @@
      "name": "Beerfreak",
      "url": "https://beerfreak.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "Beerselection",
@@ -602,7 +602,7 @@
      "name": "Sörspecialista",
      "url": "https://sorspecialista.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     }
    ]
   },
@@ -662,13 +662,13 @@
      "name": "Chili Farm",
      "url": "https://chili-farm.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "Chili Tábor",
      "url": "https://chilitabor.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "Fenevad",
@@ -800,7 +800,7 @@
      "name": "Wiss-Pet",
      "url": null,
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Bestie.hu",
@@ -824,7 +824,7 @@
      "name": "Falatka Webshop",
      "url": "https://falatkawebshop.hu/termekkategoria/kutya/jutalomfalat/",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 403, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Bestie.hu",
@@ -842,7 +842,7 @@
      "name": "Wiss-Pet",
      "url": "https://wiss-pet.hu",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Petfamily.hu",
@@ -914,7 +914,7 @@
      "name": "Highland Soap",
      "url": "https://highlandsoap.hu",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     }
    ]
   },
@@ -1105,7 +1105,7 @@
      "name": "3D Market",
      "url": "https://www.3dmarket.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
     },
     {
      "name": "Filament.hu",
@@ -1375,7 +1375,7 @@
      "name": "Modellvasút Centrum",
      "url": "https://www.modellvasut.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
     },
     {
      "name": "Modell & Hobby",
@@ -1393,7 +1393,7 @@
      "name": "Prohászka Éremkereskedés",
      "url": "https://prohaszka.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
     },
     {
      "name": "NumizMarket",
@@ -1429,7 +1429,7 @@
      "name": "Pölöskei Szörp",
      "url": "https://poleskeiszorp.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "Virágoskút Biogazdaság",
@@ -1447,7 +1447,7 @@
      "name": "PuzzleGuru",
      "url": "https://www.puzzleguru.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "Puzzle.hu",
@@ -1483,7 +1483,7 @@
      "name": "RC Modell",
      "url": "https://www.rcmodell.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS kapcsolat hiba 2026-10-30"
     }
    ]
   },
@@ -1495,7 +1495,7 @@
      "name": "Keychron Magyarország",
      "url": "https://keychron.hu",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     }
    ]
   },
@@ -1525,7 +1525,7 @@
      "name": "Okosotthon Bolt",
      "url": "https://okosotthonbolt.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
     },
     {
      "name": "Sonoff Magyarország",
@@ -1543,13 +1543,13 @@
      "name": "Spuri Futóbolt",
      "url": "https://spurifutobolt.hu",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 520, újraellenőrzés kell 2026-10-30"
     },
     {
      "name": "Futócipőbolt",
      "url": "https://www.futocipobolt.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
     }
    ]
   },
@@ -1561,7 +1561,7 @@
      "name": "Jógakellék",
      "url": "https://jogakellek.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
     },
     {
      "name": "YogaBazaar",
@@ -1609,7 +1609,7 @@
      "name": "YKRA",
      "url": "https://www.ykra.com",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     }
    ]
   },
@@ -1621,7 +1621,7 @@
      "name": "Printa",
      "url": "https://printa.hu",
      "priority": null,
-     "status": null
+     "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30"
     }
    ]
   },
