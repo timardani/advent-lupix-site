@@ -282,15 +282,15 @@
     },
     {
      "name": "Cafe Frei",
-     "url": null,
+     "url": "https://www.cafefrei.hu/",
      "priority": "tartalék",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Roastar Zrt.",
-     "url": null,
+     "url": "https://roastar.hu/",
      "priority": "tartalék",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Kávélabor",
@@ -372,9 +372,9 @@
     },
     {
      "name": "Mikrozöldség",
-     "url": null,
+     "url": "https://mikrozoldseg.hu/",
      "priority": "C",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     }
    ]
   },
@@ -834,9 +834,9 @@
     },
     {
      "name": "Luna Pet Shop Debrecen",
-     "url": null,
+     "url": "https://lunapetshop.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Wiss-Pet",
