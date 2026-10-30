@@ -258,21 +258,21 @@
     },
     {
      "name": "CrackerJack",
-     "url": null,
+     "url": "https://crackerjack.hu/",
      "priority": "B",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "One Eleven",
-     "url": null,
+     "url": "https://oneeleven.hu/",
      "priority": "B",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Twenty Eight",
-     "url": null,
+     "url": "https://twentyeight.hu/",
      "priority": "C",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Kávékalmár",
@@ -366,9 +366,9 @@
     },
     {
      "name": "Kertdiszkont",
-     "url": null,
+     "url": "https://www.kertdiszkont.hu/",
      "priority": "B",
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Mikrozöldség",
@@ -444,27 +444,27 @@
     },
     {
      "name": "Szellemlovas",
-     "url": null,
+     "url": "https://www.szellemlovas.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Reflexshop",
-     "url": null,
+     "url": "https://reflexshop.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Társasjátékdiszkont",
-     "url": null,
+     "url": "https://www.tarsasjatekdiszkont.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Compaya",
-     "url": null,
+     "url": "https://www.compaya.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     }
    ]
   },
@@ -522,9 +522,9 @@
     },
     {
      "name": "BudsCartel.com",
-     "url": null,
+     "url": "https://www.budscartel.com/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Hill Vital",
@@ -618,15 +618,15 @@
     },
     {
      "name": "Chili Hungária Webshop",
-     "url": null,
+     "url": "https://www.chilihungaria.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "GaBko Chili",
-     "url": null,
+     "url": "https://gabkochili.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "ChillER Manufaktúra",
@@ -696,15 +696,15 @@
     },
     {
      "name": "Fonal Paradicsom",
-     "url": null,
+     "url": "https://www.fonalparadicsom.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Fonalkunyhó",
-     "url": null,
+     "url": "https://www.fonalkunyho.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Muci Fonal",
@@ -804,9 +804,9 @@
     },
     {
      "name": "Bestie.hu",
-     "url": null,
+     "url": "https://www.bestie.hu/",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
     },
     {
      "name": "Petfamily.hu",
