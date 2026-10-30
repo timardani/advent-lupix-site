@@ -1,0 +1,2624 @@
+{
+  "generated": "2026-10-30",
+  "source_dir": "/Users/danieltimar/Documents/tacitOS Projects/Moai Kalenderáium",
+  "category_count": 65,
+  "shop_count": 208,
+  "categories": [
+    {
+      "category": "Szobanövény",
+      "sources": [
+        "szobanoveny_webshopok_osszefoglalo.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md",
+        "kutatas-noveny.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Moai Jungle",
+          "url": null,
+          "priority": null,
+          "status": "elutasította",
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Tropical Home",
+          "url": "https://tropicalhome.hu",
+          "priority": "A",
+          "status": "várunk",
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Növénybirodalom",
+          "url": "https://www.novenybirodalom.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Best Plants and Decor",
+          "url": "https://www.bestplants.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Bernikert Webshop",
+          "url": "https://bernikertwebshop.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Plantart",
+          "url": "https://plantart.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Marczika",
+          "url": "https://marczika.eu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Orchidea Sziget",
+          "url": "https://www.orchideasziget.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Oázis Kertészet",
+          "url": "https://oazis.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Verdena.hu",
+          "url": "https://verdena.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Virág-Online",
+          "url": "https://www.virag-online.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Fitoland",
+          "url": "https://www.fitoland.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "New Garden",
+          "url": "https://webshop.newgarden.hu",
+          "priority": "C",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Citrus és Pálma",
+          "url": "https://citrusespalma.hu",
+          "priority": "C",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Banánfa Kft.",
+          "url": "https://bananfa.com",
+          "priority": "C",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Kaktuszhalom",
+          "url": "https://kaktuszhalom.hu",
+          "priority": "C",
+          "status": "inkább beszállító",
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Királykert",
+          "url": "https://kiralykertkerteszet.hu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Plantstore",
+          "url": "https://www.plantstore.hu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Növényshop.hu",
+          "url": "https://www.novenyshop.hu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Növényfutár",
+          "url": "https://novenyfutar.hu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "CactusShop.eu",
+          "url": "https://cactusshop.eu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Marczika – Orchideacsodák / Bonsai Studio",
+          "url": "https://orchideacsodak.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Orchidea és szobanövény turkáló",
+          "url": "https://orchideaturi.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Ragadozó Kert",
+          "url": "https://www.ragadozokert.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tea – gyógynövényes / funkcionális",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md",
+        "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "UKKO",
+          "url": "https://www.ukko.hu",
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Teapalota / Lucky Matcha",
+          "url": null,
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tea – szálas / specialty",
+      "sources": [
+        "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md",
+        "kutatas-kave-tea.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "1000TEA",
+          "url": "https://1000tea.hu",
+          "priority": "A",
+          "status": "várunk",
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Teavolution",
+          "url": "https://teavolution.eu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Vörös Oroszlán Teaház",
+          "url": "https://vorosoroszlanteahaz.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Somerset Tea (tea.hu)",
+          "url": "https://tea.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Demmers Teahouse",
+          "url": null,
+          "priority": null,
+          "status": "kizárt (benchmark)",
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "Teapalota / Lucky Matcha",
+          "url": "https://teapalota.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-kave-tea.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kávé",
+      "sources": [
+        "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md",
+        "kutatas-kave-tea.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Casino Mocca",
+          "url": "https://www.casinomocca.com",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Goosebumps",
+          "url": "https://goosebumps.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Koffein Roasters",
+          "url": "https://koffeinroasters.hu",
+          "priority": "A",
+          "status": "várunk",
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "The Coffee Hub csoport",
+          "url": "https://www.coffeehub.hu",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Impresso Micro Roastery",
+          "url": "https://impresso.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "REXKAVE.HU",
+          "url": "https://rexkave.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "R Coffee Roastery",
+          "url": "https://www.rcoffee.hu",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "CrackerJack",
+          "url": null,
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "One Eleven",
+          "url": null,
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Twenty Eight",
+          "url": null,
+          "priority": "C",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Kávékalmár",
+          "url": "https://frissen-porkolt-kave.hu",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Cafe Frei",
+          "url": null,
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "Roastar Zrt.",
+          "url": null,
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "Kávélabor",
+          "url": null,
+          "priority": null,
+          "status": "kizárt",
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "18gramm.hu",
+          "url": null,
+          "priority": null,
+          "status": "kizárt",
+          "sources": [
+            "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "Kávéáruház",
+          "url": "https://kavearuhaz.hu",
+          "priority": null,
+          "status": "demó kész, nem kapott levelet",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "CrackerJack Coffee Roasters",
+          "url": "https://crackerjack.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "One Eleven Specialty Kávé",
+          "url": "https://oneeleven.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Twenty Eight by Hernyák Gábor",
+          "url": "https://twentyeight.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-kave-tea.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Apple / elektronika",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "iStyle",
+          "url": null,
+          "priority": null,
+          "status": "törölve, nem célpont",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Vetőmag / kiskert",
+      "sources": [
+        "research/hobbi_webshop_kutatas_2026-10-22.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "BioKiskert",
+          "url": "https://biokiskert.hu/hu",
+          "priority": "A",
+          "status": "várunk",
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "ZKI vetőmag",
+          "url": "https://zkivetomag.hu/",
+          "priority": "A",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Goldenpalm",
+          "url": "https://goldenpalm.hu/",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Kertdiszkont",
+          "url": null,
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Mikrozöldség",
+          "url": null,
+          "priority": "C",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Horgászat",
+      "sources": [
+        "research/hobbi_webshop_kutatas_2026-10-22.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Horgász-Zóna",
+          "url": "https://www.horgasz-zona.hu/",
+          "priority": "A",
+          "status": "várunk",
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "FishingTime",
+          "url": "https://fishingtime.hu/",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "BojliBolt",
+          "url": "https://bojlibolt.hu/",
+          "priority": null,
+          "status": "kizárt (karbantartás)",
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kerti tó",
+      "sources": [
+        "research/hobbi_webshop_kutatas_2026-10-22.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Aquakert Kertitó Webáruház",
+          "url": "https://www.kertitotechnika.hu/",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Koi Mánia",
+          "url": "https://koimania.hu/",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Aquapond",
+          "url": "https://www.aquapond.hu/",
+          "priority": "B",
+          "status": null,
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Europond",
+          "url": "https://europond.hu/",
+          "priority": null,
+          "status": "kizárt (szolgáltatás, nem webshop)",
+          "sources": [
+            "research/hobbi_webshop_kutatas_2026-10-22.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Társasjáték",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Gémklub",
+          "url": "https://www.gemklub.hu",
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Szellemlovas",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Reflexshop",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Társasjátékdiszkont",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Compaya",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Csokoládé / édesség",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Demeter Chocolate",
+          "url": null,
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Stühmer",
+          "url": null,
+          "priority": null,
+          "status": "kizárt (nagy cég)",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kozmetika / bőrápolás",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Helia-D",
+          "url": "https://helia-d.hu",
+          "priority": null,
+          "status": "helyi projekt, nem igazolt",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Baba / kisgyerek",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Artdea",
+          "url": null,
+          "priority": null,
+          "status": "kizárt",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "CBD / kender",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "HempHealth.hu",
+          "url": null,
+          "priority": null,
+          "status": "demó kész, kiküldésre vár",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "BudsCartel.com",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Hill Vital",
+          "url": "https://hillvital.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Merce Online",
+          "url": "https://merceonline.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Naturecan",
+          "url": null,
+          "priority": null,
+          "status": "kizárt (nagy márka)",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "HempHealth",
+          "url": "https://hemphealth.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sütőeszközök / cukrászkellékek",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Süss Velem",
+          "url": "https://www.sussvelem.com",
+          "priority": null,
+          "status": "helyi koncepció",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Szeszes ital / prémium alkohol",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Mr. Alkohol",
+          "url": "https://www.mralkohol.hu",
+          "priority": null,
+          "status": "várunk (Dani kivétele)",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kézműves / prémium sör",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Csakajósör",
+          "url": "https://www.csakajosor.hu",
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Beerfreak",
+          "url": "https://beerfreak.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Beerselection",
+          "url": "https://beerselection.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Sörspecialista",
+          "url": "https://sorspecialista.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Chili / csípős szósz és BBQ-szósz",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Chimax",
+          "url": "https://www.chimax.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Chili Hungária Webshop",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "GaBko Chili",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "ChillER Manufaktúra",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Sárréti ChiliFarm",
+          "url": "https://chilifarm.hu/",
+          "priority": null,
+          "status": "demó kész, nincs kiküldve",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Kelchili",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Chilimánia",
+          "url": "https://chilimania.hu",
+          "priority": null,
+          "status": "elutasította",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Chili Hungária",
+          "url": "https://www.chilihungaria.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Chili Farm",
+          "url": "https://chili-farm.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Chili Tábor",
+          "url": "https://chilitabor.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Fenevad",
+          "url": "https://fenevad.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Fonal / kötés-horgolás",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "KONTAKT_AUDIT_2026-10-28.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Fonalam.hu",
+          "url": "https://fonalam.hu",
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "TiSza Fonal",
+          "url": "https://www.tiszafonal.hu",
+          "priority": null,
+          "status": "demó kész, nem kapott levelet",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Fonal Paradicsom",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Fonalkunyhó",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Muci Fonal",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Csomagolásmentes / zero waste",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Szatócska",
+          "url": null,
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Hulladékmentes háztartás és öko tisztítás",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [
+        "B prioritás"
+      ],
+      "shops": [
+        {
+          "name": "BioBubi",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "BajaBee",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Ökotár",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Lady Clean",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Orgalco",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Zöldbolt",
+          "url": "https://zoldbolt.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Bűvésztrükkök / close-up kellékek",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Bűvészbolt",
+          "url": "https://buveszbolt.hu",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Joker Magic",
+          "url": "https://jokermagic.com",
+          "priority": "tartalék",
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Állategészségügy / kisállat",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Gazdipro",
+          "url": null,
+          "priority": null,
+          "status": "demó kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Wiss-Pet",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Bestie.hu",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Petfamily.hu",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kutyás jutalomfalat és kiegészítő",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+      ],
+      "notes": [
+        "A prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Falatka Webshop",
+          "url": "https://falatkawebshop.hu/termekkategoria/kutya/jutalomfalat/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Bestie.hu",
+          "url": "https://bestie.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Luna Pet Shop Debrecen",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Wiss-Pet",
+          "url": "https://wiss-pet.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Petfamily.hu",
+          "url": "https://petfamily.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Fűszer / gourmet kamra",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Fűszerész",
+          "url": "https://webshop.fuszeresz.hu",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Illatgyertya és otthonillat",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+      ],
+      "notes": [
+        "A prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Viaszkuckó",
+          "url": "https://www.viaszkucko.hu/Illatgyertya",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Aurora Candle",
+          "url": "https://auroracandle.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "illatgyertya.hu",
+          "url": "https://illatgyertya.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "TT Candle",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Natúr szappan / natúrkozmetika",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+      ],
+      "notes": [
+        "B prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Napvirág",
+          "url": "https://www.napviragszappan.hu/",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Highland Soap Hungary",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Highland Soap",
+          "url": "https://highlandsoap.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kézműves kerámia és bögrék",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [
+        "A prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Agyagtanya",
+          "url": "https://agyagtanya.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Apacuka Ceramics",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Bokréta Kerámia",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Katica Kerámia",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Nünü Kerámia",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Manka Ceramics",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Termelői éléskamra / kézműves delikát",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+      ],
+      "notes": [
+        "A prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Héthatár",
+          "url": "https://www.hethatarshop.hu/",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Kutyori Konyha",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Diófaktúra",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Hajdúság Éléskamrája",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Rajz-, festő- és kreatív papírtermékek",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+      ],
+      "notes": [
+        "B prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Rajzshop.hu",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Papírtermék / naplózás",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Bomo Art",
+          "url": "https://bomoart.com",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Ásvány, fosszília és geóda",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [
+        "B prioritás"
+      ],
+      "shops": [
+        {
+          "name": "Cleo Collection",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "ZenAura",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Ásványbolt",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Férfi borotválkozás és szakállápolás",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+      ],
+      "notes": [
+        "B prioritás"
+      ],
+      "shops": [
+        {
+          "name": "G.O.D.",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Blade",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Varrás, patchwork és textil-kellék",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+      ],
+      "notes": [
+        "C prioritás, nincs jelölt"
+      ],
+      "shops": []
+    },
+    {
+      "category": "Akvarisztika / aquascaping",
+      "sources": [
+        "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [
+        "C prioritás, nincs jelölt"
+      ],
+      "shops": [
+        {
+          "name": "Akváriumom",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "AquaDepo",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Hangszer- és gitárkiegészítők",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Hangszerbarlang",
+          "url": "https://hangszerbarlang.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Gitárshop",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "3D nyomtatás",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [
+        "konkrét bolt még ellenőrizendő"
+      ],
+      "shops": [
+        {
+          "name": "3D Market",
+          "url": "https://www.3dmarket.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Filament.hu",
+          "url": "https://filament.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Makett / miniatűr",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Makettshop",
+          "url": "https://makettshop.hu",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Modell & Hobby",
+          "url": "https://www.modellhobby.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Művészellátó",
+      "sources": [
+        "ADVENTI_UGYFEL_CHECKLIST.md",
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Művészellátó / Hobbyművész",
+          "url": "https://muveszellato.com",
+          "priority": null,
+          "status": "demó kész és kint",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Kreatív Hobby",
+          "url": "https://kreativhobby.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        },
+        {
+          "name": "Hobbyművész",
+          "url": "https://hobbymuvesz.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kerti növény / évelő / rózsa / gyümölcsfa",
+      "sources": [
+        "kutatas-noveny.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Évelő Bazár",
+          "url": "https://evelobazar.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Rózsawebáruház",
+          "url": "https://rozsawebaruhaz.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Attila Garden Rose",
+          "url": "https://attilagardenrose.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "EmilyGarden",
+          "url": "https://emilygarden.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Gyümölcsfa vásárlás.hu",
+          "url": "https://gyumolcsfavasarlas.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Csemetecentrum",
+          "url": "https://csemetecentrum.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Autóápolás / detailing",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "IN2 Detailing",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Autómosó Webshop",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Bakelit / lemezbolt",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Lemezbarlang",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Lemezkuckó",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Deep Record Store",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Túra / kemping kiegészítők",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Tengerszem",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Nomád Sport",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Mountex",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kerékpáros kiegészítők",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "BikePro",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Bringa.hu",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Bringaland",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Analóg fotózás",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Soós Fotó",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "F8 Camera",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kések és konyhai eszközök",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Késvilág",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Késshop",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Specialty sajt / delikát",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Sajtmester",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Képregény és manga",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Fumax",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Kingpin",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kékfestő / kézműves textil",
+      "sources": [
+        "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Tóth Borbála Kékfestő",
+          "url": null,
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Modellvasút",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Modellvasút Centrum",
+          "url": "https://www.modellvasut.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Modell & Hobby",
+          "url": "https://www.modellhobby.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Numizmatika",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Prohászka Éremkereskedés",
+          "url": "https://prohaszka.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "NumizMarket",
+          "url": "https://www.numizmarket.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Magok, diófélék, aszalványok",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Nobilis",
+          "url": "https://www.nobilis.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Dénes-Natura",
+          "url": "https://denesnatura.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Prémium szörp / alkoholmentes ital",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Pölöskei Szörp",
+          "url": "https://poleskeiszorp.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Virágoskút Biogazdaság",
+          "url": "https://viragoskut.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Puzzle / prémium kirakó",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "PuzzleGuru",
+          "url": "https://www.puzzleguru.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Puzzle.hu",
+          "url": "https://www.puzzle.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Barkács / kéziszerszám",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "SzerszámKell",
+          "url": "https://www.szerszamkell.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "RC modellezés",
+      "sources": [
+        "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Modellfutár",
+          "url": "https://www.modellfutar.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "RC Modell",
+          "url": "https://www.rcmodell.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Mechanikus billentyűzet",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Keychron Magyarország",
+          "url": "https://keychron.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Elektronika / mikrokontroller",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Hestore",
+          "url": "https://www.hestore.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "ChipCAD",
+          "url": "https://www.chipcad.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Okosotthon DIY",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Okosotthon Bolt",
+          "url": "https://okosotthonbolt.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Sonoff Magyarország",
+          "url": "https://sonoff.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Futás / téli futókiegészítők",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Spuri Futóbolt",
+          "url": "https://spurifutobolt.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Futócipőbolt",
+          "url": "https://www.futocipobolt.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Jóga / pilates",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Jógakellék",
+          "url": "https://jogakellek.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "YogaBazaar",
+          "url": "https://yogabazaar.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sí / snowboard karbantartás",
+      "sources": [
+        "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Snowboardshop",
+          "url": "https://www.snowboardshop.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        },
+        {
+          "name": "Skioutlet",
+          "url": "https://www.skioutlet.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-negyedik-kategoria-kutatasi-kor.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tervezői ékszer",
+      "sources": [
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Vanda Jewelry",
+          "url": "https://vandajewelry.com",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tervezői táska / utazási kiegészítő",
+      "sources": [
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "YKRA",
+          "url": "https://www.ykra.com",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Szitanyomott ruházat / design-ajándék",
+      "sources": [
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Printa",
+          "url": "https://printa.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Kézműves bőráru",
+      "sources": [
+        "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+      ],
+      "notes": [],
+      "shops": [
+        {
+          "name": "Vengru",
+          "url": "https://vengru.com",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_sources": [
+    "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md",
+    "2026-10-29-harmadik-kategoria-kutatasi-kor.md",
+    "2026-10-29-negyedik-kategoria-kutatasi-kor.md",
+    "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md",
+    "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md",
+    "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md",
+    "kutatas-hobbi-kisallat.md",
+    "kutatas-kave-tea.md",
+    "kutatas-noveny.md"
+  ]
+}

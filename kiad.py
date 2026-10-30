@@ -83,6 +83,7 @@ def rewrite(out: Path, slug: str):
 
 
 def publish():
+    subprocess.run([sys.executable, ROOT / "scripts" / "vezerlo-sync.py"], check=True)
     subprocess.run([sys.executable, ROOT / "scripts" / "demo-audit.py"], check=True)
     conf = load()
     keep = {"index.html", "robots.txt", "404.html"}

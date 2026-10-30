@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Kategóriák – Adventi vezérlő</title>
+<style>
+:root{--bg:#f4f1ec;--card:#fff;--ink:#1d1b18;--mut:#6b665e;--line:#e4dfd6;--accent:#9b2c2c;--ok:#166534;--blue:#1f4e8c}
+*{box-sizing:border-box}body{margin:0;font:14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header,main{max-width:1440px;margin:auto}header{padding:16px 14px 6px}main{padding:0 12px 40px}h1{margin:0;font-size:22px}.meta{color:var(--mut);font-size:12px;margin-top:3px}a{color:var(--blue)}button,input,select{font:inherit}
+.tools{display:flex;gap:8px;align-items:center;margin:10px 0;flex-wrap:wrap}.tools input,.tools select{min-height:35px;padding:6px 8px;border:1px solid #cec6ba;border-radius:7px;background:#fff}.tools input{flex:1;min-width:200px}
+.plain-button{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:7px;background:#faf8f4;cursor:pointer;text-decoration:none;color:var(--ink)}
+h2.sec{font-size:16px;margin:18px 3px 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:8px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 11px;min-width:0}
+.cat.szabad{border-left:4px solid var(--ok)}.cat.var{border-left:4px solid #6b46c1}.cat.otlet{border-left:4px solid #cbd5e1}
+.head{display:flex;gap:6px;align-items:baseline;justify-content:space-between}.head h3{margin:0;font-size:15px}
+.tag{font-size:10px;font-weight:700;border-radius:999px;padding:2px 7px;color:#fff;white-space:nowrap}
+.sor{color:var(--mut);font-size:11px;margin:3px 0 6px}
+ul{margin:4px 0;padding-left:0;list-style:none}li{font-size:12px;padding:3px 0;border-top:1px dashed var(--line);display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+li .n{font-weight:650}li.done .n{text-decoration:line-through;color:var(--mut)}
+.badge{display:inline-block;border-radius:999px;padding:1px 6px;color:#fff;font-size:10px;font-weight:700}
+.prio{color:var(--mut);font-size:10px;border:1px solid var(--line);border-radius:5px;padding:0 4px}
+.lbl{color:var(--mut);font-size:11px;margin-top:6px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.ask{margin-top:8px;width:100%}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <h1>Kategóriák és jelöltek</h1>
+ <div class="meta" id="meta">Betöltés…</div>
+ <div class="tools"><a class="plain-button" href="./">← Vezérlő</a><input id="q" type="search" placeholder="Keresés kategóriára vagy boltra"><select id="f"><option value="">Mind</option><option value="szabad">Szabad (nincs nyitott levél)</option><option value="var">Válaszra várunk</option><option value="otlet">Csak kutatás, nincs demó</option></select><span id="msg" class="meta"></span></div>
+</header>
+<main id="app"></main>
+<script>
+const S={elokeszites:['Készül','#8a8f98'],review:['Kész, átnézésre','#b7791f'],kuldheto:['Küldhető','#2b6cb0'],tartalek:['Tartalék','#64748b'],kikuldve:['Kiküldve','#6b46c1'],valaszolt:['Válaszolt','#0f766e'],foglalt:['Foglalt (igen)','#15803d'],nyert:['Nyert','#166534'],nem:['Nem kéri','#b91c1c'],nem_reagal:['Nem reagál','#9f1239'],lejart:['Lejárt','#9f1239'],kizart:['Kizárt','#475569']};
+const LEZART=new Set(['nem','nem_reagal','lejart','kizart']),NYITOTT=new Set(['kikuldve','valaszolt','foglalt','nyert']);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s||'').toLocaleLowerCase('hu').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const tok=s=>new Set(norm(s).split(/[^a-z0-9]+/).filter(w=>w.length>=5));
+const dom=u=>{try{return new URL(u).hostname.replace(/^www\./,'')}catch{return ''}};
+let adat,linkek={},kut=[];
+function badge(a){const[t,c]=S[a]||[a||'?','#888'];return `<span class="badge" style="background:${c}">${esc(t)}</span>`}
+function matchKut(nev,used){const ex=kut.findIndex((k,i)=>!used.has(i)&&k.nev===nev);if(ex>=0)return[ex];const t=tok(nev);return kut.map((k,i)=>i).filter(i=>!used.has(i)&&[...tok(kut[i].nev)].some(w=>t.has(w)))}
+function build(){const used=new Set(),out=[];
+ for(const k of adat.kategoriak){const shops=adat.boltok.filter(b=>b.kategoria===k.nev);const idx=matchKut(k.nev,used);idx.forEach(i=>used.add(i));
+  const known=new Set(shops.flatMap(b=>[norm(b.bolt),norm(b.id)]));
+  const jel=idx.flatMap(i=>kut[i].jeloltek).filter(j=>!known.has(norm(j.name))&&!shops.some(b=>norm(b.bolt).includes(norm(j.name).slice(0,6))));
+  const seen=new Set(),jeloltek=jel.filter(j=>{const key=norm(j.name);if(seen.has(key))return false;seen.add(key);return true});
+  const tipus=shops.some(b=>NYITOTT.has(b.allapot))?'var':'szabad';out.push({nev:k.nev,sor:k.sor,shops,jeloltek,tipus})}
+ kut.forEach((k,i)=>{if(!used.has(i))out.push({nev:k.nev,sor:k.megj,shops:[],jeloltek:k.jeloltek,tipus:'otlet'})});return out}
+function kovetkezo(c){return c.jeloltek.find(j=>!['elutasította','kizárt'].includes(j.status||''))}
+function ask(c){const j=kovetkezo(c);const elo=c.shops.find(b=>!LEZART.has(b.allapot)&&b.demo);
+ if(c.tipus==='otlet'||!elo)return `Szia, készítsd el a(z) „${c.nev}” kategória adventi kalendáriumát${j?` – első jelölt: ${j.name}${j.url?` (${j.url})`:''}`:''}.`;
+ return `Szia, a(z) „${c.nev}” kategóriában ${elo.bolt} után a következő bolt jöhet${j?`: ${j.name}${j.url?` (${j.url})`:''}`:''} – alakítsd át rá a kalendáriumot.`}
+function card(c){const tag={szabad:['Szabad','#166534'],var:['Válaszra várunk','#6b46c1'],otlet:['Csak ötlet','#94a3b8']}[c.tipus];
+ return `<section class="cat ${c.tipus}"><div class="head"><h3>${esc(c.nev)}</h3><span class="tag" style="background:${tag[1]}">${tag[0]}</span></div>${c.sor?`<div class="sor">${esc(c.sor)}</div>`:''}
+ ${c.shops.length?`<div class="lbl">Kalendáriumok / boltok</div><ul>${c.shops.map(b=>{const slug=linkek[b.demo];return `<li class="${LEZART.has(b.allapot)?'done':''}"><span class="n">${esc(b.bolt)}</span>${badge(b.allapot)}${slug?`<a href="/${esc(slug)}/?bemutato=1" target="_blank" rel="noopener">megnyitás</a>`:b.demo?'<span class="prio">helyi</span>':''}</li>`}).join('')}</ul>`:''}
+ ${c.jeloltek.length?`<div class="lbl">Jelöltek a kutatásból (${c.jeloltek.length})</div><ul>${c.jeloltek.slice(0,8).map(j=>`<li class="${['elutasította','kizárt'].includes(j.status||'')?'done':''}"><span class="n">${esc(j.name)}</span>${j.priority?`<span class="prio">${esc(j.priority)}</span>`:''}${j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(dom(j.url))}</a>`:''}${j.status?`<span class="prio">${esc(j.status)}</span>`:''}</li>`).join('')}${c.jeloltek.length>8?`<li>… még ${c.jeloltek.length-8}</li>`:''}</ul>`:''}
+ <button class="plain-button ask" data-ask="${esc(ask(c))}">Kérés másolása a chatbe</button></section>`}
+function render(){const q=norm(document.getElementById('q').value),f=document.getElementById('f').value;
+ const all=build().filter(c=>(!f||c.tipus===f)&&(!q||norm([c.nev,c.sor,...c.shops.map(b=>b.bolt),...c.jeloltek.map(j=>j.name)].join(' ')).includes(q)));
+ const groups=[['szabad','Szabad kategóriák – indítható új levél'],['var','Válaszra várunk'],['otlet','Csak kutatás – még nincs kalendárium']];
+ document.getElementById('app').innerHTML=groups.map(([t,l])=>{const x=all.filter(c=>c.tipus===t);return x.length?`<h2 class="sec">${l} (${x.length})</h2><div class="grid">${x.map(card).join('')}</div>`:''}).join('')||'<p class="meta">Nincs találat.</p>';
+ document.getElementById('meta').textContent=`${adat.kategoriak.length} aktív kategória · ${kut.length} kutatási kategória · ${Object.keys(linkek).length} élő kalendárium`}
+document.addEventListener('click',e=>{const t=e.target.dataset?.ask;if(!t)return;const done=()=>{e.target.textContent='Kimásolva ✓ – illeszd be a chatbe';setTimeout(()=>e.target.textContent='Kérés másolása a chatbe',2200)};
+ (navigator.clipboard?.writeText?navigator.clipboard.writeText(t):Promise.reject()).then(done).catch(()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();done()})});
+document.getElementById('q').addEventListener('input',render);document.getElementById('f').addEventListener('change',render);
+Promise.all([fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw new Error('Nincs belépve')}return r.json()}),
+ fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]})),
+ fetch('kutatas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{kategoriak:[]}).catch(()=>({kategoriak:[]}))])
+.then(([a,k,ku])=>{adat=a;for(const x of k.demok)linkek[x.demo]=x.slug;kut=ku.kategoriak||[];render()})
+.catch(e=>{document.getElementById('app').innerHTML=`<p class="meta">Nem sikerült betölteni: ${esc(e.message)}</p>`});
+</script>
+</body>
+</html>

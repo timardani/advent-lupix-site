@@ -23,6 +23,9 @@ DINAMIKUS_BOLT_MEZOK = {
     "allapot", "kikuldve", "hatarido", "valasz_datum", "teendo",
     "allapot_datum", "elozmenyek",
 }
+# Dani által a felületen kézzel beírható kapcsolati adatok. Ha a /data-ban
+# már nem üres, az marad; ha üres, a seed (kutatásból jövő) érték érvényes.
+KEZI_MEZOK = {"kinek", "email", "telefon", "megjegyzes"}
 
 
 def init_data():
@@ -43,6 +46,9 @@ def init_data():
         old = current.get(base.get("id"), {})
         for key in DINAMIKUS_BOLT_MEZOK:
             if key in old:
+                merged[key] = old[key]
+        for key in KEZI_MEZOK:
+            if old.get(key):
                 merged[key] = old[key]
         merged_shops.append(merged)
     seed["boltok"] = merged_shops
@@ -117,7 +123,7 @@ class Handler(BaseHTTPRequestHandler):
             payload = json.loads(self.rfile.read(size))
             if not isinstance(payload, dict) or not isinstance(payload.get("id"), str):
                 return self.send_json(400, {"hiba": "Hiányzó boltazonosító."})
-            allowed = {"id", "kikuldve", "hatarido", "allapot", "teendo"}
+            allowed = {"id", "kikuldve", "hatarido", "allapot", "teendo"} | KEZI_MEZOK
             if set(payload) - allowed:
                 return self.send_json(400, {"hiba": "Nem támogatott mező."})
 
@@ -179,6 +185,12 @@ class Handler(BaseHTTPRequestHandler):
                 if not isinstance(task, str) or len(task) > 500:
                     return self.send_json(400, {"hiba": "Érvénytelen következő teendő."})
                 bolt["teendo"] = task.strip()
+
+            for key in KEZI_MEZOK & set(payload):
+                value = payload[key]
+                if not isinstance(value, str) or len(value) > 500:
+                    return self.send_json(400, {"hiba": "Érvénytelen kapcsolati adat."})
+                bolt[key] = value.strip()
 
             if bolt.get("allapot") != old_status:
                 bolt["allapot_datum"] = today.isoformat()

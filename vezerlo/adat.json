@@ -1,444 +1,580 @@
 {
-  "frissitve": "2026-10-29",
-  "alairasi_hatarido": "2026-11-13",
-  "kategoriak": [
-    {
-      "nev": "Szobanövény",
-      "sor": "Tropical Home → Növénybirodalom → Best Plants and Decor → Bernikert"
-    },
-    {
-      "nev": "Tea – gyógynövényes / funkcionális",
-      "sor": "UKKO → Teapalota / Lucky Matcha"
-    },
-    {
-      "nev": "Tea – szálas / specialty",
-      "sor": "1000TEA → Teavolution → Vörös Oroszlán → Somerset Tea"
-    },
-    {
-      "nev": "Kávé",
-      "sor": "Kávéáruház → Koffein Roasters → Casino Mocca → Goosebumps"
-    },
-    {
-      "nev": "Apple / elektronika",
-      "sor": "Új, megfelelő célbolt keresendő (az iStyle-demó törölve)"
-    },
-    {
-      "nev": "Vetőmag / kiskert",
-      "sor": "BioKiskert → ZKI vetőmag → Goldenpalm → Mikrozöldség"
-    },
-    {
-      "nev": "Horgászat",
-      "sor": "Horgász-Zóna → FishingTime"
-    },
-    {
-      "nev": "Kerti tó",
-      "sor": "Aquakert → Koi Mánia → Aquapond"
-    },
-    {
-      "nev": "Társasjáték",
-      "sor": "Gémklub → Szellemlovas"
-    },
-    {
-      "nev": "Csokoládé / édesség",
-      "sor": "Demeter Chocolate (Stühmer kizárva)"
-    },
-    {
-      "nev": "Kozmetika / bőrápolás",
-      "sor": "Helia-D helyi projekt; kisebb célbolt előnyben"
-    },
-    {
-      "nev": "Baba / kisgyerek",
-      "sor": "Kisebb, tulajdonos vezette bolt keresendő (Artdea kizárva)"
-    },
-    {
-      "nev": "Sütőeszközök / cukrászkellékek",
-      "sor": "Süss Velem"
-    },
-    {
-      "nev": "Szeszes ital / prémium alkohol",
-      "sor": "Mr. Alkohol – Dani kivétele"
-    },
-    {
-      "nev": "Kézműves / prémium sör",
-      "sor": "Csakajósör → Beerfreak → Beerselection → Sörspecialista"
-    },
-    {
-      "nev": "Chili / csípős szószok és fűszerek",
-      "sor": "Chilimánia – a jelenlegi kör lezárásáig nincs második jelölt"
-    },
-    {
-      "nev": "Fonal / kötés-horgolás",
-      "sor": "Fonalam.hu → TiSza Fonal → Fonal Paradicsom → Fonalkunyhó"
-    },
-    {
-      "nev": "Vicces póló / ajándékbögre",
-      "sor": "Pólómánia"
-    },
-    {
-      "nev": "Csomagolásmentes / zero waste",
-      "sor": "Szatócska"
-    },
-    {
-      "nev": "Kisállat / állategészségügy",
-      "sor": "Gazdipro"
-    },
-    {
-      "nev": "Bűvészet / bűvésztrükkök",
-      "sor": "Damien White Bűvészbolt"
-    }
-  ],
-  "boltok": [
-    {
-      "id": "tropicalhome",
-      "bolt": "Tropical Home",
-      "kategoria": "Szobanövény",
-      "demo": "tropicalhome",
-      "allapot": "review",
-      "kinek": "Hetényi Brigitta (tulajdonos, ügyvezető)",
-      "email": "info@tropicalhome.hu",
-      "telefon": "+36 70 368 1232",
-      "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + adatlap véglegesítése",
-      "megjegyzes": "Alternatív cím: tropicalhome.hungary@gmail.com"
-    },
-    {
-      "id": "moaijungle",
-      "bolt": "Moai Jungle",
-      "kategoria": "Szobanövény",
-      "demo": "",
-      "allapot": "nem",
-      "kinek": "",
-      "email": "",
-      "telefon": "",
-      "kapcsolat_minoseg": "",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "2026-10-22",
-      "teendo": "",
-      "megjegyzes": "Nemet mondott; archív"
-    },
-    {
-      "id": "ukko",
-      "bolt": "UKKO",
-      "kategoria": "Tea – gyógynövényes / funkcionális",
-      "demo": "ukko",
-      "allapot": "review",
-      "kinek": "Dr. Sipos Tibor (alapító, vezérigazgató); Sipos-Kerese Éva (alapító)",
-      "email": "s.tibor@ukko.hu",
-      "telefon": "+36 20 941 1420",
-      "kapcsolat_minoseg": "Igazolt közvetlen vezetői elérés",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + célméret végső ellenőrzése",
-      "megjegyzes": "Másodlagos cím: info@ukko.hu; egészségügyi állítás nélkül"
-    },
-    {
-      "id": "1000tea",
-      "bolt": "1000TEA",
-      "kategoria": "Tea – szálas / specialty",
-      "demo": "1000tea",
-      "allapot": "elokeszites",
-      "kinek": "Döntéshozó még nem azonosított",
-      "email": "contact@1000tea.hu",
-      "telefon": "+36 1 337 8217",
-      "kapcsolat_minoseg": "Központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Tulajdonosi út + adatlap + Dani review",
-      "megjegyzes": "Napi akció + kupon kész"
-    },
-    {
-      "id": "kavearuhaz",
-      "bolt": "Kávéáruház",
-      "kategoria": "Kávé",
-      "demo": "kavearuhaz",
-      "allapot": "review",
-      "kinek": "Nagy Pál Sándor (tulajdonos, ügyvezető)",
-      "email": "info@kavearuhaz.hu",
-      "telefon": "+36 79 737 007",
-      "kapcsolat_minoseg": "Központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review",
-      "megjegyzes": "Alternatív cím: freshcoffeekft@gmail.com"
-    },
-    {
-      "id": "koffeinroasters",
-      "bolt": "Koffein Roasters",
-      "kategoria": "Kávé",
-      "demo": "koffeinroasters",
-      "allapot": "tartalek",
-      "kinek": "Pintér Máté (Koffein Group Kft. képviselője)",
-      "email": "hello@koffeinroasters.hu",
-      "telefon": "+36 1 206 1881",
-      "kapcsolat_minoseg": "Központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "A Kávéáruház-kör lezárása után; cégméret és döntéshozó ellenőrzése",
-      "megjegyzes": "Második demó kész; alternatív kontakt: info@koffeinservice.hu, +36 70 622 2285"
-    },
-    {
-      "id": "biokiskert",
-      "bolt": "BioKiskert",
-      "kategoria": "Vetőmag / kiskert",
-      "demo": "biokiskert",
-      "allapot": "review",
-      "kinek": "Székely Gyöngyvér (cégképviselő, szakmai vezető)",
-      "email": "gyongyver.szekely@biokiskert.hu",
-      "telefon": "+36 50 121 1505",
-      "kapcsolat_minoseg": "Igazolt közvetlen vezetői elérés",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review; decemberi kampányhely és téli szállítás egyeztetése",
-      "megjegyzes": "Demó és adatlap kész; kb. 4 aktív Meta-hirdetés"
-    },
-    {
-      "id": "horgaszzona",
-      "bolt": "Horgász-Zóna",
-      "kategoria": "Horgászat",
-      "demo": "horgaszzona",
-      "allapot": "elokeszites",
-      "kinek": "Nagy Zoltán Lajos (ügyvezető)",
-      "email": "ugyfelszolgalat@horgasz-zona.hu",
-      "telefon": "+36 70 362 7167",
-      "kapcsolat_minoseg": "Központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Vizuális review + tulajdonosi út + fotójogok",
-      "megjegyzes": "Kis cég; tulajdonosi státusz nem igazolt"
-    },
-    {
-      "id": "gemklub",
-      "bolt": "Gémklub",
-      "kategoria": "Társasjáték",
-      "demo": "gemklub",
-      "allapot": "review",
-      "kinek": "Aczél Zoltán (ügyvezető, képviselő)",
-      "email": "info@gemklub.hu",
-      "telefon": "+36 20 366 7080",
-      "kapcsolat_minoseg": "Központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + tulajdonosi út ellenőrzése",
-      "megjegyzes": "Adatlap kész"
-    },
-    {
-      "id": "demeter",
-      "bolt": "Demeter Chocolate",
-      "kategoria": "Csokoládé / édesség",
-      "demo": "demeter",
-      "allapot": "review",
-      "kinek": "Zoli és Zsuzsi (alapítók; teljes nevük még nem igazolt)",
-      "email": "info@demeterchocolate.com",
-      "telefon": "+36 70 355 0686",
-      "kapcsolat_minoseg": "Családi vállalkozás, központi kapu",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + döntéshozó teljes nevének ellenőrzése",
-      "megjegyzes": "Demó és adatlap kész; Meta-hirdetés és saját csatorna még nincs auditálva"
-    },
-    {
-      "id": "stuhmer",
-      "bolt": "Stühmer",
-      "kategoria": "Csokoládé / édesség",
-      "demo": "stuhmer",
-      "allapot": "kizart",
-      "kinek": "",
-      "email": "",
-      "telefon": "",
-      "kapcsolat_minoseg": "",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "",
-      "megjegyzes": "Túl nagy célbolt; félkész helyi munka megőrizve, nincs megkeresés"
-    },
-    {
-      "id": "heliad",
-      "bolt": "Helia-D",
-      "kategoria": "Kozmetika / bőrápolás",
-      "demo": "heliad",
-      "allapot": "elokeszites",
-      "kinek": "Budaházy Péter Miklós (ügyvezető)",
-      "email": "helia@helia-d.hu",
-      "telefon": "+36 1 585 8580",
-      "kapcsolat_minoseg": "Központi kapu; nagyobb vállalat",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "QA + review; kisebb célbolt lehet jobb",
-      "megjegyzes": "Helyi projekt, státusz nem teljesen igazolt"
-    },
-    {
-      "id": "sussvelem",
-      "bolt": "Süss Velem",
-      "kategoria": "Sütőeszközök / cukrászkellékek",
-      "demo": "sussvelem",
-      "allapot": "elokeszites",
-      "kinek": "Szalai Viktória Lídia (alapító, ügyvezető, marketingvezető)",
-      "email": "info@sussvelem.com",
-      "telefon": "+36 30 709 8007",
-      "kapcsolat_minoseg": "Központi kapu, jól azonosított döntéshozó",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Vizuális review + jogok, árak és készlet ellenőrzése",
-      "megjegyzes": "Privát helyi koncepció"
-    },
-    {
-      "id": "mralkohol",
-      "bolt": "Mr. Alkohol",
-      "kategoria": "Szeszes ital / prémium alkohol",
-      "demo": "mralkohol",
-      "allapot": "elokeszites",
-      "kinek": "Miklós Anita (vállalati képviselő)",
-      "email": "info@mralkohol.hu",
-      "telefon": "+36 1 808 9240",
-      "kapcsolat_minoseg": "Központi kapu; nagyvállalati háttér",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Marketinges döntéshozó + alkoholreklám-jogi ellenőrzés",
-      "megjegyzes": "Dani kivétele"
-    },
-    {
-      "id": "csakajosor",
-      "bolt": "Csakajósör",
-      "kategoria": "Kézműves / prémium sör",
-      "demo": "csakajosor",
-      "allapot": "review",
-      "kinek": "Tulajdonos / ügyvezető (név még nem ismert)",
-      "email": "shop@csakajosor.hu",
-      "telefon": "+36 1 798 0036",
-      "kapcsolat_minoseg": "Általános bolti cím; tulajdonos-közeli kis bolt",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + ügyvezető nevének ellenőrzése + alkoholjogi ellenőrzés",
-      "megjegyzes": "Demó és adatlap kész; 3 aktív Meta-hirdetés"
-    },
-    {
-      "id": "chilimania",
-      "bolt": "Chilimánia",
-      "kategoria": "Chili / csípős szószok és fűszerek",
-      "demo": "chilimania",
-      "allapot": "review",
-      "kinek": "Döntéshozó még nincs rögzítve",
-      "email": "",
-      "telefon": "",
-      "kapcsolat_minoseg": "Ellenőrzendő",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Dani review + kapcsolati adatlap elkészítése",
-      "megjegyzes": "Demó elkészült és él; ebben a kategóriában most nincs második jelölt"
-    },
-    {
-      "id": "fonalam",
-      "bolt": "Fonalam.hu",
-      "kategoria": "Fonal / kötés-horgolás",
-      "demo": "fonalam",
-      "allapot": "kuldheto",
-      "kinek": "Soltészné Illés Ágnes (tulajdonos, kreatív igazgató)",
-      "email": "info@lana-tex.hu",
-      "telefon": "+36 72 222 619",
-      "kapcsolat_minoseg": "Igazolt közvetlen tulajdonosi elérés",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Mehet a levél (a demó él)",
-      "megjegyzes": "Másodlagos cím: bolt@lana-tex.hu; kb. 11 aktív Meta-hirdetés"
-    },
-    {
-      "id": "tiszafonal",
-      "bolt": "TiSza Fonal",
-      "kategoria": "Fonal / kötés-horgolás",
-      "demo": "tiszafonal",
-      "allapot": "tartalek",
-      "kinek": "Timi és Szabi (tulajdonosok)",
-      "email": "info@tiszafonal.hu",
-      "telefon": "+36 20 997 0003",
-      "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "teendo": "Ha a Fonalam nemet mond vagy lejár",
-      "megjegyzes": "Második demó kész; alternatív cím: tiszafonal@gmail.com"
-    },
-    {
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "id": "polomania",
-      "bolt": "Pólómánia",
-      "kategoria": "Vicces póló / ajándékbögre",
-      "demo": "polomania",
-      "allapot": "review",
-      "kinek": "unknown",
-      "email": "",
-      "telefon": "",
-      "kapcsolat_minoseg": "Nincs ellenőrizve",
-      "teendo": "Döntéshozó + kapcsolat felkutatása, demó publikálása",
-      "megjegyzes": "Demó kész (helyi), még nincs élő link"
-    },
-    {
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "id": "szatocska",
-      "bolt": "Szatócska",
-      "kategoria": "Csomagolásmentes / zero waste",
-      "demo": "szatocska",
-      "allapot": "kuldheto",
-      "kinek": "Tami és Dávid (tulajdonosok)",
-      "email": "hello@szatocska.hu",
-      "telefon": "+36 30 407 7233",
-      "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
-      "teendo": "Levél kiküldése (Dani)",
-      "megjegyzes": "Élő: https://advent.lupix.hu/szatocska-7f2844/?bemutato=1"
-    },
-    {
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "id": "gazdipro",
-      "bolt": "Gazdipro",
-      "kategoria": "Kisállat / állategészségügy",
-      "demo": "gazdipro",
-      "allapot": "elokeszites",
-      "kinek": "unknown",
-      "email": "hello@gazdipro.hu",
-      "telefon": "",
-      "kapcsolat_minoseg": "Ügyfélszolgálati cím, tulajdonos nem igazolt",
-      "teendo": "Tulajdonosi elérés igazolása megkeresés előtt",
-      "megjegyzes": "blocked:prospect; demó kész (helyi), nincs élő link"
-    },
-    {
-      "kikuldve": "",
-      "hatarido": "",
-      "valasz_datum": "",
-      "id": "buveszbolt",
-      "bolt": "Damien White Bűvészbolt",
-      "kategoria": "Bűvészet / bűvésztrükkök",
-      "demo": "buveszbolt",
-      "allapot": "elokeszites",
-      "kinek": "",
-      "email": "",
-      "telefon": "",
-      "kapcsolat_minoseg": "Ellenőrzendő",
-      "teendo": "Tulajdonosi elérés és kapcsolati adatok felkutatása",
-      "megjegyzes": "Demó kész és élő titkos linken"
-    }
-  ]
+ "frissitve": "2026-10-29",
+ "alairasi_hatarido": "2026-11-13",
+ "kategoriak": [
+  {
+   "nev": "Szobanövény",
+   "sor": "Tropical Home → Növénybirodalom → Best Plants and Decor → Bernikert"
+  },
+  {
+   "nev": "Tea – gyógynövényes / funkcionális",
+   "sor": "UKKO → Teapalota / Lucky Matcha"
+  },
+  {
+   "nev": "Tea – szálas / specialty",
+   "sor": "1000TEA → Teavolution → Vörös Oroszlán → Somerset Tea"
+  },
+  {
+   "nev": "Kávé",
+   "sor": "Kávéáruház → Koffein Roasters → Casino Mocca → Goosebumps"
+  },
+  {
+   "nev": "Apple / elektronika",
+   "sor": "Új, megfelelő célbolt keresendő (az iStyle-demó törölve)"
+  },
+  {
+   "nev": "Vetőmag / kiskert",
+   "sor": "BioKiskert → ZKI vetőmag → Goldenpalm → Mikrozöldség"
+  },
+  {
+   "nev": "Horgászat",
+   "sor": "Horgász-Zóna → FishingTime"
+  },
+  {
+   "nev": "Kerti tó",
+   "sor": "Aquakert → Koi Mánia → Aquapond"
+  },
+  {
+   "nev": "Társasjáték",
+   "sor": "Gémklub → Szellemlovas"
+  },
+  {
+   "nev": "Csokoládé / édesség",
+   "sor": "Demeter Chocolate (Stühmer kizárva)"
+  },
+  {
+   "nev": "Kozmetika / bőrápolás",
+   "sor": "Helia-D helyi projekt; kisebb célbolt előnyben"
+  },
+  {
+   "nev": "Baba / kisgyerek",
+   "sor": "Kisebb, tulajdonos vezette bolt keresendő (Artdea kizárva)"
+  },
+  {
+   "nev": "Sütőeszközök / cukrászkellékek",
+   "sor": "Süss Velem"
+  },
+  {
+   "nev": "Szeszes ital / prémium alkohol",
+   "sor": "Mr. Alkohol – Dani kivétele"
+  },
+  {
+   "nev": "Kézműves / prémium sör",
+   "sor": "Csakajósör → Beerfreak → Beerselection → Sörspecialista"
+  },
+  {
+   "nev": "Chili / csípős szószok és fűszerek",
+   "sor": "Chilimánia (nem) → Sárréti ChiliFarm"
+  },
+  {
+   "nev": "Fonal / kötés-horgolás",
+   "sor": "Fonalam.hu → TiSza Fonal → Fonal Paradicsom → Fonalkunyhó"
+  },
+  {
+   "nev": "Vicces póló / ajándékbögre",
+   "sor": "Pólómánia"
+  },
+  {
+   "nev": "Csomagolásmentes / zero waste",
+   "sor": "Szatócska"
+  },
+  {
+   "nev": "Kisállat / állategészségügy",
+   "sor": "Gazdipro"
+  },
+  {
+   "nev": "Bűvészet / bűvésztrükkök",
+   "sor": "Damien White Bűvészbolt"
+  },
+  {
+   "nev": "CBD / kender",
+   "sor": "HempHealth → BudsCartel → Hill Vital"
+  },
+  {
+   "nev": "Illatgyertya",
+   "sor": "Viaszkuckó → Illatgyertya.hu → Aurora Candle"
+  },
+  {
+   "nev": "Natúrkozmetika / kézműves szappan",
+   "sor": "Napvirág → Highland Soap"
+  },
+  {
+   "nev": "Fűszer / gourmet kamra",
+   "sor": "Fűszerész"
+  },
+  {
+   "nev": "Makett / miniatűr",
+   "sor": "Makettshop → Modell & Hobby"
+  },
+  {
+   "nev": "Művészellátó",
+   "sor": "Művészellátó (Hobbyművész) → Kreatív Hobby"
+  }
+ ],
+ "boltok": [
+  {
+   "id": "tropicalhome",
+   "bolt": "Tropical Home",
+   "kategoria": "Szobanövény",
+   "demo": "tropicalhome",
+   "allapot": "review",
+   "kinek": "Hetényi Brigitta (tulajdonos, ügyvezető)",
+   "email": "info@tropicalhome.hu",
+   "telefon": "+36 70 368 1232",
+   "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review + adatlap véglegesítése",
+   "megjegyzes": "Alternatív cím: tropicalhome.hungary@gmail.com"
+  },
+  {
+   "id": "moaijungle",
+   "bolt": "Moai Jungle",
+   "kategoria": "Szobanövény",
+   "demo": "",
+   "allapot": "nem",
+   "kinek": "",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "2026-10-22",
+   "teendo": "",
+   "megjegyzes": "Nemet mondott; archív"
+  },
+  {
+   "id": "ukko",
+   "bolt": "UKKO",
+   "kategoria": "Tea – gyógynövényes / funkcionális",
+   "demo": "ukko",
+   "allapot": "review",
+   "kinek": "Dr. Sipos Tibor (alapító, vezérigazgató); Sipos-Kerese Éva (alapító)",
+   "email": "s.tibor@ukko.hu",
+   "telefon": "+36 20 941 1420",
+   "kapcsolat_minoseg": "Igazolt közvetlen vezetői elérés",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review + célméret végső ellenőrzése",
+   "megjegyzes": "Másodlagos cím: info@ukko.hu; egészségügyi állítás nélkül"
+  },
+  {
+   "id": "1000tea",
+   "bolt": "1000TEA",
+   "kategoria": "Tea – szálas / specialty",
+   "demo": "1000tea",
+   "allapot": "elokeszites",
+   "kinek": "Döntéshozó még nem azonosított",
+   "email": "contact@1000tea.hu",
+   "telefon": "+36 1 337 8217",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Tulajdonosi út + adatlap + Dani review",
+   "megjegyzes": "Napi akció + kupon kész"
+  },
+  {
+   "id": "kavearuhaz",
+   "bolt": "Kávéáruház",
+   "kategoria": "Kávé",
+   "demo": "kavearuhaz",
+   "allapot": "review",
+   "kinek": "Nagy Pál Sándor (tulajdonos, ügyvezető)",
+   "email": "info@kavearuhaz.hu",
+   "telefon": "+36 79 737 007",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review",
+   "megjegyzes": "Alternatív cím: freshcoffeekft@gmail.com"
+  },
+  {
+   "id": "koffeinroasters",
+   "bolt": "Koffein Roasters",
+   "kategoria": "Kávé",
+   "demo": "koffeinroasters",
+   "allapot": "tartalek",
+   "kinek": "Pintér Máté (Koffein Group Kft. képviselője)",
+   "email": "hello@koffeinroasters.hu",
+   "telefon": "+36 1 206 1881",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "A Kávéáruház-kör lezárása után; cégméret és döntéshozó ellenőrzése",
+   "megjegyzes": "Második demó kész; alternatív kontakt: info@koffeinservice.hu, +36 70 622 2285"
+  },
+  {
+   "id": "biokiskert",
+   "bolt": "BioKiskert",
+   "kategoria": "Vetőmag / kiskert",
+   "demo": "biokiskert",
+   "allapot": "review",
+   "kinek": "Székely Gyöngyvér (cégképviselő, szakmai vezető)",
+   "email": "gyongyver.szekely@biokiskert.hu",
+   "telefon": "+36 50 121 1505",
+   "kapcsolat_minoseg": "Igazolt közvetlen vezetői elérés",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review; decemberi kampányhely és téli szállítás egyeztetése",
+   "megjegyzes": "Demó és adatlap kész; kb. 4 aktív Meta-hirdetés"
+  },
+  {
+   "id": "horgaszzona",
+   "bolt": "Horgász-Zóna",
+   "kategoria": "Horgászat",
+   "demo": "horgaszzona",
+   "allapot": "elokeszites",
+   "kinek": "Nagy Zoltán Lajos (ügyvezető)",
+   "email": "ugyfelszolgalat@horgasz-zona.hu",
+   "telefon": "+36 70 362 7167",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Vizuális review + tulajdonosi út + fotójogok",
+   "megjegyzes": "Kis cég; tulajdonosi státusz nem igazolt"
+  },
+  {
+   "id": "gemklub",
+   "bolt": "Gémklub",
+   "kategoria": "Társasjáték",
+   "demo": "gemklub",
+   "allapot": "review",
+   "kinek": "Aczél Zoltán (ügyvezető, képviselő)",
+   "email": "info@gemklub.hu",
+   "telefon": "+36 20 366 7080",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review + tulajdonosi út ellenőrzése",
+   "megjegyzes": "Adatlap kész"
+  },
+  {
+   "id": "demeter",
+   "bolt": "Demeter Chocolate",
+   "kategoria": "Csokoládé / édesség",
+   "demo": "demeter",
+   "allapot": "review",
+   "kinek": "Zoli és Zsuzsi (alapítók; teljes nevük még nem igazolt)",
+   "email": "info@demeterchocolate.com",
+   "telefon": "+36 70 355 0686",
+   "kapcsolat_minoseg": "Családi vállalkozás, központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review + döntéshozó teljes nevének ellenőrzése",
+   "megjegyzes": "Demó és adatlap kész; Meta-hirdetés és saját csatorna még nincs auditálva"
+  },
+  {
+   "id": "stuhmer",
+   "bolt": "Stühmer",
+   "kategoria": "Csokoládé / édesség",
+   "demo": "stuhmer",
+   "allapot": "kizart",
+   "kinek": "",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "",
+   "megjegyzes": "Túl nagy célbolt; félkész helyi munka megőrizve, nincs megkeresés"
+  },
+  {
+   "id": "heliad",
+   "bolt": "Helia-D",
+   "kategoria": "Kozmetika / bőrápolás",
+   "demo": "heliad",
+   "allapot": "elokeszites",
+   "kinek": "Budaházy Péter Miklós (ügyvezető)",
+   "email": "helia@helia-d.hu",
+   "telefon": "+36 1 585 8580",
+   "kapcsolat_minoseg": "Központi kapu; nagyobb vállalat",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "QA + review; kisebb célbolt lehet jobb",
+   "megjegyzes": "Helyi projekt, státusz nem teljesen igazolt"
+  },
+  {
+   "id": "sussvelem",
+   "bolt": "Süss Velem",
+   "kategoria": "Sütőeszközök / cukrászkellékek",
+   "demo": "sussvelem",
+   "allapot": "elokeszites",
+   "kinek": "Szalai Viktória Lídia (alapító, ügyvezető, marketingvezető)",
+   "email": "info@sussvelem.com",
+   "telefon": "+36 30 709 8007",
+   "kapcsolat_minoseg": "Központi kapu, jól azonosított döntéshozó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Vizuális review + jogok, árak és készlet ellenőrzése",
+   "megjegyzes": "Privát helyi koncepció"
+  },
+  {
+   "id": "mralkohol",
+   "bolt": "Mr. Alkohol",
+   "kategoria": "Szeszes ital / prémium alkohol",
+   "demo": "mralkohol",
+   "allapot": "elokeszites",
+   "kinek": "Miklós Anita (vállalati képviselő)",
+   "email": "info@mralkohol.hu",
+   "telefon": "+36 1 808 9240",
+   "kapcsolat_minoseg": "Központi kapu; nagyvállalati háttér",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Marketinges döntéshozó + alkoholreklám-jogi ellenőrzés",
+   "megjegyzes": "Dani kivétele"
+  },
+  {
+   "id": "csakajosor",
+   "bolt": "Csakajósör",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "csakajosor",
+   "allapot": "review",
+   "kinek": "Tulajdonos / ügyvezető (név még nem ismert)",
+   "email": "shop@csakajosor.hu",
+   "telefon": "+36 1 798 0036",
+   "kapcsolat_minoseg": "Általános bolti cím; tulajdonos-közeli kis bolt",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani review + ügyvezető nevének ellenőrzése + alkoholjogi ellenőrzés",
+   "megjegyzes": "Demó és adatlap kész; 3 aktív Meta-hirdetés"
+  },
+  {
+   "id": "chilimania",
+   "bolt": "Chilimánia",
+   "kategoria": "Chili / csípős szószok és fűszerek",
+   "demo": "chilimania",
+   "allapot": "nem",
+   "kinek": "Döntéshozó még nincs rögzítve",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "Ellenőrzendő",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "2026-10-29",
+   "teendo": "Lezárva – nemet mondott",
+   "megjegyzes": "Demó elkészült és él; ebben a kategóriában most nincs második jelölt"
+  },
+  {
+   "id": "fonalam",
+   "bolt": "Fonalam.hu",
+   "kategoria": "Fonal / kötés-horgolás",
+   "demo": "fonalam",
+   "allapot": "kuldheto",
+   "kinek": "Soltészné Illés Ágnes (tulajdonos, kreatív igazgató)",
+   "email": "info@lana-tex.hu",
+   "telefon": "+36 72 222 619",
+   "kapcsolat_minoseg": "Igazolt közvetlen tulajdonosi elérés",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél (a demó él)",
+   "megjegyzes": "Másodlagos cím: bolt@lana-tex.hu; kb. 11 aktív Meta-hirdetés"
+  },
+  {
+   "id": "tiszafonal",
+   "bolt": "TiSza Fonal",
+   "kategoria": "Fonal / kötés-horgolás",
+   "demo": "tiszafonal",
+   "allapot": "tartalek",
+   "kinek": "Timi és Szabi (tulajdonosok)",
+   "email": "info@tiszafonal.hu",
+   "telefon": "+36 20 997 0003",
+   "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Ha a Fonalam nemet mond vagy lejár",
+   "megjegyzes": "Második demó kész; alternatív cím: tiszafonal@gmail.com"
+  },
+  {
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "id": "polomania",
+   "bolt": "Pólómánia",
+   "kategoria": "Vicces póló / ajándékbögre",
+   "demo": "polomania",
+   "allapot": "review",
+   "kinek": "unknown",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "Nincs ellenőrizve",
+   "teendo": "Döntéshozó + kapcsolat felkutatása, demó publikálása",
+   "megjegyzes": "Demó kész (helyi), még nincs élő link"
+  },
+  {
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "id": "szatocska",
+   "bolt": "Szatócska",
+   "kategoria": "Csomagolásmentes / zero waste",
+   "demo": "szatocska",
+   "allapot": "kuldheto",
+   "kinek": "Tami és Dávid (tulajdonosok)",
+   "email": "hello@szatocska.hu",
+   "telefon": "+36 30 407 7233",
+   "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna",
+   "teendo": "Levél kiküldése (Dani)",
+   "megjegyzes": "Élő: https://advent.lupix.hu/szatocska-7f2844/?bemutato=1"
+  },
+  {
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "id": "gazdipro",
+   "bolt": "Gazdipro",
+   "kategoria": "Kisállat / állategészségügy",
+   "demo": "gazdipro",
+   "allapot": "elokeszites",
+   "kinek": "unknown",
+   "email": "hello@gazdipro.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Ügyfélszolgálati cím, tulajdonos nem igazolt",
+   "teendo": "Tulajdonosi elérés igazolása megkeresés előtt",
+   "megjegyzes": "blocked:prospect; demó kész (helyi), nincs élő link"
+  },
+  {
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "id": "buveszbolt",
+   "bolt": "Damien White Bűvészbolt",
+   "kategoria": "Bűvészet / bűvésztrükkök",
+   "demo": "buveszbolt",
+   "allapot": "elokeszites",
+   "kinek": "",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "Ellenőrzendő",
+   "teendo": "Tulajdonosi elérés és kapcsolati adatok felkutatása",
+   "megjegyzes": "Demó kész és élő titkos linken"
+  },
+  {
+   "id": "hemphealth",
+   "bolt": "HempHealth",
+   "kategoria": "CBD / kender",
+   "demo": "hemphealth",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@hemphealth.hu",
+   "telefon": "+36 30 100 9525",
+   "kapcsolat_minoseg": "Általános cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Hemp Health Kft., 1085 Bp., József krt. 59-61.; Meta-hirdetés ID 820423587772367"
+  },
+  {
+   "id": "viaszkucko",
+   "bolt": "Viaszkuckó",
+   "kategoria": "Illatgyertya",
+   "demo": "viaszkucko",
+   "allapot": "kuldheto",
+   "kinek": "Balla János (egyéni vállalkozó)",
+   "email": "info@viaszkucko.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Tulajdonosi csatorna",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "4181 Nádudvar; hírlevél + hűségpont; Meta ID 1374634414503730"
+  },
+  {
+   "id": "napvirag",
+   "bolt": "Napvirág Natúrkozmetikum",
+   "kategoria": "Natúrkozmetika / kézműves szappan",
+   "demo": "napvirag",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "ugyfelszolgalat@napviragszappan.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Ügyfélszolgálat (családi manufaktúra)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Conwell Kft., 2013 óta; hírlevél + hűségpont"
+  },
+  {
+   "id": "fuszeresz",
+   "bolt": "Fűszerész",
+   "kategoria": "Fűszer / gourmet kamra",
+   "demo": "fuszeresz",
+   "allapot": "kuldheto",
+   "kinek": "… Kovács ügyvezető (Éva? nem igazolt)",
+   "email": "eve@fuszeresz.hu",
+   "telefon": "+36 1 951 3067",
+   "kapcsolat_minoseg": "Valószínű tulajdonosi cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Másolat: bolt@fuszeresz.hu; Fűszeres Kft., Szentendre"
+  },
+  {
+   "id": "makettshop",
+   "bolt": "Makettshop",
+   "kategoria": "Makett / miniatűr",
+   "demo": "makettshop",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@makettshop.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Általános cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Falcon-Model Kft., 4233 Balkány"
+  },
+  {
+   "id": "muveszellato",
+   "bolt": "Művészellátó (Hobbyművész)",
+   "kategoria": "Művészellátó",
+   "demo": "muveszellato",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "ugyfelszolgalat@muveszellato.com",
+   "telefon": "",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálat (Dani: mehet)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Art-Export 2020 Kft."
+  },
+  {
+   "id": "sarretichilifarm",
+   "bolt": "Sárréti ChiliFarm",
+   "kategoria": "Chili / csípős szószok és fűszerek",
+   "demo": "sarretichilifarm",
+   "allapot": "kuldheto",
+   "kinek": "Bogár Márk (egyéni vállalkozó)",
+   "email": "info@chilifarm.hu",
+   "telefon": "+36 30 55 45227",
+   "kapcsolat_minoseg": "Tulajdonosi csatorna",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Családi vállalkozás 2012 óta, Tetétlen"
+  }
+ ]
 }

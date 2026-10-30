@@ -1,0 +1,1641 @@
+{
+ "kategoriak": [
+  {
+   "nev": "Szobanövény",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Moai Jungle",
+     "url": null,
+     "priority": null,
+     "status": "elutasította"
+    },
+    {
+     "name": "Tropical Home",
+     "url": "https://tropicalhome.hu",
+     "priority": "A",
+     "status": "várunk"
+    },
+    {
+     "name": "Növénybirodalom",
+     "url": "https://www.novenybirodalom.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Best Plants and Decor",
+     "url": "https://www.bestplants.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Bernikert Webshop",
+     "url": "https://bernikertwebshop.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Plantart",
+     "url": "https://plantart.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Marczika",
+     "url": "https://marczika.eu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Orchidea Sziget",
+     "url": "https://www.orchideasziget.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Oázis Kertészet",
+     "url": "https://oazis.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Verdena.hu",
+     "url": "https://verdena.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Virág-Online",
+     "url": "https://www.virag-online.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Fitoland",
+     "url": "https://www.fitoland.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "New Garden",
+     "url": "https://webshop.newgarden.hu",
+     "priority": "C",
+     "status": null
+    },
+    {
+     "name": "Citrus és Pálma",
+     "url": "https://citrusespalma.hu",
+     "priority": "C",
+     "status": null
+    },
+    {
+     "name": "Banánfa Kft.",
+     "url": "https://bananfa.com",
+     "priority": "C",
+     "status": null
+    },
+    {
+     "name": "Kaktuszhalom",
+     "url": "https://kaktuszhalom.hu",
+     "priority": "C",
+     "status": "inkább beszállító"
+    },
+    {
+     "name": "Királykert",
+     "url": "https://kiralykertkerteszet.hu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Plantstore",
+     "url": "https://www.plantstore.hu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Növényshop.hu",
+     "url": "https://www.novenyshop.hu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Növényfutár",
+     "url": "https://novenyfutar.hu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "CactusShop.eu",
+     "url": "https://cactusshop.eu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Marczika – Orchideacsodák / Bonsai Studio",
+     "url": "https://orchideacsodak.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Orchidea és szobanövény turkáló",
+     "url": "https://orchideaturi.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Ragadozó Kert",
+     "url": "https://www.ragadozokert.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Tea – gyógynövényes / funkcionális",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "UKKO",
+     "url": "https://www.ukko.hu",
+     "priority": null,
+     "status": "várunk"
+    },
+    {
+     "name": "Teapalota / Lucky Matcha",
+     "url": null,
+     "priority": "B",
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Tea – szálas / specialty",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "1000TEA",
+     "url": "https://1000tea.hu",
+     "priority": "A",
+     "status": "várunk"
+    },
+    {
+     "name": "Teavolution",
+     "url": "https://teavolution.eu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Vörös Oroszlán Teaház",
+     "url": "https://vorosoroszlanteahaz.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Somerset Tea (tea.hu)",
+     "url": "https://tea.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Demmers Teahouse",
+     "url": null,
+     "priority": null,
+     "status": "kizárt (benchmark)"
+    },
+    {
+     "name": "Teapalota / Lucky Matcha",
+     "url": "https://teapalota.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kávé",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Casino Mocca",
+     "url": "https://www.casinomocca.com",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Goosebumps",
+     "url": "https://goosebumps.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Koffein Roasters",
+     "url": "https://koffeinroasters.hu",
+     "priority": "A",
+     "status": "várunk"
+    },
+    {
+     "name": "The Coffee Hub csoport",
+     "url": "https://www.coffeehub.hu",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Impresso Micro Roastery",
+     "url": "https://impresso.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "REXKAVE.HU",
+     "url": "https://rexkave.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "R Coffee Roastery",
+     "url": "https://www.rcoffee.hu",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "CrackerJack",
+     "url": null,
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "One Eleven",
+     "url": null,
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Twenty Eight",
+     "url": null,
+     "priority": "C",
+     "status": null
+    },
+    {
+     "name": "Kávékalmár",
+     "url": "https://frissen-porkolt-kave.hu",
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Cafe Frei",
+     "url": null,
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Roastar Zrt.",
+     "url": null,
+     "priority": "tartalék",
+     "status": null
+    },
+    {
+     "name": "Kávélabor",
+     "url": null,
+     "priority": null,
+     "status": "kizárt"
+    },
+    {
+     "name": "18gramm.hu",
+     "url": null,
+     "priority": null,
+     "status": "kizárt"
+    },
+    {
+     "name": "Kávéáruház",
+     "url": "https://kavearuhaz.hu",
+     "priority": null,
+     "status": "demó kész, nem kapott levelet"
+    },
+    {
+     "name": "CrackerJack Coffee Roasters",
+     "url": "https://crackerjack.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "One Eleven Specialty Kávé",
+     "url": "https://oneeleven.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Twenty Eight by Hernyák Gábor",
+     "url": "https://twentyeight.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Apple / elektronika",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "iStyle",
+     "url": null,
+     "priority": null,
+     "status": "törölve, nem célpont"
+    }
+   ]
+  },
+  {
+   "nev": "Vetőmag / kiskert",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "BioKiskert",
+     "url": "https://biokiskert.hu/hu",
+     "priority": "A",
+     "status": "várunk"
+    },
+    {
+     "name": "ZKI vetőmag",
+     "url": "https://zkivetomag.hu/",
+     "priority": "A",
+     "status": null
+    },
+    {
+     "name": "Goldenpalm",
+     "url": "https://goldenpalm.hu/",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Kertdiszkont",
+     "url": null,
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Mikrozöldség",
+     "url": null,
+     "priority": "C",
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Horgászat",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Horgász-Zóna",
+     "url": "https://www.horgasz-zona.hu/",
+     "priority": "A",
+     "status": "várunk"
+    },
+    {
+     "name": "FishingTime",
+     "url": "https://fishingtime.hu/",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "BojliBolt",
+     "url": "https://bojlibolt.hu/",
+     "priority": null,
+     "status": "kizárt (karbantartás)"
+    }
+   ]
+  },
+  {
+   "nev": "Kerti tó",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Aquakert Kertitó Webáruház",
+     "url": "https://www.kertitotechnika.hu/",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Koi Mánia",
+     "url": "https://koimania.hu/",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Aquapond",
+     "url": "https://www.aquapond.hu/",
+     "priority": "B",
+     "status": null
+    },
+    {
+     "name": "Europond",
+     "url": "https://europond.hu/",
+     "priority": null,
+     "status": "kizárt (szolgáltatás, nem webshop)"
+    }
+   ]
+  },
+  {
+   "nev": "Társasjáték",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Gémklub",
+     "url": "https://www.gemklub.hu",
+     "priority": null,
+     "status": "várunk"
+    },
+    {
+     "name": "Szellemlovas",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Reflexshop",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Társasjátékdiszkont",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Compaya",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Csokoládé / édesség",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Demeter Chocolate",
+     "url": null,
+     "priority": null,
+     "status": "várunk"
+    },
+    {
+     "name": "Stühmer",
+     "url": null,
+     "priority": null,
+     "status": "kizárt (nagy cég)"
+    }
+   ]
+  },
+  {
+   "nev": "Kozmetika / bőrápolás",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Helia-D",
+     "url": "https://helia-d.hu",
+     "priority": null,
+     "status": "helyi projekt, nem igazolt"
+    }
+   ]
+  },
+  {
+   "nev": "Baba / kisgyerek",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Artdea",
+     "url": null,
+     "priority": null,
+     "status": "kizárt"
+    }
+   ]
+  },
+  {
+   "nev": "CBD / kender",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "HempHealth.hu",
+     "url": null,
+     "priority": null,
+     "status": "demó kész, kiküldésre vár"
+    },
+    {
+     "name": "BudsCartel.com",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Hill Vital",
+     "url": "https://hillvital.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Merce Online",
+     "url": "https://merceonline.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Naturecan",
+     "url": null,
+     "priority": null,
+     "status": "kizárt (nagy márka)"
+    },
+    {
+     "name": "HempHealth",
+     "url": "https://hemphealth.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Sütőeszközök / cukrászkellékek",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Süss Velem",
+     "url": "https://www.sussvelem.com",
+     "priority": null,
+     "status": "helyi koncepció"
+    }
+   ]
+  },
+  {
+   "nev": "Szeszes ital / prémium alkohol",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Mr. Alkohol",
+     "url": "https://www.mralkohol.hu",
+     "priority": null,
+     "status": "várunk (Dani kivétele)"
+    }
+   ]
+  },
+  {
+   "nev": "Kézműves / prémium sör",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Csakajósör",
+     "url": "https://www.csakajosor.hu",
+     "priority": null,
+     "status": "várunk"
+    },
+    {
+     "name": "Beerfreak",
+     "url": "https://beerfreak.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Beerselection",
+     "url": "https://beerselection.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Sörspecialista",
+     "url": "https://sorspecialista.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Chili / csípős szósz és BBQ-szósz",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Chimax",
+     "url": "https://www.chimax.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Chili Hungária Webshop",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "GaBko Chili",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "ChillER Manufaktúra",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Sárréti ChiliFarm",
+     "url": "https://chilifarm.hu/",
+     "priority": null,
+     "status": "demó kész, nincs kiküldve"
+    },
+    {
+     "name": "Kelchili",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Chilimánia",
+     "url": "https://chilimania.hu",
+     "priority": null,
+     "status": "elutasította"
+    },
+    {
+     "name": "Chili Hungária",
+     "url": "https://www.chilihungaria.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Chili Farm",
+     "url": "https://chili-farm.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Chili Tábor",
+     "url": "https://chilitabor.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Fenevad",
+     "url": "https://fenevad.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Fonal / kötés-horgolás",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Fonalam.hu",
+     "url": "https://fonalam.hu",
+     "priority": null,
+     "status": "várunk"
+    },
+    {
+     "name": "TiSza Fonal",
+     "url": "https://www.tiszafonal.hu",
+     "priority": null,
+     "status": "demó kész, nem kapott levelet"
+    },
+    {
+     "name": "Fonal Paradicsom",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Fonalkunyhó",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Muci Fonal",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Csomagolásmentes / zero waste",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Szatócska",
+     "url": null,
+     "priority": null,
+     "status": "demó kész és kint"
+    }
+   ]
+  },
+  {
+   "nev": "Hulladékmentes háztartás és öko tisztítás",
+   "megj": "B prioritás",
+   "jeloltek": [
+    {
+     "name": "BioBubi",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "BajaBee",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Ökotár",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Lady Clean",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Orgalco",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Zöldbolt",
+     "url": "https://zoldbolt.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Bűvésztrükkök / close-up kellékek",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Bűvészbolt",
+     "url": "https://buveszbolt.hu",
+     "priority": null,
+     "status": "demó kész és kint"
+    },
+    {
+     "name": "Joker Magic",
+     "url": "https://jokermagic.com",
+     "priority": "tartalék",
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Állategészségügy / kisállat",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Gazdipro",
+     "url": null,
+     "priority": null,
+     "status": "demó kint"
+    },
+    {
+     "name": "Wiss-Pet",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Bestie.hu",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Petfamily.hu",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kutyás jutalomfalat és kiegészítő",
+   "megj": "A prioritás",
+   "jeloltek": [
+    {
+     "name": "Falatka Webshop",
+     "url": "https://falatkawebshop.hu/termekkategoria/kutya/jutalomfalat/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Bestie.hu",
+     "url": "https://bestie.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Luna Pet Shop Debrecen",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Wiss-Pet",
+     "url": "https://wiss-pet.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Petfamily.hu",
+     "url": "https://petfamily.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Fűszer / gourmet kamra",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Fűszerész",
+     "url": "https://webshop.fuszeresz.hu",
+     "priority": null,
+     "status": "demó kész és kint"
+    }
+   ]
+  },
+  {
+   "nev": "Illatgyertya és otthonillat",
+   "megj": "A prioritás",
+   "jeloltek": [
+    {
+     "name": "Viaszkuckó",
+     "url": "https://www.viaszkucko.hu/Illatgyertya",
+     "priority": null,
+     "status": "demó kész és kint"
+    },
+    {
+     "name": "Aurora Candle",
+     "url": "https://auroracandle.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "illatgyertya.hu",
+     "url": "https://illatgyertya.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "TT Candle",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Natúr szappan / natúrkozmetika",
+   "megj": "B prioritás",
+   "jeloltek": [
+    {
+     "name": "Napvirág",
+     "url": "https://www.napviragszappan.hu/",
+     "priority": null,
+     "status": "demó kész és kint"
+    },
+    {
+     "name": "Highland Soap Hungary",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Highland Soap",
+     "url": "https://highlandsoap.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kézműves kerámia és bögrék",
+   "megj": "A prioritás",
+   "jeloltek": [
+    {
+     "name": "Agyagtanya",
+     "url": "https://agyagtanya.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Apacuka Ceramics",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Bokréta Kerámia",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Katica Kerámia",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Nünü Kerámia",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Manka Ceramics",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Termelői éléskamra / kézműves delikát",
+   "megj": "A prioritás",
+   "jeloltek": [
+    {
+     "name": "Héthatár",
+     "url": "https://www.hethatarshop.hu/",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Kutyori Konyha",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Diófaktúra",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Hajdúság Éléskamrája",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Rajz-, festő- és kreatív papírtermékek",
+   "megj": "B prioritás",
+   "jeloltek": [
+    {
+     "name": "Rajzshop.hu",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Papírtermék / naplózás",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Bomo Art",
+     "url": "https://bomoart.com",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Ásvány, fosszília és geóda",
+   "megj": "B prioritás",
+   "jeloltek": [
+    {
+     "name": "Cleo Collection",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "ZenAura",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Ásványbolt",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Férfi borotválkozás és szakállápolás",
+   "megj": "B prioritás",
+   "jeloltek": [
+    {
+     "name": "G.O.D.",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Blade",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Varrás, patchwork és textil-kellék",
+   "megj": "C prioritás, nincs jelölt",
+   "jeloltek": []
+  },
+  {
+   "nev": "Akvarisztika / aquascaping",
+   "megj": "C prioritás, nincs jelölt",
+   "jeloltek": [
+    {
+     "name": "Akváriumom",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "AquaDepo",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Hangszer- és gitárkiegészítők",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Hangszerbarlang",
+     "url": "https://hangszerbarlang.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Gitárshop",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "3D nyomtatás",
+   "megj": "konkrét bolt még ellenőrizendő",
+   "jeloltek": [
+    {
+     "name": "3D Market",
+     "url": "https://www.3dmarket.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Filament.hu",
+     "url": "https://filament.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Makett / miniatűr",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Makettshop",
+     "url": "https://makettshop.hu",
+     "priority": null,
+     "status": "demó kész és kint"
+    },
+    {
+     "name": "Modell & Hobby",
+     "url": "https://www.modellhobby.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Művészellátó",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Művészellátó / Hobbyművész",
+     "url": "https://muveszellato.com",
+     "priority": null,
+     "status": "demó kész és kint"
+    },
+    {
+     "name": "Kreatív Hobby",
+     "url": "https://kreativhobby.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Hobbyművész",
+     "url": "https://hobbymuvesz.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kerti növény / évelő / rózsa / gyümölcsfa",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Évelő Bazár",
+     "url": "https://evelobazar.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Rózsawebáruház",
+     "url": "https://rozsawebaruhaz.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Attila Garden Rose",
+     "url": "https://attilagardenrose.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "EmilyGarden",
+     "url": "https://emilygarden.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Gyümölcsfa vásárlás.hu",
+     "url": "https://gyumolcsfavasarlas.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Csemetecentrum",
+     "url": "https://csemetecentrum.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Autóápolás / detailing",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "IN2 Detailing",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Autómosó Webshop",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Bakelit / lemezbolt",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Lemezbarlang",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Lemezkuckó",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Deep Record Store",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Túra / kemping kiegészítők",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Tengerszem",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Nomád Sport",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Mountex",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kerékpáros kiegészítők",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "BikePro",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Bringa.hu",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Bringaland",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Analóg fotózás",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Soós Fotó",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "F8 Camera",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kések és konyhai eszközök",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Késvilág",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Késshop",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Specialty sajt / delikát",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Sajtmester",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Képregény és manga",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Fumax",
+     "url": null,
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Kingpin",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kékfestő / kézműves textil",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Tóth Borbála Kékfestő",
+     "url": null,
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Modellvasút",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Modellvasút Centrum",
+     "url": "https://www.modellvasut.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Modell & Hobby",
+     "url": "https://www.modellhobby.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Numizmatika",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Prohászka Éremkereskedés",
+     "url": "https://prohaszka.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "NumizMarket",
+     "url": "https://www.numizmarket.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Magok, diófélék, aszalványok",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Nobilis",
+     "url": "https://www.nobilis.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Dénes-Natura",
+     "url": "https://denesnatura.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Prémium szörp / alkoholmentes ital",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Pölöskei Szörp",
+     "url": "https://poleskeiszorp.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Virágoskút Biogazdaság",
+     "url": "https://viragoskut.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Puzzle / prémium kirakó",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "PuzzleGuru",
+     "url": "https://www.puzzleguru.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Puzzle.hu",
+     "url": "https://www.puzzle.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Barkács / kéziszerszám",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "SzerszámKell",
+     "url": "https://www.szerszamkell.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "RC modellezés",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Modellfutár",
+     "url": "https://www.modellfutar.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "RC Modell",
+     "url": "https://www.rcmodell.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Mechanikus billentyűzet",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Keychron Magyarország",
+     "url": "https://keychron.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Elektronika / mikrokontroller",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Hestore",
+     "url": "https://www.hestore.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "ChipCAD",
+     "url": "https://www.chipcad.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Okosotthon DIY",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Okosotthon Bolt",
+     "url": "https://okosotthonbolt.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Sonoff Magyarország",
+     "url": "https://sonoff.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Futás / téli futókiegészítők",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Spuri Futóbolt",
+     "url": "https://spurifutobolt.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Futócipőbolt",
+     "url": "https://www.futocipobolt.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Jóga / pilates",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Jógakellék",
+     "url": "https://jogakellek.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "YogaBazaar",
+     "url": "https://yogabazaar.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Sí / snowboard karbantartás",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Snowboardshop",
+     "url": "https://www.snowboardshop.hu",
+     "priority": null,
+     "status": null
+    },
+    {
+     "name": "Skioutlet",
+     "url": "https://www.skioutlet.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Tervezői ékszer",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Vanda Jewelry",
+     "url": "https://vandajewelry.com",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Tervezői táska / utazási kiegészítő",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "YKRA",
+     "url": "https://www.ykra.com",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Szitanyomott ruházat / design-ajándék",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Printa",
+     "url": "https://printa.hu",
+     "priority": null,
+     "status": null
+    }
+   ]
+  },
+  {
+   "nev": "Kézműves bőráru",
+   "megj": "",
+   "jeloltek": [
+    {
+     "name": "Vengru",
+     "url": "https://vengru.com",
+     "priority": null,
+     "status": null
+    }
+   ]
+  }
+ ]
+}

@@ -39,6 +39,8 @@ await page.route('http://vez.test/**', async route => {
   const url = new URL(route.request().url());
   if (url.pathname === '/vezerlo/' || url.pathname === '/vezerlo/index.html') return route.fulfill({ contentType: 'text/html; charset=utf-8', body: html });
   if (url.pathname === '/vezerlo/demo-audit.json') return route.fulfill({ contentType: 'application/json', body: audit });
+  if (url.pathname === '/vezerlo/kategoriak.html') return route.fulfill({ contentType: 'text/html; charset=utf-8', body: readFileSync(new URL('vezerlo/kategoriak.html', root), 'utf8') });
+  if (url.pathname === '/vezerlo/kutatas.json') return route.fulfill({ contentType: 'application/json', body: readFileSync(new URL('vezerlo/kutatas.json', root), 'utf8') });
   if (url.pathname === '/vezerlo/kiadas.json') return route.fulfill({ contentType: 'application/json', body: releases });
   if (url.pathname === '/api/vezerlo/adat' && route.request().method() === 'GET') return route.fulfill({ contentType: 'application/json', body: JSON.stringify(data) });
   if (url.pathname === '/api/vezerlo/adat' && route.request().method() === 'PATCH') {
@@ -61,13 +63,13 @@ await page.route('http://vez.test/**', async route => {
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 await page.goto('http://vez.test/vezerlo/', { waitUntil: 'networkidle' });
-if (!await page.getByText('21 kategória').isVisible()) throw new Error('kategóriaszám hiányzik');
-if (!await page.getByText('22 ügyfél/jelölt').isVisible()) throw new Error('ügyfélszám hiányzik');
-if (await page.locator('.cat').count() !== 21) throw new Error('nem látszik mind a 21 kategória');
+if (!await page.getByText(`${seedData.kategoriak.length} kategória`).isVisible()) throw new Error('kategóriaszám hiányzik');
+if (!await page.getByText(`${seedData.boltok.length} ügyfél/jelölt`).isVisible()) throw new Error('ügyfélszám hiányzik');
+if (await page.locator('.cat').count() !== seedData.kategoriak.length) throw new Error('nem látszik minden kategória');
 for (const name of ['BioKiskert','Demeter Chocolate','Csakajósör','Chilimánia','Gazdipro','Damien White Bűvészbolt']) {
   if (!await page.locator('.shop', { hasText: name }).isVisible()) throw new Error(`új ügyfél hiányzik: ${name}`);
 }
-if (!await page.locator('.shop', { hasText: 'Chilimánia' }).getByText('nincs e-mail').isVisible()) throw new Error('hiányos kontakt jelzése nem látszik');
+if (!await page.locator('.shop', { hasText: 'Makettshop' }).getByText('név pótolható').isVisible()) throw new Error('hiányos kontakt jelzése nem látszik');
 const horgaszCard = page.locator('.shop', { has: page.locator('.name', { hasText: 'Horgász-Zóna' }) });
 await horgaszCard.locator('summary').click();
 const emailButton = horgaszCard.getByRole('button', { name: 'E-mail másolása' });
@@ -92,7 +94,18 @@ await card.locator('[data-field="kikuldve"]').fill('2026-10-29');
 await response;
 if (!patches.some(x => x.id === 'fonalam' && x.kikuldve === '2026-10-29')) throw new Error('kiküldési dátum PATCH hiányzik');
 const updated = page.locator('.shop', { has: page.locator('.name', { hasText: 'Fonalam.hu' }) });
-if (!await updated.getByText('4 nap van hátra').isVisible()) throw new Error('az újraszámolt határidő nem látszik');
+const todayBp = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Budapest' }).format(new Date());
+const leftDays = Math.round((Date.parse(deadline('2026-10-29')) - Date.parse(todayBp)) / 864e5);
+const leftText = leftDays < 0 ? `lejárt ${-leftDays} napja` : leftDays === 0 ? 'ma jár le' : leftDays === 1 ? 'holnap jár le' : `${leftDays} nap van hátra`;
+if (!await updated.getByText(leftText).first().isVisible()) throw new Error('az újraszámolt határidő nem látszik');
+const mk = page.locator('.shop', { has: page.locator('.name', { hasText: 'Makettshop' }) });
+await mk.locator('summary').click();
+response = page.waitForResponse(r => r.request().method() === 'PATCH' && r.request().postData()?.includes('Teszt Elek'));
+await mk.locator('[data-field="kinek"]').fill('Teszt Elek');
+await mk.locator('[data-field="kinek"]').press('Tab');
+await response;
+if (!patches.some(x => x.id === 'makettshop' && x.kinek === 'Teszt Elek')) throw new Error('kézi kapcsolattartó mentése hiányzik');
+if (!await page.locator('.shop.done', { hasText: 'Chilimánia' }).isVisible()) throw new Error('az elutasított bolt nem látszik áthúzva');
 let overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
 if (overflow) throw new Error('mobilos vízszintes túlcsordulás');
 await page.screenshot({ path: new URL('../screenshots/vezerlo-mobile.png', import.meta.url).pathname, fullPage: true });
@@ -109,5 +122,17 @@ await page.locator('#kategoria-szuro').selectOption({ label: 'Fonal / kötés-ho
 if (await page.locator('.kanban-card').count() !== 2) throw new Error('Kanban kategóriaszűrő hibás');
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kanban.png', import.meta.url).pathname, fullPage: true });
+await page.goto('http://vez.test/vezerlo/kategoriak.html', { waitUntil: 'networkidle' });
+for (const sec of ['Szabad kategóriák', 'Csak kutatás']) if (!await page.locator('h2.sec', { hasText: sec }).isVisible()) throw new Error(`kategóriaoldal szakasz hiányzik: ${sec}`);
+const catCount = await page.locator('.cat').count();
+if (catCount < seedData.kategoriak.length) throw new Error('kategóriaoldalon hiányzik kategória');
+if (!await page.locator('.cat', { hasText: 'Makett / miniatűr' }).getByRole('link', { name: 'megnyitás' }).isVisible()) throw new Error('élő link hiányzik a kategóriaoldalon');
+await page.locator('.cat', { hasText: 'Puzzle' }).getByRole('button').click();
+await page.waitForFunction(() => document.body.textContent.includes('Kimásolva ✓'));
+if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
+await page.setViewportSize({ width: 390, height: 844 });
+if (await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)) throw new Error('kategóriaoldal túlcsordul mobilon');
+await page.screenshot({ path: new URL('../screenshots/vezerlo-kategoriak.png', import.meta.url).pathname });
+console.log(`✓ kategóriaoldal: ${catCount} kártya`);
 await browser.close();
-console.log(`✓ vezérlő: 21 kategória, 22 ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
+console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
