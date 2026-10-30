@@ -113,6 +113,10 @@
   {
    "nev": "Hulladékmentes háztartás és öko tisztítás",
    "sor": "BioBubi – élő demó, képi review hátravan; ajánlatok és kuponok még nem élesek"
+  },
+  {
+   "nev": "Desszertétterem / palacsintázó (helyszíni beváltás)",
+   "sor": "Fluffy & Me – Dani kivétele (tulajdonosi elérhetőség megvan)"
   }
  ],
  "boltok": [
@@ -646,6 +650,24 @@
    "valasz_datum": "",
    "teendo": "Képi review és bolti megkeresés; a fotók/márkahasználat jóváhagyása az éles kampány előtt szükséges",
    "megjegyzes": "Élő demó linkkel, 24 nap és javasolt BUBI kódok; képi review és bolti megkeresés még hátravan. Nem éles kampány."
+  },
+  {
+   "id": "fluffyandme",
+   "bolt": "Fluffy & Me",
+   "kategoria": "Desszertétterem / palacsintázó (helyszíni beváltás)",
+   "demo": "fluffyandme",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "Tulajdonosi elérhetőség Daninál – pótolandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Tulaj elérhetőségét beírni; a levélben a helyszíni (pultnál mutatott) beváltást kiemelni",
+   "megjegyzes": "Desszertétterem (japán szuflé palacsinta). Fluffy and Me Kft. + 3 franchise cég (Budapest Kazinczy u. 52/C, Győr, Debrecen; Mammut 2026. nov., Szeged év vége). Árak a menüoldalról (3 480–15 980 Ft). Futó kampány: vásárláshoz kötött karácsonyi iPhone-nyereményjáték okt. 24.–dec. 20. Központi: hello@fluffyandme.hu, +36 20 503 4034.",
+   "motivum": "szuflé-sütőlap 24 sütőgyűrűvel, nyomva tartásos sütés, fogpiszkáló-zászló, pultnál felmutatható jegy + elhúzásos beváltás",
+   "weboldal": "https://fluffyandme.hu"
   }
  ]
 }
