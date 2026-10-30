@@ -1375,8 +1375,8 @@
         {
           "name": "Petfamily.hu",
           "url": "https://petfamily.hu",
-          "priority": null,
-          "status": null,
+          "priority": 1,
+          "status": "demó kész (petfamily), küldhető",
           "sources": [
             "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
           ]

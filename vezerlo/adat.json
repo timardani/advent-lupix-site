@@ -117,6 +117,10 @@
   {
    "nev": "Desszertétterem / palacsintázó (helyszíni beváltás)",
    "sor": "Fluffy & Me – Dani kivétele (tulajdonosi elérhetőség megvan)"
+  },
+  {
+   "nev": "Kutyás jutalomfalat és kiegészítő",
+   "sor": "Pet Family → Falatka Webshop → Bestie.hu → Wiss-Pet"
   }
  ],
  "boltok": [
@@ -668,6 +672,24 @@
    "megjegyzes": "Desszertétterem (japán szuflé palacsinta). Fluffy and Me Kft. + 3 franchise cég (Budapest Kazinczy u. 52/C, Győr, Debrecen; Mammut 2026. nov., Szeged év vége). Árak a menüoldalról (3 480–15 980 Ft). Futó kampány: vásárláshoz kötött karácsonyi iPhone-nyereményjáték okt. 24.–dec. 20. Központi: hello@fluffyandme.hu, +36 20 503 4034.",
    "motivum": "szuflé-sütőlap 24 sütőgyűrűvel, nyomva tartásos sütés, fogpiszkáló-zászló, pultnál felmutatható jegy + elhúzásos beváltás",
    "weboldal": "https://fluffyandme.hu"
+  },
+  {
+   "id": "petfamily",
+   "bolt": "Pet Family",
+   "kategoria": "Kutyás jutalomfalat és kiegészítő",
+   "demo": "petfamily",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "hello@petfamily.hu",
+   "telefon": "+36 70 616 4726",
+   "kapcsolat_minoseg": "Központi cím (hello@ / info@) és telefon; tulaj/cégnév nyilvánosan nem azonosítható – pótolandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Tulajdonos/döntéshozó nevét kideríteni (pl. Facebook-oldal), majd a levél kiküldése",
+   "megjegyzes": "Kis magyar kisállat-webáruház (ShopRenter), széles kutyás kínálat (Pet Expert, Trixie). Hírlevél + Facebook/Instagram (petfamily.hu). Ingyenes szállítás 24 999 Ft felett → a szállítási napok „értékhatár nélkül”. 24/24 termék rendelhető (lekérés 2026-10-30), a kódok javaslatok.",
+   "motivum": "fa alakú szimatjáték 24 csúszófedeles rekesszel, fedél félretolása (kutyaorr szimatol), csontkeksz-jel a fotón és csontkeksz-kupon",
+   "weboldal": "https://petfamily.hu"
   }
  ]
 }

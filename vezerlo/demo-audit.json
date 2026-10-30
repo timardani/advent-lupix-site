@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-10-30T18:31:08+01:00",
+  "generalva": "2026-10-30T19:14:19+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-10-27T22:43+01:00",
@@ -113,6 +113,11 @@
     },
     "napvirag": {
       "frissitve": "2026-10-30T10:58+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "petfamily": {
+      "frissitve": "2026-10-30T19:13+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
