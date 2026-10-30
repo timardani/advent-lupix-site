@@ -1105,7 +1105,7 @@
      "name": "3D Market",
      "url": "https://www.3dmarket.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
+     "status": "ellenőrizendő – HTTP 404 a gyökéroldalon 2026-10-30"
     },
     {
      "name": "Filament.hu",
@@ -1375,7 +1375,7 @@
      "name": "Modellvasút Centrum",
      "url": "https://www.modellvasut.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
+     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
     },
     {
      "name": "Modell & Hobby",
@@ -1393,7 +1393,7 @@
      "name": "Prohászka Éremkereskedés",
      "url": "https://prohaszka.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
+     "status": "parkoltnak tűnik – default.hu-ra irányít 2026-10-30"
     },
     {
      "name": "NumizMarket",
@@ -1483,7 +1483,7 @@
      "name": "RC Modell",
      "url": "https://www.rcmodell.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS kapcsolat hiba 2026-10-30"
+     "status": "ellenőrizendő – TLS-kapcsolat sikertelen, domain válaszol 2026-10-30"
     }
    ]
   },
@@ -1525,7 +1525,7 @@
      "name": "Okosotthon Bolt",
      "url": "https://okosotthonbolt.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
+     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
     },
     {
      "name": "Sonoff Magyarország",
@@ -1549,7 +1549,7 @@
      "name": "Futócipőbolt",
      "url": "https://www.futocipobolt.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS tanúsítványhiba 2026-10-30"
+     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
     }
    ]
   },
