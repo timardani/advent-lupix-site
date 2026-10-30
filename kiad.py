@@ -82,15 +82,21 @@ def rewrite(out: Path, slug: str):
     return n
 
 
-def publish():
+def publish(only_new=None):
     subprocess.run([sys.executable, ROOT / "scripts" / "vezerlo-sync.py"], check=True)
     subprocess.run([sys.executable, ROOT / "scripts" / "demo-audit.py"], check=True)
     conf = load()
-    keep = {"index.html", "robots.txt", "404.html"}
-    for p in SITE.iterdir():  # régi kiadások törlése a site/-ból (git-ben visszakereshető)
-        if p.name not in keep:
-            shutil.rmtree(p) if p.is_dir() else p.unlink()
-    for d in conf["demok"]:
+    if only_new:
+        entries = [d for d in conf["demok"] if d["demo"] == only_new]
+        if len(entries) != 1 or (SITE / entries[0]["slug"]).exists():
+            raise RuntimeError("Az új kiadás célmappája nem egyértelmű vagy már létezik")
+    else:
+        keep = {"index.html", "robots.txt", "404.html"}
+        for p in SITE.iterdir():  # régi kiadások törlése a site/-ból (git-ben visszakereshető)
+            if p.name not in keep:
+                shutil.rmtree(p) if p.is_dir() else p.unlink()
+        entries = conf["demok"]
+    for d in entries:
         demo = DEMOS / d["demo"]
         out = SITE / d["slug"]
         dist = ensure_build(demo)
@@ -106,7 +112,7 @@ def publish():
                     shutil.copy2(src, out / name)
         n = rewrite(out, d["slug"])
         print(f"  ✓ {d['demo']:<16} {DOMAIN}/{d['slug']}/?bemutato=1   ({n} hivatkozás átírva)")
-    print(f"Kész: {len(conf['demok'])} demó a site/ mappában.")
+    print(f"Kész: {len(entries)} demó kiadva; összesen {len(conf['demok'])} regisztrálva.")
 
 
 def main():
@@ -125,7 +131,7 @@ def main():
         save(conf)
     elif args:
         sys.exit(__doc__)
-    publish()
+    publish(only_new=name if args[:1] == ["--uj"] else None)
 
 
 if __name__ == "__main__":

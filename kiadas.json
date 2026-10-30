@@ -103,6 +103,10 @@
     {
       "demo": "heliad",
       "slug": "heliad-b0d045"
+    },
+    {
+      "demo": "biobubi",
+      "slug": "biobubi-99a993"
     }
   ]
 }
