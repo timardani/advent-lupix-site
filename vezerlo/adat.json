@@ -121,6 +121,10 @@
   {
    "nev": "Kutyás jutalomfalat és kiegészítő",
    "sor": "Pet Family → Falatka Webshop → Bestie.hu → Wiss-Pet"
+  },
+  {
+   "nev": "Jóga / pilates",
+   "sor": "Yoga Bazaar → Jógakellék"
   }
  ],
  "boltok": [
@@ -690,6 +694,24 @@
    "megjegyzes": "Kis magyar kisállat-webáruház (ShopRenter), széles kutyás kínálat (Pet Expert, Trixie). Hírlevél + Facebook/Instagram (petfamily.hu). Ingyenes szállítás 24 999 Ft felett → a szállítási napok „értékhatár nélkül”. 24/24 termék rendelhető (lekérés 2026-10-30), a kódok javaslatok.",
    "motivum": "fa alakú szimatjáték 24 csúszófedeles rekesszel, fedél félretolása (kutyaorr szimatol), csontkeksz-jel a fotón és csontkeksz-kupon",
    "weboldal": "https://petfamily.hu"
+  },
+  {
+   "id": "yogabazaar",
+   "bolt": "Yoga Bazaar",
+   "kategoria": "Jóga / pilates",
+   "demo": "yogabazaar",
+   "allapot": "kuldheto",
+   "kinek": "Ábrahám Kata (alapító, vezető)",
+   "email": "hello@yogabazaar.hu",
+   "telefon": "+36 30 472 0000",
+   "kapcsolat_minoseg": "Valószínű tulajdonosi csatorna (hello@); ügyfélszolgálat: ugyfelszolgalat@yogabazaar.hu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Manura.hu Kft., 2013 óta; jógaoktatók válogatása, 7500+ értékelés; Bodhi/Manduka/YogaDesignLab + doTERRA (a demóban nincs doTERRA)",
+   "motivum": "lótusz-mandala 24 feltekert szőnyegből + szőnyeg letekerése, szövött címke, szőnyegpánt-kupon",
+   "weboldal": "https://yogabazaar.hu"
   }
  ]
 }

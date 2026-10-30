@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-10-30T19:14:19+01:00",
+  "generalva": "2026-10-30T23:26:06+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-10-27T22:43+01:00",
@@ -40,7 +40,7 @@
       "hianyok": []
     },
     "fluffyandme": {
-      "frissitve": "2026-10-30T18:30+01:00",
+      "frissitve": "2026-10-30T20:47+01:00",
       "demo2_kesz": false,
       "hianyok": [
         "nem szerepel mind az 5 akciótípus"
@@ -177,6 +177,11 @@
     },
     "viaszkucko": {
       "frissitve": "2026-10-30T00:45+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "yogabazaar": {
+      "frissitve": "2026-10-30T23:25+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }
