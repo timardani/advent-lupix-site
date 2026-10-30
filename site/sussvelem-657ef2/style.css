@@ -83,7 +83,8 @@ dialog::backdrop{background:rgba(25,12,8,.72);backdrop-filter:blur(3px)}
 .cutter{cursor:grab;transition:transform .22s ease;z-index:2;filter:drop-shadow(0 10px 8px rgba(70,40,15,.4))}
 .cutter.move{transition:left .26s ease,top .26s ease,transform .22s}
 .cutter:active{cursor:grabbing}
-.cutter:focus-visible{outline:3px solid var(--gold);outline-offset:6px;border-radius:12px}
+.cutter{outline:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+@media (hover:hover) and (pointer:fine){.cutter:focus-visible{outline:3px solid var(--gold);outline-offset:6px;border-radius:12px}}
 .cutter svg{width:100%;height:100%;overflow:visible}
 .steel path{fill:rgba(255,255,255,.08);stroke:url(#g-steel);stroke-width:7;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .cutter:not(.press){animation:hover 1.8s ease-in-out infinite}
