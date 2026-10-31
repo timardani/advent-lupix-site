@@ -7,7 +7,7 @@ const { chromium } = require('playwright-core');
 const root = new URL('../', import.meta.url);
 const seedData = JSON.parse(readFileSync(new URL('vezerlo/adat.json', root), 'utf8'));
 let data = structuredClone(seedData);
-data.boltok.find(x => x.id === 'horgaszzona').hatarido = '2026-11-02';
+Object.assign(data.boltok.find(x => x.id === 'horgaszzona'), { kikuldve: '2026-10-29', hatarido: '2026-11-02' });
 const audit = readFileSync(new URL('vezerlo/demo-audit.json', root), 'utf8');
 const releases = readFileSync(new URL('kiadas.json', root), 'utf8');
 const html = readFileSync(new URL('vezerlo/index.html', root), 'utf8');
@@ -84,6 +84,14 @@ for (const bold of ['Röviden a lényeg:', 'Ár: 100 000 Ft az idei adventre, va
   if (!copied.html.includes(`<strong>${bold}</strong>`)) throw new Error(`a félkövér kiemelés hiányzik: ${bold}`);
 }
 if ((copied.html.match(/<li>/g) || []).length !== 5) throw new Error('a levél öt pontja nem került a formázott változatba');
+const reminderButton = horgaszCard.getByRole('button', { name: 'Emlékeztető másolása' });
+await reminderButton.click();
+await page.waitForFunction(() => document.querySelector('[data-copy-reminder="horgaszzona"]')?.textContent.includes('Kimásolva'));
+const reminder = await page.evaluate(() => window.__copiedEmail);
+if (!reminder?.plain.startsWith('Kedves Horgász-Zóna!\n\nMa estig még a Horgász-Zóna számára')) throw new Error('az emlékeztető eleje hibás');
+if (!reminder.plain.includes('http://vez.test/horgaszzona-8d4bdb/?bemutato=1')) throw new Error('a demólink nem került az emlékeztetőbe');
+if (!reminder.plain.endsWith('azt is megköszönöm, ha egy szóban jelzi.')) throw new Error('az emlékeztető vége hibás');
+await page.waitForFunction(() => document.querySelector('[data-copy-reminder="horgaszzona"]')?.textContent === 'Emlékeztető másolása', null, { timeout: 4000 });
 await page.locator('#kereses').fill('gyongyver.szekely@biokiskert.hu');
 if (await page.locator('.shop').count() !== 1 || !await page.locator('.shop', { hasText: 'BioKiskert' }).isVisible()) throw new Error('e-mail keresés hibás');
 await page.locator('#kereses').fill('');
