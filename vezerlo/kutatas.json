@@ -258,21 +258,21 @@
     },
     {
      "name": "CrackerJack",
-     "url": "https://crackerjack.hu/",
+     "url": "https://crackerjack.hu",
      "priority": "B",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "One Eleven",
-     "url": "https://oneeleven.hu/",
+     "url": "https://oneeleven.hu",
      "priority": "B",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Twenty Eight",
-     "url": "https://twentyeight.hu/",
+     "url": "https://twentyeight.hu",
      "priority": "C",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Kávékalmár",
@@ -282,15 +282,15 @@
     },
     {
      "name": "Cafe Frei",
-     "url": "https://www.cafefrei.hu/",
+     "url": "https://www.cafefrei.hu",
      "priority": "tartalék",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "link pótolva 2026-10-31 – országos lánc, valószínűleg túl nagy"
     },
     {
      "name": "Roastar Zrt.",
-     "url": "https://roastar.hu/",
+     "url": "https://roastar.hu",
      "priority": "tartalék",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "link pótolva 2026-10-31 – Zrt., méret ellenőrizendő"
     },
     {
      "name": "Kávélabor",
@@ -366,15 +366,15 @@
     },
     {
      "name": "Kertdiszkont",
-     "url": "https://www.kertdiszkont.hu/",
+     "url": "https://www.kertdiszkont.hu",
      "priority": "B",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Mikrozöldség",
-     "url": "https://mikrozoldseg.hu/",
+     "url": "https://mikrozoldseg.hu",
      "priority": "C",
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -444,27 +444,27 @@
     },
     {
      "name": "Szellemlovas",
-     "url": "https://www.szellemlovas.hu/",
+     "url": "https://www.szellemlovas.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Reflexshop",
-     "url": "https://reflexshop.hu/",
+     "url": "https://reflexshop.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Társasjátékdiszkont",
-     "url": "https://www.tarsasjatekdiszkont.hu/",
+     "url": "https://www.tarsasjatekdiszkont.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Compaya",
-     "url": "https://www.compaya.hu/",
+     "url": "https://www.compaya.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -522,9 +522,9 @@
     },
     {
      "name": "BudsCartel.com",
-     "url": "https://www.budscartel.com/",
+     "url": "https://www.budscartel.com",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Hill Vital",
@@ -590,7 +590,7 @@
      "name": "Beerfreak",
      "url": "https://beerfreak.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
     },
     {
      "name": "Beerselection",
@@ -602,7 +602,7 @@
      "name": "Sörspecialista",
      "url": "https://sorspecialista.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
     }
    ]
   },
@@ -618,21 +618,21 @@
     },
     {
      "name": "Chili Hungária Webshop",
-     "url": "https://www.chilihungaria.hu/",
+     "url": "https://www.chilihungaria.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "GaBko Chili",
-     "url": "https://gabkochili.hu/",
+     "url": "https://gabkochili.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "ChillER Manufaktúra",
-     "url": null,
+     "url": "https://chillermanufaktura.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Sárréti ChiliFarm",
@@ -642,9 +642,9 @@
     },
     {
      "name": "Kelchili",
-     "url": null,
+     "url": "https://kelchili.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Chilimánia",
@@ -662,19 +662,19 @@
      "name": "Chili Farm",
      "url": "https://chili-farm.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – chili-farm.hu nem létezik; valószínűleg = Sárréti ChiliFarm (chilifarm.hu) 2026-10-31"
     },
     {
      "name": "Chili Tábor",
      "url": "https://chilitabor.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
     },
     {
      "name": "Fenevad",
      "url": "https://fenevad.hu",
      "priority": null,
-     "status": null
+     "status": "megszűnt – „coming soon” parkoló oldal 2026-10-31"
     }
    ]
   },
@@ -696,21 +696,21 @@
     },
     {
      "name": "Fonal Paradicsom",
-     "url": "https://www.fonalparadicsom.hu/",
+     "url": "https://www.fonalparadicsom.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Fonalkunyhó",
-     "url": "https://www.fonalkunyho.hu/",
+     "url": "https://www.fonalkunyho.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Muci Fonal",
-     "url": null,
+     "url": "https://mucifonal.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -732,33 +732,33 @@
    "jeloltek": [
     {
      "name": "BioBubi",
-     "url": null,
+     "url": "https://www.biobubi.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "BajaBee",
-     "url": null,
+     "url": "https://bajabee.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Ökotár",
-     "url": null,
+     "url": "https://okotar.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Lady Clean",
-     "url": null,
+     "url": "https://ladyclean.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Orgalco",
-     "url": null,
+     "url": "https://orgalco.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Zöldbolt",
@@ -804,15 +804,15 @@
     },
     {
      "name": "Bestie.hu",
-     "url": "https://www.bestie.hu/",
+     "url": "https://www.bestie.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Petfamily.hu",
-     "url": null,
+     "url": "https://petfamily.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -830,13 +830,13 @@
      "name": "Bestie.hu",
      "url": "https://bestie.hu/",
      "priority": null,
-     "status": null
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Luna Pet Shop Debrecen",
-     "url": "https://lunapetshop.hu/",
+     "url": "https://lunapetshop.hu",
      "priority": null,
-     "status": "ellenőrizve – HTTP 200, hivatalos oldal elérhető 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Wiss-Pet",
@@ -890,7 +890,7 @@
      "name": "TT Candle",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -906,9 +906,9 @@
     },
     {
      "name": "Highland Soap Hungary",
-     "url": null,
+     "url": "https://highlandsoap.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Highland Soap",
@@ -930,33 +930,33 @@
     },
     {
      "name": "Apacuka Ceramics",
-     "url": null,
+     "url": "https://apacukaceramics.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Bokréta Kerámia",
-     "url": null,
+     "url": "https://bokretakeramia.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Katica Kerámia",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Nünü Kerámia",
-     "url": null,
+     "url": "https://nunukeramia.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Manka Ceramics",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -974,19 +974,19 @@
      "name": "Kutyori Konyha",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Diófaktúra",
-     "url": null,
+     "url": "https://www.diofaktura.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Hajdúság Éléskamrája",
-     "url": null,
+     "url": "https://hajdusageleskamraja.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -996,9 +996,9 @@
    "jeloltek": [
     {
      "name": "Rajzshop.hu",
-     "url": null,
+     "url": "https://rajzshop.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -1020,21 +1020,21 @@
    "jeloltek": [
     {
      "name": "Cleo Collection",
-     "url": null,
+     "url": "https://cleocollection.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "ZenAura",
-     "url": null,
+     "url": "https://zenaura.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Ásványbolt",
-     "url": null,
+     "url": "https://www.asvanybolt.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200 (Ametiszt Ásványbolt), link pótolva 2026-10-31"
     }
    ]
   },
@@ -1046,13 +1046,13 @@
      "name": "G.O.D.",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Blade",
-     "url": null,
+     "url": "https://www.blade.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     }
    ]
   },
@@ -1067,15 +1067,15 @@
    "jeloltek": [
     {
      "name": "Akváriumom",
-     "url": null,
+     "url": "https://akvariumom.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link pótolva 2026-10-31 – főleg tartalomoldal, webshop ellenőrizendő"
     },
     {
      "name": "AquaDepo",
-     "url": null,
+     "url": "http://www.aquadepo.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizendő – HTTP 503 2026-10-31"
     }
    ]
   },
@@ -1093,7 +1093,7 @@
      "name": "Gitárshop",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1105,13 +1105,13 @@
      "name": "3D Market",
      "url": "https://www.3dmarket.hu",
      "priority": null,
-     "status": "ellenőrizendő – HTTP 404 a gyökéroldalon 2026-10-30"
+     "status": "ellenőrizendő – nem válaszol (időtúllépés) 2026-10-31"
     },
     {
      "name": "Filament.hu",
      "url": "https://filament.hu",
      "priority": null,
-     "status": null
+     "status": "megszűnt – a domain eladó 2026-10-31"
     }
    ]
   },
@@ -1207,13 +1207,13 @@
      "name": "IN2 Detailing",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Autómosó Webshop",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1225,19 +1225,19 @@
      "name": "Lemezbarlang",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Lemezkuckó",
-     "url": null,
+     "url": "https://lemezkucko.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Deep Record Store",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1247,21 +1247,21 @@
    "jeloltek": [
     {
      "name": "Tengerszem",
-     "url": null,
+     "url": "https://www.tengerszem.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Nomád Sport",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Mountex",
-     "url": null,
+     "url": "https://mountex.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link pótolva 2026-10-31 – több üzletes lánc, méret ellenőrizendő"
     }
    ]
   },
@@ -1271,21 +1271,21 @@
    "jeloltek": [
     {
      "name": "BikePro",
-     "url": null,
+     "url": "https://bikepro.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Bringa.hu",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "Bringaland",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1297,13 +1297,13 @@
      "name": "Soós Fotó",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     },
     {
      "name": "F8 Camera",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1313,15 +1313,15 @@
    "jeloltek": [
     {
      "name": "Késvilág",
-     "url": null,
+     "url": "https://www.kesvilag.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Késshop",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1333,7 +1333,7 @@
      "name": "Sajtmester",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1343,15 +1343,15 @@
    "jeloltek": [
     {
      "name": "Fumax",
-     "url": null,
+     "url": "https://fumax.hu",
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
     },
     {
      "name": "Kingpin",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
     }
    ]
   },
@@ -1363,7 +1363,7 @@
      "name": "Tóth Borbála Kékfestő",
      "url": null,
      "priority": null,
-     "status": "link hiányzik – felkutatandó 2026-10-30"
+     "status": "link hiányzik – kekfesto.hu a Bácsalmási Kékfestőé, nem ez 2026-10-31"
     }
    ]
   },
@@ -1375,7 +1375,7 @@
      "name": "Modellvasút Centrum",
      "url": "https://www.modellvasut.hu",
      "priority": null,
-     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
+     "status": "ellenőrizendő – nem válaszol (időtúllépés) 2026-10-31"
     },
     {
      "name": "Modell & Hobby",
@@ -1393,7 +1393,7 @@
      "name": "Prohászka Éremkereskedés",
      "url": "https://prohaszka.hu",
      "priority": null,
-     "status": "parkoltnak tűnik – default.hu-ra irányít 2026-10-30"
+     "status": "megszűnt – parkolt/nem válaszol (default.hu, időtúllépés) 2026-10-31"
     },
     {
      "name": "NumizMarket",
@@ -1427,9 +1427,9 @@
    "jeloltek": [
     {
      "name": "Pölöskei Szörp",
-     "url": "https://poleskeiszorp.hu",
+     "url": "https://poloskeiszorp.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "ellenőrizve – HTTP 200, elírt domain javítva 2026-10-31"
     },
     {
      "name": "Virágoskút Biogazdaság",
@@ -1447,7 +1447,7 @@
      "name": "PuzzleGuru",
      "url": "https://www.puzzleguru.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
     },
     {
      "name": "Puzzle.hu",
@@ -1465,7 +1465,7 @@
      "name": "SzerszámKell",
      "url": "https://www.szerszamkell.hu",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – karbantartás alatt 2026-10-31"
     }
    ]
   },
@@ -1483,7 +1483,7 @@
      "name": "RC Modell",
      "url": "https://www.rcmodell.hu",
      "priority": null,
-     "status": "ellenőrizendő – TLS-kapcsolat sikertelen, domain válaszol 2026-10-30"
+     "status": "ellenőrizendő – TLS-hiba, nem tölt be 2026-10-31"
     }
    ]
   },
@@ -1525,13 +1525,13 @@
      "name": "Okosotthon Bolt",
      "url": "https://okosotthonbolt.hu",
      "priority": null,
-     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
+     "status": "ellenőrizendő – nem válaszol (időtúllépés) 2026-10-31"
     },
     {
      "name": "Sonoff Magyarország",
      "url": "https://sonoff.hu",
      "priority": null,
-     "status": null
+     "status": "megszűnt – üres szerver (Index of /) 2026-10-31"
     }
    ]
   },
@@ -1549,7 +1549,7 @@
      "name": "Futócipőbolt",
      "url": "https://www.futocipobolt.hu",
      "priority": null,
-     "status": "elérhető – HTTP 200, de hibás TLS-tanúsítvány 2026-10-30"
+     "status": "ellenőrizendő – nem válaszol (időtúllépés) 2026-10-31"
     }
    ]
   },
@@ -1561,7 +1561,7 @@
      "name": "Jógakellék",
      "url": "https://jogakellek.hu",
      "priority": null,
-     "status": "ellenőrizendő – DNS-feloldás sikertelen 2026-10-30"
+     "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
     },
     {
      "name": "YogaBazaar",
@@ -1597,7 +1597,7 @@
      "name": "Vanda Jewelry",
      "url": "https://vandajewelry.com",
      "priority": null,
-     "status": null
+     "status": "ellenőrizendő – üres oldal 2026-10-31"
     }
    ]
   },

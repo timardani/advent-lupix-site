@@ -62,14 +62,15 @@ function build(){const used=new Set(),out=[];
   const seen=new Set(),jeloltek=jel.filter(j=>{const key=norm(j.name);if(seen.has(key))return false;seen.add(key);return true});
   const tipus=shops.some(b=>NYITOTT.has(b.allapot))?'var':'szabad';out.push({nev:k.nev,sor:k.sor,shops,jeloltek,tipus})}
  kut.forEach((k,i)=>{if(!used.has(i))out.push({nev:k.nev,sor:k.megj,shops:[],jeloltek:k.jeloltek,tipus:'otlet'})});return out}
-function kovetkezo(c){return c.jeloltek.find(j=>!['elutasította','kizárt'].includes(j.status||''))}
+function lezart(s){s=s||'';return ['elutasította','kizárt'].includes(s)||s.startsWith('kizárt')||s.startsWith('megszűnt')}
+function kovetkezo(c){return c.jeloltek.find(j=>!lezart(j.status))}
 function ask(c){const j=kovetkezo(c);const elo=c.shops.find(b=>!LEZART.has(b.allapot)&&b.demo);
  if(c.tipus==='otlet'||!elo)return `Szia, készítsd el a(z) „${c.nev}” kategória adventi kalendáriumát${j?` – első jelölt: ${j.name}${j.url?` (${j.url})`:''}`:''}.`;
  return `Szia, a(z) „${c.nev}” kategóriában ${elo.bolt} után a következő bolt jöhet${j?`: ${j.name}${j.url?` (${j.url})`:''}`:''} – alakítsd át rá a kalendáriumot.`}
 function card(c){const tag={szabad:['Szabad','#166534'],var:['Válaszra várunk','#6b46c1'],otlet:['Csak ötlet','#94a3b8']}[c.tipus];
  return `<section class="cat ${c.tipus}"><div class="head"><h3>${esc(c.nev)}</h3><span class="tag" style="background:${tag[1]}">${tag[0]}</span></div>${c.sor?`<div class="sor">${esc(c.sor)}</div>`:''}
  ${c.shops.length?`<div class="lbl">Kalendáriumok / boltok</div><ul>${c.shops.map(b=>{const slug=linkek[b.demo];return `<li class="${LEZART.has(b.allapot)?'done':''}"><span class="n">${esc(b.bolt)}</span>${badge(b.allapot)}${slug?`<a href="/${esc(slug)}/?bemutato=1" target="_blank" rel="noopener">megnyitás</a>`:b.demo?'<span class="prio">helyi</span>':''}</li>`}).join('')}</ul>`:''}
- ${c.jeloltek.length?`<div class="lbl">Jelöltek a kutatásból (${c.jeloltek.length})</div><ul>${c.jeloltek.slice(0,8).map(j=>`<li class="${['elutasította','kizárt'].includes(j.status||'')?'done':''}"><span class="n">${esc(j.name)}</span>${j.priority?`<span class="prio">${esc(j.priority)}</span>`:''}${j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(dom(j.url))}</a>`:''}${j.status?`<span class="prio">${esc(j.status)}</span>`:''}</li>`).join('')}${c.jeloltek.length>8?`<li>… még ${c.jeloltek.length-8}</li>`:''}</ul>`:''}
+ ${c.jeloltek.length?`<div class="lbl">Jelöltek a kutatásból (${c.jeloltek.length})</div><ul>${c.jeloltek.slice(0,8).map(j=>`<li class="${lezart(j.status)?'done':''}"><span class="n">${esc(j.name)}</span>${j.priority?`<span class="prio">${esc(j.priority)}</span>`:''}${j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(dom(j.url))}</a>`:''}${j.status?`<span class="prio">${esc(j.status)}</span>`:''}</li>`).join('')}${c.jeloltek.length>8?`<li>… még ${c.jeloltek.length-8}</li>`:''}</ul>`:''}
  <button class="plain-button ask" data-ask="${esc(ask(c))}">Kérés másolása a chatbe</button></section>`}
 function render(){const q=norm(document.getElementById('q').value),f=document.getElementById('f').value;
  const all=build().filter(c=>(!f||c.tipus===f)&&(!q||norm([c.nev,c.sor,...c.shops.map(b=>b.bolt),...c.jeloltek.map(j=>j.name)].join(' ')).includes(q)));
