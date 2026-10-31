@@ -131,6 +131,10 @@
    "sor": "Spuri Futóbolt"
   },
   {
+   "nev": "Gumivitamin / gyümölcszselé (étrend-kiegészítő)",
+   "sor": "Természetes gumicukor (Obstermann's) – Dani kérése"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -760,6 +764,24 @@
    "megjegyzes": "SPURI FUTÓBOLT Kft., 2000 óta, szaküzlethálózat Budapesten és vidéken (Győr, Székesfehérvár, Miskolc, Debrecen) + futobolt.hu (UNAS). Tulajdonos vezette, de közepes méret – Dani kérésére készült. Saját hűségprogram (akár 12%), ajándékkártya, ingyenes szállítás 25 000 Ft felett, tesztnapok, lábvizsgálat. Demó: 24 termék (cipő, téli ruha, kesztyű, fejlámpa, gél, Polar, Garmin Venu 3S a 24. napon), árak 2026-10-31.",
    "motivum": "téli futóútvonal-térkép 24 kilométertáblával + cipő felhúzása a célszalagig (a szalag megfeszül és elszakad), befutóérem a fotón, rajtszám-kupon biztosítótűkkel",
    "weboldal": "https://www.spurifutobolt.hu/"
+  },
+  {
+   "id": "termeszetesgumicukor",
+   "bolt": "Természetes gumicukor (Obstermann's)",
+   "kategoria": "Gumivitamin / gyümölcszselé (étrend-kiegészítő)",
+   "demo": "termeszetesgumicukor",
+   "allapot": "kuldheto",
+   "kinek": "Obstermann család (Obstermann's Édesipari Kft., Csenger) – a tulajdonos neve nem ismert",
+   "email": "info@termeszetesgumicukor.hu",
+   "telefon": "+36 30 884 5656",
+   "kapcsolat_minoseg": "Központi cím (info@) és mobilszám (munkanapokon 8–15); családi kisüzem, a levél valószínűleg a tulajdonoshoz jut",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél (info@); érdemes kiemelni, hogy a meglévő kuponjaik (1000 Ft első rendelésre, Black Friday) mellé decemberben napi 24 kuponos akciót ad",
+   "megjegyzes": "Obstermann's Édesipari Kft., szatmári családi vállalkozás (Csenger), saját kisüzemi gyártás: NANI almaecetes gyümölcszselé + gumivitamin-család (SPA, PORC, D3K2, KIDS…). WooCommerce, ~15 termékcsalád, sok csomagajánlat, ingyenes szállítást hirdet. Aktív kuponkultúra (1000 Ft első rendelés, Black Friday −54%), Facebook: termeszetesgumicukor. Étrend-kiegészítő: a demóban nincs egészségállítás, lábléc-figyelmeztetés van. 5. akciótípus a szállítás helyett „2. doboz féláron”. Demó: 24 termék (17 egyedi + 7 csomag), árak 2026-10-31.",
+   "motivum": "piros szilikon gumicukor-öntőforma 24 szív alakú mélyedéssel + nyomva tartással kinyomás (a szív kiugrik, megremeg), zöld gyümölcsmatrica a fotón, kraft ládacímke-kupon",
+   "weboldal": "https://termeszetesgumicukor.hu/"
   }
  ]
 }

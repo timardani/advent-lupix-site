@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-10-31T10:22:45+01:00",
+  "generalva": "2026-10-31T22:42:32+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-10-27T22:43+01:00",
@@ -163,6 +163,13 @@
       "frissitve": "2026-10-29T14:53+01:00",
       "demo2_kesz": true,
       "hianyok": []
+    },
+    "termeszetesgumicukor": {
+      "frissitve": "2026-10-31T22:42+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nem szerepel mind az 5 akciótípus"
+      ]
     },
     "tiszafonal": {
       "frissitve": "2026-10-23T23:08+02:00",
