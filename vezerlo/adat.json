@@ -127,6 +127,10 @@
    "sor": "Yoga Bazaar → Jógakellék"
   },
   {
+   "nev": "Futás / futófelszerelés",
+   "sor": "Spuri Futóbolt"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -738,6 +742,24 @@
    "megjegyzes": "Cseh családi vállalkozás (1996, Voves család), saját Next.js-webshop, HU/CZ/SK piac, „Magyarország legnagyobb dió- és aszaltgyümölcs-választéka”. Saját kuponkultúra (DIOK20 −20%), hűségprogram, „Kóstold meg a karácsonyt” karácsonyi sor + Jézuska-mix. Ingyenes szállítás 24 990 Ft felett. Közepes méret: nem multi, de nem is egyszemélyes – Dani kérésére készült.",
    "motivum": "vágódeszka 24 dióval + emelőkaros diótörő (kar lehúzása, a héj kettéválik, kigördül a cetli), aranydió-medál a fotón, papírcetli-kupon",
    "weboldal": "https://www.balabons.hu/"
+  },
+  {
+   "id": "spuri",
+   "bolt": "Spuri Futóbolt",
+   "kategoria": "Futás / futófelszerelés",
+   "demo": "spuri",
+   "allapot": "kuldheto",
+   "kinek": "Szűcs Csaba (tulajdonos, vezető tanácsadó; egykori maratoni csúcstartó)",
+   "email": "webshop@spurifutobolt.hu",
+   "telefon": "+36 70 883 6222",
+   "kapcsolat_minoseg": "Webshopos központi cím és telefon (ÁSZF); a tulajdonos név szerint ismert (Váci úti üzlet vezetője), közvetlen e-mail nincs",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél (webshop@, Szűcs Csaba nevére); érdemes kiemelni, hogy a 9 szaküzlet vásárlóinak is továbbítható",
+   "megjegyzes": "SPURI FUTÓBOLT Kft., 2000 óta, szaküzlethálózat Budapesten és vidéken (Győr, Székesfehérvár, Miskolc, Debrecen) + futobolt.hu (UNAS). Tulajdonos vezette, de közepes méret – Dani kérésére készült. Saját hűségprogram (akár 12%), ajándékkártya, ingyenes szállítás 25 000 Ft felett, tesztnapok, lábvizsgálat. Demó: 24 termék (cipő, téli ruha, kesztyű, fejlámpa, gél, Polar, Garmin Venu 3S a 24. napon), árak 2026-10-31.",
+   "motivum": "téli futóútvonal-térkép 24 kilométertáblával + cipő felhúzása a célszalagig (a szalag megfeszül és elszakad), befutóérem a fotón, rajtszám-kupon biztosítótűkkel",
+   "weboldal": "https://www.spurifutobolt.hu/"
   }
  ]
 }
