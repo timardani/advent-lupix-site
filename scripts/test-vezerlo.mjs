@@ -53,6 +53,7 @@ await page.route('http://vez.test/**', async route => {
       if (changes.kikuldve && ['elokeszites','review','kuldheto','tartalek','keszul'].includes(shop.allapot)) shop.allapot = 'kikuldve';
       delete changes.kikuldve;
     }
+    if (changes.allapot === 'idot_kert' && !('hatarido' in changes)) { const d = new Date(); d.setDate(d.getDate() + 7); shop.hatarido = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Budapest' }).format(d); }
     Object.assign(shop, changes);
     data.frissitve = '2026-10-29';
     return route.fulfill({ contentType: 'application/json', body: JSON.stringify(data) });
@@ -129,8 +130,9 @@ if (!await page.locator('#drawer[open] .shop', { hasText: 'Fonalam.hu' }).isVisi
 await page.keyboard.press('Escape');
 if (await page.locator('#drawer[open]').count()) throw new Error('Esc nem zárja az oldalpanelt');
 await page.getByRole('button', { name: 'Teendő tábla' }).click();
-if (await page.locator('.kanban-col').count() !== 6) throw new Error('nem hat oszlop jelent meg');
-for (const name of ['Most kell lépni','Mehet a levél','Válaszra vár','Készül / tartalék','Nyert','Lezárt']) if (!await page.locator('.kanban-head', { hasText: name }).isVisible()) throw new Error(`oszlop hiányzik: ${name}`);
+const heads = (await page.locator('.kanban-head > span:first-child').allTextContents()).map(x => x.replace(/^\S+\s(\d\.\s)?/, ''));
+const order = ['Készül / tartalék','Mehet a levél','Válaszra vár','Időt kért','Most kell lépni','Nyert','Lezárt'];
+if (JSON.stringify(heads) !== JSON.stringify(order)) throw new Error('az oszlopok nem a folyamat sorrendjében vannak: ' + heads.join(' | '));
 if (await page.locator('.kanban-card [data-field]').count()) throw new Error('a táblán szerkeszthető mező maradt');
 if (await page.locator('.kanban-card[draggable="true"]').count()) throw new Error('a tábla húzható');
 if (!await page.locator('.col-most .kanban-card', { hasText: 'Fonalam.hu' }).isVisible()) throw new Error('a ma lejáró bolt nem a „Most kell lépni” oszlopban van');
@@ -145,6 +147,12 @@ await page.locator('#drawer [data-field="kinek"]').fill('Panel Pál');
 await page.locator('#drawer [data-field="kinek"]').press('Tab');
 await response;
 if (!await page.locator('#drawer[open] [data-field="kinek"]').isVisible() || await page.locator('#drawer [data-field="kinek"]').inputValue() !== 'Panel Pál') throw new Error('mentés után a panel nem maradt nyitva frissítve');
+response = page.waitForResponse(r => r.request().method() === 'PATCH' && r.request().postData()?.includes('idot_kert'));
+await page.locator('#drawer [data-field="allapot"]').selectOption('idot_kert');
+await response;
+if (!await page.locator('.col-ido .kanban-card', { hasText: 'Makettshop' }).isVisible()) throw new Error('az időt kérő bolt nem az „Időt kért” oszlopban van');
+if (!await page.locator('.col-ido .kanban-card', { hasText: 'Makettshop' }).getByText('Rákérdezés').isVisible()) throw new Error('a rákérdezés dátuma nem látszik');
+if (!await page.locator('#drawer .control', { hasText: 'Rákérdezés napja' }).isVisible()) throw new Error('a panelen nincs „Rákérdezés napja” mező');
 await page.locator('#drawer-close').click();
 await page.locator('#ugras').fill('fonal');
 await page.locator('#ugras').press('Enter');
@@ -182,4 +190,4 @@ if (await page.evaluate(() => document.documentElement.dataset.theme) !== 'light
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 console.log('✓ éjszakai mód: kapcsoló, megmaradás, visszaváltás');
 await browser.close();
-console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil, automatikus teendő tábla, oldalpanel és gyorskereső rendben (${patches.length} mentés)`);
+console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil, automatikus teendő tábla folyamatsorrendben, „Időt kért” oszlop, oldalpanel és gyorskereső rendben (${patches.length} mentés)`);

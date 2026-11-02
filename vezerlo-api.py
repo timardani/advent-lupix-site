@@ -19,9 +19,11 @@ ALLAPOTOK = {
     "foglalt", "nyert", "nem", "nem_reagal", "lejart", "kizart",
     # 2026-10-30: egyszerűsített 5 státusz (a régiek visszafelé kompatibilisek)
     "keszul", "lezart",
+    # 2026-11-02: a bolt időt kért; a határidő = rákérdezés napja
+    "idot_kert",
 }
 ELOTTE = {"elokeszites", "review", "kuldheto", "tartalek", "keszul"}
-VALASZ_ALLAPOTOK = {"valaszolt", "foglalt", "nyert", "nem"}
+VALASZ_ALLAPOTOK = {"valaszolt", "foglalt", "nyert", "nem", "idot_kert"}
 DINAMIKUS_BOLT_MEZOK = {
     "allapot", "kikuldve", "hatarido", "valasz_datum", "teendo",
     "allapot_datum", "elozmenyek",
@@ -146,6 +148,9 @@ class Handler(BaseHTTPRequestHandler):
                     bolt["kikuldve"] = today.isoformat()
                 if status == "kikuldve" and not bolt.get("hatarido"):
                     bolt["hatarido"] = default_deadline(today)
+                if status == "idot_kert" and "hatarido" not in payload and (not bolt.get("hatarido") or bolt["hatarido"] <= today.isoformat()):
+                    # Alapból egy hét múlva kérdezünk rá; a vezérlőben átírható.
+                    bolt["hatarido"] = (today + timedelta(days=7)).isoformat()
                 if status in VALASZ_ALLAPOTOK and not bolt.get("valasz_datum"):
                     bolt["valasz_datum"] = today.isoformat()
 
