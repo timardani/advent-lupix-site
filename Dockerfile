@@ -4,6 +4,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY vezerlo-auth.sh /docker-entrypoint.d/40-vezerlo-auth.sh
 COPY start.sh /app/start.sh
 COPY vezerlo-api.py /app/vezerlo-api.py
+COPY kalendar-api.py /app/kalendar-api.py
+COPY kalendar-seed/ /app-seed/kalendar/
 COPY vezerlo/adat.json /app-seed/adat.json
 RUN chmod +x /docker-entrypoint.d/40-vezerlo-auth.sh /app/start.sh
 COPY site/ /usr/share/nginx/html/

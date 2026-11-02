@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="kal-api" content="/api/kal/demeter-1e4e59">
+<meta name="kal-bolt" content="Demeter Chocolate">
+<meta name="kal-ev" content="2026">
+<title>Adventi naptár – háttérrendszer</title>
+<link rel="icon" href="../favicon.svg">
+<link rel="stylesheet" href="hatter.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b id="bolt">Demeter Chocolate</b><span>Adventi naptár · háttérrendszer</span></div>
+  <nav class="tabs" role="tablist">
+    <a href="#napok" role="tab" id="tab-napok">Napi tartalom</a>
+    <a href="#statisztika" role="tab" id="tab-statisztika">Statisztika</a>
+  </nav>
+  <a class="open-cal" href="../?bemutato=1" target="_blank" rel="noopener">Naptár megnyitása ↗</a>
+</header>
+
+<main>
+  <section id="napok" class="view" hidden>
+    <div class="intro">
+      <h1>Napi tartalom</h1>
+      <p>Kattints egy napra a termék, a kép, az akció és a kuponkód módosításához. Mentés után a naptárban azonnal látszik.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="statisztika" class="view" hidden>
+    <div class="intro">
+      <h1>Statisztika</h1>
+      <p>Napi összesített számok: hányan jöttek, hányszor nyitották ki az aznapi ablakot, hányszor másolták a kódot, és hányszor kattintottak át a webshopba.</p>
+    </div>
+    <div id="stat"></div>
+  </section>
+</main>
+
+<dialog id="editor" aria-labelledby="ed-title">
+  <form id="ed-form" method="dialog" novalidate></form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="hatter.js"></script>
+</body>
+</html>

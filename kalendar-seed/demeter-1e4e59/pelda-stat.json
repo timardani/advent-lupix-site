@@ -1,0 +1,150 @@
+{
+ "latogatas": {
+  "2026-12-01": 177,
+  "2026-12-02": 178,
+  "2026-12-03": 213,
+  "2026-12-04": 218,
+  "2026-12-05": 280,
+  "2026-12-06": 290,
+  "2026-12-07": 222,
+  "2026-12-08": 231,
+  "2026-12-09": 270,
+  "2026-12-10": 251,
+  "2026-12-11": 269,
+  "2026-12-12": 345,
+  "2026-12-13": 328,
+  "2026-12-14": 291,
+  "2026-12-15": 306,
+  "2026-12-16": 318,
+  "2026-12-17": 333,
+  "2026-12-18": 325,
+  "2026-12-19": 392,
+  "2026-12-20": 439,
+  "2026-12-21": 347,
+  "2026-12-22": 387,
+  "2026-12-23": 395,
+  "2026-12-24": 292
+ },
+ "napok": {
+  "1": {
+   "ablak": 139,
+   "masolas": 64,
+   "atkattintas": 39
+  },
+  "2": {
+   "ablak": 137,
+   "masolas": 66,
+   "atkattintas": 48
+  },
+  "3": {
+   "ablak": 171,
+   "masolas": 58,
+   "atkattintas": 50
+  },
+  "4": {
+   "ablak": 164,
+   "masolas": 64,
+   "atkattintas": 59
+  },
+  "5": {
+   "ablak": 229,
+   "masolas": 78,
+   "atkattintas": 77
+  },
+  "6": {
+   "ablak": 221,
+   "masolas": 102,
+   "atkattintas": 68
+  },
+  "7": {
+   "ablak": 179,
+   "masolas": 61,
+   "atkattintas": 56
+  },
+  "8": {
+   "ablak": 180,
+   "masolas": 70,
+   "atkattintas": 50
+  },
+  "9": {
+   "ablak": 220,
+   "masolas": 65,
+   "atkattintas": 72
+  },
+  "10": {
+   "ablak": 182,
+   "masolas": 91,
+   "atkattintas": 58
+  },
+  "11": {
+   "ablak": 212,
+   "masolas": 104,
+   "atkattintas": 69
+  },
+  "12": {
+   "ablak": 279,
+   "masolas": 119,
+   "atkattintas": 76
+  },
+  "13": {
+   "ablak": 266,
+   "masolas": 118,
+   "atkattintas": 97
+  },
+  "14": {
+   "ablak": 220,
+   "masolas": 76,
+   "atkattintas": 70
+  },
+  "15": {
+   "ablak": 224,
+   "masolas": 78,
+   "atkattintas": 71
+  },
+  "16": {
+   "ablak": 231,
+   "masolas": 118,
+   "atkattintas": 73
+  },
+  "17": {
+   "ablak": 260,
+   "masolas": 131,
+   "atkattintas": 85
+  },
+  "18": {
+   "ablak": 234,
+   "masolas": 90,
+   "atkattintas": 70
+  },
+  "19": {
+   "ablak": 297,
+   "masolas": 102,
+   "atkattintas": 84
+  },
+  "20": {
+   "ablak": 338,
+   "masolas": 121,
+   "atkattintas": 99
+  },
+  "21": {
+   "ablak": 254,
+   "masolas": 128,
+   "atkattintas": 89
+  },
+  "22": {
+   "ablak": 283,
+   "masolas": 137,
+   "atkattintas": 84
+  },
+  "23": {
+   "ablak": 322,
+   "masolas": 115,
+   "atkattintas": 103
+  },
+  "24": {
+   "ablak": 214,
+   "masolas": 92,
+   "atkattintas": 58
+  }
+ }
+}
