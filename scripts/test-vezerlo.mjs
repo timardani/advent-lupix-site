@@ -1,4 +1,4 @@
-// Vezérlő-regresszió: teljes adatlista, kompakt mobilnézet, dátumszerkesztés és csak olvasható Kanban.
+// Vezérlő-regresszió: automatikus teendő tábla (alapnézet), kattintható kártya → oldalpanel, gyorskereső, lista, dátumszerkesztés.
 import { createRequire } from 'node:module';
 import { readFileSync } from 'node:fs';
 const require = createRequire(new URL('../../webshop-kalendarium-demok/fonalam/package.json', import.meta.url));
@@ -63,6 +63,8 @@ await page.route('http://vez.test/**', async route => {
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 await page.goto('http://vez.test/vezerlo/', { waitUntil: 'networkidle' });
+if (!await page.locator('.kanban-col').first().isVisible()) throw new Error('nem a teendő tábla az alapnézet');
+await page.getByRole('button', { name: 'Lista', exact: true }).click();
 if (!await page.getByText(`${seedData.kategoriak.length} kategória`).isVisible()) throw new Error('kategóriaszám hiányzik');
 if (!await page.getByText(`${seedData.boltok.length} ügyfél/jelölt`).isVisible()) throw new Error('ügyfélszám hiányzik');
 if (await page.locator('.cat').count() !== seedData.kategoriak.length) throw new Error('nem látszik minden kategória');
@@ -119,15 +121,39 @@ if (overflow) throw new Error('mobilos vízszintes túlcsordulás');
 await page.screenshot({ path: new URL('../screenshots/vezerlo-mobile.png', import.meta.url).pathname, fullPage: true });
 
 await page.setViewportSize({ width: 1440, height: 900 });
-await page.getByRole('button', { name: 'Kanban' }).click();
-if (await page.locator('.kanban-col').count() !== 5) throw new Error('nem öt Kanban-oszlop jelent meg');
-for (const name of ['Készül','Küldhető','Kiküldve','Nyert','Lezárt']) if (!await page.locator('.kanban-head', { hasText: name }).isVisible()) throw new Error(`Kanban-oszlop hiányzik: ${name}`);
-if (await page.locator('.kanban-card [data-field]').count()) throw new Error('a Kanbanban szerkeszthető mező maradt');
-if (await page.locator('.kanban-card[draggable="true"]').count()) throw new Error('a Kanban továbbra is húzható');
-const kanbanTexts = await page.locator('.kanban-card').allTextContents();
-if (kanbanTexts.some(x => x.includes('Határidő') || x.includes('Teendő') || x.includes('demó'))) throw new Error('a Kanban-kártyán a néven kívül más adat látszik');
+// Mai teendők: csoportosított, kattintható chipek → oldalpanel
+const todoChips = page.locator('.todo .chip');
+if (!await todoChips.count()) throw new Error('a mai teendők chipjei hiányoznak');
+await page.locator('.todo .chip', { hasText: 'Fonalam.hu' }).click();
+if (!await page.locator('#drawer[open] .shop', { hasText: 'Fonalam.hu' }).isVisible()) throw new Error('teendő-chip nem nyitja meg a boltot');
+await page.keyboard.press('Escape');
+if (await page.locator('#drawer[open]').count()) throw new Error('Esc nem zárja az oldalpanelt');
+await page.getByRole('button', { name: 'Teendő tábla' }).click();
+if (await page.locator('.kanban-col').count() !== 6) throw new Error('nem hat oszlop jelent meg');
+for (const name of ['Most kell lépni','Mehet a levél','Válaszra vár','Készül / tartalék','Nyert','Lezárt']) if (!await page.locator('.kanban-head', { hasText: name }).isVisible()) throw new Error(`oszlop hiányzik: ${name}`);
+if (await page.locator('.kanban-card [data-field]').count()) throw new Error('a táblán szerkeszthető mező maradt');
+if (await page.locator('.kanban-card[draggable="true"]').count()) throw new Error('a tábla húzható');
+if (!await page.locator('.col-most .kanban-card', { hasText: 'Fonalam.hu' }).isVisible()) throw new Error('a ma lejáró bolt nem a „Most kell lépni” oszlopban van');
+if (!await page.locator('.col-lezart .kanban-card', { hasText: 'Chilimánia' }).isVisible()) throw new Error('az elutasított bolt nem a Lezárt oszlopban van');
+const cardCount = await page.locator('.kanban-card').count();
+if (cardCount !== data.boltok.length) throw new Error(`a táblán ${cardCount} kártya van, ${data.boltok.length} helyett`);
+await page.locator('.kanban-card', { hasText: 'Makettshop' }).click();
+if (!await page.locator('#drawer[open] [data-field="kinek"]').isVisible()) throw new Error('a kártya nem nyit szerkeszthető panelt');
+if (!(await page.evaluate(() => location.hash)).includes('makettshop')) throw new Error('a panel nem kap közvetlen linket');
+response = page.waitForResponse(r => r.request().method() === 'PATCH' && r.request().postData()?.includes('Panel Pál'));
+await page.locator('#drawer [data-field="kinek"]').fill('Panel Pál');
+await page.locator('#drawer [data-field="kinek"]').press('Tab');
+await response;
+if (!await page.locator('#drawer[open] [data-field="kinek"]').isVisible() || await page.locator('#drawer [data-field="kinek"]').inputValue() !== 'Panel Pál') throw new Error('mentés után a panel nem maradt nyitva frissítve');
+await page.locator('#drawer-close').click();
+await page.locator('#ugras').fill('fonal');
+await page.locator('#ugras').press('Enter');
+if (!await page.locator('#drawer[open] .shop', { hasText: 'Fonalam.hu' }).isVisible()) throw new Error('a gyorskereső nem nyitja meg a Fonalam.hu-t');
+await page.keyboard.press('Escape');
+await page.keyboard.press('Meta+k');
+if (await page.evaluate(() => document.activeElement?.id) !== 'ugras') throw new Error('⌘K nem a gyorskeresőre ugrik');
 await page.locator('#kategoria-szuro').selectOption({ label: 'Fonal / kötés-horgolás' });
-if (await page.locator('.kanban-card').count() !== 2) throw new Error('Kanban kategóriaszűrő hibás');
+if (await page.locator('.kanban-card').count() !== 2) throw new Error('tábla kategóriaszűrő hibás');
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kanban.png', import.meta.url).pathname, fullPage: true });
 await page.goto('http://vez.test/vezerlo/kategoriak.html', { waitUntil: 'networkidle' });
@@ -156,4 +182,4 @@ if (await page.evaluate(() => document.documentElement.dataset.theme) !== 'light
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 console.log('✓ éjszakai mód: kapcsoló, megmaradás, visszaváltás');
 await browser.close();
-console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil és csak olvasható Kanban rendben (${patches.length} mentés)`);
+console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil, automatikus teendő tábla, oldalpanel és gyorskereső rendben (${patches.length} mentés)`);
