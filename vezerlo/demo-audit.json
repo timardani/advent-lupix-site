@@ -1,8 +1,8 @@
 {
-  "generalva": "2026-10-31T22:42:32+01:00",
+  "generalva": "2026-11-03T16:31:44+01:00",
   "demok": {
     "1000tea": {
-      "frissitve": "2026-10-27T22:43+01:00",
+      "frissitve": "2026-11-03T16:26+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -40,12 +40,12 @@
       "hianyok": []
     },
     "demeter": {
-      "frissitve": "2026-10-29T00:14+01:00",
+      "frissitve": "2026-11-02T20:48+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
     "fluffyandme": {
-      "frissitve": "2026-10-30T20:47+01:00",
+      "frissitve": "2026-11-02T17:12+01:00",
       "demo2_kesz": false,
       "hianyok": [
         "nem szerepel mind az 5 akciótípus"
@@ -88,6 +88,11 @@
     },
     "horgaszzona": {
       "frissitve": "2026-10-28T01:34+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "idrinks": {
+      "frissitve": "2026-11-03T12:36+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -164,6 +169,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "teavolution": {
+      "frissitve": "2026-11-03T12:45+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "termeszetesgumicukor": {
       "frissitve": "2026-10-31T22:42+01:00",
       "demo2_kesz": false,
@@ -198,7 +208,7 @@
       "hianyok": []
     },
     "yogabazaar": {
-      "frissitve": "2026-10-30T23:25+01:00",
+      "frissitve": "2026-11-02T10:51+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }
