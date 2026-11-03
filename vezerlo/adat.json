@@ -56,7 +56,7 @@
   },
   {
    "nev": "Szeszes ital / prémium alkohol",
-   "sor": "Mr. Alkohol – Dani kivétele"
+   "sor": "iDrinks (Mr. Alkohol helyett, 2026-11-03)"
   },
   {
    "nev": "Kézműves / prémium sör",
@@ -379,7 +379,7 @@
    "bolt": "Mr. Alkohol",
    "kategoria": "Szeszes ital / prémium alkohol",
    "demo": "mralkohol",
-   "allapot": "elokeszites",
+   "allapot": "kizart",
    "kinek": "Miklós Anita (vállalati képviselő)",
    "email": "info@mralkohol.hu",
    "telefon": "+36 1 808 9240",
@@ -388,7 +388,7 @@
    "hatarido": "",
    "valasz_datum": "",
    "teendo": "Marketinges döntéshozó + alkoholreklám-jogi ellenőrzés",
-   "megjegyzes": "Dani kivétele",
+   "megjegyzes": "Dani kivétele; 2026-11-03: helyette az iDrinks a célpont (a demó archívként kint marad)",
    "motivum": "palacksor + dugóhúzás, nyakcímke",
    "weboldal": "https://mralkohol.hu"
   },
@@ -785,19 +785,21 @@
   },
   {
    "id": "idrinks",
-   "bolt": "idrinks",
-   "kategoria": "Besorolandó",
+   "bolt": "iDrinks",
+   "kategoria": "Szeszes ital / prémium alkohol",
    "demo": "idrinks",
-   "allapot": "review",
+   "allapot": "kuldheto",
    "kinek": "",
-   "email": "",
-   "telefon": "",
-   "kapcsolat_minoseg": "",
+   "email": "info@idrinks.hu",
+   "telefon": "+36 1 8000 345",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálati cím; tulaj/marketinges döntéshozó ismeretlen",
    "kikuldve": "",
    "hatarido": "",
    "valasz_datum": "",
-   "teendo": "Kategória és kapcsolat pótlása",
-   "megjegyzes": "Automatikusan felvéve"
+   "teendo": "Döntéshozó (tulaj/marketing) megkeresése + Grt. 13. § alkoholreklám-jogi ellenőrzés",
+   "megjegyzes": "Mr. Alkohol helyett (Dani, 2026-11-03). ShopRenter; Budapesten akár 2 órás kiszállítás, budapesti boltok; ingyenes szállítás 20.000 Ft-tól; hírlevél ajándékkuponnal; saját palackozás: Dictador RumLab by iDrinks.",
+   "motivum": "palacksor + dugóhúzás, nyakcímke (a Mr. Alkohol-demó átdolgozása)",
+   "weboldal": "https://idrinks.hu"
   },
   {
    "id": "teavolution",
