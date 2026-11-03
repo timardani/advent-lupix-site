@@ -1,8 +1,8 @@
 {
   "generated": "2026-10-31",
   "source_dir": "/Users/danieltimar/Documents/tacitOS Projects/Moai Kalenderáium",
-  "category_count": 65,
-  "shop_count": 208,
+  "category_count": 66,
+  "shop_count": 257,
   "categories": [
     {
       "category": "Szobanövény",
@@ -1751,7 +1751,8 @@
         "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
       ],
       "notes": [
-        "B prioritás"
+        "B prioritás",
+        "3. kör 2026-11-03: Napvirág lezárva; Meta aktív hirdetők ('kézműves szappan' gyenge, 'natúrkozmetikum' jó)"
       ],
       "shops": [
         {
@@ -1781,6 +1782,87 @@
           "status": "ismeretlen – HTTP 429, újraellenőrzés kell 2026-10-30",
           "sources": [
             "jelolt-kor-kisallat-kozmetika-gyertya-cbd.md"
+          ]
+        },
+        {
+          "name": "Milla Bogár Natúrkozmetikum",
+          "url": "https://millabogar.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 971150245803394 (2026-11-03); WooCommerce; NATURE LAB Kft.; info@millabogar.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Sofia Michelle Natúrkozmetikumok",
+          "url": "https://sofiamichelle.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1347559860109251 (2026-11-03); WooCommerce; Natural Business Kft.; info@sofiamichelle.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Aldeléna Natúrkozmetikum",
+          "url": "https://aldelena.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 2071439720185302 (2026-11-03); UNAS; info@aldelena.hu; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "MagicHerb Natúrkozmetikum",
+          "url": "https://magicherb.eu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1849894475990382 (2026-11-03); Shoprenter; gmail-es cím (valószínűleg a tulaj kezeli)",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Arborea Natúrkozmetikum",
+          "url": "https://arborea.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 2928948687439835 (2026-11-03); WooCommerce; info@arborea.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Piperita",
+          "url": "https://piperita.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1125812713327895 (2026-11-03); WooCommerce; info@piperita.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Herbiovit",
+          "url": "https://herbiovit.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1403666087964295 (2026-11-03); Shoprenter; info@herbiovit.hu; gyógynövényes – egészségállítás nélkül",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Dora Natura",
+          "url": "https://doranatura.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1002827209539338 (2026-11-03); Shoprenter; csak ügyfélszolgálati cím, étrend-kiegészítő is",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Greens of Daisy",
+          "url": "https://greensofdaisy.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1924377031548247 (2026-11-03); Shopify; dm-ben is kapható – valószínűleg túl nagy márka",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -2890,6 +2972,98 @@
           "status": null,
           "sources": [
             "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Desszertétterem / palacsintázó (helyszíni beváltás)",
+      "sources": [
+        "Meta Hirdetéstár 2026-11-03"
+      ],
+      "notes": [
+        "3. kör 2026-11-03: Fluffy & Me lezárva; palacsintázóra alig van hirdetés, ezért cukrászdák helyszíni beváltással"
+      ],
+      "shops": [
+        {
+          "name": "Fit Cukrászda Fit&Sweet (Dunakeszi)",
+          "url": "https://fitcukraszda.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1329492831843876 (2026-11-03); Shopify webshop + mentes cukrászda; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Sulyán Cukrászda (Veresegyház, Gödöllő)",
+          "url": "https://sulyancukraszda.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1587550472839705 (2026-11-03); SULYÁN Kft.; info@sulyancukraszda.hu; családnév = tulaj valószínű",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Nádor Cukrászda Győr",
+          "url": "https://nador-cukraszda.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 27973289305673189 (2026-11-03); WordPress; info@nador-cukraszda.hu; tortarendelés",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Kismandula Cukrászda (Debrecen)",
+          "url": "https://kismandula.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1138208680241323 (2026-11-03); Mandula Família Kft.; info@tortarendeles.hu; több egység",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Lazuli Kávézó és cukrászda (Hegykő)",
+          "url": "https://lazuli.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1357937079344493 (2026-11-03); apartman + café; hegyko@lazuli.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Jakabfi Dávid Pâtissier",
+          "url": "https://jakabfidavid.com",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 998151303164820 (2026-11-03); ellenőrizendő – HTTP 403",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Cziniel Cukrászda",
+          "url": "https://czinielcukraszda.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 904215732084543 (2026-11-03); Cziniel Üzemeltető Kft.; több egység",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Gyöngyössy Cukrászda",
+          "url": null,
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1724867272253526 (2026-11-03); link hiányzik, felkutatandó",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "A Fekvő Róka Cukrászda",
+          "url": null,
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 2530538147368012 (2026-11-03); link hiányzik, felkutatandó",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
