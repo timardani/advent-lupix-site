@@ -12,18 +12,10 @@
         "KONTAKT_AUDIT_2026-10-28.md",
         "kutatas-noveny.md"
       ],
-      "notes": [],
+      "notes": [
+        "Utánkutatás 2026-11-03 (Moai Jungle nemet mondott): Meta Hirdetéstár „szobanövény”, „monstera”; A = aktív hirdetés + kis bolt"
+      ],
       "shops": [
-        {
-          "name": "Moai Jungle",
-          "url": null,
-          "priority": null,
-          "status": "elutasította",
-          "sources": [
-            "szobanoveny_webshopok_osszefoglalo.md",
-            "ADVENTI_UGYFEL_CHECKLIST.md"
-          ]
-        },
         {
           "name": "Tropical Home",
           "url": "https://tropicalhome.hu",
@@ -37,21 +29,10 @@
           ]
         },
         {
-          "name": "Növénybirodalom",
-          "url": "https://www.novenybirodalom.hu",
-          "priority": "A",
-          "status": null,
-          "sources": [
-            "szobanoveny_webshopok_osszefoglalo.md",
-            "ADVENTI_UGYFEL_CHECKLIST.md",
-            "kutatas-noveny.md"
-          ]
-        },
-        {
           "name": "Best Plants and Decor",
           "url": "https://www.bestplants.hu",
           "priority": "A",
-          "status": null,
+          "status": "aktív Meta-hirdetés 1352157420114146 (2026-11-03); ShopRenter; tulaj még ismeretlen",
           "sources": [
             "szobanoveny_webshopok_osszefoglalo.md",
             "ADVENTI_UGYFEL_CHECKLIST.md"
@@ -69,12 +50,13 @@
           ]
         },
         {
-          "name": "Plantart",
-          "url": "https://plantart.hu",
-          "priority": "A",
-          "status": null,
+          "name": "Növénybirodalom",
+          "url": "https://www.novenybirodalom.hu",
+          "priority": "B",
+          "status": "ShopRenter; novenybirodalom@gmail.com → kis, tulajdonos vezette bolt valószínű; aktív hirdetést nem láttunk (2026-11-03)",
           "sources": [
             "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md",
             "kutatas-noveny.md"
           ]
         },
@@ -95,15 +77,6 @@
           "sources": [
             "szobanoveny_webshopok_osszefoglalo.md",
             "kutatas-noveny.md"
-          ]
-        },
-        {
-          "name": "Oázis Kertészet",
-          "url": "https://oazis.hu",
-          "priority": "B",
-          "status": null,
-          "sources": [
-            "szobanoveny_webshopok_osszefoglalo.md"
           ]
         },
         {
@@ -131,6 +104,34 @@
           "status": null,
           "sources": [
             "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Tápió Kert",
+          "url": "https://tapiokert.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1648811920228042 (2026-11-03); UNAS; Tápió Kert Kft., info@tapiokert.hu; kertészet szobanövénnyel",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Downtown Plant Club",
+          "url": "https://downtownplantclub.com",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1865651338188320 (2026-11-03); Shopify; ritka növények, EU-s szállítás – méret/tulaj ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Plantart",
+          "url": "https://plantart.hu",
+          "priority": "C",
+          "status": "WooCommerce; Plantart Kft.; aktív hirdetést nem láttunk (2026-11-03)",
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "kutatas-noveny.md"
           ]
         },
         {
@@ -166,6 +167,60 @@
           "url": "https://kaktuszhalom.hu",
           "priority": "C",
           "status": "inkább beszállító",
+          "sources": [
+            "szobanoveny_webshopok_osszefoglalo.md"
+          ]
+        },
+        {
+          "name": "Tropical Rainbow Plants",
+          "url": "https://tropicalrainbowplants.com",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 2509263556268597 (2026-11-03); webshop él, cég/tulaj ismeretlen",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "MonsterPlants Hungary",
+          "url": null,
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1445346816928968 (2026-11-03); webshop-domain nem található (lehet csak FB/IG-eladó)",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Marczika – Orchideacsodák / Bonsai Studio",
+          "url": "https://orchideacsodak.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Orchidea és szobanövény turkáló",
+          "url": "https://orchideaturi.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Ragadozó Kert",
+          "url": "https://www.ragadozokert.hu",
+          "priority": null,
+          "status": null,
+          "sources": [
+            "kutatas-noveny.md"
+          ]
+        },
+        {
+          "name": "Oázis Kertészet",
+          "url": "https://oazis.hu",
+          "priority": "tartalék",
+          "status": "aktív Meta-hirdetés 4583496275268934, de 30 éves, többüzletes kertészet → valószínűleg túl nagy (méretkapu)",
           "sources": [
             "szobanoveny_webshopok_osszefoglalo.md"
           ]
@@ -216,30 +271,13 @@
           ]
         },
         {
-          "name": "Marczika – Orchideacsodák / Bonsai Studio",
-          "url": "https://orchideacsodak.hu",
+          "name": "Moai Jungle",
+          "url": null,
           "priority": null,
-          "status": null,
+          "status": "elutasította",
           "sources": [
-            "kutatas-noveny.md"
-          ]
-        },
-        {
-          "name": "Orchidea és szobanövény turkáló",
-          "url": "https://orchideaturi.hu",
-          "priority": null,
-          "status": null,
-          "sources": [
-            "kutatas-noveny.md"
-          ]
-        },
-        {
-          "name": "Ragadozó Kert",
-          "url": "https://www.ragadozokert.hu",
-          "priority": null,
-          "status": null,
-          "sources": [
-            "kutatas-noveny.md"
+            "szobanoveny_webshopok_osszefoglalo.md",
+            "ADVENTI_UGYFEL_CHECKLIST.md"
           ]
         }
       ]
@@ -254,16 +292,6 @@
       "notes": [],
       "shops": [
         {
-          "name": "UKKO",
-          "url": "https://www.ukko.hu",
-          "priority": null,
-          "status": "várunk",
-          "sources": [
-            "ADVENTI_UGYFEL_CHECKLIST.md",
-            "KONTAKT_AUDIT_2026-10-28.md"
-          ]
-        },
-        {
           "name": "Teapalota / Lucky Matcha",
           "url": null,
           "priority": "B",
@@ -271,6 +299,25 @@
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "research/osszefoglalo_kave_tea_ugyfeljeloltek.md"
+          ]
+        },
+        {
+          "name": "Reberry Tea",
+          "url": "https://reberrytea.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1855240908970711 (2026-11-03); WooCommerce; S-Berry Group Kft.",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "UKKO",
+          "url": "https://www.ukko.hu",
+          "priority": null,
+          "status": "várunk",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
+            "KONTAKT_AUDIT_2026-10-28.md"
           ]
         }
       ]
@@ -283,7 +330,9 @@
         "KONTAKT_AUDIT_2026-10-28.md",
         "kutatas-kave-tea.md"
       ],
-      "notes": [],
+      "notes": [
+        "Utánkutatás 2026-11-03 (1000TEA lezárva; Teavolution demó kész): Meta „szálas tea”; A = aktív hirdetés + kis teaház"
+      ],
       "shops": [
         {
           "name": "1000TEA",
@@ -328,6 +377,51 @@
             "research/osszefoglalo_kave_tea_ugyfeljeloltek.md",
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "kutatas-kave-tea.md"
+          ]
+        },
+        {
+          "name": "Konzorcium Teaház",
+          "url": "https://konzorciumteahaz.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1093833206851490 (2026-11-03); UNAS; IVANA Bt., info@konzorciumteahaz.hu",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Kossik Tea & Coffee",
+          "url": "https://kossiktea.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1840724283944554 (2026-11-03); Shopify; info@kossiktea.hu; családi teaház (tulaj ellenőrizendő)",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Kávé- és Teaház az Íródeákhoz",
+          "url": "https://teakboltja.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1562497468200196 (2026-11-03); szálas tea + kávé, cég ismeretlen",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "ManuTea",
+          "url": "https://manutea.hu",
+          "priority": "B",
+          "status": "Meta-hirdetés 1703382474149805 2026-11-03-ig futott; saját keverésű szálas teák",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
+          ]
+        },
+        {
+          "name": "Teázz.hu",
+          "url": "https://teazz.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 2500115100489784 (2026-11-03); Hollagora Kft.",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
           ]
         },
         {
@@ -1005,31 +1099,15 @@
         "ADVENTI_UGYFEL_CHECKLIST.md",
         "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
       ],
-      "notes": [],
+      "notes": [
+        "Utánkutatás 2026-11-03 (Chilimánia nemet mondott; Sárréti demó kész): Meta „chili szósz”; A = aktív hirdetés + ismert tulaj"
+      ],
       "shops": [
-        {
-          "name": "Chimax",
-          "url": "https://www.chimax.hu/",
-          "priority": null,
-          "status": null,
-          "sources": [
-            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
-          ]
-        },
-        {
-          "name": "Chili Hungária Webshop",
-          "url": "https://www.chilihungaria.hu",
-          "priority": null,
-          "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31",
-          "sources": [
-            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
-          ]
-        },
         {
           "name": "GaBko Chili",
           "url": "https://gabkochili.hu",
-          "priority": null,
-          "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 2146462229469977 (2026-11-03); GabkoChili Kft., ügyvezető Nagy Gábor, gabkochili@gmail.com; Nagymaros, kistermelő",
           "sources": [
             "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
           ]
@@ -1037,10 +1115,46 @@
         {
           "name": "ChillER Manufaktúra",
           "url": "https://chillermanufaktura.hu",
-          "priority": null,
-          "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1240614174949578 (2026-11-03); WooCommerce; LEBAKER Kft., Erdeiné Hákli Ildikó",
           "sources": [
             "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Chili Hungária Webshop",
+          "url": "https://www.chilihungaria.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 634008523066668 (2026-11-03); UNAS; a hirdetés domainje chilis.hu; info@chilis.hu",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Kelchili",
+          "url": "https://kelchili.hu",
+          "priority": "B",
+          "status": "WooCommerce; Huber András e.v. (egyéni vállalkozó → tulaj elérhető); aktív hirdetést nem láttunk (2026-11-03)",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Chimax",
+          "url": "https://www.chimax.hu/",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1059278092696152 (2026-11-03); UNAS; Yuva Kft., inkább márka/importőr",
+          "sources": [
+            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Smokey Monkies BBQ",
+          "url": "https://smokeymonkiesbbq.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1033699509774941 (2026-11-03); BBQ-szósz/fűszer, cég ismeretlen",
+          "sources": [
+            "Meta Hirdetéstár HU aktív, 2026-11-03"
           ]
         },
         {
@@ -1051,25 +1165,6 @@
           "sources": [
             "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md",
             "ADVENTI_UGYFEL_CHECKLIST.md"
-          ]
-        },
-        {
-          "name": "Kelchili",
-          "url": "https://kelchili.hu",
-          "priority": null,
-          "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31",
-          "sources": [
-            "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
-          ]
-        },
-        {
-          "name": "Chilimánia",
-          "url": "https://chilimania.hu",
-          "priority": null,
-          "status": "elutasította",
-          "sources": [
-            "ADVENTI_UGYFEL_CHECKLIST.md",
-            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
           ]
         },
         {
@@ -1105,6 +1200,16 @@
           "priority": null,
           "status": "megszűnt – „coming soon” parkoló oldal 2026-10-31",
           "sources": [
+            "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "Chilimánia",
+          "url": "https://chilimania.hu",
+          "priority": null,
+          "status": "elutasította",
+          "sources": [
+            "ADVENTI_UGYFEL_CHECKLIST.md",
             "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
           ]
         }
