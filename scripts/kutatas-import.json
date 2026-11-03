@@ -1,8 +1,8 @@
 {
   "generated": "2026-10-31",
   "source_dir": "/Users/danieltimar/Documents/tacitOS Projects/Moai Kalenderáium",
-  "category_count": 66,
-  "shop_count": 257,
+  "category_count": 67,
+  "shop_count": 276,
   "categories": [
     {
       "category": "Szobanövény",
@@ -986,7 +986,9 @@
       "sources": [
         "ADVENTI_UGYFEL_CHECKLIST.md"
       ],
-      "notes": [],
+      "notes": [
+        "4. kör 2026-11-03: Meta aktív hirdetők"
+      ],
       "shops": [
         {
           "name": "Artdea",
@@ -995,6 +997,69 @@
           "status": "kizárt",
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Fakopáncs Fajáték",
+          "url": "https://fakopancs.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1251878627033426 (2026-11-03); UNAS; info@fakopancs.hu; fajáték",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Vesszőparipa",
+          "url": "https://vesszoparipa.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 2149562719226011 (2026-11-03); Shoprenter; FAFALU Kft.; info@vesszoparipa.hu; fajáték",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Vidám Játék",
+          "url": "https://vidamjatek.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1368771767661809 (2026-11-03); UNAS; vidamjatek@vidamjatek.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Mamabrum.hu",
+          "url": "https://mamabrum.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 395451643129461 (2026-11-03); játék + gyerekkiegészítő; info@mamabrum.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Bükk&Bársony",
+          "url": "https://bukkesbarsony.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1632244401958880 (2026-11-03); ellenőrizendő – HTTP 429",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Baby Forest",
+          "url": "https://babyforest.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1406981584049520 (2026-11-03); UNAS; Baby Forest Hungary Kft.; nagyobb bababolt lehet",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "KreatívJáték.hu",
+          "url": "https://kreativjatek.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1627026619066824 (2026-11-03); UNAS; csak ügyfélszolgálati cím",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -1394,7 +1459,9 @@
       "sources": [
         "ADVENTI_UGYFEL_CHECKLIST.md"
       ],
-      "notes": [],
+      "notes": [
+        "4. kör 2026-11-03: Meta aktív hirdetők"
+      ],
       "shops": [
         {
           "name": "Szatócska",
@@ -1403,6 +1470,15 @@
           "status": "demó kész és kint",
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md"
+          ]
+        },
+        {
+          "name": "Érdi Termelői Bolt",
+          "url": null,
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1642877343533146 (2026-11-03); kimérős bolt Érden (Budai út 5.); webshop nem ismert, link felkutatandó",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -1479,7 +1555,9 @@
         "ADVENTI_UGYFEL_CHECKLIST.md",
         "2026-10-29-harmadik-kategoria-kutatasi-kor.md"
       ],
-      "notes": [],
+      "notes": [
+        "4. kör 2026-11-03: 'bűvészkészlet' – nincs aktív HU Meta-hirdető"
+      ],
       "shops": [
         {
           "name": "Bűvészbolt",
@@ -1647,7 +1725,9 @@
         "ADVENTI_UGYFEL_CHECKLIST.md",
         "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
       ],
-      "notes": [],
+      "notes": [
+        "4. kör 2026-11-03: Meta aktív hirdetők"
+      ],
       "shops": [
         {
           "name": "Fűszerész",
@@ -1657,6 +1737,42 @@
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "2026-10-29-uj-webshop-kategoriak-adventi-kalendariumhoz.md"
+          ]
+        },
+        {
+          "name": "A Fűszeres Lány",
+          "url": "https://afuszereslany.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 2314024436113908 (2026-11-03); WooCommerce; kézműves fűszerkeverékek; névvel: david@afuszereslany.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Finom Fűszerek",
+          "url": "https://shop.finomfuszerek.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 4109459482517236 (2026-11-03); Shoprenter; info@finomfuszerek.hu; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Fűszeráruház",
+          "url": "https://fuszeraruhaz.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 4530130407130611 (2026-11-03); UNAS; A1 Marketing Kft.; info@fuszeraruhaz.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Böllérshop.hu",
+          "url": "https://bollershop.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1083283610028781 (2026-11-03); hentes-fűszer; nem ellenőrizve",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -2194,7 +2310,9 @@
         "ADVENTI_UGYFEL_CHECKLIST.md",
         "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
       ],
-      "notes": [],
+      "notes": [
+        "4. kör 2026-11-03: Meta aktív hirdetők"
+      ],
       "shops": [
         {
           "name": "Makettshop",
@@ -2214,6 +2332,33 @@
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "2026-10-29-bovitett-webshop-kategoria-es-jeloltkutatas.md"
+          ]
+        },
+        {
+          "name": "Megamakett",
+          "url": "https://megamakett.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 412005821470824 (2026-11-03); UNAS; Megahobby Kft; info@megamakett.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Modellfutár",
+          "url": "https://modellfutar.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1740932036889177 (2026-11-03); UNAS; Balmador Kft.; 60 000+ termék – méret ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Epicarium (Főnix Csarnok)",
+          "url": "https://epicarium.eu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 2331576181007365 (2026-11-03); games & hobby; webshop@fonixcsarnok.eu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -3062,6 +3207,53 @@
           "url": null,
           "priority": "C",
           "status": "aktív Meta-hirdetés 2530538147368012 (2026-11-03); link hiányzik, felkutatandó",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Vicces póló / ajándékbögre",
+      "sources": [
+        "Meta Hirdetéstár 2026-11-03"
+      ],
+      "notes": [
+        "4. kör 2026-11-03: Meta aktív hirdetők"
+      ],
+      "shops": [
+        {
+          "name": "LOLmarkt",
+          "url": "https://lolmarkt.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1602081994252551 (2026-11-03); Shoprenter; vicces pólók és ajándékok; hello@lolmarkt.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Bögreguru",
+          "url": "https://bogreguru.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 26311079968517593 (2026-11-03); Shopify; egyedi bögre/ajándék; hello@bogreguru.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Pólóügynökség",
+          "url": "https://polougynokseg.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1083234144361084 (2026-11-03); WooCommerce; online + üzlet",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "PamutLabor",
+          "url": "https://pamutlabor.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 2139830720087354 (2026-11-03); WooCommerce; több kollekció, valószínűleg nagy",
           "sources": [
             "Meta Hirdetéstár 2026-11-03"
           ]
