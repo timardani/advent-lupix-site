@@ -53,6 +53,8 @@ await page.route('http://vez.test/**', async route => {
       if (changes.kikuldve && ['elokeszites','review','kuldheto','tartalek','keszul'].includes(shop.allapot)) shop.allapot = 'kikuldve';
       delete changes.kikuldve;
     }
+    if ('jegyzet_uj' in changes) { shop.jegyzetek = shop.jegyzetek || []; shop.jegyzetek.push({ id: `n${shop.jegyzetek.length + 1}`, datum: new Date().toISOString(), szoveg: changes.jegyzet_uj }); delete changes.jegyzet_uj; }
+    if ('jegyzet' in changes) { const n = shop.jegyzetek.find(x => x.id === changes.jegyzet.id); n.szoveg = changes.jegyzet.szoveg; n.modositva = new Date().toISOString(); delete changes.jegyzet; }
     if (changes.allapot === 'idot_kert' && !('hatarido' in changes)) { const d = new Date(); d.setDate(d.getDate() + 7); shop.hatarido = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Budapest' }).format(d); }
     Object.assign(shop, changes);
     data.frissitve = '2026-10-29';
@@ -153,6 +155,26 @@ await response;
 if (!await page.locator('.col-ido .kanban-card', { hasText: 'Makettshop' }).isVisible()) throw new Error('az időt kérő bolt nem az „Időt kért” oszlopban van');
 if (!await page.locator('.col-ido .kanban-card', { hasText: 'Makettshop' }).getByText('Rákérdezés').isVisible()) throw new Error('a rákérdezés dátuma nem látszik');
 if (!await page.locator('#drawer .control', { hasText: 'Rákérdezés napja' }).isVisible()) throw new Error('a panelen nincs „Rákérdezés napja” mező');
+// Megjegyzés-csempék: új bejegyzés dátummal, második külön csempe, szerkesztés helyben.
+for (const t of ['Felhívtam, jövő héten dönt', 'Második: árajánlatot kért']) {
+  response = page.waitForResponse(r => r.request().method() === 'PATCH' && r.request().postData()?.includes('jegyzet_uj'));
+  await page.locator('#drawer textarea[data-new-note]').fill(t);
+  await page.locator('#drawer [data-add-note]').click();
+  await response;
+}
+if (await page.locator('#drawer .note').count() !== 2) throw new Error('a két megjegyzés nem két külön csempe');
+if (!/\d{4}\. \d{2}\. \d{2}\./.test(await page.locator('#drawer .note-meta').first().textContent())) throw new Error('a csempén nincs dátum');
+if (await page.locator('#drawer .note-text').first().inputValue() !== 'Második: árajánlatot kért') throw new Error('a legújabb csempe nincs felül');
+if (await page.locator('#drawer textarea[data-new-note]').inputValue() !== '') throw new Error('az új megjegyzés mezője nem ürült ki');
+response = page.waitForResponse(r => r.request().method() === 'PATCH' && r.request().postData()?.includes('"jegyzet":'));
+await page.locator('#drawer .note-text').last().fill('Felhívtam, csütörtökön dönt');
+await page.locator('#drawer .note-text').last().press('Tab');
+await response;
+if (await page.locator('#drawer .note').count() !== 2 || !(await page.locator('#drawer .note-meta').last().textContent()).includes('szerkesztve')) throw new Error('a szerkesztés nem helyben frissült');
+if (!await page.locator('.kanban-card, .shop').filter({ hasText: 'Makettshop' }).first().isVisible()) throw new Error('kártya eltűnt');
+await page.locator('#drawer .notes').scrollIntoViewIfNeeded();
+await page.screenshot({ path: new URL('../screenshots/vezerlo-jegyzetek.png', import.meta.url).pathname });
+console.log('✓ megjegyzés-csempék: 2 dátumozott csempe, szerkesztés helyben');
 await page.locator('#drawer-close').click();
 await page.locator('#ugras').fill('fonal');
 await page.locator('#ugras').press('Enter');

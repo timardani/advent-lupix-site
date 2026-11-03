@@ -2,9 +2,11 @@
 """Belső, csak nginx mögül elérhető API a vezérlő adatainak mentéséhez."""
 import json
 import os
+import secrets
+import time
 import shutil
 import tempfile
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
@@ -27,7 +29,10 @@ VALASZ_ALLAPOTOK = {"valaszolt", "foglalt", "nyert", "nem", "idot_kert"}
 DINAMIKUS_BOLT_MEZOK = {
     "allapot", "kikuldve", "hatarido", "valasz_datum", "teendo",
     "allapot_datum", "elozmenyek",
+    # 2026-11-03: dátumozott megjegyzés-csempék (Dani írja a felületen)
+    "jegyzetek",
 }
+JEGYZET_MAX = 3000
 # Dani által a felületen kézzel beírható kapcsolati adatok. Ha a /data-ban
 # már nem üres, az marad; ha üres, a seed (kutatásból jövő) érték érvényes.
 KEZI_MEZOK = {"kinek", "email", "telefon", "megjegyzes", "weboldal"}
@@ -128,7 +133,7 @@ class Handler(BaseHTTPRequestHandler):
             payload = json.loads(self.rfile.read(size))
             if not isinstance(payload, dict) or not isinstance(payload.get("id"), str):
                 return self.send_json(400, {"hiba": "Hiányzó boltazonosító."})
-            allowed = {"id", "kikuldve", "hatarido", "allapot", "teendo"} | KEZI_MEZOK
+            allowed = {"id", "kikuldve", "hatarido", "allapot", "teendo", "jegyzet_uj", "jegyzet"} | KEZI_MEZOK
             if set(payload) - allowed:
                 return self.send_json(400, {"hiba": "Nem támogatott mező."})
 
@@ -193,6 +198,30 @@ class Handler(BaseHTTPRequestHandler):
                 if not isinstance(task, str) or len(task) > 500:
                     return self.send_json(400, {"hiba": "Érvénytelen következő teendő."})
                 bolt["teendo"] = task.strip()
+
+            if "jegyzet_uj" in payload or "jegyzet" in payload:
+                notes = bolt.get("jegyzetek")
+                if not isinstance(notes, list):
+                    notes = bolt["jegyzetek"] = []
+                now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+                if "jegyzet_uj" in payload:
+                    text = payload["jegyzet_uj"]
+                    if not isinstance(text, str) or not text.strip() or len(text) > JEGYZET_MAX:
+                        return self.send_json(400, {"hiba": "Érvénytelen megjegyzés."})
+                    notes.append({"id": f"n{int(time.time() * 1000)}{secrets.token_hex(2)}",
+                                  "datum": now, "szoveg": text.strip()})
+                if "jegyzet" in payload:
+                    edit = payload["jegyzet"]
+                    if (not isinstance(edit, dict) or not isinstance(edit.get("id"), str)
+                            or not isinstance(edit.get("szoveg"), str) or not edit["szoveg"].strip()
+                            or len(edit["szoveg"]) > JEGYZET_MAX):
+                        return self.send_json(400, {"hiba": "Érvénytelen megjegyzés (üresre nem írható)."})
+                    note = next((n for n in notes if isinstance(n, dict) and n.get("id") == edit["id"]), None)
+                    if not note:
+                        return self.send_json(404, {"hiba": "Nincs ilyen megjegyzés."})
+                    if note.get("szoveg") != edit["szoveg"].strip():
+                        note["szoveg"] = edit["szoveg"].strip()
+                        note["modositva"] = now
 
             for key in KEZI_MEZOK & set(payload):
                 value = payload[key]
