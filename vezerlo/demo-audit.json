@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-03T16:46:44+01:00",
+  "generalva": "2026-11-03T17:48:40+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -41,6 +41,11 @@
     },
     "demeter": {
       "frissitve": "2026-11-02T20:48+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "fishingtime": {
+      "frissitve": "2026-11-03T17:48+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

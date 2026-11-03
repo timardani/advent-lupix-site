@@ -818,6 +818,24 @@
    "megjegyzes": "Shopify; 24 termék + 24 napi akció/kupon; ingyenes szállítás 33 000 Ft felett, ezért a szállítási kuponok ez alatti termékeken",
    "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (1000TEA lezárva, a jelenet átdolgozva)",
    "weboldal": "https://teavolution.eu"
+  },
+  {
+   "id": "fishingtime",
+   "bolt": "FishingTime",
+   "kategoria": "Horgászat",
+   "demo": "fishingtime",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@fishingtime.hu",
+   "telefon": "+36 70 945 0727",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Kiküldés (Dani); tulajdonos/döntéshozó neve hiányzik",
+   "megjegyzes": "Fishing Time Kft (Érd, Cg. 01-09-994257); nagy katalógus (~30 ezer termék), kis cég. A Horgász-Zóna demó átdolgozása, 2026-11-03.",
+   "motivum": "úszók a téli vízen + bedobás",
+   "weboldal": "https://fishingtime.hu"
   }
  ]
 }
