@@ -195,6 +195,24 @@
      "url": "https://www.ukko.hu",
      "priority": null,
      "status": "várunk"
+    },
+    {
+     "name": "Hölgyi tea",
+     "url": "https://holgyitea.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1057811833373674 (2026-11-03); WooCommerce; Rigó Teaház Kft.; kapcsolat@holgyitea.hu; gyógynövényes – egészségállítás tilos a demóban"
+    },
+    {
+     "name": "Györgytea",
+     "url": "https://gyorgyteabolt.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1396016885461392 (2026-11-03); Shopify; családi (Szabó Gyuri bácsi öröksége); info@gyorgytea.hu"
+    },
+    {
+     "name": "Herbatea Manufaktúra",
+     "url": "https://herbatea-manufaktura.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 970527792758994 (2026-11-03); ellenőrizendő – HTTP 403 curl-ből"
     }
    ]
   },
@@ -435,6 +453,30 @@
      "url": "https://mikrozoldseg.hu",
      "priority": "C",
      "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
+    },
+    {
+     "name": "Greenea",
+     "url": "https://greenea.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1142654388322688 (2026-11-03); WooCommerce; LNX-Trend Kft.; info@greenea.hu; mikrozöld termesztőkészlet"
+    },
+    {
+     "name": "Békés Botanika",
+     "url": "https://bekesbotanika.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1412431563524146 (2026-11-03); WooCommerce; Békés Botanika Kft.; bekesbotanikakft@gmail.com"
+    },
+    {
+     "name": "Sersia Farm",
+     "url": "https://sersiafarm.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 1148856827588166 (2026-11-03); UNAS; Sersia Farm Kft.; névvel: csirkovics.gyula@sersiafarm.hu"
+    },
+    {
+     "name": "Kertészfutár",
+     "url": "https://kerteszfutar.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 919457034321351 (2026-11-03); UNAS; M-Constulting Online Kft.; info@kerteszfutar.hu"
     }
    ]
   },
@@ -621,6 +663,24 @@
      "url": "https://www.sussvelem.com",
      "priority": null,
      "status": "helyi koncepció"
+    },
+    {
+     "name": "AndyCake",
+     "url": "https://andycake.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1844656200034768 (2026-11-03); WordPress; info@andycake.hu; cég ellenőrizendő"
+    },
+    {
+     "name": "Cukrászkellék.hu",
+     "url": "https://cukraszkellek.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 1567141925194287 (2026-11-03); UNAS; info@cukraszkellek.hu; 30 éves bolt, méret ellenőrizendő"
+    },
+    {
+     "name": "Vinka Cukrászkellék és Dekor",
+     "url": "https://vinkacukraszkellek.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 1979742012954976 (2026-11-03); győri üzlet + webshop; cég ellenőrizendő"
     }
    ]
   },
@@ -663,6 +723,24 @@
      "url": "https://sorspecialista.hu",
      "priority": null,
      "status": "megszűnt – a domain nem létezik (DNS) 2026-10-31"
+    },
+    {
+     "name": "FIRST Craft Beer",
+     "url": "https://shop.firstcraftbeer.com",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 2757270761270937 (2026-11-03); UNAS; FIRST Craft Beer Kft.; shop@firstcraftbeer.com; saját sörfőzde, sörcsomag-hirdetések"
+    },
+    {
+     "name": "One Beer",
+     "url": "https://onebeer.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 4835709013315489 (2026-11-03); UNAS; Nap Fair Kft.; webshop@onebeer.hu"
+    },
+    {
+     "name": "Beer Brothers Budapest",
+     "url": "https://beerbrothers.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 1011149858193969 (2026-11-03); Wix; info@beerbrothers.hu; tulaj ellenőrizendő"
     }
    ]
   },
@@ -879,6 +957,30 @@
      "url": "https://petfamily.hu",
      "priority": null,
      "status": "ellenőrizve – HTTP 200, link pótolva 2026-10-31"
+    },
+    {
+     "name": "Best4Pets",
+     "url": "https://best4pets.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 994912406395002 (2026-11-03); UNAS; Ő.P.A. Kft.; info@best4pets.hu"
+    },
+    {
+     "name": "Kutyakajás.hu",
+     "url": "https://kutyakajas.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 1354918322726830 (2026-11-03); Shoprenter; info@kutyakajas.hu; cég ellenőrizendő"
+    },
+    {
+     "name": "ElitePet (dado-kutyatap.hu)",
+     "url": "https://dado-kutyatap.hu",
+     "priority": "C",
+     "status": "aktív Meta-hirdetés 1165166341578906 (2026-11-03); ellenőrizendő – HTTP 403 curl-ből"
+    },
+    {
+     "name": "PETNET",
+     "url": "https://petnet.hu",
+     "priority": "C",
+     "status": "aktív Meta-hirdetés 26961933246800546 (2026-11-03); Petnet Kft.; valószínűleg túl nagy"
     }
    ]
   },
@@ -957,6 +1059,24 @@
      "url": null,
      "priority": null,
      "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31"
+    },
+    {
+     "name": "Little Harmony",
+     "url": "https://littleharmony.hu",
+     "priority": "A",
+     "status": "aktív Meta-hirdetés 30012104371712633 (2026-11-03); WooCommerce; kézműves szójagyertya és illatviasz; cég ellenőrizendő"
+    },
+    {
+     "name": "More Light Candle",
+     "url": "https://morelightcandle.hu",
+     "priority": "B",
+     "status": "aktív Meta-hirdetés 1767045874377281 (2026-11-03); ellenőrizendő – HTTP 429 curl-ből"
+    },
+    {
+     "name": "Andyourstories (AYS Candles)",
+     "url": null,
+     "priority": "C",
+     "status": "aktív Meta-hirdetés 1134125452447522 (2026-11-03); link hiányzik – andyourstories.hu nem él, felkutatandó"
     }
    ]
   },

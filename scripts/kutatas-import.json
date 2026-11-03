@@ -319,6 +319,33 @@
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "KONTAKT_AUDIT_2026-10-28.md"
           ]
+        },
+        {
+          "name": "Hölgyi tea",
+          "url": "https://holgyitea.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1057811833373674 (2026-11-03); WooCommerce; Rigó Teaház Kft.; kapcsolat@holgyitea.hu; gyógynövényes – egészségállítás tilos a demóban",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Györgytea",
+          "url": "https://gyorgyteabolt.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1396016885461392 (2026-11-03); Shopify; családi (Szabó Gyuri bácsi öröksége); info@gyorgytea.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Herbatea Manufaktúra",
+          "url": "https://herbatea-manufaktura.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 970527792758994 (2026-11-03); ellenőrizendő – HTTP 403 curl-ből",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
         }
       ]
     },
@@ -722,6 +749,42 @@
             "research/hobbi_webshop_kutatas_2026-10-22.md",
             "ADVENTI_UGYFEL_CHECKLIST.md"
           ]
+        },
+        {
+          "name": "Greenea",
+          "url": "https://greenea.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1142654388322688 (2026-11-03); WooCommerce; LNX-Trend Kft.; info@greenea.hu; mikrozöld termesztőkészlet",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Békés Botanika",
+          "url": "https://bekesbotanika.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1412431563524146 (2026-11-03); WooCommerce; Békés Botanika Kft.; bekesbotanikakft@gmail.com",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Sersia Farm",
+          "url": "https://sersiafarm.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1148856827588166 (2026-11-03); UNAS; Sersia Farm Kft.; névvel: csirkovics.gyula@sersiafarm.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Kertészfutár",
+          "url": "https://kerteszfutar.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 919457034321351 (2026-11-03); UNAS; M-Constulting Online Kft.; info@kerteszfutar.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
         }
       ]
     },
@@ -1019,6 +1082,33 @@
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "KONTAKT_AUDIT_2026-10-28.md"
           ]
+        },
+        {
+          "name": "AndyCake",
+          "url": "https://andycake.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1844656200034768 (2026-11-03); WordPress; info@andycake.hu; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Cukrászkellék.hu",
+          "url": "https://cukraszkellek.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 1567141925194287 (2026-11-03); UNAS; info@cukraszkellek.hu; 30 éves bolt, méret ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Vinka Cukrászkellék és Dekor",
+          "url": "https://vinkacukraszkellek.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1979742012954976 (2026-11-03); győri üzlet + webshop; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
         }
       ]
     },
@@ -1088,6 +1178,33 @@
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md",
             "2026-10-29-tovabbi-webshop-kategoria-kutatas-chili-sor.md"
+          ]
+        },
+        {
+          "name": "FIRST Craft Beer",
+          "url": "https://shop.firstcraftbeer.com",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 2757270761270937 (2026-11-03); UNAS; FIRST Craft Beer Kft.; shop@firstcraftbeer.com; saját sörfőzde, sörcsomag-hirdetések",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "One Beer",
+          "url": "https://onebeer.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 4835709013315489 (2026-11-03); UNAS; Nap Fair Kft.; webshop@onebeer.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Beer Brothers Budapest",
+          "url": "https://beerbrothers.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1011149858193969 (2026-11-03); Wix; info@beerbrothers.hu; tulaj ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
@@ -1427,6 +1544,42 @@
           "sources": [
             "ADVENTI_UGYFEL_CHECKLIST.md"
           ]
+        },
+        {
+          "name": "Best4Pets",
+          "url": "https://best4pets.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 994912406395002 (2026-11-03); UNAS; Ő.P.A. Kft.; info@best4pets.hu",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Kutyakajás.hu",
+          "url": "https://kutyakajas.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1354918322726830 (2026-11-03); Shoprenter; info@kutyakajas.hu; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "ElitePet (dado-kutyatap.hu)",
+          "url": "https://dado-kutyatap.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1165166341578906 (2026-11-03); ellenőrizendő – HTTP 403 curl-ből",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "PETNET",
+          "url": "https://petnet.hu",
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 26961933246800546 (2026-11-03); Petnet Kft.; valószínűleg túl nagy",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
         }
       ]
     },
@@ -1559,6 +1712,33 @@
           "status": "link hiányzik – a kézenfekvő domain nem él, felkutatandó 2026-10-31",
           "sources": [
             "UJ_WEBSHOP_KATEGORIAK_2026-10-28.md"
+          ]
+        },
+        {
+          "name": "Little Harmony",
+          "url": "https://littleharmony.hu",
+          "priority": "A",
+          "status": "aktív Meta-hirdetés 30012104371712633 (2026-11-03); WooCommerce; kézműves szójagyertya és illatviasz; cég ellenőrizendő",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "More Light Candle",
+          "url": "https://morelightcandle.hu",
+          "priority": "B",
+          "status": "aktív Meta-hirdetés 1767045874377281 (2026-11-03); ellenőrizendő – HTTP 429 curl-ből",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
+          ]
+        },
+        {
+          "name": "Andyourstories (AYS Candles)",
+          "url": null,
+          "priority": "C",
+          "status": "aktív Meta-hirdetés 1134125452447522 (2026-11-03); link hiányzik – andyourstories.hu nem él, felkutatandó",
+          "sources": [
+            "Meta Hirdetéstár 2026-11-03"
           ]
         }
       ]
