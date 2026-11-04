@@ -1,220 +1,295 @@
 {
+  "note": "Javasolt ajánlatok és kódok (approved:false). A valódi kuponokat élesítés előtt a BioBubi hozza létre a saját rendszerében.",
   "offers": [
     {
       "day": 1,
       "type": "percent",
-      "title": "Ablakfény napja · javasolt −10%",
-      "detail": "Javasolt 10% kedvezmény a napi ablaktisztítóra: 1 990 Ft helyett 1 791 Ft.",
+      "title": "Csillogó ablakok −10%",
+      "detail": "Ma 10% kedvezmény a Bubi ablaktisztítóra.",
       "code": "BUBI01",
-      "conditions": "Csak tervezet; kereskedői jóváhagyás, árellenőrzés és technikai beállítás szükséges. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A napi termékre, csak ma éjfélig.",
+      "approved": false,
+      "percent": 10,
+      "was": 1990,
+      "price": 1791
     },
     {
       "day": 2,
       "type": "bundle",
-      "title": "Ragyogó konyha páros · ötlet",
-      "detail": "Kézi mosogatószer (2. nap, 3 790 Ft) + ablaktisztító (1. nap, 1 990 Ft): külön 5 780 Ft; javasolt csomagár 5 200 Ft.",
+      "title": "Ragyogó konyha páros",
+      "detail": "Kézi mosogatószer + ablaktisztító együtt, csomagáron.",
       "code": "BUBI02",
-      "conditions": "Javaslat, nem létező csomagár; külön jóváhagyás és mindkét termék rendelhetősége szükséges. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        1
+      ],
+      "was": 5780,
+      "price": 5190
     },
     {
       "day": 3,
       "type": "shipping",
-      "title": "0 Ft szállítás · napi ötlet",
-      "detail": "Javasolt ingyenes kiszállítás a napi terméket tartalmazó rendeléshez.",
+      "title": "0 Ft-os szállítás",
+      "detail": "Ingyenes házhozszállítás, ha a kosárban ott a napi mosószer.",
       "code": "BUBI03",
-      "conditions": "A napi terméket tartalmazó rendelésre, csak aznap; terület és kosárminimum bolti jóváhagyás után.",
+      "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
       "approved": false
     },
     {
       "day": 4,
       "type": "gift",
-      "title": "Újratöltős kezdés · ajándékötlet",
-      "detail": "Javasolt szórófejes flakon ajándék megfelelő tisztítószer-rendelés mellé; ajándékkeret külön egyeztetendő.",
+      "title": "Flakon mellé táska",
+      "detail": "A szórófejes flakon mellé ajándék Biobubi vászontáskát adunk.",
       "code": "BUBI04",
-      "conditions": "Nem aktív ajándékakció; a készlet, értékhatár és jogosultság jóváhagyandó. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "Amíg az ajándéktermék készleten van.",
+      "approved": false,
+      "related": [
+        20
+      ],
+      "giftValue": 1290
     },
     {
       "day": 5,
       "type": "one_plus_one",
-      "title": "1+1 · Bubi Padló és általános tisztítószer Koncentrátum (1L)",
-      "detail": "Javaslat: 2 db azonos termék 1 db áráért (2 490 Ft).",
+      "title": "1+1 padlótisztító",
+      "detail": "Két flakon koncentrátum egy áráért.",
       "code": "BUBI05",
-      "conditions": "Azonos termék 2 darabjára, csak a kijelölt napon; bolti jóváhagyás és kuponbeállítás után.",
-      "approved": false
+      "conditions": "2 db azonos napi termék a kosárban.",
+      "approved": false,
+      "was": 4980,
+      "price": 2490
     },
     {
       "day": 6,
       "type": "percent",
-      "title": "Mikulásnapi konyhai segítség · javasolt −10%",
-      "detail": "A gépi mosogatópor 5 690 Ft-os alapárának 10%-os kedvezményes ötlete: 5 121 Ft.",
+      "title": "Mikulásnapi −15%",
+      "detail": "Ma 15% kedvezmény a gépi mosogatóporra.",
       "code": "BUBI06",
-      "conditions": "Tervezet; az üzlet nem hirdeti ezt az árat, amíg nincs jóváhagyva. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A napi termékre, csak ma éjfélig.",
+      "approved": false,
+      "percent": 15,
+      "was": 5690,
+      "price": 4837
     },
     {
       "day": 7,
       "type": "bundle",
-      "title": "Fürdőszobai páros · ötlet",
-      "detail": "WC olaj (7. nap, 3 790 Ft) + vízkőoldó (11. nap, 3 390 Ft): külön 7 180 Ft; javasolt csomagár 6 460 Ft.",
+      "title": "Fürdőszobai páros",
+      "detail": "WC olaj + vízkőoldó koncentrátum együtt, csomagáron.",
       "code": "BUBI07",
-      "conditions": "Két külön használandó termék; csomagár csak jóváhagyás után alkalmazható. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        11
+      ],
+      "was": 7180,
+      "price": 6390
     },
     {
       "day": 8,
       "type": "shipping",
-      "title": "0 Ft szállítás · napi ötlet",
-      "detail": "Javasolt ingyenes kiszállítás a napi terméket tartalmazó rendeléshez.",
+      "title": "0 Ft-os szállítás",
+      "detail": "Ingyenes házhozszállítás, ha a kosárban ott a virágillatú mosószer.",
       "code": "BUBI08",
-      "conditions": "A napi terméket tartalmazó rendelésre, csak aznap; terület és kosárminimum bolti jóváhagyás után.",
+      "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
       "approved": false
     },
     {
       "day": 9,
       "type": "gift",
-      "title": "Kávészünet mellé · ajándékötlet",
-      "detail": "Javasolt újrahasznosított kéztörlő (10. nap) ajándék kijelölt géptisztító-kosárhoz.",
+      "title": "Kávészünet ajándékkal",
+      "detail": "A kávéfőző-tisztító mellé ajándék szórófejes flakont adunk.",
       "code": "BUBI09",
-      "conditions": "Csak koncepció; ajándékkészlet és kosárküszöb kereskedői jóváhagyást igényel. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "Amíg az ajándéktermék készleten van.",
+      "approved": false,
+      "related": [
+        4
+      ],
+      "giftValue": 1290
     },
     {
       "day": 10,
       "type": "one_plus_one",
-      "title": "1+1 · Bubi - Tekercses újrahasznosított kéztörlő",
-      "detail": "Javaslat: 2 db azonos termék 1 db áráért (1 990 Ft).",
+      "title": "1+1 kéztörlő",
+      "detail": "Két tekercs újrahasznosított kéztörlő egy áráért.",
       "code": "BUBI10",
-      "conditions": "Azonos termék 2 darabjára, csak a kijelölt napon; bolti jóváhagyás és kuponbeállítás után.",
-      "approved": false
+      "conditions": "2 db azonos napi termék a kosárban.",
+      "approved": false,
+      "was": 3980,
+      "price": 1990
     },
     {
       "day": 11,
       "type": "percent",
-      "title": "Vízkőmentesebb nap · javasolt −10%",
-      "detail": "A vízkőoldó 3 390 Ft-os alapárából számolt javaslat: 3 051 Ft.",
+      "title": "Vízkő ellen −12%",
+      "detail": "Ma 12% kedvezmény a vízkőoldó koncentrátumra.",
       "code": "BUBI11",
-      "conditions": "Tervezet; kampányárazás előtt ellenőrzendő az aktuális ár és árrés. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A napi termékre, csak ma éjfélig.",
+      "approved": false,
+      "percent": 12,
+      "was": 3390,
+      "price": 2983
     },
     {
       "day": 12,
       "type": "bundle",
-      "title": "Gyümölcsös konyhai páros · ötlet",
-      "detail": "Gyümölcsöskert mosogatószer (12. nap, 2 790 Ft) + ablaktisztító (1. nap, 1 990 Ft): külön 4 780 Ft; javasolt csomagár 4 300 Ft.",
+      "title": "Gyümölcsös konyha páros",
+      "detail": "Gyümölcsöskert mosogatószer + zsíroldó együtt, csomagáron.",
       "code": "BUBI12",
-      "conditions": "Külön rendeltetésű tisztítók; csomagár csak kereskedői jóváhagyással. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        13
+      ],
+      "was": 5580,
+      "price": 4990
     },
     {
       "day": 13,
       "type": "shipping",
-      "title": "0 Ft szállítás · napi ötlet",
-      "detail": "Javasolt ingyenes kiszállítás a napi terméket tartalmazó rendeléshez.",
+      "title": "0 Ft-os szállítás",
+      "detail": "Ingyenes házhozszállítás, ha a kosárban ott a zsíroldó.",
       "code": "BUBI13",
-      "conditions": "A napi terméket tartalmazó rendelésre, csak aznap; terület és kosárminimum bolti jóváhagyás után.",
+      "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
       "approved": false
     },
     {
       "day": 14,
       "type": "gift",
-      "title": "Utántöltő nap · ajándékötlet",
-      "detail": "Javasolt csapos kupak ajándék kijelölt nagy kiszerelésű mosószer mellé.",
+      "title": "Csapos kupak + ajándék",
+      "detail": "A csapos kupak mellé ajándék tekercses kéztörlőt adunk.",
       "code": "BUBI14",
-      "conditions": "Kupakkompatibilitás, készlet és kampánykeret ellenőrzendő; nem élő ajándék. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "Amíg az ajándéktermék készleten van.",
+      "approved": false,
+      "related": [
+        10
+      ],
+      "giftValue": 1990
     },
     {
       "day": 15,
       "type": "one_plus_one",
-      "title": "1+1 · Bubi Általános és padlótisztítószer Koncentrátum (1L) - Nyári szellő illattal",
-      "detail": "Javaslat: 2 db azonos termék 1 db áráért (2 490 Ft).",
+      "title": "1+1 nyári szellő",
+      "detail": "Két flakon nyári szellő illatú koncentrátum egy áráért.",
       "code": "BUBI15",
-      "conditions": "Azonos termék 2 darabjára, csak a kijelölt napon; bolti jóváhagyás és kuponbeállítás után.",
-      "approved": false
+      "conditions": "2 db azonos napi termék a kosárban.",
+      "approved": false,
+      "was": 4980,
+      "price": 2490
     },
     {
       "day": 16,
       "type": "percent",
-      "title": "Lefolyófrissítő nap · javasolt −10%",
-      "detail": "A duguláselhárító 3 990 Ft-os alapárából számolt javasolt ár: 3 591 Ft.",
+      "title": "Szabad lefolyó −10%",
+      "detail": "Ma 10% kedvezmény a duguláselhárítóra.",
       "code": "BUBI16",
-      "conditions": "Jóváhagyás és aktuális ár megerősítése szükséges. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A napi termékre, csak ma éjfélig.",
+      "approved": false,
+      "percent": 10,
+      "was": 3990,
+      "price": 3591
     },
     {
       "day": 17,
       "type": "bundle",
-      "title": "Nagy mosás, vászontáska · ötlet",
-      "detail": "Mosószer 3L (17. nap, 8 090 Ft) + vászontáska (20. nap, 1 290 Ft): külön 9 380 Ft; javasolt csomagár 8 440 Ft.",
+      "title": "Utántöltő szett",
+      "detail": "3 literes mosószer + csapos kupak együtt, csomagáron.",
       "code": "BUBI17",
-      "conditions": "Csomagár nem élő és kereskedői jóváhagyást igényel. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        14
+      ],
+      "was": 9580,
+      "price": 8690
     },
     {
       "day": 18,
       "type": "shipping",
-      "title": "0 Ft szállítás · napi ötlet",
-      "detail": "Javasolt ingyenes kiszállítás a napi terméket tartalmazó rendeléshez.",
+      "title": "0 Ft-os szállítás",
+      "detail": "Ingyenes házhozszállítás, ha a kosárban ott a felületfertőtlenítő.",
       "code": "BUBI18",
-      "conditions": "A napi terméket tartalmazó rendelésre, csak aznap; terület és kosárminimum bolti jóváhagyás után.",
+      "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
       "approved": false
     },
     {
       "day": 19,
       "type": "gift",
-      "title": "Virágillatú otthon · ajándékötlet",
-      "detail": "Javasolt vászontáska (20. nap) ajándék kijelölt mosószer-kosár mellé.",
+      "title": "Kannához kupak ajándék",
+      "detail": "A 3 literes virágillatú mosószer mellé ajándék csapos kupakot adunk.",
       "code": "BUBI19",
-      "conditions": "Készlet, küszöb és jogosultság ellenőrizendő; nincs ígért ajándék. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "Amíg az ajándéktermék készleten van.",
+      "approved": false,
+      "related": [
+        14
+      ],
+      "giftValue": 1490
     },
     {
       "day": 20,
       "type": "one_plus_one",
-      "title": "1+1 · Biobubi Vászontáska",
-      "detail": "Javaslat: 2 db azonos termék 1 db áráért (1 290 Ft).",
+      "title": "1+1 vászontáska",
+      "detail": "Két Biobubi vászontáska egy áráért.",
       "code": "BUBI20",
-      "conditions": "Azonos termék 2 darabjára, csak a kijelölt napon; bolti jóváhagyás és kuponbeállítás után.",
-      "approved": false
+      "conditions": "2 db azonos napi termék a kosárban.",
+      "approved": false,
+      "was": 2580,
+      "price": 1290
     },
     {
       "day": 21,
       "type": "percent",
-      "title": "Gépi mosogatás napja · javasolt −10%",
-      "detail": "A gépi mosogatószer 4 690 Ft-os alapárához képest javasolt ár: 4 221 Ft.",
+      "title": "Ünnepi mosogatás −20%",
+      "detail": "Ma 20% kedvezmény a gépi mosogatószerre.",
       "code": "BUBI21",
-      "conditions": "Tervezet; ár és érvényesség csak jóváhagyás után. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A napi termékre, csak ma éjfélig.",
+      "approved": false,
+      "percent": 20,
+      "was": 4690,
+      "price": 3752
     },
     {
       "day": 22,
       "type": "bundle",
-      "title": "Nagy utántöltő, vászontáska · ötlet",
-      "detail": "Mosószer 5L (22. nap, 12 490 Ft) + vászontáska (20. nap, 1 290 Ft): külön 13 780 Ft; javasolt csomagár 12 400 Ft.",
+      "title": "5 liter + táska",
+      "detail": "5 literes mosószer mellé a vászontáska csomagáron.",
       "code": "BUBI22",
-      "conditions": "Nem aktív csomag; árrés és kereskedői jóváhagyás szükséges. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        20
+      ],
+      "was": 13780,
+      "price": 12490
     },
     {
       "day": 23,
       "type": "gift",
-      "title": "Karácsony előtti rendrakás · ajándékötlet",
-      "detail": "Javasolt kéztörlő (10. nap) ajándék kijelölt nagy kiszerelésű mosószer-rendelés mellé.",
+      "title": "Rendrakás ajándékkal",
+      "detail": "A 3 literes Tisztaság mosószer mellé ajándék vászontáskát adunk.",
       "code": "BUBI23",
-      "conditions": "Nem garantált ajándék; keret, rendelési minimum és készlet ellenőrzése szükséges. Csak az adott napon, a kijelölt termékre/kosárra; bolti jóváhagyás után.",
-      "approved": false
+      "conditions": "Amíg az ajándéktermék készleten van.",
+      "approved": false,
+      "related": [
+        20
+      ],
+      "giftValue": 1290
     },
     {
       "day": 24,
-      "type": "one_plus_one",
-      "title": "1+1 · Bubi Mosószer és öblítő - Tisztaság illattal 5L",
-      "detail": "Javaslat: 2 db azonos termék 1 db áráért (11 790 Ft).",
+      "type": "bundle",
+      "title": "Karácsonyi nagytakarítás",
+      "detail": "5 literes mosószer + ablaktisztító + zsíroldó: a nagy ünnepi csomag.",
       "code": "BUBI24",
-      "conditions": "Azonos termék 2 darabjára, csak a kijelölt napon; bolti jóváhagyás és kuponbeállítás után.",
-      "approved": false
+      "conditions": "A csomag összes termékével a kosárban.",
+      "approved": false,
+      "related": [
+        1,
+        13
+      ],
+      "was": 16570,
+      "price": 13990
     }
   ]
 }
