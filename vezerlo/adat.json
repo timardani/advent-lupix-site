@@ -269,6 +269,24 @@
    "weboldal": "https://biokiskert.hu"
   },
   {
+   "id": "zki",
+   "bolt": "ZKI vetőmag",
+   "kategoria": "Vetőmag / kiskert",
+   "demo": "zki",
+   "allapot": "kuldheto",
+   "kinek": "ZKI-Vetőmag Kereskedelmi Kft. (Kecskemét, magyar tulajdon, 2006 óta)",
+   "email": "",
+   "telefon": "+36 30 712 2222",
+   "kapcsolat_minoseg": "Csak bolti telefon ismert; döntéshozó és e-mail pótlandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó + e-mail pótlása, utána mehet a levél",
+   "megjegyzes": "Méretkapu tudatosan felülbírálva (Dani, 2026-11-03): kb. 1,1 Mrd Ft bevétel, de mehet. A BioKiskert-demó technikai alapjára, új jelenettel.",
+   "motivum": "havas ágyás sorjelző karókkal + karó kihúzása a hóból",
+   "weboldal": "https://zkivetomag.hu"
+  },
+  {
    "id": "horgaszzona",
    "bolt": "Horgász-Zóna",
    "kategoria": "Horgászat",

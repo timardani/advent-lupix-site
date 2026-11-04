@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-03T20:36:20+01:00",
+  "generalva": "2026-11-04T11:51:40+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -40,7 +40,7 @@
       "hianyok": []
     },
     "demeter": {
-      "frissitve": "2026-11-02T20:48+01:00",
+      "frissitve": "2026-11-03T22:00+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -219,6 +219,11 @@
     },
     "yogabazaar": {
       "frissitve": "2026-11-02T10:51+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "zki": {
+      "frissitve": "2026-11-04T11:51+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }
