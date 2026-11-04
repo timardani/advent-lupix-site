@@ -60,7 +60,7 @@
   },
   {
    "nev": "Kézműves / prémium sör",
-   "sor": "Csakajósör → Beerselection (Beerfreak, Sörspecialista: megszűnt)"
+   "sor": "Csakajósör (felszabadult) → Beerselection (demó kész) · Beerfreak, Sörspecialista: megszűnt"
   },
   {
    "nev": "Chili / csípős szószok és fűszerek",
@@ -873,6 +873,24 @@
    "megjegyzes": "Családi chilimanufaktúra, Nagymaros, 2012 óta (GabkoChili Kft.); saját motoros webshop, aktív Meta-pixel. A Sárréti ChiliFarm-demó átdolgozása, 2026-11-03.",
    "motivum": "chilifüzér + hőfokszabályzó felcsavarása (a sarretichilifarm jelenete)",
    "weboldal": "https://gabkochili.hu"
+  },
+  {
+   "id": "beerselection",
+   "bolt": "Beerselection",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "beerselection",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / ügyvezető (név még nem ismert)",
+   "email": "ugyfelszolgalat@beerselection.hu",
+   "telefon": "+36 30 970 2221",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálati cím (lehet, hogy a tulaj kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Ügyvezető nevének ellenőrzése + alkoholjogi (Grt. 13. §) ellenőrzés, majd kiküldés",
+   "megjegyzes": "Átdolgozva a Csakajósör-demóból (2026-11-04). Beerselection Kft., 1085 Budapest, József krt. 22–24.; ShopRenter; saját fizikai sörös adventi kalendáriumot is árul + Craft Beer Card hűségprogram → a digitális naptár inkrementális értékét kell megmutatni.",
+   "motivum": "csappult krétatáblával + csapolás",
+   "weboldal": "https://www.beerselection.hu"
   }
  ]
 }
