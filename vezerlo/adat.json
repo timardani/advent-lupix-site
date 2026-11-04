@@ -100,7 +100,7 @@
   },
   {
    "nev": "Fűszer / gourmet kamra",
-   "sor": "Fűszerész"
+   "sor": "Fűszerész → A Fűszeres Lány"
   },
   {
    "nev": "Makett / miniatűr",
@@ -623,6 +623,24 @@
    "megjegyzes": "Másolat: bolt@fuszeresz.hu; Fűszeres Kft., Szentendre",
    "motivum": "fűszerpolc tasakokkal + borsőrlés",
    "weboldal": "https://webshop.fuszeresz.hu"
+  },
+  {
+   "id": "afuszereslany",
+   "bolt": "A Fűszeres Lány",
+   "kategoria": "Fűszer / gourmet kamra",
+   "demo": "afuszereslany",
+   "allapot": "kuldheto",
+   "kinek": "Zsófi (alapító, kertészmérnök – „A Fűszeres Lány”; vezetéknév nem igazolt)",
+   "email": "david@afuszereslany.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Névre szóló bolti cím (Dávid), nem a tulaj neve – ellenőrizendő",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "A Fűszerész-demó átdolgozása, 2026-11-04. WooCommerce; aktív Meta-hirdetés 2314024436113908 (2026-11-03); családi üzem, saját kézműves keverékek, 257 Google-értékelés; hírlevél van. Saját fizikai „Fűszeres Kalendárium” terméke is van (előrendelés) → a digitális naptár kiegészítésként pitchelhető.",
+   "motivum": "fűszerpolc tasakokkal + borsőrlés (a fuszeresz jelenete)",
+   "weboldal": "https://afuszereslany.hu"
   },
   {
    "id": "makettshop",
