@@ -48,7 +48,7 @@
   },
   {
    "nev": "Baba / kisgyerek",
-   "sor": "Kisebb, tulajdonos vezette bolt keresendő (Artdea kizárva)"
+   "sor": "Fakopáncs (demó kész) → Vesszőparipa → Vidám Játék (Artdea kizárva)"
   },
   {
    "nev": "Sütőeszközök / cukrászkellékek",
@@ -909,6 +909,24 @@
    "megjegyzes": "Átdolgozva a Csakajósör-demóból (2026-11-04). Beerselection Kft., 1085 Budapest, József krt. 22–24.; ShopRenter; saját fizikai sörös adventi kalendáriumot is árul + Craft Beer Card hűségprogram → a digitális naptár inkrementális értékét kell megmutatni.",
    "motivum": "csappult krétatáblával + csapolás",
    "weboldal": "https://www.beerselection.hu"
+  },
+  {
+   "id": "fakopancs",
+   "bolt": "Fakopáncs",
+   "kategoria": "Baba / kisgyerek",
+   "demo": "fakopancs",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@fakopancs.hu",
+   "telefon": "+36 20 379 8189",
+   "kapcsolat_minoseg": "Központi cím (info@) és telefon; cég: Fakopáncs '92 Kft. (1085 Budapest, Baross u. 46.), tulaj/döntéshozó neve pótolandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése",
+   "megjegyzes": "Fajáték-webáruház (UNAS), 1992 óta; saját üzletek + nagykereskedelem/intézményi értékesítés is (Dani 2026-11-04: mehet). Aktív Meta-hirdetés 1251878627033426 (2026-11-03). Hírlevél 1000 Ft-os első vásárlási kuponnal. Ingyenes szállítás 10 000 Ft felett → a szállításos napok 10 000 Ft alatti termékek. 24/24 termék rendelhető (lekérés 2026-11-04), a kódok javaslatok.",
+   "motivum": "fa formaberakó láda 24 formalyukkal + a mai festett fakocka bedobása a saját alakú lyukába (koppan, kicsúszik a fiók), festett fakocka-jel a fotón, puzzle-darab kupon",
+   "weboldal": "https://www.fakopancs.hu"
   }
  ]
 }

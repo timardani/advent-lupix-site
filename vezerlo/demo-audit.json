@@ -1,8 +1,13 @@
 {
-  "generalva": "2026-11-04T13:36:33+01:00",
+  "generalva": "2026-11-04T23:36:44+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "afuszereslany": {
+      "frissitve": "2026-11-04T23:25+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -12,7 +17,7 @@
       "hianyok": []
     },
     "beerselection": {
-      "frissitve": "2026-11-04T13:36+01:00",
+      "frissitve": "2026-11-04T21:47+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -45,6 +50,11 @@
     },
     "demeter": {
       "frissitve": "2026-11-03T22:00+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "fakopancs": {
+      "frissitve": "2026-11-04T23:35+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -227,7 +237,7 @@
       "hianyok": []
     },
     "zki": {
-      "frissitve": "2026-11-04T11:51+01:00",
+      "frissitve": "2026-11-04T14:25+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }
