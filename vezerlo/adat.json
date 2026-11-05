@@ -135,6 +135,10 @@
    "sor": "Természetes gumicukor (Obstermann's) – Dani kérése"
   },
   {
+   "nev": "Élményajándék",
+   "sor": "Meglepkék (Dani kérése, 2026-11-05)"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -963,6 +967,24 @@
    "megjegyzes": "Fajáték-webáruház (UNAS), 1992 óta; saját üzletek + nagykereskedelem/intézményi értékesítés is (Dani 2026-11-04: mehet). Aktív Meta-hirdetés 1251878627033426 (2026-11-03). Hírlevél 1000 Ft-os első vásárlási kuponnal. Ingyenes szállítás 10 000 Ft felett → a szállításos napok 10 000 Ft alatti termékek. 24/24 termék rendelhető (lekérés 2026-11-04), a kódok javaslatok.",
    "motivum": "fa formaberakó láda 24 formalyukkal + a mai festett fakocka bedobása a saját alakú lyukába (koppan, kicsúszik a fiók), festett fakocka-jel a fotón, puzzle-darab kupon",
    "weboldal": "https://www.fakopancs.hu"
+  },
+  {
+   "id": "meglepkek",
+   "bolt": "Meglepkék",
+   "kategoria": "Élményajándék",
+   "demo": "meglepkek",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@meglepkek.hu",
+   "telefon": "+36 30 462 3539",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálat (döntéshozó ismeretlen)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó (tulaj / marketing) azonosítása, levél kiküldése",
+   "megjegyzes": "Dani kérése (2026-11-05). Meglepkék Csoport Kft., 1095 Bp., Tinódi L. Sebestyén köz 1. Nagy szereplő (a logó szerint „Magyarország legnagyobb élmény-webáruháza”, 2006 óta) – a méretkapun Dani kérésére ment át. A demó a bolt saját logójával készült. Kiszállítás 1 790 Ft, 60 000 Ft felett ingyenes.",
+   "motivum": "kaparós adventi bakancslista-plakát 24 ezüst mezővel + a mai mező lekaparása érmével, masnis logó-matrica a fotón, élményutalvány-kupon ezüst kódcsíkkal",
+   "weboldal": "https://meglepkek.hu"
   }
  ]
 }
