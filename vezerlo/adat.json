@@ -985,6 +985,24 @@
    "megjegyzes": "Dani kérése (2026-11-05). Meglepkék Csoport Kft., 1095 Bp., Tinódi L. Sebestyén köz 1. Nagy szereplő (a logó szerint „Magyarország legnagyobb élmény-webáruháza”, 2006 óta) – a méretkapun Dani kérésére ment át. A demó a bolt saját logójával készült. Kiszállítás 1 790 Ft, 60 000 Ft felett ingyenes.",
    "motivum": "kaparós adventi bakancslista-plakát 24 ezüst mezővel + a mai mező lekaparása érmével, masnis logó-matrica a fotón, élményutalvány-kupon ezüst kódcsíkkal",
    "weboldal": "https://meglepkek.hu"
+  },
+  {
+   "id": "roastcoffee",
+   "bolt": "Röast Coffee",
+   "kategoria": "Kávé",
+   "demo": "roastcoffee",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "hello@roastcoffee.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Kiküldés (Dani kézzel); a Koffein Roasters helyett ez a kávé-demó",
+   "megjegyzes": "Shopify (shop.roastcoffee.hu), üzemeltető: Roastar Zrt., Budaörs; saját pörkölő + SCA-oktatás. Pecsét = a kupon kávéjának származási országa; szállítási/eredet nélküli napon MAGYARORSZÁG/HUNGARY/BUDAÖRS/EURÓPA.",
+   "motivum": "kávéútlevél + pecsételés (Koffein-demó átdolgozása)",
+   "weboldal": "https://shop.roastcoffee.hu"
   }
  ]
 }

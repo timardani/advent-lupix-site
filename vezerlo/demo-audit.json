@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-05T13:30:09+01:00",
+  "generalva": "2026-11-05T14:46:04+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -172,6 +172,11 @@
     },
     "polomania": {
       "frissitve": "2026-10-28T15:14+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "roastcoffee": {
+      "frissitve": "2026-11-05T14:44+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
