@@ -1003,6 +1003,24 @@
    "megjegyzes": "Shopify (shop.roastcoffee.hu), üzemeltető: Roastar Zrt., Budaörs; saját pörkölő + SCA-oktatás. Pecsét = a kupon kávéjának származási országa; szállítási/eredet nélküli napon MAGYARORSZÁG/HUNGARY/BUDAÖRS/EURÓPA.",
    "motivum": "kávéútlevél + pecsételés (Koffein-demó átdolgozása)",
    "weboldal": "https://shop.roastcoffee.hu"
+  },
+  {
+   "id": "littleharmony",
+   "bolt": "Little Harmony",
+   "kategoria": "Illatgyertya",
+   "demo": "littleharmony",
+   "allapot": "kuldheto",
+   "kinek": "Ács Anita (egyéni vállalkozó)",
+   "email": "info@littleharmony.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Tulajdonosi csatorna",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "2117 Isaszeg; WooCommerce; aktív Meta-hirdetés 30012104371712633 (2026-11-03); a Viaszkuckó-demó átdolgozása (2026-11-05). Kis katalógus: 24 saját képes termék, tartalék nélkül; a karácsonyi kollekció még nincs kint (csak teamécsesek fotó nélkül). A kutatási sorban Illatgyertya.hu (Kft., ShopRenter) volt a következő, helyette a kisebb, tulajdonos vezette, éppen hirdető Little Harmony.",
+   "motivum": "gyertyák + gyufagyújtás",
+   "weboldal": "https://littleharmony.hu"
   }
  ]
 }
