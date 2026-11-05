@@ -60,7 +60,7 @@
   },
   {
    "nev": "Kézműves / prémium sör",
-   "sor": "Csakajósör (felszabadult) → Beerselection (demó kész) · Beerfreak, Sörspecialista: megszűnt"
+   "sor": "Csakajósör (felszabadult) → Beerselection (demó kész) · Beerfreak, Sörspecialista: megszűnt · MONYO (külön projekt, Dani kérése, 2026-11-05)"
   },
   {
    "nev": "Chili / csípős szószok és fűszerek",
@@ -1040,6 +1040,24 @@
    "megjegyzes": "WeLoveShirts Kft., 6000 Kecskemét (cégjegyzék 03-09-127585); WooCommerce; 2013 óta, saját nyomda, több mint 5.000 minta; MailerLite hírlevél a boltban; aktív Meta-hirdetés („vicces póló”, 2026-11-03). A Pólómánia-demó átdolgozása (2026-11-05, Dani kérésére): 24 saját karácsonyi minta, licences (Minecraft, Pokémon, Star Wars stb.) kihagyva. 10.000 Ft felett ingyen szállít, ezért a szállítási kupon csak az alatti termékeken van. Korábbi kutatás: „valószínűleg nagyobb cég”, Dani szerint „nem rossz”, mehet.",
    "motivum": "pólónyomda szita + rakli-húzás",
    "weboldal": "https://pamutlabor.hu"
+  },
+  {
+   "id": "monyo",
+   "bolt": "MONYO Brewing Co.",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "monyo",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "shop@monyobrewing.com",
+   "telefon": "+36 70 415 0885",
+   "kapcsolat_minoseg": "Webshop ügyfélszolgálati cím (lehet, hogy a tulaj kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó (tulaj/marketing) nevének ellenőrzése + alkoholjogi (Grt. 13. §) ellenőrzés, majd kiküldés",
+   "megjegyzes": "Új projekt Dani kérésére (2026-11-05), a sörös kategóriában a Beerselection mellett (ütközés rendben). Monyo Brewing Kft., 1103 Budapest, Gyömrői út 148.; UNAS (www.monyobrewing.com); 25 000 Ft felett ingyenes szállítás; hírlevél van. 24 termék: core/prémium/limitált sörök, 0%-os craft soda, pakkok, merch.",
+   "motivum": "felülnézeti kraft sörtálca 24 doboztetővel + a mai doboz nyitófülének felhúzása (pssszt, habkitörés), nyitófül-jel a fotón, dobozcímke-szalag kupon",
+   "weboldal": "https://www.monyobrewing.com"
   }
  ]
 }

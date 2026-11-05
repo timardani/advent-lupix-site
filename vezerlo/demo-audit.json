@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-05T21:10:03+01:00",
+  "generalva": "2026-11-05T21:19:33+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -136,7 +136,7 @@
       "hianyok": []
     },
     "littleharmony": {
-      "frissitve": "2026-11-05T21:05+01:00",
+      "frissitve": "2026-11-05T21:10+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -147,6 +147,11 @@
     },
     "meglepkek": {
       "frissitve": "2026-11-05T13:28+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "monyo": {
+      "frissitve": "2026-11-05T21:19+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
