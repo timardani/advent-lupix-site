@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-04T23:36:44+01:00",
+  "generalva": "2026-11-05T12:29:12+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -112,6 +112,11 @@
     },
     "horgaszzona": {
       "frissitve": "2026-10-28T01:34+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "hotchip": {
+      "frissitve": "2026-11-05T12:27+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
