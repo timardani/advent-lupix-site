@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 SEED = Path(os.environ.get("VEZERLO_SEED", "/app-seed/adat.json"))
 DATA = Path(os.environ.get("VEZERLO_ADAT", "/data/adat.json"))
+RELEASES = Path(os.environ.get("VEZERLO_KIADAS", "/usr/share/nginx/html/vezerlo/kiadas.json"))
 HOST = os.environ.get("VEZERLO_API_HOST", "127.0.0.1")
 PORT = int(os.environ.get("VEZERLO_API_PORT", "8081"))
 MAX_BODY = 16_384
@@ -36,6 +37,30 @@ JEGYZET_MAX = 3000
 # Dani által a felületen kézzel beírható kapcsolati adatok. Ha a /data-ban
 # már nem üres, az marad; ha üres, a seed (kutatásból jövő) érték érvényes.
 KEZI_MEZOK = {"kinek", "email", "telefon", "megjegyzes", "weboldal"}
+# A vezérlő Lezárt oszlopának állapotai.
+LEZART_ALLAPOTOK = {"lezart", "nem", "lejart", "kizart"}
+
+
+def demo_access(uri, is_admin):
+    """A lezárt bemutató csak a vezérlőbe belépett felhasználónak érhető el."""
+    path = uri.split("?", 1)[0]
+    # Az nginx normalizálja a kiszolgált útvonalat. Az eredeti URI nem
+    # engedhet másik demóba átlépést (../, // vagy %-kódolt változatok).
+    if not path.startswith("/") or "%" in path or "//" in path or any(
+            segment in {".", ".."} for segment in path.split("/")):
+        return False
+    parts = path.split("/")
+    slug = parts[3] if parts[1:3] == ["api", "kal"] else parts[1]
+    releases = json.loads(RELEASES.read_text("utf-8"))
+    demo = next((d["demo"] for d in releases["demok"] if d["slug"] == slug), None)
+    if not demo:
+        return False
+    if is_admin:
+        return True
+    bolt = next((b for b in load_data()["boltok"] if b.get("id") == demo), None)
+    # Hiányzó/érvénytelen rekord vagy olvasási hiba esetén nem tesszük nyilvánossá.
+    status = bolt.get("allapot") if bolt else None
+    return status in ALLAPOTOK and status not in LEZART_ALLAPOTOK
 
 
 def init_data():
@@ -116,6 +141,13 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self):
+        if urlparse(self.path).path == "/demo-access":
+            try:
+                allowed = demo_access(self.headers.get("X-Demo-URI", ""),
+                                      self.headers.get("X-Vezerlo-OK") == "1")
+            except (ValueError, KeyError, IndexError, OSError, TypeError):
+                allowed = False
+            return self.send_json(200 if allowed else 403, {"elerheto": allowed})
         if urlparse(self.path).path != "/adat":
             return self.send_json(404, {"hiba": "Nincs ilyen végpont."})
         try:
