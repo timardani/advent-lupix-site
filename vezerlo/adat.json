@@ -104,7 +104,7 @@
   },
   {
    "nev": "Makett / miniatűr",
-   "sor": "Makettshop → Modell & Hobby"
+   "sor": "Makettshop → Megamakett → Modell & Hobby"
   },
   {
    "nev": "Művészellátó",
@@ -1058,6 +1058,24 @@
    "megjegyzes": "Új projekt Dani kérésére (2026-11-05), a sörös kategóriában a Beerselection mellett (ütközés rendben). Monyo Brewing Kft., 1103 Budapest, Gyömrői út 148.; UNAS (www.monyobrewing.com); 25 000 Ft felett ingyenes szállítás; hírlevél van. 24 termék: core/prémium/limitált sörök, 0%-os craft soda, pakkok, merch.",
    "motivum": "felülnézeti kraft sörtálca 24 doboztetővel + a mai doboz nyitófülének felhúzása (pssszt, habkitörés), nyitófül-jel a fotón, dobozcímke-szalag kupon",
    "weboldal": "https://www.monyobrewing.com"
+  },
+  {
+   "id": "megamakett",
+   "bolt": "Megamakett",
+   "kategoria": "Makett / miniatűr",
+   "demo": "megamakett",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@megamakett.hu",
+   "telefon": "+36 30 455 6550",
+   "kapcsolat_minoseg": "Általános cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Megahobby Kft., 1137 Budapest (csak online bolt); aktív Meta-hirdetés 412005821470824 (2026-11-03); UNAS. Makettshop-demó átdolgozása (2026-11-06). Tulaj neve nem ismert.",
+   "motivum": "öntőkeret (sprue) + alkatrész kitörése",
+   "weboldal": "https://www.megamakett.hu"
   }
  ]
 }
