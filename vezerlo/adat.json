@@ -139,6 +139,10 @@
    "sor": "Meglepkék (Dani kérése, 2026-11-05)"
   },
   {
+   "nev": "Méhészet / méz",
+   "sor": "Popovics Méz (demó kész, 2026-11-07) → Simai Családi Méhészet"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -1076,6 +1080,24 @@
    "megjegyzes": "Megahobby Kft., 1137 Budapest (csak online bolt); aktív Meta-hirdetés 412005821470824 (2026-11-03); UNAS. Makettshop-demó átdolgozása (2026-11-06). Tulaj neve nem ismert.",
    "motivum": "öntőkeret (sprue) + alkatrész kitörése",
    "weboldal": "https://www.megamakett.hu"
+  },
+  {
+   "id": "popovicsmez",
+   "bolt": "Popovics Méz",
+   "kategoria": "Méhészet / méz",
+   "demo": "popovicsmez",
+   "allapot": "kuldheto",
+   "kinek": "Popovics Balázs (mezőgazdasági őstermelő, tulajdonos)",
+   "email": "info@popovicsmez.hu",
+   "telefon": "+36 20 273 3866",
+   "kapcsolat_minoseg": "Tulajdonos közvetlenül (őstermelő, saját webshop)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hétfő, 11.09.)",
+   "megjegyzes": "Hajrá 2026-11-07, méhészet első demója. Termelő (nem viszonteladó, a Demeter-minta szerint), Shopify, 46 termék, hírlevél-feliratkozás van, Meta-hirdetést futtat. Új bolt: „nyitási ajánlat” nov. 8-ig ingyenes szállítás; egyébként GLS 2 490 Ft, 20 000 Ft felett ingyenes. 8 terméknél csak helyőrző kép van a boltban (pl. lépesméz, gesztenye), ezek kimaradtak. Ár/készlet: popovicsmez.hu/products.json, 2026-11-07.",
+   "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel",
+   "weboldal": "https://popovicsmez.hu/"
   }
  ]
 }
