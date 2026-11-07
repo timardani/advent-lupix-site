@@ -90,7 +90,7 @@ def wait_title(url, want, secs=40):
 
 
 def key_images(demo, since):
-    shots = [p for p in (demo / "screenshots").glob("*.png") if p.stat().st_mtime >= since - 1]
+    shots = [p for p in (demo / "screenshots").rglob("*.png") if p.stat().st_mtime >= since - 1]
     picked = []
     for pat in KEY_PATTERNS:
         for p in sorted(shots):
@@ -145,7 +145,10 @@ def check(slug, opts):
             else:
                 env = dict(**__import__("os").environ, DEMO_URL=url.rstrip("/"))
                 t0 = time.time()
-                rc, msg = lg.run("capture", ["npm", "run", "capture", "--silent"], demo, env=env, timeout=1200)
+                has_npm = '"capture"' in (demo / "package.json").read_text("utf-8")
+                cmd = (["npm", "run", "capture", "--silent"] if has_npm or not (demo / "scripts" / "capture.mjs").exists()
+                       else ["node", "scripts/capture.mjs"])  # pl. szobanövény-család: nincs npm capture
+                rc, msg = lg.run("capture", cmd, demo, env=env, timeout=1200)
                 images, nshots = key_images(demo, t0)
                 steps.append(("capture", rc == 0, f"{nshots} kép · {msg}" if rc else f"{nshots} kép"))
                 ok &= rc == 0

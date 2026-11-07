@@ -90,18 +90,34 @@ def companion_prices(o, prod, comp):
     return [x for x in out if isinstance(x, (int, float))]
 
 
+def load_clients(cdir):
+    """Szobanövény-család (tropicalhome → novenybirodalom → …): clients/<bolt>/ajanlatjavaslatok.json
+    {"napok":[{nap,tipus,cim,kod,feltetel,with}]}, termekek.json [{nap,ar}], kiegeszitok.json {handle:{ar}}."""
+    raw = [dict(o, day=o.get("nap"), type=o.get("tipus"), title=o.get("cim"), detail=o.get("szoveg"),
+                code=o.get("kod"), conditions=o.get("feltetel"), companions=o.get("with") or [])
+           for o in load(cdir / "ajanlatjavaslatok.json")["napok"]]
+    prod = {int(p["nap"]): p.get("ar") for p in load(cdir / "termekek.json")}
+    kp = cdir / "kiegeszitok.json"
+    comp = {str(h): c.get("ar") for h, c in (load(kp).items() if kp.exists() else [])}
+    return raw, prod, comp
+
+
 def check(demo, egeszseg):
     errs, warns = [], []
     f = demo / "data" / "offers.json"
-    if not f.exists():
-        return None, [f"nincs {f.relative_to(demo.parent)}"], []
-    raw = load(f)
+    cl = [] if f.exists() else sorted((demo / "clients").glob("*/ajanlatjavaslatok.json"))
+    if not f.exists() and not cl:
+        return None, [f"nincs {f.relative_to(demo.parent)} (és clients/*/ajanlatjavaslatok.json sem)"], []
+    if cl:
+        raw, cprod, ccomp = load_clients(cl[0].parent)
+    else:
+        raw = load(f)
     marker = demo / "data" / "_REGI_BOLT"
     if marker.exists():
         errs.append(f"offers/companions még a régi bolté ({marker.read_text('utf-8').strip()}): "
                     "írd át, majd tedd Kukába a data/_REGI_BOLT fájlt")
     offers = sorted(offers_of(raw), key=lambda o: int(o.get("day", 0)))
-    prod, comp = price_map(demo)
+    prod, comp = (cprod, ccomp) if cl else price_map(demo)
     days = [int(o.get("day", 0)) for o in offers]
     if days != list(range(1, 25)):
         errs.append(f"napok nem 1..24 ({len(days)} db)")
