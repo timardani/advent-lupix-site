@@ -79,7 +79,8 @@ def num(s):
 
 
 def is_placeholder(u):
-    return not u or bool(re.search(r"no_image|placeholder|noimage|nopic|default-image|data:image", u, re.I))
+    # helyorzo/helyőrző: magyar helyőrző képnév (popovicsmez: vad-voros-afonya-helyorzo.jpg)
+    return not u or bool(re.search(r"no_image|placeholder|noimage|nopic|default-image|helyorzo|helyőrző|data:image", u, re.I))
 
 
 # ---------------- adapters ----------------
@@ -99,6 +100,8 @@ def shopify(base, home, fresh, kat):
             av = [v for v in p.get("variants", []) if v.get("available")]
             prices = [num(v.get("price")) for v in av if num(v.get("price"))]
             img = (p.get("images") or [{}])[0].get("src")
+            if is_placeholder(img):
+                img = None
             if img:
                 img += ("&" if "?" in img else "?") + "width=900"
             out.append(dict(
