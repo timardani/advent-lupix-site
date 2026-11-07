@@ -143,6 +143,10 @@
    "sor": "Popovics Méz (demó kész, 2026-11-07) → Simai Családi Méhészet"
   },
   {
+   "nev": "Import édesség / amerikai snack",
+   "sor": "CandyDaddy (demó kész, 2026-11-08)"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -1152,6 +1156,24 @@
    "megjegyzes": "Best Plants and Decor Kft. (Pilisvörösvár, Őrhegy u. 5.), ShopRenter; saját kertészet („Kertészetből, nem raktárból”), saját szaporítású dugványok, ritkaságok, bromélia, dekor; gmail-es cím → valószínűleg tulaj kezeli; hírlevél-feliratkozás van. A Növénybirodalom-demó átdolgozása (2026-11-07). Szállítási küszöböt nem találtam, a 0 Ft-os szállítási napok semlegesen fogalmazva. Decemberi kapocs: fűtőtasak társtermékként, Helleborus 'Red December', havas házikó dekor.",
    "motivum": "párás üvegházablak + letörlés (a tropicalhome jelenete)",
    "weboldal": "https://www.bestplants.hu"
+  },
+  {
+   "id": "candydaddy",
+   "bolt": "CandyDaddy",
+   "kategoria": "Import édesség / amerikai snack",
+   "demo": "candydaddy",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos (név még nem ismert)",
+   "email": "info@candydaddy.eu",
+   "telefon": "+36 70 245 0915",
+   "kapcsolat_minoseg": "Webshop info@ címe (kis Kft., valószínűleg a tulaj kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése a hajrában (hétfő, 11.09.), rövid határidővel (11.11–12.)",
+   "megjegyzes": "Dani kérése (2026-11-08): teljesen új demó, új kategória. Candydaddy Kft. (adószám 32520648-2-15); Shopify, ~250 termék, Omnisend-hírlevél van. DPD 1 780 Ft, ingyenes küszöb nincs, minimális rendelés 3 000 Ft, 15 000 Ft felett a bolt már most ajándékot ad. 24 termék: amerikai/ázsiai snack, karácsonyi édesség, gumicukor; Mikulás-termék dec. 2–3., karácsonyi óriásdoboz dec. 14., dec. 24. USA Candy Box csomag. Felnőtt tartalmú termék és 1 kg-os ömlesztett ismétlődések kizárva.",
+   "motivum": "retró snack-automata 24 spirálos rekesszel (A1–F4) + a mai kód beütése a billentyűzeten (a spirál elfordul, a csomag lepottyan a kiadótálcába), aranyérme-jel a fotón, hőpapír-blokk kupon",
+   "weboldal": "https://candydaddy.eu/"
   }
  ]
 }
