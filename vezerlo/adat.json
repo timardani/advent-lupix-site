@@ -1116,6 +1116,24 @@
    "megjegyzes": "Hajrá 2026-11-07, méhészet első demója. Termelő (nem viszonteladó, a Demeter-minta szerint), Shopify, 46 termék, hírlevél-feliratkozás van, Meta-hirdetést futtat. Új bolt: „nyitási ajánlat” nov. 8-ig ingyenes szállítás; egyébként GLS 2 490 Ft, 20 000 Ft felett ingyenes. 8 terméknél csak helyőrző kép van a boltban (pl. lépesméz, gesztenye), ezek kimaradtak. Ár/készlet: popovicsmez.hu/products.json, 2026-11-07.",
    "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel",
    "weboldal": "https://popovicsmez.hu/"
+  },
+  {
+   "id": "mmm",
+   "bolt": "Magyar Méz Manufaktúra",
+   "kategoria": "Méhészet / méz",
+   "demo": "mmm",
+   "allapot": "kuldheto",
+   "kinek": "unknown (Magyar Méz Manufaktúra Kft.; az impresszumban nincs név, céges info-cím)",
+   "email": "info@magyarmezmanufaktura.hu",
+   "telefon": "+36 70 771 3246",
+   "kapcsolat_minoseg": "Céges info-cím (manufaktúra, saját webshop); a tulajdonost név szerint nem találtuk",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hétfő, 11.09.)",
+   "megjegyzes": "Hajrá 2026-11-07, méhészet 2. levele (Dani: „mehet”), a popovicsmez demó átdolgozása (csak márka + termékcsere). Magyar Méz Manufaktúra Kft. (Budapest, adószám 25898480-2-42), WooCommerce, 124 termék, Mailchimp-hírlevél, díjnyertes és bio mézek, Hot Honey (Jancsa Jani), mézbor, Busy Bees céges ajánlat. GLS 1 490 Ft, 20 000 Ft felett ingyenes. 24 nap: mézek, krémmézek, mézborok, csomagok; 24. nap Deluxe Box. Ár/készlet: mmm.hu Store API, 2026-11-07.",
+   "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (popovicsmez átdolgozás, MMM erdőzöld)",
+   "weboldal": "https://mmm.hu/"
   }
  ]
 }
