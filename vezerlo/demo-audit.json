@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-06T13:15:11+01:00",
+  "generalva": "2026-11-07T20:04:59+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -280,6 +280,11 @@
     },
     "zki": {
       "frissitve": "2026-11-04T14:25+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "szentandras": {
+      "frissitve": "2026-11-07T20:04+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }

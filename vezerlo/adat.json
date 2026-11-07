@@ -1064,6 +1064,24 @@
    "weboldal": "https://www.monyobrewing.com"
   },
   {
+   "id": "szentandras",
+   "bolt": "Szent András Sörfőzde",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "szentandras",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "hsz@szentandrassorfozde.hu",
+   "telefon": "+36 20 925 9410",
+   "kapcsolat_minoseg": "Webshop ügyfélszolgálati cím (lehet, hogy a tulaj kezeli); admin@szentandrassorfozde.hu is van",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó (tulaj/marketing) nevének ellenőrzése + alkoholjogi (Grt. 13. §) ellenőrzés, majd kiküldés",
+   "megjegyzes": "Dani kérésére (2026-11-07), hajrá: a MONYO demó átdolgozása, komolyabb dizájnnal (cuki nyulas hero helyett sötét prémium doboz, fekete–arany–krém, Poppins). Agro-Flott Kft., Békésszentandrás; ShopRenter (webshop.szentandrassorfozde.hu); 38 000 Ft felett ingyenes szállítás, alatta 2 400 Ft; Mailchimp-hírlevél van. 24 termék: 13 sör, 7 válogatás, 4 pohár/korsó. Méret: Lidlben/Auchanban/Tescóban is jelen van (nagyobb főzde), Dani kifejezetten kérte.",
+   "motivum": "felülnézeti kraft sörtálca 24 doboztetővel + a mai doboz nyitófülének felhúzása (pssszt, habkitörés), nyitófül-jel a fotón, dobozcímke-szalag kupon – a monyo átdolgozása",
+   "weboldal": "https://webshop.szentandrassorfozde.hu"
+  },
+  {
    "id": "megamakett",
    "bolt": "Megamakett",
    "kategoria": "Makett / miniatűr",
