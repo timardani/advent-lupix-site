@@ -1,0 +1,424 @@
+[
+ {
+  "input": "https://popovicsmez.hu/",
+  "domain": "popovicsmez.hu",
+  "ok": true,
+  "base": "https://popovicsmez.hu",
+  "platform": "Shopify",
+  "company": null,
+  "tax_id": null,
+  "emails": [
+   "info@popovicsmez.hu"
+  ],
+  "phones": [
+   "+36 20 273 3866"
+  ],
+  "newsletter": "form",
+  "logo": "https://popovicsmez.hu/cdn/shop/files/popovicsmezlogo.png?v=1788453006&width=400",
+  "legal_pages": [
+   "200 https://popovicsmez.hu/pages/impresszum",
+   "200 https://popovicsmez.hu/pages/aszf",
+   "200 https://popovicsmez.hu/pages/contact"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=popovicsmez&search_type=keyword_unordered",
+  "email": "info@popovicsmez.hu",
+  "phone": "+36 20 273 3866",
+  "products": "~47",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://mezrendelespecs.hu/",
+  "domain": "mezrendelespecs.hu",
+  "ok": true,
+  "base": "https://mezrendelespecs.hu",
+  "platform": "WooCommerce",
+  "company": "Simai Attila EV",
+  "tax_id": "79493178-1-22",
+  "emails": [
+   "info@mezrendelespecs.hu"
+  ],
+  "phones": [
+   "+36 30 285 7794",
+   "+36 30 946 9671"
+  ],
+  "newsletter": "form",
+  "logo": "https://mezrendelespecs.hu/wp-content/uploads/elementor/thumbs/cropped-simai-csaladi-meheszet-logo-v1-p1ctywr1d72xkltkkktohu9r2i804hvbnnh23e8a9s.png",
+  "legal_pages": [
+   "200 https://mezrendelespecs.hu/impresszum/"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=mezrendelespecs&search_type=keyword_unordered",
+  "email": "info@mezrendelespecs.hu",
+  "phone": "+36 30 285 7794",
+  "products": "32",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://www.mezerdo.hu/",
+  "domain": "mezerdo.hu",
+  "ok": true,
+  "base": "https://www.mezerdo.hu",
+  "platform": "ShopRenter",
+  "company": "Méhek és Mézek Kft.",
+  "tax_id": "32446339-1-19",
+  "emails": [
+   "info@nmhh.hu",
+   "info@salesautopilot.hu"
+  ],
+  "phones": [
+   "+36 70 341 2047",
+   "+36 30 241 0656"
+  ],
+  "newsletter": "form",
+  "logo": "https://mezerdo.cdn.shoprenter.hu/custom/mezerdo/image/cache/w330h88q100/Fooldal/Mezerdo_Logo-06.png.webp?lastmod=0.1772020846",
+  "legal_pages": [
+   "200 https://www.mezerdo.hu/vasarlasi-feltetelek",
+   "200 https://www.mezerdo.hu/index.php?route=information/contact",
+   "200 https://www.mezerdo.hu/adatvedelmi-nyilatkozat"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=mezerdo&search_type=keyword_unordered",
+  "email": "info@nmhh.hu",
+  "phone": "+36 70 341 2047",
+  "products": "~110",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://molnarmeheszet.hu/",
+  "domain": "molnarmeheszet.hu",
+  "ok": true,
+  "base": "https://molnarmeheszet.hu",
+  "platform": "ShopRenter",
+  "company": "Teherszállító Kft.",
+  "tax_id": "55182922-1-36",
+  "emails": [
+   "molnarmeheszetjaszbereny@gmail.com"
+  ],
+  "phones": [
+   "+36 70 538 1821",
+   "+36 56 510 610"
+  ],
+  "newsletter": "form",
+  "logo": "https://molnarmeheszet.hu/custom/jaszhoney/image/cache/w220h100m00/Pics/logo.jpg",
+  "legal_pages": [
+   "200 https://molnarmeheszet.hu/altalanos-szerzodesi-feltetelek-54"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=molnarmeheszet&search_type=keyword_unordered",
+  "email": "molnarmeheszetjaszbereny@gmail.com",
+  "phone": "+36 70 538 1821",
+  "products": "~76",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://harapunk.hu/",
+  "domain": "harapunk.hu",
+  "ok": true,
+  "base": "https://harapunk.hu",
+  "platform": "WooCommerce",
+  "company": null,
+  "tax_id": null,
+  "emails": [],
+  "phones": [
+   "+36 30 570 0564",
+   "+36 20 543 9794"
+  ],
+  "newsletter": "form",
+  "logo": "https://harapunk.hu/wp-content/uploads/2022/04/Harapunk.png",
+  "legal_pages": [
+   "404 https://harapunk.hu/adatvedelmi-tajekoztato/"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=harapunk&search_type=keyword_unordered",
+  "email": null,
+  "phone": "+36 30 570 0564",
+  "products": "22",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://www.fehernyul.hu/",
+  "domain": "fehernyul.hu",
+  "ok": true,
+  "base": "https://www.fehernyul.hu",
+  "platform": "Unas",
+  "company": "Fehér Nyúl Sörfőző Kft.",
+  "tax_id": "14922563-2-43",
+  "emails": [
+   "info@fehernyul.hu",
+   "shop@fehernyul.hu"
+  ],
+  "phones": [
+   "+36 1 391 1400",
+   "+36 1 391 1410"
+  ],
+  "newsletter": "mailchimp",
+  "logo": "https://www.fehernyul.hu/!common_design/custom/fehernyul.unas.hu/element/layout_hu_header_logo-260x60_1_default.png?time=1775049414",
+  "legal_pages": [
+   "200 https://www.fehernyul.hu/shop_help.php?tab=terms"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=fehernyul&search_type=keyword_unordered",
+  "email": "info@fehernyul.hu",
+  "phone": "+36 1 391 1400",
+  "products": "~316",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://helkasor.hu/",
+  "domain": "helkasor.hu",
+  "ok": true,
+  "base": "https://helkasor.hu",
+  "platform": "WooCommerce",
+  "company": "GASTROFLEX KFT.",
+  "tax_id": null,
+  "emails": [
+   "laknerdori@helkasor.hu",
+   "info@helkasor.hu"
+  ],
+  "phones": [
+   "+36 70 546 7344",
+   "+36 70 386 0637"
+  ],
+  "newsletter": "mailerlite",
+  "logo": "https://helkasor.hu/wp-content/uploads/2022/05/Helka-sorfozde-logo-1.svg",
+  "legal_pages": [
+   "200 https://helkasor.hu/aszf/",
+   "200 https://helkasor.hu/privacy-policy/"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=helkasor&search_type=keyword_unordered",
+  "email": "laknerdori@helkasor.hu",
+  "phone": "+36 70 546 7344",
+  "products": "28",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://hoptop.hu/",
+  "domain": "hoptop.hu",
+  "ok": true,
+  "base": "https://hoptop.hu",
+  "platform": "Unas",
+  "company": "Nap Fair Kft.",
+  "tax_id": "24652632-2-42",
+  "emails": [
+   "webshop@hoptop.hu",
+   "info@hoptop.hu"
+  ],
+  "phones": [
+   "+36 20 371 1787",
+   "+36 30 268 3160"
+  ],
+  "newsletter": "form",
+  "logo": "https://hoptop.hu/!common_design/custom/hoptop.unas.hu/element/layout_hu_header_logo-300x80_1_default.png?time=1774517165",
+  "legal_pages": [
+   "200 https://hoptop.hu/shop_help.php?tab=terms"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=hoptop&search_type=keyword_unordered",
+  "email": "webshop@hoptop.hu",
+  "phone": "+36 20 371 1787",
+  "products": "~188",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://www.spektrum.coffee",
+  "domain": "spektrum.coffee",
+  "ok": true,
+  "base": "https://www.spektrum.coffee",
+  "platform": "Unas",
+  "company": "Spektrum Coffee Roastery Kft.",
+  "tax_id": "32358560-2-42",
+  "emails": [
+   "hello@spektrum.coffee",
+   "gyorgy@spektrum.coffee"
+  ],
+  "phones": [
+   "+36 30 982 2298",
+   "+36 29 886 700"
+  ],
+  "newsletter": "form",
+  "logo": "https://www.spektrum.coffee/!common_design/custom/spektrumcoffee.unas.hu/element/layout_hu_header_logo-400x120_1_default.png?time=1765823130",
+  "legal_pages": [
+   "200 https://www.spektrum.coffee/shop_help.php?tab=terms"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=spektrum&search_type=keyword_unordered",
+  "email": "hello@spektrum.coffee",
+  "phone": "+36 30 982 2298",
+  "products": "~46",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://www.maran.hu",
+  "domain": "maran.hu",
+  "ok": true,
+  "base": "https://www.maran.hu",
+  "platform": "Unas",
+  "company": "Maran Coffee Kft.",
+  "tax_id": null,
+  "emails": [
+   "hello@maran.hu"
+  ],
+  "phones": [
+   "+36 70 315 9227"
+  ],
+  "newsletter": "klaviyo",
+  "logo": "https://www.maran.hu/!common_design/custom/maran.unas.hu/element/layout_hu_header_logo-400x120_1_default.png?time=1776253014",
+  "legal_pages": [
+   "200 https://www.maran.hu/shop_help.php?tab=terms",
+   "200 https://www.maran.hu/shop_contact.php?tab=shipping",
+   "200 https://www.maran.hu/shop_help.php?tab=privacy_policy"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=maran&search_type=keyword_unordered",
+  "email": "hello@maran.hu",
+  "phone": "+36 70 315 9227",
+  "products": "~51",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://groundroastery.com",
+  "domain": "groundroastery.com",
+  "ok": true,
+  "base": "https://groundroastery.com",
+  "platform": "WooCommerce",
+  "company": null,
+  "tax_id": null,
+  "emails": [
+   "hello@groundroastery.com"
+  ],
+  "phones": [
+   "+36 30 914 7777"
+  ],
+  "newsletter": "form",
+  "logo": "https://groundroastery.com/wp-content/uploads/2025/04/GR-logo_horizontal-black-scaled.png",
+  "legal_pages": [
+   "200 https://groundroastery.com/kapcsolat/"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=groundroastery&search_type=keyword_unordered",
+  "email": "hello@groundroastery.com",
+  "phone": "+36 30 914 7777",
+  "products": "15",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://www.manucafe.hu",
+  "domain": "manucafe.hu",
+  "ok": true,
+  "base": "https://www.manucafe.hu",
+  "platform": "egyéb",
+  "company": null,
+  "tax_id": null,
+  "emails": [],
+  "phones": [
+   "+36 30 842 5200",
+   "+36 1 488 2131"
+  ],
+  "newsletter": "form",
+  "logo": "https://www.manucafe.hu/logo-hm-10.png?2",
+  "legal_pages": [
+   "200 https://www.manucafe.hu/altalanos-szerzodesi-feltetelek-x31424"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=manucafe&search_type=keyword_unordered",
+  "email": null,
+  "phone": "+36 30 842 5200",
+  "products": "unknown",
+  "products_source": "-"
+ },
+ {
+  "input": "https://egrichiliagok.hu",
+  "domain": "egrichiliagok.hu",
+  "ok": true,
+  "base": "https://egrichiliagok.hu",
+  "platform": "Unas",
+  "company": "Történelmi Chili Kft.",
+  "tax_id": "32533482-1-10",
+  "emails": [
+   "info@egrichiliagok.hu"
+  ],
+  "phones": [
+   "+36 70 408 5192",
+   "+36 70 408 5191"
+  ],
+  "newsletter": "form",
+  "logo": "https://egrichiliagok.hu/!common_design/custom/egrichiliagok.unas.hu/element/layout_hu_header_logo-200x50_1_default.png?time=1618995709",
+  "legal_pages": [
+   "200 https://egrichiliagok.hu/shop_help.php?tab=terms",
+   "200 https://egrichiliagok.hu/shop_contact.php?tab=payment"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=egrichiliagok&search_type=keyword_unordered",
+  "email": "info@egrichiliagok.hu",
+  "phone": "+36 70 408 5192",
+  "products": "~56",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://chilidise.hu",
+  "domain": "chilidise.hu",
+  "ok": true,
+  "base": "https://chilidise.hu",
+  "platform": "WooCommerce",
+  "company": null,
+  "tax_id": "55686282-1-38",
+  "emails": [
+   "info@chilidise.hu"
+  ],
+  "phones": [
+   "+36 70 320 0279",
+   "+36 94 312 356"
+  ],
+  "newsletter": null,
+  "logo": "https://chilidise.hu/wp-content/uploads/2026/09/logo-180x170.webp",
+  "legal_pages": [
+   "200 https://chilidise.hu/aszf/",
+   "200 https://chilidise.hu/kapcsolat/",
+   "200 https://chilidise.hu/adatkezelesi-tajekoztato/"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=chilidise&search_type=keyword_unordered",
+  "email": "info@chilidise.hu",
+  "phone": "+36 70 320 0279",
+  "products": "22",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://chilicum.hu",
+  "domain": "chilicum.hu",
+  "ok": true,
+  "base": "https://chilicum.hu",
+  "platform": "WooCommerce",
+  "company": "Chilicum Europe Kft.",
+  "tax_id": "29260447-2-07",
+  "emails": [
+   "info@chilicum.hu"
+  ],
+  "phones": [
+   "+36 30 629 6637"
+  ],
+  "newsletter": "mailchimp",
+  "logo": "https://chilicum.hu/wp-content/uploads/2020/10/logo_bl.png",
+  "legal_pages": [],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=chilicum&search_type=keyword_unordered",
+  "email": "info@chilicum.hu",
+  "phone": "+36 30 629 6637",
+  "products": "68",
+  "products_source": "wc-store-api"
+ },
+ {
+  "input": "https://janchili.com",
+  "domain": "janchili.com",
+  "ok": true,
+  "base": "https://janchili.com",
+  "platform": "Unas",
+  "company": "Mega-Kontvill Kft.",
+  "tax_id": "56346257-1-37",
+  "emails": [
+   "sales@janchili.com",
+   "admin@janchili.com"
+  ],
+  "phones": [
+   "+36 70 394 5371",
+   "+36 99 200 200"
+  ],
+  "newsletter": "form",
+  "logo": "https://janchili.com/!common_design/custom/janchili.unas.hu/element/layout_hu_header_logo-260x60_1_default.jpg?time=1673038166",
+  "legal_pages": [
+   "200 https://janchili.com/shop_help.php?tab=terms"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=janchili&search_type=keyword_unordered",
+  "email": "sales@janchili.com",
+  "phone": "+36 70 394 5371",
+  "products": "~59",
+  "products_source": "sitemap"
+ }
+]

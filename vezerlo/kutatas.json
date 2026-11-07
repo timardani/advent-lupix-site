@@ -2056,6 +2056,126 @@
      "status": "aktív Meta-hirdetés 2139830720087354 (2026-11-03); WooCommerce; több kollekció, valószínűleg nagy"
     }
    ]
+  },
+  {
+   "nev": "Méhészet / méz",
+   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár",
+   "jeloltek": [
+    {
+     "name": "Popovics Méz",
+     "url": "https://popovicsmez.hu/",
+     "priority": "A",
+     "status": "Hajrá 11-07 | Shopify | Popovics Balázs mezőgazdasági őstermelő | info@popovicsmez.hu | +36 20 273 3866 | termék ~47 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Simai Családi Méhészet (Mézrendelés Pécs)",
+     "url": "https://mezrendelespecs.hu/",
+     "priority": "A",
+     "status": "Hajrá 11-07 | WooCommerce | Simai Attila EV | info@mezrendelespecs.hu | +36 30 285 7794 | termék 32 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Molnár Méhészet (Jászberény)",
+     "url": "https://molnarmeheszet.hu/",
+     "priority": "A",
+     "status": "Hajrá 11-07 | ShopRenter | Teherszállító Kft. | molnarmeheszetjaszbereny@gmail.com | +36 70 538 1821 | termék ~76 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Mézerdő Méhészet",
+     "url": "https://www.mezerdo.hu/",
+     "priority": "B",
+     "status": "Hajrá 11-07 | ShopRenter | Méhek és Mézek Kft. | info@nmhh.hu | +36 70 341 2047 | termék ~110 | hírlevél form | Meta-hirdetés True | 110 termék, Kft – méret ellenőrzendő"
+    }
+   ]
+  },
+  {
+   "nev": "Kézműves / prémium sör",
+   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár",
+   "jeloltek": [
+    {
+     "name": "Helka Sörfőzde",
+     "url": "https://helkasor.hu/",
+     "priority": "A",
+     "status": "Hajrá 11-07 | WooCommerce | GASTROFLEX KFT. | laknerdori@helkasor.hu | +36 70 546 7344 | termék 28 | hírlevél mailerlite | Meta-hirdetés True"
+    },
+    {
+     "name": "Hara'Punk Brewing",
+     "url": "https://harapunk.hu/",
+     "priority": "B",
+     "status": "Hajrá 11-07 | WooCommerce | unknown | ? | +36 30 570 0564 | termék 22 | hírlevél form | Meta-hirdetés unknown | 22 termék – kevés"
+    },
+    {
+     "name": "Fehér Nyúl Brewery",
+     "url": "https://www.fehernyul.hu/",
+     "priority": "B",
+     "status": "Hajrá 11-07 | Unas | Fehér Nyúl Sörfőző Kft. | info@fehernyul.hu | +36 1 391 1400 | termék ~316 | hírlevél mailchimp | Meta-hirdetés unknown | 316 termék – ellenőrizni, nem viszonteladó-e"
+    },
+    {
+     "name": "HopTop Brewery",
+     "url": "https://hoptop.hu/",
+     "priority": "C",
+     "status": "Hajrá 11-07 | Unas | Nap Fair Kft. | webshop@hoptop.hu | +36 20 371 1787 | termék ~188 | hírlevél form | Meta-hirdetés True | nagyobb (Zrt?), sok termék – valószínű viszonteladó"
+    }
+   ]
+  },
+  {
+   "nev": "Kávé",
+   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár",
+   "jeloltek": [
+    {
+     "name": "Spektrum Coffee Roastery",
+     "url": "https://www.spektrum.coffee",
+     "priority": "A",
+     "status": "Hajrá 11-07 | Unas | Spektrum Coffee Roastery Kft. | hello@spektrum.coffee | +36 30 982 2298 | termék ~46 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Maran Coffee",
+     "url": "https://www.maran.hu",
+     "priority": "A",
+     "status": "Hajrá 11-07 | Unas | Maran Coffee Kft. | hello@maran.hu | +36 70 315 9227 | termék ~51 | hírlevél klaviyo | Meta-hirdetés True"
+    },
+    {
+     "name": "ManuCafe",
+     "url": "https://www.manucafe.hu",
+     "priority": "B",
+     "status": "Hajrá 11-07 | egyéb | unknown | ? | +36 30 842 5200 | termék unknown | hírlevél form | Meta-hirdetés True | saját motor, kontakt hiányos"
+    },
+    {
+     "name": "Ground Roastery",
+     "url": "https://groundroastery.com",
+     "priority": "C",
+     "status": "Hajrá 11-07 | WooCommerce | unknown | hello@groundroastery.com | +36 30 914 7777 | termék 15 | hírlevél form | Meta-hirdetés True | csak 15 termék"
+    }
+   ]
+  },
+  {
+   "nev": "Chili / csípős szószok és fűszerek",
+   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár",
+   "jeloltek": [
+    {
+     "name": "Egri Chiliagok",
+     "url": "https://egrichiliagok.hu",
+     "priority": "A",
+     "status": "Hajrá 11-07 | Unas | Történelmi Chili Kft. | info@egrichiliagok.hu | +36 70 408 5192 | termék ~56 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Chilicum",
+     "url": "https://chilicum.hu",
+     "priority": "A",
+     "status": "Hajrá 11-07 | WooCommerce | Chilicum Europe Kft. | info@chilicum.hu | +36 30 629 6637 | termék 68 | hírlevél mailchimp | Meta-hirdetés True"
+    },
+    {
+     "name": "Janchili",
+     "url": "https://janchili.com",
+     "priority": "A",
+     "status": "Hajrá 11-07 | Unas | Mega-Kontvill Kft. | sales@janchili.com | +36 70 394 5371 | termék ~59 | hírlevél form | Meta-hirdetés True"
+    },
+    {
+     "name": "Chilidise",
+     "url": "https://chilidise.hu",
+     "priority": "B",
+     "status": "Hajrá 11-07 | WooCommerce | unknown | info@chilidise.hu | +36 70 320 0279 | termék 22 | hírlevél nem | Meta-hirdetés True | 22 termék, hírlevél nincs"
+    }
+   ]
   }
  ]
 }
