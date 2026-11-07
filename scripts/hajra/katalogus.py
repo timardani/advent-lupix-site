@@ -385,7 +385,9 @@ def detail(c, fresh, platform):
     if av:
         available = bool(re.search(r"instock|limitedavailability|onlineonly", av, re.I))
     elif platform == "Unas":
-        available = "js-main-product-cart-btn" in t and not re.search(r"elfogyott|nem rendelhető", low)
+        # témánként más a kosárgomb: js-main-product-cart-btn VAGY value/title="Kosárba" gomb
+        cart = "js-main-product-cart-btn" in t or re.search(r"""(?i)(?:value|title|aria-label)=["']kosárba["']""", t)
+        available = bool(cart) and not re.search(r"elfogyott|nem rendelhető|jelenleg nem kapható", low)
     else:
         available = bool(re.search(r"kosárba|add to cart|add-to-cart", low)) and not re.search(OUT_WORDS, low)
     img = p.get("image")
