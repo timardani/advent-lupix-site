@@ -503,7 +503,7 @@ def main(argv):
     argv = [a for a in argv if a != "--fresh"]
     while i < len(argv):
         a = argv[i]
-        if a in ("--out", "--n"):
+        if a in ("--out", "--n", "--ids"):
             args[a] = argv[i + 1] if i + 1 < len(argv) else None
             i += 2
         elif a == "--kat":
@@ -515,7 +515,7 @@ def main(argv):
             url = url or a
             i += 1
     if not url or not args.get("--out"):
-        print("usage: katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr>...] [--fresh]")
+        print("usage: katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr>...] [--ids id1,id2,...] [--fresh]")
         return 2
     n = NEED = int(args["--n"])
     out = Path(args["--out"]).expanduser().resolve()
@@ -556,6 +556,14 @@ def main(argv):
         else:
             verified_pool.append(c)
     ranked = select([c for c in verified_pool if c["verified"] is False or ok(c)], n)
+    if args.get("--ids"):  # kézi válogatás: a megadott sorrend = napsorrend, a többlet tartalék
+        want = [x.strip() for x in args["--ids"].split(",") if x.strip()]
+        by_id = {str(c["id"]): c for c in cands + verified_pool  # a MAX_CANDIDATES-vágás előtti teljes lista
+                 if c.get("sitemap_only") or c["available"] is not False}
+        miss = [x for x in want if x not in by_id]
+        if miss:
+            warn(f"--ids: {len(miss)} azonosító nincs a rendelhető jelöltek között: {','.join(miss[:5])}")
+        ranked = [by_id[x] for x in want if x in by_id]
     imgdir = out / "public" / "products"
     imgdir.mkdir(parents=True, exist_ok=True)
     (out / "data").mkdir(parents=True, exist_ok=True)
