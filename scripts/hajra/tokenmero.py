@@ -13,6 +13,7 @@ from pathlib import Path
 
 PROJ = Path("/Users/danieltimar/.claude/projects")
 CSV = Path("/Users/danieltimar/Documents/tacitOS Projects/Moai Kalenderáium/TOKENMERES.csv")
+JSON_OUT = Path(__file__).resolve().parents[2] / "vezerlo" / "tokenmeres.json"  # a vezérlő Tokenmérés oldala olvassa
 FIELDS = ["datum", "demo", "munka", "modell", "kerdesek", "input", "cache_iras", "cache_olvasas", "output",
           "osszes", "uj_token", "munkamenet", "megjegyzes"]
 
@@ -55,7 +56,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("demo"); ap.add_argument("--kulcsszo"); ap.add_argument("--munka", default="átdolgozás")
     ap.add_argument("--megj", default=""); ap.add_argument("--session"); ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--csak-json", action="store_true", help="csak a CSV -> tokenmeres.json tükrözés")
     a = ap.parse_args()
+    if a.csak_json:
+        return export_json()
     path = Path(a.session) if a.session else find_session(a.kulcsszo or a.demo)
     if not path:
         sys.exit(f"HIBA nincs átirat a(z) '{a.kulcsszo or a.demo}' kulcsszóval: {PROJ}")
@@ -74,6 +78,16 @@ def main():
             w.writeheader()
         w.writerow(row)
     print(f"-> {CSV}")
+    export_json()
+
+
+def export_json():
+    """A teljes CSV-t a vezerlo/tokenmeres.json-ba tükrözi (a következő push viszi ki)."""
+    num = {"kerdesek", "input", "cache_iras", "cache_olvasas", "output", "osszes", "uj_token"}
+    with CSV.open(encoding="utf-8") as f:
+        rows = [{k: (int(v) if k in num and str(v).isdigit() else v) for k, v in r.items()} for r in csv.DictReader(f, delimiter=";")]
+    JSON_OUT.write_text(json.dumps({"frissitve": date.today().isoformat(), "sorok": rows}, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"-> {JSON_OUT.name} ({len(rows)} sor)")
 
 
 if __name__ == "__main__":

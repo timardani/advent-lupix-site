@@ -1,0 +1,50 @@
+{
+ "frissitve": "2026-11-08",
+ "sorok": [
+  {
+   "datum": "2026-11-08",
+   "demo": "szellemlovas",
+   "munka": "átdolgozás (tarsasjatekdiszkont)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 88,
+   "cache_iras": 136065,
+   "cache_olvasas": 4038090,
+   "output": 33865,
+   "osszes": 4208108,
+   "uj_token": 170018,
+   "munkamenet": "7b3cd6c5",
+   "megjegyzes": "saját Yii-bolt: kézi lekérő szkript kellett; + tokenmérő elkészítése benne"
+  },
+  {
+   "datum": "2026-11-08",
+   "demo": "tarsasjatekrendeles",
+   "munka": "Társasjáték Diszkont-átdolgozás + katalogus.py szűrőjavítás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 114,
+   "cache_iras": 128379,
+   "cache_olvasas": 5441676,
+   "output": 37451,
+   "osszes": 5607620,
+   "uj_token": 165944,
+   "munkamenet": "cef22eea",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-08",
+   "demo": "kaveverzum",
+   "munka": "átdolgozás koffeinroasters → kaveverzum (Unas, kézi 24 válogatás, 24 ajánlat, logó/színek, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 88,
+   "cache_iras": 118171,
+   "cache_olvasas": 4171874,
+   "output": 32987,
+   "osszes": 4323120,
+   "uj_token": 151246,
+   "munkamenet": "a4c7b756",
+   "megjegyzes": ""
+  }
+ ]
+}

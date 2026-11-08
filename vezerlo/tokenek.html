@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<script>(function(){try{var t=localStorage.getItem("vezerlo-tema");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<title>Tokenmérés – Adventi vezérlő</title>
+<style>
+:root{--bg:#f4f1ec;--card:#fff;--ink:#1d1b18;--mut:#6b665e;--line:#e4dfd6;--accent:#9b2c2c;--ok:#166534;--blue:#1f4e8c;--bar:#d6c9b5}
+*{box-sizing:border-box}body{margin:0;font:14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header,main{max-width:1100px;margin:auto}header{padding:16px 14px 6px}main{padding:0 12px 40px}h1{margin:0;font-size:22px}.meta{color:var(--mut);font-size:12px;margin-top:3px}a{color:var(--blue)}button{font:inherit}
+.tools{display:flex;gap:8px;align-items:center;margin:10px 0;flex-wrap:wrap}
+.plain-button{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:7px;background:#faf8f4;cursor:pointer;text-decoration:none;color:var(--ink)}
+.summary{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;margin:8px 0 14px}
+.metric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}.metric strong{display:block;font-size:22px}.metric span{color:var(--mut);font-size:12px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 0;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:7px 10px;text-align:left;border-top:1px solid var(--line);white-space:nowrap}th{border-top:0;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}td.uj{font-weight:700}
+.barcell{width:28%;min-width:120px}.bar{height:8px;border-radius:4px;background:var(--accent);opacity:.75}
+td.megj{white-space:normal;color:var(--mut);font-size:12px;min-width:220px}
+h2.sec{font-size:16px;margin:18px 3px 8px}.note{color:var(--mut);font-size:12px;margin:10px 3px}
+html[data-theme=dark]{--bg:#0a0a0b;--card:#16161a;--ink:#ececee;--mut:#9b9ba3;--line:#2a2a31;--accent:#f87171;--ok:#4ade80;--blue:#7fa8ff;color-scheme:dark}
+html[data-theme=dark] .plain-button{background:#1d1d22;color:var(--ink);border-color:#34343c}
+</style>
+</head>
+<body>
+<header>
+ <h1>Tokenmérés</h1>
+ <div class="meta" id="meta">Betöltés…</div>
+ <div class="tools"><a class="plain-button" href="./">← Vezérlő</a><a class="plain-button" href="kategoriak.html">Kategóriák és jelöltek</a><button type="button" class="plain-button" id="tema" aria-pressed="false">🌙 Éjszakai</button></div>
+</header>
+<main id="app"></main>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const n=x=>Number(x||0).toLocaleString('hu-HU');
+const k=x=>{x=Number(x||0);return x>=1e6?(x/1e6).toLocaleString('hu-HU',{maximumFractionDigits:1})+' M':x>=1e3?Math.round(x/1e3).toLocaleString('hu-HU')+' e':String(x)};
+function render(rows,nevek){
+ rows=rows.slice().sort((a,b)=>String(b.datum).localeCompare(String(a.datum)));
+ const nev=d=>nevek[d]||d;
+ const sum=f=>rows.reduce((s,r)=>s+Number(r[f]||0),0);
+ const uj=sum('uj_token'),db=new Set(rows.map(r=>r.demo)).size;
+ const max=Math.max(1,...rows.map(r=>Number(r.uj_token||0)));
+ const per={};rows.forEach(r=>{(per[r.demo]=per[r.demo]||{uj:0,db:0,cr:0});per[r.demo].uj+=Number(r.uj_token||0);per[r.demo].cr+=Number(r.cache_olvasas||0);per[r.demo].db++});
+ const perRows=Object.entries(per).sort((a,b)=>b[1].uj-a[1].uj);const pmax=Math.max(1,...perRows.map(([,v])=>v.uj));
+ document.getElementById('meta').textContent=`${rows.length} mérés · ${db} kalendárium · utolsó: ${rows[0]?rows[0].datum:'–'}`;
+ if(!rows.length){document.getElementById('app').innerHTML='<p class="note">Még nincs mérés.</p>';return}
+ document.getElementById('app').innerHTML=`<div class="summary">
+  <div class="metric"><strong>${k(uj)}</strong><span>új token összesen</span></div>
+  <div class="metric"><strong>${k(Math.round(uj/db))}</strong><span>átlag / kalendárium</span></div>
+  <div class="metric"><strong>${k(sum('cache_olvasas'))}</strong><span>gyorsítótárból (olcsó)</span></div>
+  <div class="metric"><strong>${db}</strong><span>mért kalendárium</span></div></div>
+ <h2 class="sec">Kalendáriumonként</h2>
+ <div class="panel"><table><thead><tr><th>Kalendárium</th><th class="num">Új token</th><th class="barcell"></th><th class="num">Gyorsítótár</th><th class="num">Mérés</th></tr></thead><tbody>
+ ${perRows.map(([d,v])=>`<tr><td><b>${esc(nev(d))}</b></td><td class="num uj">${n(v.uj)}</td><td class="barcell"><div class="bar" style="width:${(v.uj/pmax*100).toFixed(1)}%"></div></td><td class="num">${k(v.cr)}</td><td class="num">${v.db}</td></tr>`).join('')}
+ </tbody></table></div>
+ <h2 class="sec">Összes mérés</h2>
+ <div class="panel"><table><thead><tr><th>Dátum</th><th>Kalendárium</th><th>Munka</th><th class="num">Új token</th><th class="barcell"></th><th class="num">Gyorsítótár</th><th>Modell</th><th>Megjegyzés</th></tr></thead><tbody>
+ ${rows.map(r=>`<tr><td>${esc(r.datum)}</td><td><b>${esc(nev(r.demo))}</b></td><td>${esc(r.munka)}</td><td class="num uj">${n(r.uj_token)}</td><td class="barcell"><div class="bar" style="width:${(Number(r.uj_token||0)/max*100).toFixed(1)}%"></div></td><td class="num">${k(r.cache_olvasas)}</td><td>${esc(r.modell)}</td><td class="megj">${esc(r.megjegyzes)}</td></tr>`).join('')}
+ </tbody></table></div>
+ <p class="note">Új token = input + gyorsítótár-írás + output; ez mutatja a valódi költséget. A gyorsítótárból olvasott rész a korábbi szöveg olcsó újraolvasása. Forrás: tokenmero.py, minden kész kalendárium után.</p>`}
+Promise.all([fetch('tokenmeres.json',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw new Error('Nincs belépve')}return r.json()}),
+ fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>r.ok?r.json():{boltok:[]}).catch(()=>({boltok:[]})),
+ fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]}))])
+.then(([t,a,ki])=>{const nevek={};const slug2demo={};(ki.demok||[]).forEach(x=>slug2demo[x.slug]=x.demo);
+ (a.boltok||[]).forEach(b=>{if(b.demo)nevek[b.demo]=b.bolt;if(b.id)nevek[b.id]=nevek[b.id]||b.bolt});
+ Object.entries(slug2demo).forEach(([s,d])=>{if(nevek[d])nevek[s]=nevek[d]});
+ render(t.sorok||[],nevek)})
+.catch(e=>{document.getElementById('app').innerHTML=`<p class="note">Nem sikerült betölteni: ${esc(e.message)}</p>`});
+</script>
+<script>(function(){var b=document.getElementById("tema"),r=document.documentElement;function u(){var k=r.dataset.theme==="dark";b.textContent=k?"☀️ Nappali":"🌙 Éjszakai";b.setAttribute("aria-pressed",k)}b.addEventListener("click",function(){r.dataset.theme=r.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("vezerlo-tema",r.dataset.theme)}catch(e){}u()});u()})()</script>
+</body>
+</html>
