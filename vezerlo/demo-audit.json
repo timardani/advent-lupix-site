@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-07T20:04:59+01:00",
+  "generalva": "2026-11-08T10:42:03+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -21,6 +21,13 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "bestplants": {
+      "frissitve": "2026-11-07T23:45+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon"
+      ]
+    },
     "biobubi": {
       "frissitve": "2026-11-04T13:33+01:00",
       "demo2_kesz": false,
@@ -33,8 +40,21 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "bonuszbrigad": {
+      "frissitve": "2026-11-07T15:07+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon",
+        "nem szerepel mind az 5 akciótípus"
+      ]
+    },
     "buveszbolt": {
       "frissitve": "2026-10-29T22:24+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "candydaddy": {
+      "frissitve": "2026-11-08T00:35+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -50,6 +70,11 @@
     },
     "demeter": {
       "frissitve": "2026-11-03T22:00+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "egrichiliagok": {
+      "frissitve": "2026-11-08T01:26+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -157,6 +182,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "mmm": {
+      "frissitve": "2026-11-07T23:48+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "monyo": {
       "frissitve": "2026-11-06T10:04+01:00",
       "demo2_kesz": true,
@@ -192,8 +222,24 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "podor": {
+      "frissitve": "2026-11-08T10:42+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon",
+        "nem szerepel mind az 5 akciótípus",
+        "nincs éjféli visszaszámlálás/lejárat",
+        "nincs kuponmásolás",
+        "nincs igazolt nagy, vizuális akció és ár"
+      ]
+    },
     "polomania": {
       "frissitve": "2026-10-28T15:14+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "popovicsmez": {
+      "frissitve": "2026-11-07T19:59+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -204,6 +250,11 @@
     },
     "sarretichilifarm": {
       "frissitve": "2026-10-30T14:52+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "simaimeheszet": {
+      "frissitve": "2026-11-08T01:51+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -232,6 +283,21 @@
     },
     "szatocska": {
       "frissitve": "2026-10-29T14:53+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "szellemlovas": {
+      "frissitve": "2026-11-08T10:40+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "szentandras": {
+      "frissitve": "2026-11-07T20:04+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "tarsasjatekdiszkont": {
+      "frissitve": "2026-11-08T01:20+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -280,11 +346,6 @@
     },
     "zki": {
       "frissitve": "2026-11-04T14:25+01:00",
-      "demo2_kesz": true,
-      "hianyok": []
-    },
-    "szentandras": {
-      "frissitve": "2026-11-07T20:04+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }

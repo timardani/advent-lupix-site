@@ -1228,6 +1228,23 @@
    "megjegyzes": "Hajrá 2026-11-08, méhészet 3. levele (Dani: „mehet valakinek egy méhész”), a popovicsmez demó átdolgozása (csak márka + termékcsere; Popovics és MMM demó érintetlen). Simai Attila EV (Pécs/Szalánta, adószám 79493178-1-22), WooCommerce, 32 termék, hírlevél-űrlap, saját termelésű mézek, ízesített krémmézek, méhviasz gyertyák, egyedi címkés céges ajándékcsomagok. MPL 1 990 Ft (kosárpróba), Pécsett személyes átvétel. 24 nap pontos variációs linkkel; 24. nap Karácsonyi bőség csomag (a bolt saját fotóján „LOGO HELYE” felirat látszik, céges egyedi logós csomag). Ár/készlet: Store API, 2026-11-08.",
    "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (popovicsmez átdolgozás, Simai narancs + rozsdabarna)",
    "weboldal": "https://mezrendelespecs.hu/"
+  },
+  {
+   "id": "szellemlovas",
+   "bolt": "Szellemlovas",
+   "kategoria": "Társasjáték",
+   "demo": "szellemlovas",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@szellemlovas.hu",
+   "telefon": "+36 30 363 2344",
+   "kapcsolat_minoseg": "központi info@ + bolti telefon (H–P 12–19)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (hajrá, társasjáték 2. bolt)",
+   "megjegyzes": "Szellemlovas Kft. (13094744-2-42), 1067 Budapest, Szondi u. 18/a; saját Yii-webbolt, kb. 2900 raktáron lévő társas, hírlevél van, ingyenes GLS 18 000 Ft felett. A tarsasjatekdiszkont (Gémklub) demó átdolgozása, 2026-11-08. Dani kérte.",
+   "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)"
   }
  ]
 }
