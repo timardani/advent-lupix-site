@@ -40,15 +40,16 @@ function render(rows,nevek){_rows=rows;_nev=nevek;
  rows=rows.slice().sort((a,b)=>String(b.datum).localeCompare(String(a.datum)));
  const nev=d=>nevek[d]||d;
  const sum=f=>rows.reduce((s,r)=>s+Number(r[f]||0),0);
- const uj=sum('uj_token'),db=new Set(rows.map(r=>r.demo)).size;
+ const nemKal=d=>/^(általános|több bolt)/i.test(String(d));const kal=rows.filter(r=>!nemKal(r.demo));
+ const uj=sum('uj_token'),ujKal=kal.reduce((s,r)=>s+Number(r.uj_token||0),0),db=new Set(kal.map(r=>r.demo)).size;
  const max=Math.max(1,...rows.map(r=>Number(r.uj_token||0)));
  const per={};rows.forEach(r=>{(per[r.demo]=per[r.demo]||{uj:0,db:0,cr:0});per[r.demo].uj+=Number(r.uj_token||0);per[r.demo].cr+=Number(r.cache_olvasas||0);per[r.demo].db++});
  const perRows=Object.entries(per).sort((a,b)=>b[1].uj-a[1].uj);const pmax=Math.max(1,...perRows.map(([,v])=>v.uj));
- document.getElementById('meta').textContent=`${rows.length} mérés · ${db} kalendárium · utolsó: ${rows[0]?rows[0].datum:'–'}`;
+ document.getElementById('meta').textContent=`${rows.length} beszélgetés/mérés · ${db} kalendárium · utolsó: ${rows[0]?rows[0].datum:'–'}`;
  if(!rows.length){document.getElementById('app').innerHTML='<p class="note">Még nincs mérés.</p>';return}
  document.getElementById('app').innerHTML=`<div class="summary">
   <div class="metric"><strong>${k(uj)}</strong><span>új token összesen</span></div>
-  <div class="metric"><strong>${k(Math.round(uj/db))}</strong><span>átlag / kalendárium</span></div>
+  <div class="metric"><strong>${k(Math.round(ujKal/Math.max(1,db)))}</strong><span>átlag / kalendárium (általános nélkül)</span></div>
   <div class="metric"><strong>${k(sum('cache_olvasas'))}</strong><span>gyorsítótárból (olcsó)</span></div>
   <div class="metric"><strong>${db}</strong><span>mért kalendárium</span></div></div>
  <h2 class="sec">Kalendáriumonként</h2>
