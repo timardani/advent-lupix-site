@@ -150,6 +150,13 @@ def logo(base, t):
         if src:
             score = (2 if re.search(r"\.svg", src, re.I) else 1 if re.search(r"\.png", src, re.I) else 0)
             score += 1 if re.search(r"logo", src, re.I) else 0
+            # a bolt saját neve a fájlnévben/alt-ban erősebb jel, mint a formátum
+            stem = re.sub(r"^(https?://)?(www\.|shop\.)?", "", base).split(".")[0].lower()
+            if stem and stem[:6] in tag.lower().replace("-", "").replace("_", ""):
+                score += 4
+            # partner-/tanúsítvány-jelvény (pl. Magyar Mezőgazdaság, Kertbarát) ne nyerjen
+            if re.search(r"(?i)mezogazdasag|kertbar|szechenyi|tanusit|award|dij|partner|minosit|footer", tag):
+                score -= 4
             imgs.append((-score, len(imgs), K.absu(base, src)))
     if imgs:
         return sorted(imgs)[0][2]
