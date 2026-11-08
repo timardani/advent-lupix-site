@@ -143,7 +143,7 @@ def check(slug, opts):
                 steps.append(("capture", False, f"rossz demó a porton: {got[:60]}"))
                 ok = False
             else:
-                env = dict(**__import__("os").environ, DEMO_URL=url.rstrip("/"))
+                env = dict(**__import__("os").environ, DEMO_URL=url.rstrip("/"), PORT=str(port))  # PORT: a PORT-os capture.mjs-ekhez (pl. chili-család)
                 t0 = time.time()
                 has_npm = '"capture"' in (demo / "package.json").read_text("utf-8")
                 cmd = (["npm", "run", "capture", "--silent"] if has_npm or not (demo / "scripts" / "capture.mjs").exists()

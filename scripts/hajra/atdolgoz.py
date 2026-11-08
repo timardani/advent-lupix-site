@@ -172,8 +172,11 @@ def main(argv):
 
     pj = new / "package.json"
     dev = pick_port()
+    old_dev = None
     if pj.exists():
         t = pj.read_text("utf-8")
+        m = re.search(r"vite(?: --host \S+)? --port (\d+) --strictPort", t)
+        old_dev = m.group(1) if m else None
         t = re.sub(r'"name":\s*"[^"]*"', f'"name": "{new.name}-advent-local-demo"', t, count=1)
         t = re.sub(r"(vite(?: --host \S+)?)( --port )\d+( --strictPort)", rf"\g<1>\g<2>{dev}\g<3>", t)
         t = re.sub(r"(vite preview(?: --host \S+)?)( --port )\d+", rf"\g<1>\g<2>{dev - 1000}", t)
@@ -181,6 +184,8 @@ def main(argv):
     for f in (new / "scripts").glob("*.mjs"):
         t = f.read_text("utf-8")
         t2 = re.sub(r"(https?://127\.0\.0\.1:)\d{4}", rf"\g<1>{dev}", t)
+        if old_dev:  # e.g. `const PORT=process.env.PORT||5290` – különben a forrásdemó futó szerverét fotózza
+            t2 = re.sub(rf"(?<!\d){old_dev}(?!\d)", str(dev), t2)
         if t2 != t:
             f.write_text(t2, "utf-8")
 
