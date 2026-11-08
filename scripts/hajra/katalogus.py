@@ -558,8 +558,19 @@ def main(argv):
     ranked = select([c for c in verified_pool if c["verified"] is False or ok(c)], n)
     if args.get("--ids"):  # kézi válogatás: a megadott sorrend = napsorrend, a többlet tartalék
         want = [x.strip() for x in args["--ids"].split(",") if x.strip()]
-        by_id = {str(c["id"]): c for c in cands + verified_pool  # a MAX_CANDIDATES-vágás előtti teljes lista
-                 if c.get("sitemap_only") or c["available"] is not False}
+        by_id = {}
+        for c in cands + verified_pool:  # a MAX_CANDIDATES-vágás előtti teljes lista
+            if not (c.get("sitemap_only") or c["available"] is not False):
+                continue
+            # Unas/ShopRenter listán nincs id (csak a termékoldalon): URL-slug és /spd/<id>/ is kulcs
+            parts = [p for p in str(c.get("url") or "").rstrip("/").split("/") if p]
+            keys = [str(c["id"])] if c.get("id") else []
+            if parts:
+                keys.append(parts[-1])
+            if "spd" in parts and parts.index("spd") + 1 < len(parts):
+                keys.append(parts[parts.index("spd") + 1])
+            for key in keys:
+                by_id.setdefault(key, c)
         miss = [x for x in want if x not in by_id]
         if miss:
             warn(f"--ids: {len(miss)} azonosító nincs a rendelhető jelöltek között: {','.join(miss[:5])}")
