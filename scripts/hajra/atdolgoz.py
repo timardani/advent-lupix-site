@@ -78,8 +78,11 @@ def old_identity(src):
     pp = src / "data" / "products.json"
     if pp.exists():
         d = json.loads(pp.read_text("utf-8"))
-        items = d.get("products", d) if isinstance(d, dict) else d
-        for p in items[:3]:
+        items = d
+        if isinstance(d, dict):
+            items = d.get("products") or next(
+                (v for v in d.values() if isinstance(v, list)), [])
+        for p in [x for x in items if isinstance(x, dict)][:3]:
             host = urllib.parse.urlsplit(str(p.get("url", ""))).hostname or ""
             host = host.removeprefix("www.")
             if host:
@@ -157,10 +160,25 @@ def main(argv):
     if not src.is_dir():
         print(f"HIBA nincs forrásdemó: {src.name}")
         return 2
-    if new.exists():
-        print(f"HIBA már létezik: {new.name} (nem írom felül)")
+    resume = "--folytat" in flags  # félbeszakadt futás után: másolás/port kihagyva
+    if new.exists() and not resume:
+        print(f"HIBA már létezik: {new.name} (nem írom felül; félbeszakadt futásnál: --folytat)")
         return 2
-    log(f"=== {src.name} -> {new.name} {url}")
+    if resume and not new.exists():
+        print(f"HIBA --folytat, de nincs: {new.name}")
+        return 2
+    log(f"=== {src.name} -> {new.name} {url}{' (folytat)' if resume else ''}")
+    incomplete = []
+    dev = None
+    if not resume:
+        dev = copy_and_port(src, new)
+    else:
+        m = re.search(r"--port (\d+) --strictPort", (new / "package.json").read_text("utf-8"))
+        dev = int(m.group(1)) if m else 0
+    return finish(src, new, url, flags, kat, n, dev, incomplete)
+
+
+def copy_and_port(src, new):
     excl = ["--exclude", "/dist", "--exclude", "/screenshots", "--exclude", "/research",
             "--exclude", "/public/products", "--exclude", "/node_modules", "--exclude", "__pycache__"]
     run(["rsync", "-a", *excl, f"{src}/", f"{new}/"])
@@ -168,7 +186,6 @@ def main(argv):
         run(["rsync", "-a", f"{src}/node_modules/", f"{new}/node_modules/"])
     for d in ("screenshots", "public/products"):
         (new / d).mkdir(parents=True, exist_ok=True)
-    incomplete = []
 
     pj = new / "package.json"
     dev = pick_port()
@@ -188,7 +205,10 @@ def main(argv):
             t2 = re.sub(rf"(?<!\d){old_dev}(?!\d)", str(dev), t2)
         if t2 != t:
             f.write_text(t2, "utf-8")
+    return dev
 
+
+def finish(src, new, url, flags, kat, n, dev, incomplete):
     old_terms = old_identity(src)
     marked = mark_old(new, src.name)
 

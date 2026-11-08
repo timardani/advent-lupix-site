@@ -1303,6 +1303,24 @@
    "megjegyzes": "Dani kérésére (2026-11-08), hajrá: a Koffein Roasters kávéútlevél átdolgozása. Unas, kb. 1400 termék, többmárkás kávékereskedő (Lavazza, Hausbrandt, Bányai, Twenty Eight) + eszközök. 24 nap: eredet- és városállomások + eszköznapok, napi akció + kód (approved:false).",
    "motivum": "kávéútlevél + pecsételés (átdolgozás a koffeinroasters-ből)",
    "weboldal": "https://kaveverzum.hu"
+  },
+  {
+   "id": "aseres",
+   "bolt": "A kézműves Seres",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "aseres",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / ügyvezető (név még nem ismert)",
+   "email": "info@aseres.hu",
+   "telefon": "+36 70 540 6060",
+   "kapcsolat_minoseg": "Webshop általános címe (kis cég, valószínűleg a tulaj kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Ügyvezető nevének ellenőrzése + alkoholjogi (Grt. 13. §) ellenőrzés, majd kiküldés",
+   "megjegyzes": "Dani kérésére (2026-11-08), hajrá: a Beerselection-demó (csappult) átdolgozása, Seres-logóval és -színekkel. A kézműves Seres Kft., 1165 Budapest, Farkasszőlő u. 63.; WooCommerce; magyar kraftsör-bolt + termelői finomságok, saját sör is (MSKLC: „saját söreink”). 361 termékből csak 50 készleten (18 sör) → a 24 nap: 18 sör + 2 Czider + 4 kézműves üdítő. Hírlevél-feliratkozás nincs → az e-mail-lista érv erős. Üveges Csíki sörnél a házhozszállítás szünetel (személyes átvétel a kuponfeltételben).",
+   "motivum": "csappult krétatáblával + csapolás – a beerselection átdolgozása",
+   "weboldal": "https://aseres.hu"
   }
  ]
 }

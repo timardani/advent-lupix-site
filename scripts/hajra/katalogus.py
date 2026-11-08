@@ -169,6 +169,25 @@ def woo(base, home, fresh, kat):
         raw += d
         pages = int(r.header("X-WP-TotalPages") or 1)
         page += 1
+    tree = {}  # id -> (név, slug, szülő); a termék csak a levélkategóriát adja, --kat a szülőre is szűrjön
+    for cpage in range(1, 6):
+        r = K.fetch(f"{base}/wp-json/wc/store/v1/products/categories?per_page=100&page={cpage}", fresh, accept="application/json")
+        cd = r.json() if r.ok else None
+        if not isinstance(cd, list) or not cd:
+            break
+        for c in cd:
+            tree[c.get("id")] = (html.unescape(c.get("name") or ""), c.get("slug") or "", c.get("parent") or 0)
+        if len(cd) < 100:
+            break
+
+    def ancestors(cid):
+        out, seen = [], set()
+        while cid in tree and cid not in seen:
+            seen.add(cid)
+            out += [tree[cid][0], tree[cid][1]]
+            cid = tree[cid][2]
+        return out
+
     freq = {}
     for p in raw:
         for c in p.get("categories", []):
@@ -186,6 +205,7 @@ def woo(base, home, fresh, kat):
             id=str(p["id"]), name=K.clean(p.get("name")), price=price, currency=pr.get("currency_code") or "HUF",
             available=bool(p.get("is_in_stock") and p.get("is_purchasable", True)), url=p.get("permalink"),
             image_url=img, category=cat,
+            kat_text=" ".join(cats + [x for c in p.get("categories", []) for x in [c.get("slug") or ""] + ancestors(c.get("id"))]),  # --kat: minden kategória
             description=(K.clean(p.get("short_description")) or K.clean(p.get("description")))[:600], verified=True))
     return out, f"{base}/wp-json/wc/store/v1/products?per_page=100"
 
@@ -582,7 +602,7 @@ def main(argv):
     else:
         cands, source = html_shop(base, home, fresh, kat, platform)
     if kat:
-        hit = [c for c in cands if c.get("sitemap_only") or any(k.lower() in f"{c.get('category')} {c.get('name')}".lower() for k in kat)]
+        hit = [c for c in cands if c.get("sitemap_only") or any(k.lower() in f"{c.get('category')} {c.get('name')} {c.get('kat_text') or ''}".lower() for k in kat)]
         if hit:
             cands = hit
         else:
