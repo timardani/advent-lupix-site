@@ -1397,6 +1397,24 @@
    "megjegyzes": "Hajrá 2026-11-08, Dani: „csinálj egyet, akinek jónak gondolod” (a kategóriafoglaltság már nem számít). Választás oka: Demeter-mintázat – saját gyártó manufaktúra, MailerLite-hírlevél (mint a Demeternél), 96 termék, díjnyertes szószok, karácsonyi díszdobozok, saját hűségprogram, Magyar Mezőgazdaság-tag. Az egrichiliagok demó átdolgozása (márka + termékcsere), az Egri-demó változatlan. Skála: a bolt saját „Erősség” jellemzője (Csemege→Extrém csípős); 24. nap: Csak chili box (Scorpion), −20% csomagban. Levélhez: díjnyertes KP Burger sauce, Fúzió chilis repceméz, Mámor, Merry Burning Christmas (dec. 2.). Ingyenes szállítási küszöb nem ellenőrzött (a bolt 406-tal blokkolt) → általános megfogalmazás.",
    "motivum": "chilifüzér + hőfokszabályzó felcsavarása (a hotchip/egrichiliagok jelenete)",
    "weboldal": "https://chillermanufaktura.hu"
+  },
+  {
+   "id": "kossiktea",
+   "bolt": "Kossik Tea & Coffee",
+   "kategoria": "Tea – szálas / specialty",
+   "demo": "kossiktea",
+   "allapot": "kuldheto",
+   "kinek": "Kossik Béla (alapító)",
+   "email": "info@kossiktea.hu",
+   "telefon": "+36 30 997 1701",
+   "kapcsolat_minoseg": "Központi cím; kis, tulajdonos vezette bolt (alapító: Kossik Béla, 7 év, balatoni rendezvényekből indult)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése",
+   "megjegyzes": "Shopify; saját márkás (Kossik Tea tasakos) teák és keverékek; Klaviyo-hírlevél, feliratkozásért 10% → e-mail-lista érv erős. Ingyenes szállítás 25 000 Ft felett, a szállítási kuponok ez alatti termékeken. 24 termék + 24 napi akció/kupon, Teavolution-demóból átdolgozva (2026-11-09).",
+   "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (Teavolution-demó átdolgozása)",
+   "weboldal": "https://kossiktea.hu"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "frissitve": "2026-11-08",
+ "frissitve": "2026-11-09",
  "sorok": [
   {
    "datum": "2026-11-08",
@@ -119,6 +119,21 @@
    "osszes": 4771452,
    "uj_token": 142222,
    "munkamenet": "c0b7a087",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-09",
+   "demo": "kossiktea",
+   "munka": "átdolgozás Teavolutionból: jelöltválasztás, 24 termék, offers, logó/Rubik, ingest 429-javítás, review, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 96,
+   "cache_iras": 112258,
+   "cache_olvasas": 4175342,
+   "output": 29229,
+   "osszes": 4316925,
+   "uj_token": 141583,
+   "munkamenet": "3336c446",
    "megjegyzes": ""
   },
   {
