@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """katalogus.py – 24 (n) rendelhető, változatos termék egy webshopból (stdlib only).
 
-Usage: python3 katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr> ...] [--fresh]
+Usage: python3 katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr> ...] [--min-ar Ft] [--fresh]
+       (felnőtt/erotikus/ivós termék sosem kerül be: NOT_ADVENT)
 
 One central fetcher (hajra_kozos.fetch, disk cache) + platform adapters:
   Shopify      /products.json?limit=250&page=N
@@ -266,6 +267,14 @@ def cards(base, t, prodset, cat):
     return out
 
 
+WANT_SLUGS = []  # --ids: a sitemap-tartalékban ezek az URL-slugok elsőbbséget kapnak
+
+
+def groups_key(u, segs):
+    s = segs(u)
+    return s[-2] if len(s) >= 3 else None
+
+
 def html_shop(base, home, fresh, kat, platform):
     entries, _ = K.sitemap_entries(base, fresh, max_fetch=6)
     prods = K.product_entries(entries, platform)
@@ -348,11 +357,38 @@ def html_shop(base, home, fresh, kat, platform):
         # JS-rendered listings: deterministic stride over sitemap product URLs (detail pages verified later)
         rest = sorted(u for u in prodset if u not in seen and "/" + u.rsplit("/", 1)[-1] not in seen)
         k = NEED + SPARES * 3
-        step = max(1, len(rest) // k)
-        for u in rest[::step][:k]:
+        # URL szülő-szegmens = kategória (pl. /termekek/<kat>/<slug>); ha legalább 3 van, körbeforgó választás
+        segs = lambda u: [p for p in urllib.parse.urlsplit(u).path.split("/") if p]  # noqa: E731
+        groups = OrderedDict()
+        for u in rest:
+            s = segs(u)
+            groups.setdefault(s[-2] if len(s) >= 3 else None, []).append(u)
+        if len([g for g in groups if g]) >= 3:
+            if kat:
+                hit = [g for g in groups if g and any(slug(x) in slug(g) for x in kat)]
+                order = hit + [g for g in groups if g not in hit]
+            else:
+                order = list(groups)
+            picked, i = [], 0
+            while len(picked) < k and any(groups[g] for g in order):
+                for g in order:
+                    if len(picked) < k and len(groups[g]) > i:
+                        picked.append((g, groups[g][i]))
+                i += 1
+                if i > max(map(len, groups.values())):
+                    break
+        else:
+            step = max(1, len(rest) // k)
+            picked = [(None, u) for u in rest[::step][:k]]
+        if WANT_SLUGS:  # kézi válogatás: a kért slugok mindenképp jelöltek legyenek
+            have = {u for _, u in picked}
+            want = [(groups_key(u, segs), u) for u in rest if u.rsplit("/", 1)[-1] in WANT_SLUGS and u not in have]
+            picked = want + picked
+        for g, u in picked:
             out.append(dict(id=None, name="", price=None, currency="HUF", available=None, url=u, image_url=None,
-                            category=None, description="", verified=False, sitemap_only=True))
-        warn(f"listákból kevés termék ({len(seen)}), sitemap-fallback: {min(k, len(rest[::step]))} URL")
+                            category=g.replace("-", " ") if g else None, description="", verified=False,
+                            sitemap_only=True))
+        warn(f"listákból kevés termék ({len(seen)}), sitemap-fallback: {len(picked)} URL, {len(groups)} csoport")
     return out, f"{base} (listings: {used})"
 
 
@@ -417,8 +453,14 @@ def detail(c, fresh, platform):
 
 
 # ---------------- selection ----------------
+# Adventi (családi) kalendáriumba nem való: felnőtt/erotikus és ivós termékek
+NOT_ADVENT = r"(?i)erotik|szex|18\+|felnőtt|felnott|monogamy|hancúr|hancur|ivós|\bivos\b|iszogat|vedel|kocsmat[uú]ra"
+MIN_PRICE = 1  # --min-ar <Ft> felülírja
+
+
 def ok(c):
-    return c.get("available") and c.get("image_url") and (c.get("price") or 0) > 0 and c.get("name")
+    return (c.get("available") and c.get("image_url") and (c.get("price") or 0) >= MIN_PRICE and c.get("name")
+            and not re.search(NOT_ADVENT, "%s %s" % (c.get("name") or "", c.get("category") or "")))
 
 
 def select(cands, n):
@@ -503,7 +545,7 @@ def main(argv):
     argv = [a for a in argv if a != "--fresh"]
     while i < len(argv):
         a = argv[i]
-        if a in ("--out", "--n", "--ids"):
+        if a in ("--out", "--n", "--ids", "--min-ar"):
             args[a] = argv[i + 1] if i + 1 < len(argv) else None
             i += 2
         elif a == "--kat":
@@ -515,9 +557,12 @@ def main(argv):
             url = url or a
             i += 1
     if not url or not args.get("--out"):
-        print("usage: katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr>...] [--ids id1,id2,...] [--fresh]")
+        print("usage: katalogus.py <url> --out <demo_dir> [--n 24] [--kat <substr>...] [--ids id1,id2,...] [--min-ar Ft] [--fresh]")
         return 2
     n = NEED = int(args["--n"])
+    global MIN_PRICE
+    MIN_PRICE = int(args.get("--min-ar") or MIN_PRICE)
+    WANT_SLUGS[:] = [x.strip() for x in (args.get("--ids") or "").split(",") if x.strip()]
     out = Path(args["--out"]).expanduser().resolve()
     K.set_log("katalogus")
     base = K.norm_base(url)
@@ -543,7 +588,11 @@ def main(argv):
         else:
             warn(f"--kat {kat}: nincs találat, teljes kínálat")
     total = len(cands)
-    pool = [c for c in cands if c.get("sitemap_only") or (c["available"] is not False and c.get("image_url") and (c.get("price") or 0) > 0)]
+    cands = [c for c in cands if not re.search(NOT_ADVENT, "%s %s %s" % (c.get("name") or "", c.get("category") or "", c.get("url") or ""))
+             and not (c.get("price") and c["price"] < MIN_PRICE)]
+    # ár nélküli listaelem is mehet (egyes Unas-témák listáján nincs gépi ár); a termékoldal ellenőrzi
+    pool = [c for c in cands if c.get("sitemap_only") or (c["available"] is not False and c.get("image_url")
+            and ((c.get("price") or 0) > 0 or c.get("verified") is False))]
     pool = pool[:MAX_CANDIDATES]
     K.log("candidates", total, "pool", len(pool))
     # sitemap-only entries must be verified before ranking (need category/name)
