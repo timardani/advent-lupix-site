@@ -81,11 +81,32 @@ def main():
     export_json()
 
 
+REGI = Path(__file__).with_name("tokenmeres-regi.csv")  # utólagos összesítés 2026-10-06 – 11-08
+
+
+def regi_rows(uj):
+    """A tokenmérő előtti időszak beszélgetésenkénti adatai; az új mérésekkel átfedő sorok kimaradnak."""
+    if not REGI.exists():
+        return []
+    sq = lambda s: "".join(ch for ch in str(s).lower() if ch.isalnum())
+    van = {(r["datum"], sq(r["demo"])) for r in uj}
+    out = []
+    with REGI.open(encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if (r["datum"], sq(r["bolt"])) in van:
+                continue
+            ui, cr, o = (int(r[k] or 0) for k in ("uj_input", "cache_olvasas", "output"))
+            out.append({"datum": r["datum"], "demo": r["bolt"], "munka": "korábbi (utólag)", "modell": r["motor"],
+                        "cache_olvasas": cr, "output": o, "uj_token": ui + o, "megjegyzes": r["beszelgetes"], "regi": True})
+    return out
+
+
 def export_json():
     """A teljes CSV-t a vezerlo/tokenmeres.json-ba tükrözi (a következő push viszi ki)."""
     num = {"kerdesek", "input", "cache_iras", "cache_olvasas", "output", "osszes", "uj_token"}
     with CSV.open(encoding="utf-8") as f:
         rows = [{k: (int(v) if k in num and str(v).isdigit() else v) for k, v in r.items()} for r in csv.DictReader(f, delimiter=";")]
+    rows += regi_rows(rows)
     JSON_OUT.write_text(json.dumps({"frissitve": date.today().isoformat(), "sorok": rows}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"-> {JSON_OUT.name} ({len(rows)} sor)")
 

@@ -18,7 +18,7 @@ header,main{max-width:1100px;margin:auto}header{padding:16px 14px 6px}main{paddi
 table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:7px 10px;text-align:left;border-top:1px solid var(--line);white-space:nowrap}th{border-top:0;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}td.uj{font-weight:700}
 .barcell{width:28%;min-width:120px}.bar{height:8px;border-radius:4px;background:var(--accent);opacity:.75}
-td.megj{white-space:normal;color:var(--mut);font-size:12px;min-width:220px}
+td.megj{white-space:normal;color:var(--mut);font-size:12px;min-width:220px}tr.regi td{color:var(--mut)}tr.regi td.uj{color:var(--ink);font-weight:600}.chk{font-size:12px;color:var(--mut);margin-left:6px}
 h2.sec{font-size:16px;margin:18px 3px 8px}.note{color:var(--mut);font-size:12px;margin:10px 3px}
 html[data-theme=dark]{--bg:#0a0a0b;--card:#16161a;--ink:#ececee;--mut:#9b9ba3;--line:#2a2a31;--accent:#f87171;--ok:#4ade80;--blue:#7fa8ff;color-scheme:dark}
 html[data-theme=dark] .plain-button{background:#1d1d22;color:var(--ink);border-color:#34343c}
@@ -35,7 +35,8 @@ html[data-theme=dark] .plain-button{background:#1d1d22;color:var(--ink);border-c
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const n=x=>Number(x||0).toLocaleString('hu-HU');
 const k=x=>{x=Number(x||0);return x>=1e6?(x/1e6).toLocaleString('hu-HU',{maximumFractionDigits:1})+' M':x>=1e3?Math.round(x/1e3).toLocaleString('hu-HU')+' e':String(x)};
-function render(rows,nevek){
+let showRegi=false,_rows,_nev;
+function render(rows,nevek){_rows=rows;_nev=nevek;
  rows=rows.slice().sort((a,b)=>String(b.datum).localeCompare(String(a.datum)));
  const nev=d=>nevek[d]||d;
  const sum=f=>rows.reduce((s,r)=>s+Number(r[f]||0),0);
@@ -54,11 +55,12 @@ function render(rows,nevek){
  <div class="panel"><table><thead><tr><th>Kalendárium</th><th class="num">Új token</th><th class="barcell"></th><th class="num">Gyorsítótár</th><th class="num">Mérés</th></tr></thead><tbody>
  ${perRows.map(([d,v])=>`<tr><td><b>${esc(nev(d))}</b></td><td class="num uj">${n(v.uj)}</td><td class="barcell"><div class="bar" style="width:${(v.uj/pmax*100).toFixed(1)}%"></div></td><td class="num">${k(v.cr)}</td><td class="num">${v.db}</td></tr>`).join('')}
  </tbody></table></div>
- <h2 class="sec">Összes mérés</h2>
+ <h2 class="sec">Összes mérés <label class="chk"><input type="checkbox" id="regi"${showRegi?' checked':''}> korábbiak is (utólagos összesítés, okt. 6 – nov. 8)</label></h2>
  <div class="panel"><table><thead><tr><th>Dátum</th><th>Kalendárium</th><th>Munka</th><th class="num">Új token</th><th class="barcell"></th><th class="num">Gyorsítótár</th><th>Modell</th><th>Megjegyzés</th></tr></thead><tbody>
- ${rows.map(r=>`<tr><td>${esc(r.datum)}</td><td><b>${esc(nev(r.demo))}</b></td><td>${esc(r.munka)}</td><td class="num uj">${n(r.uj_token)}</td><td class="barcell"><div class="bar" style="width:${(Number(r.uj_token||0)/max*100).toFixed(1)}%"></div></td><td class="num">${k(r.cache_olvasas)}</td><td>${esc(r.modell)}</td><td class="megj">${esc(r.megjegyzes)}</td></tr>`).join('')}
+ ${rows.filter(r=>showRegi||!r.regi).map(r=>`<tr class="${r.regi?'regi':''}"><td>${esc(r.datum)}</td><td><b>${esc(nev(r.demo))}</b></td><td>${esc(r.munka)}</td><td class="num uj">${n(r.uj_token)}</td><td class="barcell"><div class="bar" style="width:${(Number(r.uj_token||0)/max*100).toFixed(1)}%"></div></td><td class="num">${k(r.cache_olvasas)}</td><td>${esc(r.modell)}</td><td class="megj">${esc(r.megjegyzes)}</td></tr>`).join('')}
  </tbody></table></div>
- <p class="note">Új token = input + gyorsítótár-írás + output; ez mutatja a valódi költséget. A gyorsítótárból olvasott rész a korábbi szöveg olcsó újraolvasása. Forrás: tokenmero.py, minden kész kalendárium után.</p>`}
+ <p class="note">A tokenmérő előtti munkák (okt. 6 – nov. 8) utólagos összesítésből kerültek be; az okt. 15–22. közti és a Codexes munkák ott alulbecsültek. Az „Általános” sor a vezérlő, a kutatás és a levelek költsége. Új token = input + gyorsítótár-írás + output; ez mutatja a valódi költséget. A gyorsítótárból olvasott rész a korábbi szöveg olcsó újraolvasása. Forrás: tokenmero.py, minden kész kalendárium után.</p>`}
+document.addEventListener('change',e=>{if(e.target.id==='regi'){showRegi=e.target.checked;render(_rows,_nev)}});
 Promise.all([fetch('tokenmeres.json',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw new Error('Nincs belépve')}return r.json()}),
  fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>r.ok?r.json():{boltok:[]}).catch(()=>({boltok:[]})),
  fetch('kiadas.json',{cache:'no-store'}).then(r=>r.ok?r.json():{demok:[]}).catch(()=>({demok:[]}))])
