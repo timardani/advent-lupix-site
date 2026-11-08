@@ -147,6 +147,10 @@
    "sor": "CandyDaddy (demó kész, 2026-11-08)"
   },
   {
+   "nev": "Hidegen sajtolt olaj / ecet",
+   "sor": "Pödör"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -1263,6 +1267,24 @@
    "megjegyzes": "2026-11-08: a Társasjáték Diszkont (Gémklub) demó átdolgozása, Dani kérésére. Utánvét Ellenőr Kft., adószám 32393640-2-14 – azonos a Társasjáték Diszkont cégével. UNAS, ~4900 termék, hírlevél van. 24 családbarát társasjáték (felnőtt/ivós kiszűrve), 9 társtermék; 24. nap Police 07 Reloaded −24%. Ingyenes szállítási küszöb nem ismert.",
    "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)",
    "weboldal": "https://tarsasjatekrendeles.hu"
+  },
+  {
+   "id": "podor",
+   "bolt": "Pödör",
+   "kategoria": "Hidegen sajtolt olaj / ecet",
+   "demo": "podor",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@podor.hu",
+   "telefon": "+36 92 900 027",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálat (döntéshozó ismeretlen)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (Dani)",
+   "megjegyzes": "Pödör Kft., 8900 Zalaegerszeg, Baross Gábor u. 44., adószám 23112047-2-20. Saját sajtolású olaj-, ecet- és fűszergyártó (nem viszonteladó), kb. 259 termék, hírlevél + klubtagság, ajándékcsomagok, nagyker/private label, 8 országos webshop – árbevétel unknown, Dani kifejezetten kérte (2026-11-08). Szállítás: GLS csomagautomata 1 490 Ft, 20 000 Ft felett ingyenes. Új kategória első demója; koncepció: Moai Kalenderáium/koncepciok/podor_koncepcio_2026-11-08.md.",
+   "motivum": "tölgy kóstolódeszka 24 kerámia kóstolókanállal + a mai üveg megdöntése (aranysugár megtölti a kanalat, a tányéron feltűnik a termék), „frissen sajtolva” tételcímke-kupon",
+   "weboldal": "https://www.podor.hu/"
   }
  ]
 }
