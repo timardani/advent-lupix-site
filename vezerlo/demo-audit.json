@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-08T10:42:03+01:00",
+  "generalva": "2026-11-08T17:27:40+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -8,6 +8,11 @@
     },
     "afuszereslany": {
       "frissitve": "2026-11-04T23:25+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "aseres": {
+      "frissitve": "2026-11-08T16:46+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -27,6 +32,11 @@
       "hianyok": [
         "nincs 24 teljes napi akció és egyedi kupon"
       ]
+    },
+    "beststuff": {
+      "frissitve": "2026-11-08T16:55+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "biobubi": {
       "frissitve": "2026-11-04T13:33+01:00",
@@ -55,6 +65,11 @@
     },
     "candydaddy": {
       "frissitve": "2026-11-08T00:35+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "chilicum": {
+      "frissitve": "2026-11-08T17:18+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -130,6 +145,11 @@
         "nincs kuponmásolás"
       ]
     },
+    "helka": {
+      "frissitve": "2026-11-08T17:26+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "hemphealth": {
       "frissitve": "2026-10-30T11:37+01:00",
       "demo2_kesz": true,
@@ -152,6 +172,11 @@
     },
     "kavearuhaz": {
       "frissitve": "2026-10-28T12:44+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "kaveverzum": {
+      "frissitve": "2026-11-08T11:15+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -223,15 +248,9 @@
       "hianyok": []
     },
     "podor": {
-      "frissitve": "2026-11-08T10:42+01:00",
-      "demo2_kesz": false,
-      "hianyok": [
-        "nincs 24 teljes napi akció és egyedi kupon",
-        "nem szerepel mind az 5 akciótípus",
-        "nincs éjféli visszaszámlálás/lejárat",
-        "nincs kuponmásolás",
-        "nincs igazolt nagy, vizuális akció és ár"
-      ]
+      "frissitve": "2026-11-08T11:06+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "polomania": {
       "frissitve": "2026-10-28T15:14+01:00",
@@ -301,6 +320,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "tarsasjatekrendeles": {
+      "frissitve": "2026-11-08T11:04+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "teavolution": {
       "frissitve": "2026-11-03T12:45+01:00",
       "demo2_kesz": true,
@@ -346,11 +370,6 @@
     },
     "zki": {
       "frissitve": "2026-11-04T14:25+01:00",
-      "demo2_kesz": true,
-      "hianyok": []
-    },
-    "aseres": {
-      "frissitve": "2026-11-08T16:46+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }

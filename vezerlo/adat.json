@@ -1343,6 +1343,24 @@
    "megjegyzes": "Dani kérése (2026-11-08): új demó, új kategória (vicces/popkultúrás ajándékbolt, nem pólónyomda → nem a Pólómánia/PamutLabor átdolgozása). BTDM Kft. (adószám 22680851-2-14); saját Next.js webshop, ~1 900 termék, hírlevél van („Ritkán kapsz ilyen menő leveleket”), budapesti üzlet + nagykereskedés/viszonteladói program is → a méretkapu szerint közepes cég, Dani kifejezetten kérte. GLS házhoz 1 590 Ft, 30 000 Ft-tól ingyenes. 24 termék, termékcsaládonként 1, korhatáros (felnőtt) termék kizárva: Mikulás dec. 1–3., karácsonyi csokiválogatás dec. 18., dec. 24. a BestStuff saját prémium snackválogatása csomagban. A katalogus.py új next_btdm adaptert kapott ehhez a motorhoz.",
    "motivum": "karácsonyfa 24 egymásra rakott rugós meglepetésdobozból (jack-in-the-box), csúcsán a bolti logóikon + a mai doboz forgatókarjának kétszeri körbetekerése (zenélő hangjegyek, a fedél felpattan, a termék rugón kiugrik), BUMM-csillag a fotón, kiss-cut matricakupon",
    "weboldal": "https://beststuff.hu"
+  },
+  {
+   "id": "helka",
+   "bolt": "Helka Sörfőzde",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "helka",
+   "allapot": "kuldheto",
+   "kinek": "Lakner Dóri (helkasor.hu)",
+   "email": "laknerdori@helkasor.hu",
+   "telefon": "+36 70 546 7344",
+   "kapcsolat_minoseg": "név szerinti e-mail",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél hétfőn (11.09.), rövid határidővel (szerda/csütörtök)",
+   "megjegyzes": "Hajrá 11-08: átdolgozás az aseres demóból. Saját főzde (GASTROFLEX Kft., Balatonföldvár), WooCommerce, MailerLite-hírlevél, fut Meta-hirdetés. Csak 18 rendelhető termék → 6 termék más akciótípussal ismétlődik. Ingyenes szállítás küszöbe unknown.",
+   "motivum": "Adventi csaplista: csapkar lehúzása, amíg megtelik a pohár; Helka-logó, erdőzöld",
+   "weboldal": "https://helkasor.hu/"
   }
  ]
 }
