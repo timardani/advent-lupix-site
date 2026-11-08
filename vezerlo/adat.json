@@ -1245,6 +1245,24 @@
    "teendo": "Levél kiküldése (hajrá, társasjáték 2. bolt)",
    "megjegyzes": "Szellemlovas Kft. (13094744-2-42), 1067 Budapest, Szondi u. 18/a; saját Yii-webbolt, kb. 2900 raktáron lévő társas, hírlevél van, ingyenes GLS 18 000 Ft felett. A tarsasjatekdiszkont (Gémklub) demó átdolgozása, 2026-11-08. Dani kérte.",
    "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)"
+  },
+  {
+   "id": "tarsasjatekrendeles",
+   "bolt": "TársasjátékRendelés.hu",
+   "kategoria": "Társasjáték",
+   "demo": "tarsasjatekrendeles",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@tarsasjatekrendeles.hu",
+   "telefon": "+36 1 809 0012",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani: döntés – UGYANAZ a cég, mint a Társasjáték Diszkont (Utánvét Ellenőr Kft.); egy közös levél a két boltra, vagy csak az egyik?",
+   "megjegyzes": "2026-11-08: a Társasjáték Diszkont (Gémklub) demó átdolgozása, Dani kérésére. Utánvét Ellenőr Kft., adószám 32393640-2-14 – azonos a Társasjáték Diszkont cégével. UNAS, ~4900 termék, hírlevél van. 24 családbarát társasjáték (felnőtt/ivós kiszűrve), 9 társtermék; 24. nap Police 07 Reloaded −24%. Ingyenes szállítási küszöb nem ismert.",
+   "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)",
+   "weboldal": "https://tarsasjatekrendeles.hu"
   }
  ]
 }
