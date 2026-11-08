@@ -1361,6 +1361,24 @@
    "megjegyzes": "Hajrá 11-08: átdolgozás az aseres demóból. Saját főzde (GASTROFLEX Kft., Balatonföldvár), WooCommerce, MailerLite-hírlevél, fut Meta-hirdetés. Csak 18 rendelhető termék → 6 termék más akciótípussal ismétlődik. Ingyenes szállítás küszöbe unknown.",
    "motivum": "Adventi csaplista: csapkar lehúzása, amíg megtelik a pohár; Helka-logó, erdőzöld",
    "weboldal": "https://helkasor.hu/"
+  },
+  {
+   "id": "herbatea",
+   "bolt": "Herbatea Manufaktúra",
+   "kategoria": "Tea – gyógynövényes / funkcionális",
+   "demo": "herbatea",
+   "allapot": "kuldheto",
+   "kinek": "Ulicsák Tamás (kapcsolat oldalon megnevezve)",
+   "email": "info@herbatea-manufaktura.hu",
+   "telefon": "+36 70 594 2860",
+   "kapcsolat_minoseg": "Manufaktúra központi címe, kapcsolattartó név szerint ismert",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (hajrá, rövid határidő)",
+   "megjegyzes": "Herbatea Manufaktúra Kft., 2624 Szokolya, Hársfa u. 9., adószám 23173523-2-13. Saját gyártó (bérgyártás is), Mailchimp-hírlevél, WooCommerce, 144 termék – Demeter-mintázat. Átdolgozás az UKKO-demóból (2026-11-08). 24 nap: teakeverékek, gyógynövényes mézek, szirupok, gyerekteák, ajándékcsomagok; étrend-kiegészítők és hatásállítás kihagyva. Ingyenes szállítási küszöb: unknown.",
+   "motivum": "teafilterek zsinegen + leakasztás és bögrébe mártás; függőcímkés 1+1/kupon (UKKO-átdolgozás)",
+   "weboldal": "https://herbatea-manufaktura.hu/"
   }
  ]
 }
