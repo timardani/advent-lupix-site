@@ -942,6 +942,24 @@
    "weboldal": "https://www.hot-chip.hu"
   },
   {
+   "id": "egrichiliagok",
+   "bolt": "Egri Chil(i)agok",
+   "kategoria": "Chili / csípős szószok és fűszerek",
+   "demo": "egrichiliagok",
+   "allapot": "kuldheto",
+   "kinek": "unknown (Történelmi Chili Kft., Eger; az impresszumban nincs név, céges info-cím)",
+   "email": "info@egrichiliagok.hu",
+   "telefon": "+36 70 408 5192",
+   "kapcsolat_minoseg": "Céges info-cím (kis egri manufaktúra, saját Unas-webshop, személyes átvétel: 3300 Eger, Servita u. 1.); a tulaj kezelheti",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hétfő, 11.09.)",
+   "megjegyzes": "Hajrá 2026-11-08, chili 2. levele (Dani: „mehet egy chilis demó, a kiküldött HOT-CHIP maradjon”). A hotchip demó másolata/átdolgozása (márka + termékcsere), a HOT-CHIP-demó változatlan. Saját gyártó (Történelmi Chili Kft.), hírlevél-feliratkozás van, aktív Meta-hirdető. Levélhez: az egri ostrom (1552) nevű szószok – Dobó Kapitány, Várvédők, Bornemissza, Szulejmán Haragja; International Flavor Awards érmek. Skála: a bolt saját 5 csípősségi kategóriája; 24. nap: Extrém csípős válogatás.",
+   "motivum": "chilifüzér + hőfokszabályzó felcsavarása (a hotchip jelenete)",
+   "weboldal": "https://egrichiliagok.hu"
+  },
+  {
    "id": "beerselection",
    "bolt": "Beerselection",
    "kategoria": "Kézműves / prémium sör",
