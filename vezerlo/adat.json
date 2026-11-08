@@ -1285,6 +1285,24 @@
    "megjegyzes": "Pödör Kft., 8900 Zalaegerszeg, Baross Gábor u. 44., adószám 23112047-2-20. Saját sajtolású olaj-, ecet- és fűszergyártó (nem viszonteladó), kb. 259 termék, hírlevél + klubtagság, ajándékcsomagok, nagyker/private label, 8 országos webshop – árbevétel unknown, Dani kifejezetten kérte (2026-11-08). Szállítás: GLS csomagautomata 1 490 Ft, 20 000 Ft felett ingyenes. Új kategória első demója; koncepció: Moai Kalenderáium/koncepciok/podor_koncepcio_2026-11-08.md.",
    "motivum": "tölgy kóstolódeszka 24 kerámia kóstolókanállal + a mai üveg megdöntése (aranysugár megtölti a kanalat, a tányéron feltűnik a termék), „frissen sajtolva” tételcímke-kupon",
    "weboldal": "https://www.podor.hu/"
+  },
+  {
+   "id": "kaveverzum",
+   "bolt": "KávéVerzum (Online-Care Kft.)",
+   "kategoria": "Kávé",
+   "demo": "kaveverzum",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "info@kaveverzum.hu",
+   "telefon": "+36 70 578 8141",
+   "kapcsolat_minoseg": "Webshop info@ cím (lehet, hogy a tulaj kezeli); MailerLite-hírlevél van",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevének ellenőrzése, majd megkereső levél (hajrá, rövid határidővel)",
+   "megjegyzes": "Dani kérésére (2026-11-08), hajrá: a Koffein Roasters kávéútlevél átdolgozása. Unas, kb. 1400 termék, többmárkás kávékereskedő (Lavazza, Hausbrandt, Bányai, Twenty Eight) + eszközök. 24 nap: eredet- és városállomások + eszköznapok, napi akció + kód (approved:false).",
+   "motivum": "kávéútlevél + pecsételés (átdolgozás a koffeinroasters-ből)",
+   "weboldal": "https://kaveverzum.hu"
   }
  ]
 }
