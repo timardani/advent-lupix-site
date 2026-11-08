@@ -210,6 +210,68 @@ def woo(base, home, fresh, kat):
     return out, f"{base}/wp-json/wc/store/v1/products?per_page=100"
 
 
+def rsc_text(t):
+    """Next.js App Router RSC payload (self.__next_f.push([1,"..."])) -> decoded text."""
+    out = []
+    for s in re.findall(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)', t, re.S):
+        try:
+            out.append(json.loads('"' + s + '"'))
+        except ValueError:
+            pass
+    return "".join(out)
+
+
+def rsc_products(t):
+    """All productsResponse.products arrays from an RSC text."""
+    dec, res = json.JSONDecoder(), []
+    for m in re.finditer(r'"productsResponse":\{"products":', t):
+        try:
+            arr, _ = dec.raw_decode(t, m.end())
+        except ValueError:
+            continue
+        res += [p for p in arr if isinstance(p, dict)]
+    return res
+
+
+def next_btdm(base, home, fresh, kat):
+    """Saját Next.js motor (beststuff.hu, BTDM Kft.): /termekek/<kat>/<id>[/<oldal>] listák RSC-JSON-ja.
+    korhataros=="1" = felnőtt tartalom (kizárva); priceLow = aktuális (akciós) bruttó ár;
+    kép: /api/getimages/<cikkszám>_0?pid=<képid>; termék: /termekek/<prettyUrl>/1/<id>."""
+    links = OrderedDict()
+    alls = K.fetch(f"{base}/termekek/osszes/1", fresh)  # a főkategóriák (buli, otthon, finomságok…) csak itt vannak
+    src = home.text + rsc_text(home.text) + (alls.text + rsc_text(alls.text) if alls.ok else "")
+    for slug_, cid in re.findall(r'/termekek/([a-z0-9-]+)/(\d{2,4})(?=["/?])', src):
+        if slug_ != "osszes":
+            links.setdefault(cid, slug_)
+    out, seen = [], set()
+    for cid, slug_ in list(links.items())[:MAX_LISTINGS]:
+        for page in (1, 2):
+            u = f"{base}/termekek/{slug_}/{cid}" + (f"/{page}" if page > 1 else "")
+            r = K.fetch(u, fresh)
+            if not r.ok:
+                break
+            t = rsc_text(r.text)
+            prods = rsc_products(t)
+            catname = slug_.replace("-", " ").capitalize()
+            for p in prods:
+                pid = str(p.get("id"))
+                if pid in seen or str(p.get("korhataros")) == "1":
+                    continue
+                seen.add(pid)
+                imgs = p.get("images") or []
+                img = (f"{base}/api/getimages/{urllib.parse.quote(str(p.get('productNr')), safe='')}_0?pid={imgs[0]}"
+                       if imgs and p.get("productNr") else None)
+                out.append(dict(
+                    id=pid, name=K.clean(p.get("name")), price=num(p.get("priceLow") or p.get("priceHi")),
+                    price_orig=num(p.get("priceHi")), currency="HUF",
+                    available=(p.get("stock") or 0) > 0 and str(p.get("status", "aktiv")) == "aktiv",
+                    url=f"{base}/termekek/{p.get('prettyUrl')}/1/{pid}", image_url=img, category=catname,
+                    description="", verified=True))
+            if len(prods) < 40:
+                break
+    return out, f"{base}/termekek/<kategoria>/<id> (Next RSC)"
+
+
 def listing_name(t):
     bc = K.jsonld(t, "BreadcrumbList").get("itemListElement") or []
     names = [(i.get("name") or (i.get("item") or {}).get("name") if isinstance(i.get("item"), dict) else i.get("name"))
@@ -599,6 +661,9 @@ def main(argv):
         cands, source = woo(base, home, fresh, kat)
         if not cands:
             cands, source = html_shop(base, home, fresh, kat, platform)
+    elif re.search(r"/api/getimages/|%2Fapi%2Fgetimages%2F", home.text) and "self.__next_f" in home.text:
+        platform = "Next (BTDM)"
+        cands, source = next_btdm(base, home, fresh, kat)
     else:
         cands, source = html_shop(base, home, fresh, kat, platform)
     if kat:

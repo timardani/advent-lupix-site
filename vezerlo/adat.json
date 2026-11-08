@@ -151,6 +151,10 @@
    "sor": "Pödör"
   },
   {
+   "nev": "Vicces ajándék / ajándékbolt",
+   "sor": "BestStuff"
+  },
+  {
    "nev": "Besorolandó",
    "sor": "Automatikusan felvett demók"
   },
@@ -1321,6 +1325,24 @@
    "megjegyzes": "Dani kérésére (2026-11-08), hajrá: a Beerselection-demó (csappult) átdolgozása, Seres-logóval és -színekkel. A kézműves Seres Kft., 1165 Budapest, Farkasszőlő u. 63.; WooCommerce; magyar kraftsör-bolt + termelői finomságok, saját sör is (MSKLC: „saját söreink”). 361 termékből csak 50 készleten (18 sör) → a 24 nap: 18 sör + 2 Czider + 4 kézműves üdítő. Hírlevél-feliratkozás nincs → az e-mail-lista érv erős. Üveges Csíki sörnél a házhozszállítás szünetel (személyes átvétel a kuponfeltételben).",
    "motivum": "csappult krétatáblával + csapolás – a beerselection átdolgozása",
    "weboldal": "https://aseres.hu"
+  },
+  {
+   "id": "beststuff",
+   "bolt": "BestStuff",
+   "kategoria": "Vicces ajándék / ajándékbolt",
+   "demo": "beststuff",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "hello@beststuff.hu",
+   "telefon": "+36 30 492 1682",
+   "kapcsolat_minoseg": "Webshop hello@ címe (lehet, hogy a tulaj/marketing kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése a hajrában (hétfő, 11.09.), rövid határidővel (11.11–12.); döntéshozó nevének ellenőrzése",
+   "megjegyzes": "Dani kérése (2026-11-08): új demó, új kategória (vicces/popkultúrás ajándékbolt, nem pólónyomda → nem a Pólómánia/PamutLabor átdolgozása). BTDM Kft. (adószám 22680851-2-14); saját Next.js webshop, ~1 900 termék, hírlevél van („Ritkán kapsz ilyen menő leveleket”), budapesti üzlet + nagykereskedés/viszonteladói program is → a méretkapu szerint közepes cég, Dani kifejezetten kérte. GLS házhoz 1 590 Ft, 30 000 Ft-tól ingyenes. 24 termék, termékcsaládonként 1, korhatáros (felnőtt) termék kizárva: Mikulás dec. 1–3., karácsonyi csokiválogatás dec. 18., dec. 24. a BestStuff saját prémium snackválogatása csomagban. A katalogus.py új next_btdm adaptert kapott ehhez a motorhoz.",
+   "motivum": "karácsonyfa 24 egymásra rakott rugós meglepetésdobozból (jack-in-the-box), csúcsán a bolti logóikon + a mai doboz forgatókarjának kétszeri körbetekerése (zenélő hangjegyek, a fedél felpattan, a termék rugón kiugrik), BUMM-csillag a fotón, kiss-cut matricakupon",
+   "weboldal": "https://beststuff.hu"
   }
  ]
 }
