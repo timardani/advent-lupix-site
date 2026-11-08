@@ -1210,6 +1210,24 @@
    "megjegyzes": "2026-11-08: a Gémklub demó átdolgozása (Dani kérte, a Gémklub lezárva). Utánvét Ellenőr Kft., adószám 32393640-2-14, UNAS, ~3000 termék, hírlevél van. 24 társasjáték, Mikulás dec. 1–3, 24. nap Gyűrűk Ura −24%. Ingyenes szállítási küszöb nem ismert.",
    "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)",
    "weboldal": "https://www.tarsasjatekdiszkont.hu"
+  },
+  {
+   "id": "simaimeheszet",
+   "bolt": "Simai Családi Méhészet",
+   "kategoria": "Méhészet / méz",
+   "demo": "simaimeheszet",
+   "allapot": "kuldheto",
+   "kinek": "Simai Attila (Simai Attila EV, a méhészet tulajdonosa)",
+   "email": "info@mezrendelespecs.hu",
+   "telefon": "+36 30 285 7794",
+   "kapcsolat_minoseg": "Tulajdonos vezette családi méhészet (EV), a webshop info-címe valószínűleg közvetlenül hozzá fut",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hétfő, 11.09.)",
+   "megjegyzes": "Hajrá 2026-11-08, méhészet 3. levele (Dani: „mehet valakinek egy méhész”), a popovicsmez demó átdolgozása (csak márka + termékcsere; Popovics és MMM demó érintetlen). Simai Attila EV (Pécs/Szalánta, adószám 79493178-1-22), WooCommerce, 32 termék, hírlevél-űrlap, saját termelésű mézek, ízesített krémmézek, méhviasz gyertyák, egyedi címkés céges ajándékcsomagok. MPL 1 990 Ft (kosárpróba), Pécsett személyes átvétel. 24 nap pontos variációs linkkel; 24. nap Karácsonyi bőség csomag (a bolt saját fotóján „LOGO HELYE” felirat látszik, céges egyedi logós csomag). Ár/készlet: Store API, 2026-11-08.",
+   "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (popovicsmez átdolgozás, Simai narancs + rozsdabarna)",
+   "weboldal": "https://mezrendelespecs.hu/"
   }
  ]
 }
