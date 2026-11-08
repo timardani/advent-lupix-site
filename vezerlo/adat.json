@@ -1379,6 +1379,24 @@
    "megjegyzes": "Herbatea Manufaktúra Kft., 2624 Szokolya, Hársfa u. 9., adószám 23173523-2-13. Saját gyártó (bérgyártás is), Mailchimp-hírlevél, WooCommerce, 144 termék – Demeter-mintázat. Átdolgozás az UKKO-demóból (2026-11-08). 24 nap: teakeverékek, gyógynövényes mézek, szirupok, gyerekteák, ajándékcsomagok; étrend-kiegészítők és hatásállítás kihagyva. Ingyenes szállítási küszöb: unknown.",
    "motivum": "teafilterek zsinegen + leakasztás és bögrébe mártás; függőcímkés 1+1/kupon (UKKO-átdolgozás)",
    "weboldal": "https://herbatea-manufaktura.hu/"
+  },
+  {
+   "id": "chillermanufaktura",
+   "bolt": "ChillER Manufaktúra",
+   "kategoria": "Chili / csípős szószok és fűszerek",
+   "demo": "chillermanufaktura",
+   "allapot": "kuldheto",
+   "kinek": "unknown (LEBAKER Kft.; az impresszumban nincs név, céges info-cím)",
+   "email": "info@chillermanufaktura.hu",
+   "telefon": "+36 70 451 6596",
+   "kapcsolat_minoseg": "Céges info-cím (kis chiligyártó manufaktúra, saját WooCommerce-webshop); a tulaj kezelheti",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hétfő, 11.09.)",
+   "megjegyzes": "Hajrá 2026-11-08, Dani: „csinálj egyet, akinek jónak gondolod” (a kategóriafoglaltság már nem számít). Választás oka: Demeter-mintázat – saját gyártó manufaktúra, MailerLite-hírlevél (mint a Demeternél), 96 termék, díjnyertes szószok, karácsonyi díszdobozok, saját hűségprogram, Magyar Mezőgazdaság-tag. Az egrichiliagok demó átdolgozása (márka + termékcsere), az Egri-demó változatlan. Skála: a bolt saját „Erősség” jellemzője (Csemege→Extrém csípős); 24. nap: Csak chili box (Scorpion), −20% csomagban. Levélhez: díjnyertes KP Burger sauce, Fúzió chilis repceméz, Mámor, Merry Burning Christmas (dec. 2.). Ingyenes szállítási küszöb nem ellenőrzött (a bolt 406-tal blokkolt) → általános megfogalmazás.",
+   "motivum": "chilifüzér + hőfokszabályzó felcsavarása (a hotchip/egrichiliagok jelenete)",
+   "weboldal": "https://chillermanufaktura.hu"
   }
  ]
 }
