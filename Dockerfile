@@ -1,11 +1,13 @@
 FROM nginx:1.27-alpine
-RUN apk add --no-cache openssl python3
+RUN apk add --no-cache openssl python3 nodejs
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY vezerlo-auth.sh /docker-entrypoint.d/40-vezerlo-auth.sh
 COPY start.sh /app/start.sh
 COPY vezerlo-api.py /app/vezerlo-api.py
 COPY kalendar-api.py /app/kalendar-api.py
 COPY kalendar-seed/ /app-seed/kalendar/
+# Élő bemutató-appok (Node, csak beépített modulok): apps/<név>/{server,config,dist}
+COPY apps/ /app/apps/
 COPY vezerlo/adat.json /app-seed/adat.json
 RUN chmod +x /docker-entrypoint.d/40-vezerlo-auth.sh /app/start.sh
 COPY site/ /usr/share/nginx/html/

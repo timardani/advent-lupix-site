@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="admin.css">
+<title>Admin · Adventi kalendárium</title>
+</head>
+<body>
+<header class="top">
+  <b class="brand"><span id="wm">AGUKRISZ.</span> <small>Kalendárium admin</small></b>
+  <span id="who"></span>
+</header>
+<main id="main">
+  <form id="login" class="card login" hidden>
+    <h1>Belépés</h1>
+    <label for="pw">Jelszó</label>
+    <input id="pw" type="password" autocomplete="current-password" required>
+    <button type="submit">Belépés</button>
+    <p class="msg" id="login-msg" role="alert"></p>
+  </form>
+  <div id="panel" hidden>
+    <p class="status" id="status"></p>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="napok" aria-selected="true">📅 Napok</button>
+      <button role="tab" data-tab="beallitasok" aria-selected="false">⚙️ Beállítások</button>
+      <button role="tab" data-tab="stat" aria-selected="false">📊 Statisztika</button>
+      <button role="tab" data-tab="mentesek" aria-selected="false">🕘 Mentések</button>
+    </nav>
+    <section id="tab-napok" class="tab"></section>
+    <section id="tab-beallitasok" class="tab" hidden></section>
+    <section id="tab-stat" class="tab" hidden></section>
+    <section id="tab-mentesek" class="tab" hidden></section>
+  </div>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="preview">
+  <div class="pv-head"><b id="pv-title">Előnézet</b><span class="pv-tools"><a id="pv-open" target="_blank" rel="noopener">Új lapon ↗</a><button type="button" id="pv-close" class="ghost sm">Bezárás</button></span></div>
+  <div class="phone"><iframe id="pv-frame" title="Előnézet"></iframe></div>
+</dialog>
+<script type="module" src="admin.js"></script>
+</body>
+</html>

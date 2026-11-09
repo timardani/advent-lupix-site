@@ -1,0 +1,785 @@
+{
+ "verzio": 1,
+ "profil": {
+  "ev": 2026,
+  "nev": "Augusztini Krisztián",
+  "becenev": "Krisz",
+  "titulus": "Ismerkedési szakértő",
+  "wordmark": "AGUKRISZ.",
+  "web": "https://agukrisz.hu/",
+  "avatar": "krisz.jpg",
+  "nyitasOra": 0,
+  "tempo": "normal",
+  "kovetes": {
+   "felirat": "@agukrisz",
+   "url": "https://www.tiktok.com/@agukrisz"
+  },
+  "szovegek": {
+   "kicker": "Advent · 24 üzenet Krisztől",
+   "cim": "Decemberben\nminden reggel *írok neked.*",
+   "lead": "Egy tipp a készülő könyvemből, egy mai házi, és néhány napon ajándék, amit januárban is beválthatsz.",
+   "gridCim": "Ki írt neked ma?",
+   "gridAlcim": "Koppints a mai kártyára, és húzd jobbra. ❤",
+   "match": "Krisz írt neked",
+   "elotte": "December 1-jén reggel jön az első üzenet. Nézz vissza akkor!",
+   "vege": "Ennyi volt az idei 24 üzenet. Köszönöm, hogy velem tartottál!",
+   "kuponLabjegyzet": "📸 Screenshotold le – januárban is érvényes.",
+   "lablec": "Augusztini Krisztián · ismerkedési szakértő"
+  },
+  "lablecLinkek": [
+   {
+    "felirat": "Instagram",
+    "url": "https://www.instagram.com/agukrisz/"
+   },
+   {
+    "felirat": "TikTok",
+    "url": "https://www.tiktok.com/@agukrisz"
+   }
+  ],
+  "gyorsLinkek": [
+   {
+    "felirat": "TikTok",
+    "url": "https://www.tiktok.com/@agukrisz"
+   },
+   {
+    "felirat": "Instagram",
+    "url": "https://www.instagram.com/agukrisz/"
+   },
+   {
+    "felirat": "Egyéni konzultáció",
+    "url": "https://agukrisz.hu/ferfi-egyeni-konzultacio"
+   },
+   {
+    "felirat": "Workshop",
+    "url": "https://agukrisz.hu/ferfi-noi-jelenlet-workshop"
+   },
+   {
+    "felirat": "Közösség (Skool)",
+    "url": "https://www.skool.com/csajozo-kozosseg-7553"
+   }
+  ]
+ },
+ "feliratkozas": {
+  "aktiv": false,
+  "cim": "Szólok, ha megjelenik a könyv",
+  "szoveg": "Add meg az e-mail-címed, és elsőként kapod meg a megjelenés hírét meg a könyves kedvezményt.",
+  "gomb": "Kérem",
+  "koszono": "Köszönöm! Hamarosan jelentkezem.",
+  "reszvetelSzoveg": "Elfogadom a játék részvételi feltételeit.",
+  "reszvetelUrl": "",
+  "hirlevelSzoveg": "Kérem Krisz hírlevelét (bármikor leiratkozhatok).",
+  "adatkezelesUrl": "",
+  "verzio": "1"
+ },
+ "days": [
+  {
+   "day": 1,
+   "cim": "A lefagyás nem jellemhiba",
+   "blokkok": [
+    {
+     "id": "10ab92bf",
+     "tipus": "szoveg",
+     "szoveg": "Na csá! 👋 24 napig minden reggel írok neked egy dolgot a készülő könyvemből. Meg egy házit, mert a változás nem olvasás közben történik."
+    },
+    {
+     "id": "6dad9b2c",
+     "tipus": "szoveg",
+     "szoveg": "Az első: ha meglátsz egy nőt, és lefagysz, az nem gyávaság. Az idegrendszered csinálja, ami a dolga: véd."
+    },
+    {
+     "id": "45ddd0f5",
+     "tipus": "szoveg",
+     "szoveg": "Nem meggyőzni kell, hanem hozzászoktatni. Kis lépésekkel, minden nap."
+    },
+    {
+     "id": "4a8e8dea",
+     "tipus": "hazi",
+     "szoveg": "Ma köszönj rá három idegenre: pénztáros, szomszéd, buszsofőr. Csak ennyi. Szemkontaktus + „Jó reggelt!”"
+    },
+    {
+     "id": "36872dda",
+     "tipus": "link",
+     "felirat": "Kövess TikTokon, ott is jönnek a tippek",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "cim": "Egy levegővételnyi szemkontaktus",
+   "blokkok": [
+    {
+     "id": "f3e5f9d7",
+     "tipus": "szoveg",
+     "szoveg": "A legtöbb srác vagy bámul, vagy azonnal lenéz. Egyik se jó."
+    },
+    {
+     "id": "66e3a8d4",
+     "tipus": "szoveg",
+     "szoveg": "Tartsd meg a pillantást egy nyugodt levegővételig. Mosolyogj. Ha elnézel, oldalra nézz, ne a földre: az a „bocs, hogy élek” mozdulat."
+    },
+    {
+     "id": "ce4e6266",
+     "tipus": "hazi",
+     "szoveg": "Öt szemkontaktus ma, mindegyik egy levegővételnyi, mosollyal. Számold."
+    },
+    {
+     "id": "ce0ce98b",
+     "tipus": "link",
+     "felirat": "Nézd meg Instán, hogy csinálom",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "cim": "Nincs tökéletes első mondat",
+   "blokkok": [
+    {
+     "id": "7ee5e48e",
+     "tipus": "szoveg",
+     "szoveg": "Kapom a kérdést: „Krisz, mit mondjak először?” A rossz hír: nincs varázsmondat. A jó hír: nem is kell."
+    },
+    {
+     "id": "a04f6eb4",
+     "tipus": "szoveg",
+     "szoveg": "„Szia, láttalak, és szerettem volna megismerni” – ez százszor többet ér egy betanult szövegnél. Mert igaz."
+    },
+    {
+     "id": "5dd83cca",
+     "tipus": "hazi",
+     "szoveg": "Írj le egy nyitómondatot, ami 100%-ig rád jellemző. Mondd ki hangosan ötször, amíg nem érzed furának."
+    },
+    {
+     "id": "38d0b6c6",
+     "tipus": "link",
+     "felirat": "Csatlakozz az ismerkedő közösséghez",
+     "url": "https://www.skool.com/csajozo-kozosseg-7553"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "cim": "A kedvesség még nem vonzalom",
+   "blokkok": [
+    {
+     "id": "31c704a0",
+     "tipus": "szoveg",
+     "szoveg": "Jó fej vagy, kedvel, és pont ezért kötsz ki újra a barátzónában. Ismerős?"
+    },
+    {
+     "id": "ba15e98b",
+     "tipus": "szoveg",
+     "szoveg": "A kedvesség nem baj. A baj az, ha elrejted mögötte a szándékodat. Ha tetszik, mutasd meg. Nem tolakodóan, hanem egyértelműen."
+    },
+    {
+     "id": "89447fff",
+     "tipus": "hazi",
+     "szoveg": "Mondj ma valakinek egy konkrét bókot. Nem „csinos vagy”, hanem: „Nagyon jól áll ez a zöld sál.”"
+    },
+    {
+     "id": "20762958",
+     "tipus": "link",
+     "felirat": "Mesélj: milyen az egyéni konzultáció?",
+     "url": "https://agukrisz.hu/ferfi-egyeni-konzultacio"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "cim": "Az elutasítás nem rólad szól",
+   "blokkok": [
+    {
+     "id": "c2b6f771",
+     "tipus": "szoveg",
+     "szoveg": "Egy kliensem mindig magát hibáztatta, ha valami nem jött össze. Feltettem neki egy kérdést: „Nem lehet, hogy csak szimplán nem passzoltok?”"
+    },
+    {
+     "id": "ad66155a",
+     "tipus": "szoveg",
+     "szoveg": "Egy „nem” nem ítélet rólad. Csak információ. Minél többet kapsz belőle, annál kevésbé fáj."
+    },
+    {
+     "id": "0750d8b1",
+     "tipus": "hazi",
+     "szoveg": "Kérj zsebkendőt öt idegentől az utcán. Igen, komolyan. Az egyik srác 28-at gyűjtött egy nap alatt."
+    },
+    {
+     "id": "1eb917c5",
+     "tipus": "link",
+     "felirat": "Holnap ajándék jön – addig itt vagyok",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "cim": "Ezt nem lehet otthonról megtanulni",
+   "blokkok": [
+    {
+     "id": "293d8f29",
+     "tipus": "szoveg",
+     "szoveg": "Öt nap, öt házi. Ha legalább kettőt megcsináltál, már előrébb vagy, mint a legtöbben. 💪"
+    },
+    {
+     "id": "7071e4d8",
+     "tipus": "szoveg",
+     "szoveg": "A flörtöt élőben lehet megtanulni, nem videókból. Ezért tartom a Férfi-Női Jelenlét Workshopot: 6 férfi, 6 nő, 4 óra gyakorlás biztonságos közegben."
+    },
+    {
+     "id": "239297d0",
+     "tipus": "szoveg",
+     "szoveg": "Hoztam neked valamit. 🎁"
+    },
+    {
+     "id": "910461a8",
+     "tipus": "hazi",
+     "szoveg": "Nézd meg a workshop programját, és írd fel, melyik rész ijeszt meg a legjobban. Pont az kell neked."
+    },
+    {
+     "id": "442234f1",
+     "tipus": "kupon",
+     "ertek": "−2 000 Ft",
+     "mire": "a következő workshopjegyem árából",
+     "kod": "AGU2000",
+     "feltetel": "Bármelyik Férfi-Női Jelenlét Workshopra, egy jegyre",
+     "ervenyesIg": "2027-01-31"
+    },
+    {
+     "id": "153f55b2",
+     "tipus": "link",
+     "felirat": "Megnézem a workshopot",
+     "url": "https://agukrisz.hu/ferfi-noi-jelenlet-workshop"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "cim": "Lépj közelebb, aztán adj teret",
+   "blokkok": [
+    {
+     "id": "eacc7a9c",
+     "tipus": "szoveg",
+     "szoveg": "A távolság beszél helyetted. Ha két méterről magyarázol, bizonytalannak tűnsz. Ha az arcába hajolsz, nyomulósnak."
+    },
+    {
+     "id": "d5e97930",
+     "tipus": "szoveg",
+     "szoveg": "A trükk: lépj közel, majd egy fél lépést hátra. Ezzel azt mondod: „Itt vagyok, de nem nyomullak.”"
+    },
+    {
+     "id": "ca7bd14d",
+     "tipus": "hazi",
+     "szoveg": "Ma minden beszélgetésnél figyeld, hol állsz. Ha túl messze vagy, lépj közelebb egyet."
+    },
+    {
+     "id": "cb41abb9",
+     "tipus": "link",
+     "felirat": "Testbeszédes videók Instán",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "cim": "Ne vacsorára hívd",
+   "blokkok": [
+    {
+     "id": "0545c528",
+     "tipus": "szoveg",
+     "szoveg": "Első randi vacsorával? Két óra szemben ülés, mint egy állásinterjún. Felejtsd el."
+    },
+    {
+     "id": "0f6deab1",
+     "tipus": "szoveg",
+     "szoveg": "December a randik legjobb hónapja: forralt bor a vásárban, korcsolya, séta a fények között. Mozgás, közös élmény, egymás mellett állás."
+    },
+    {
+     "id": "2a2e8845",
+     "tipus": "hazi",
+     "szoveg": "Tervezz egy 60 perces randit három helyszínnel. Írd le, akkor is, ha még nincs kivel."
+    },
+    {
+     "id": "76a7759d",
+     "tipus": "link",
+     "felirat": "Ötletek a közösségben",
+     "url": "https://www.skool.com/csajozo-kozosseg-7553"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "cim": "Ne interjúztasd",
+   "blokkok": [
+    {
+     "id": "313386ac",
+     "tipus": "szoveg",
+     "szoveg": "„Mivel foglalkozol? Honnan jöttél? Mit szeretsz csinálni?” Ez nem randi, hanem kérdőív."
+    },
+    {
+     "id": "0bb107bf",
+     "tipus": "szoveg",
+     "szoveg": "Kérdések helyett tegyél fel tippeket: „Szerintem te az a típus vagy, aki az ajándékokat már novemberben becsomagolja.” Rosszul tippelsz? Annál jobb, nevetni fogtok rajta."
+    },
+    {
+     "id": "6a2684b0",
+     "tipus": "hazi",
+     "szoveg": "Ma három beszélgetésben cserélj le egy-egy kérdést egy tippre. Figyeld, mi történik."
+    },
+    {
+     "id": "af3cdaf6",
+     "tipus": "link",
+     "felirat": "Több ilyen TikTokon",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 10,
+   "cim": "Üzenetben ne írj regényt",
+   "blokkok": [
+    {
+     "id": "33ac9c4d",
+     "tipus": "szoveg",
+     "szoveg": "Ha valaki rövid üzeneteket ír, te meg háromsoros esszékkel válaszolsz, abból nem randi lesz, hanem levelezőpartner."
+    },
+    {
+     "id": "d6bd6dfa",
+     "tipus": "szoveg",
+     "szoveg": "Tartsd a ritmust, és öt-hat üzenet után terelj a találkozó felé: „Ezt inkább élőben mesélném el. Csütörtök, forralt bor?”"
+    },
+    {
+     "id": "ac9cfe59",
+     "tipus": "hazi",
+     "szoveg": "Nézd meg az utolsó chatedet. Ki ír hosszabbakat? Ha te, a következőt vágd ketté."
+    },
+    {
+     "id": "1de31541",
+     "tipus": "link",
+     "felirat": "Kérdezz tőlem Instán",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 11,
+   "cim": "A játékosság vonz",
+   "blokkok": [
+    {
+     "id": "4992dedd",
+     "tipus": "szoveg",
+     "szoveg": "Ha minden mondatod tökéletes és udvarias, olyan vagy, mint egy ügyfélszolgálat. Kedves, de senki nem akar randizni vele."
+    },
+    {
+     "id": "58601410",
+     "tipus": "szoveg",
+     "szoveg": "Egy kis ugratás, egy pimasz mosoly, egy belső poén – ettől lesz feszültség. Pozitív értelemben."
+    },
+    {
+     "id": "7f4642cf",
+     "tipus": "hazi",
+     "szoveg": "Ugrass ma valakit finoman. Ha mosolyog, jó helyen jársz."
+    },
+    {
+     "id": "9a91c354",
+     "tipus": "link",
+     "felirat": "Holnap újra ajándék – addig itt vagyok",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 12,
+   "cim": "Ugyanabba a mintába futsz bele",
+   "blokkok": [
+    {
+     "id": "1e3c326f",
+     "tipus": "szoveg",
+     "szoveg": "Két hét ment le. Ha közben észrevetted, hogy mindig ugyanott akadsz el, az nem véletlen. Az egy minta."
+    },
+    {
+     "id": "e807e68f",
+     "tipus": "szoveg",
+     "szoveg": "A mintát kívülről sokkal könnyebb meglátni. Az első 45 percben pont ezt csinálom: végignézem veled, mi visz vissza újra meg újra ugyanoda."
+    },
+    {
+     "id": "dad94fff",
+     "tipus": "szoveg",
+     "szoveg": "Ezért hoztam neked most valamit. 🎁"
+    },
+    {
+     "id": "13c69805",
+     "tipus": "hazi",
+     "szoveg": "Írd le az utolsó három ismerkedésedet egy-egy mondatban. Mi volt bennük közös?"
+    },
+    {
+     "id": "6d5fd85c",
+     "tipus": "kupon",
+     "ertek": "−3 000 Ft",
+     "mire": "az első egyéni konzultációm árából",
+     "kod": "AGU3000",
+     "feltetel": "Első, 45 perces ismerkedő alkalomra (15 000 Ft helyett 12 000 Ft)",
+     "ervenyesIg": "2027-01-31"
+    },
+    {
+     "id": "6b321022",
+     "tipus": "link",
+     "felirat": "Foglalok egy alkalmat",
+     "url": "https://agukrisz.hu/ferfi-egyeni-konzultacio"
+    }
+   ]
+  },
+  {
+   "day": 13,
+   "cim": "Mondd ki, hogy jól érezted magad",
+   "blokkok": [
+    {
+     "id": "7a68e96f",
+     "tipus": "szoveg",
+     "szoveg": "Az első randi szuper. A második után eltűnik. Miért?"
+    },
+    {
+     "id": "99b21cc0",
+     "tipus": "szoveg",
+     "szoveg": "Gyakran azért, mert nem tudta, mit akarsz. Randi után írd meg egyszerűen: „Nagyon jól éreztem magam veled. Szeretnélek újra látni.” Ennyi. Nincs játszma."
+    },
+    {
+     "id": "e43b2254",
+     "tipus": "hazi",
+     "szoveg": "Gondolj vissza a legutóbbi jó beszélgetésedre. Kimondtad, hogy jól érezted magad?"
+    },
+    {
+     "id": "8bdb3f47",
+     "tipus": "link",
+     "felirat": "Csatlakozz az ismerkedő közösséghez",
+     "url": "https://www.skool.com/csajozo-kozosseg-7553"
+    }
+   ]
+  },
+  {
+   "day": 14,
+   "cim": "Az önbizalom nem póz",
+   "blokkok": [
+    {
+     "id": "70f50bf3",
+     "tipus": "szoveg",
+     "szoveg": "Az önbizalom nem kidüllesztett mellkas, és nem is hangos nevetés. Az önbizalom tudás arról, hogy mit érsz."
+    },
+    {
+     "id": "43a430fa",
+     "tipus": "szoveg",
+     "szoveg": "Ha nem tudod, miben vagy jó, nem fogod tudni megmutatni sem."
+    },
+    {
+     "id": "305ef19d",
+     "tipus": "hazi",
+     "szoveg": "Írj le tíz dolgot, amiben jó vagy. Ha a hatodiknál elakadsz, kérdezz meg egy barátot."
+    },
+    {
+     "id": "5d0d538e",
+     "tipus": "link",
+     "felirat": "Napi löket TikTokon",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 15,
+   "cim": "Alkalmit vagy komolyat?",
+   "blokkok": [
+    {
+     "id": "e1c64c7e",
+     "tipus": "szoveg",
+     "szoveg": "Mindkettő teljesen rendben van. Ami nincs rendben: ha nem mondod ki."
+    },
+    {
+     "id": "412d9c10",
+     "tipus": "szoveg",
+     "szoveg": "Ha tisztán közvetíted, mit keresel, olyan partnert fogsz találni, aki ugyanezt akarja. Hidd el, mindkettőre van nő. 🤝"
+    },
+    {
+     "id": "3049b314",
+     "tipus": "hazi",
+     "szoveg": "Fogalmazd meg egy mondatban, mit keresel most. Csak magadnak."
+    },
+    {
+     "id": "4932499c",
+     "tipus": "link",
+     "felirat": "Beszéljük meg négyszemközt",
+     "url": "https://agukrisz.hu/ferfi-egyeni-konzultacio"
+    }
+   ]
+  },
+  {
+   "day": 16,
+   "cim": "A céges buli nem tilos terep",
+   "blokkok": [
+    {
+     "id": "0121a751",
+     "tipus": "szoveg",
+     "szoveg": "Karácsonyi bulik szezonja. Mindenki lazább, mindenki nyitottabb. Neked csak egy dolgod van: ne a sarokban állj a haveroddal."
+    },
+    {
+     "id": "18e6bea1",
+     "tipus": "szoveg",
+     "szoveg": "Csatlakozz egy társasághoz, ne egyetlen emberhez. „Mi olyan vicces itt?” – és már bent is vagy."
+    },
+    {
+     "id": "900608a8",
+     "tipus": "hazi",
+     "szoveg": "A következő bulin szólíts meg egy olyan társaságot, ahol nem ismersz senkit."
+    },
+    {
+     "id": "bce1a8a3",
+     "tipus": "link",
+     "felirat": "Bulis tippek Instán",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 17,
+   "cim": "Lassíts húsz százalékot",
+   "blokkok": [
+    {
+     "id": "64a34344",
+     "tipus": "szoveg",
+     "szoveg": "Izgulsz, ezért hadarsz. Ő pedig érzi, hogy izgulsz."
+    },
+    {
+     "id": "40d8f135",
+     "tipus": "szoveg",
+     "szoveg": "Beszélj lassabban, mint gondolnád, és tarts szünetet a mondatok között. A nyugodt hang a legerősebb vonzalomjel, amit ingyen kapsz."
+    },
+    {
+     "id": "9ca5ad61",
+     "tipus": "hazi",
+     "szoveg": "Vegyél fel egy hangüzenetet magadnak egy átlagos napodról. Hallgasd vissza. Most lassabban."
+    },
+    {
+     "id": "bfd1aafa",
+     "tipus": "link",
+     "felirat": "Holnap ajándék – addig itt vagyok",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 18,
+   "cim": "Egyedül könnyebb eltűnni",
+   "blokkok": [
+    {
+     "id": "2b76c1df",
+     "tipus": "szoveg",
+     "szoveg": "Ha egyedül mész ismerkedni, könnyű hazamenni azzal, hogy „ma nem volt jó nap”."
+    },
+    {
+     "id": "f8e71c4e",
+     "tipus": "szoveg",
+     "szoveg": "Ha van egy társad, aki ugyanezen dolgozik, felelősek vagytok egymásért. Ez a legjobb gyorsító, amit tudok."
+    },
+    {
+     "id": "1e60067e",
+     "tipus": "szoveg",
+     "szoveg": "Szóval: hozd el a haverodat. 🎁"
+    },
+    {
+     "id": "cf3c3001",
+     "tipus": "hazi",
+     "szoveg": "Írj egy barátodnak, aki szintén egyedül van: „Lenne kedved velem gyakorolni?”"
+    },
+    {
+     "id": "c5b45518",
+     "tipus": "kupon",
+     "ertek": "2. jegy −50%",
+     "mire": "ha a workshopra párban jöttök",
+     "kod": "HAVERRAL",
+     "feltetel": "Két jegy egy foglalásban, a második félárú",
+     "ervenyesIg": "2027-01-31"
+    },
+    {
+     "id": "b90e57de",
+     "tipus": "link",
+     "felirat": "Workshop részletei",
+     "url": "https://agukrisz.hu/ferfi-noi-jelenlet-workshop"
+    }
+   ]
+  },
+  {
+   "day": 19,
+   "cim": "Kérdezni nem gáz",
+   "blokkok": [
+    {
+     "id": "b2fe67f2",
+     "tipus": "szoveg",
+     "szoveg": "Sokan azért nem mernek közeledni, mert félnek, hogy félreolvasnak egy jelet."
+    },
+    {
+     "id": "482cf9ee",
+     "tipus": "szoveg",
+     "szoveg": "Jó hír: kérdezhetsz. „Szívesen megfognám a kezed, oké?” Ez nem gyenge, hanem magabiztos. Az, aki tiszteli a másikat, vonzó."
+    },
+    {
+     "id": "f982d263",
+     "tipus": "hazi",
+     "szoveg": "Figyeld ma, mikor nem kérdeztél rá valamire, csak találgattál."
+    },
+    {
+     "id": "9c9746aa",
+     "tipus": "link",
+     "felirat": "Csatlakozz az ismerkedő közösséghez",
+     "url": "https://www.skool.com/csajozo-kozosseg-7553"
+    }
+   ]
+  },
+  {
+   "day": 20,
+   "cim": "A profilképed az első mondatod",
+   "blokkok": [
+    {
+     "id": "29043240",
+     "tipus": "szoveg",
+     "szoveg": "Társkeresőn a profilképed köszön helyetted. Első kép: arc, mosoly, természetes fény. Csoportkép, autószelfi, hal a kézben: nem."
+    },
+    {
+     "id": "57e021aa",
+     "tipus": "szoveg",
+     "szoveg": "És igen, tudom, hogy a saját profilképemen napszemüveg van. 😎 Ezt a szabályt én is most tanulom."
+    },
+    {
+     "id": "271bb03a",
+     "tipus": "hazi",
+     "szoveg": "Kérj meg egy nőismerőst, hogy válassza ki a legjobb képedet. Ne vitatkozz vele."
+    },
+    {
+     "id": "697ac11b",
+     "tipus": "link",
+     "felirat": "Profiltippek Instán",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 21,
+   "cim": "„Mikor lesz már barátnőd?”",
+   "blokkok": [
+    {
+     "id": "3113975c",
+     "tipus": "szoveg",
+     "szoveg": "Közeleg a családi ebéd, és vele a kérdés. Ne védekezz, és ne magyarázkodj."
+    },
+    {
+     "id": "69150e42",
+     "tipus": "szoveg",
+     "szoveg": "Egy mosoly és egy „Dolgozom rajta, ígérem, ti tudtok meg elsőként” többet ér, mint egy fél órás vita. A nyugalmad a legjobb válasz."
+    },
+    {
+     "id": "1b332473",
+     "tipus": "hazi",
+     "szoveg": "Gyakorold be a válaszodat. Ha nevetve tudod mondani, nyertél."
+    },
+    {
+     "id": "500054fa",
+     "tipus": "link",
+     "felirat": "Holnapután nagy ajándék jön",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 22,
+   "cim": "Az egyedüllét nem kudarc",
+   "blokkok": [
+    {
+     "id": "98632eee",
+     "tipus": "szoveg",
+     "szoveg": "Ha az ünnepeket egyedül töltöd, az nem azt jelenti, hogy valami nincs rendben veled."
+    },
+    {
+     "id": "56d8d05a",
+     "tipus": "szoveg",
+     "szoveg": "Használd töltődésre. Aki jól van egyedül, az nem kapaszkodik, hanem választ. És ez messziről látszik."
+    },
+    {
+     "id": "15d12892",
+     "tipus": "hazi",
+     "szoveg": "Csinálj ma valamit egyedül, amit eddig csak társasággal mertél: mozi, kávézó, kiállítás."
+    },
+    {
+     "id": "571f722a",
+     "tipus": "link",
+     "felirat": "Írj, ha beszélgetnél",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  },
+  {
+   "day": 23,
+   "cim": "Szilveszter: ne várd az éjfélt",
+   "blokkok": [
+    {
+     "id": "487af1aa",
+     "tipus": "szoveg",
+     "szoveg": "Mindenki az éjféli csókra vár, és tíz perccel előtte kezd el ismerkedni. Késő."
+    },
+    {
+     "id": "247c7b9d",
+     "tipus": "szoveg",
+     "szoveg": "Este kilenckor kezdj el beszélgetni. Mire jön az éjfél, már nem idegen leszel, hanem az a srác, akivel jót nevetett."
+    },
+    {
+     "id": "ab28ada7",
+     "tipus": "hazi",
+     "szoveg": "Tervezd meg a szilvesztert: hol leszel, kikkel, és kinek köszönsz oda elsőként."
+    },
+    {
+     "id": "252f6a04",
+     "tipus": "link",
+     "felirat": "Holnap jön az utolsó ajándék",
+     "url": "https://www.tiktok.com/@agukrisz"
+    }
+   ]
+  },
+  {
+   "day": 24,
+   "cim": "24 nap, 24 házi",
+   "blokkok": [
+    {
+     "id": "37a08bce",
+     "tipus": "szoveg",
+     "szoveg": "Boldog karácsonyt! 🎄 Ha a 24 házi közül csak tízet megcsináltál, már nem ugyanaz a srác vagy, aki december elsején voltál."
+    },
+    {
+     "id": "a103e5c4",
+     "tipus": "szoveg",
+     "szoveg": "Ezeket a tippeket a könyvemből hoztam. Karácsony után kijön, és szeretném, ha te olvasnád el elsőként."
+    },
+    {
+     "id": "617cf00a",
+     "tipus": "szoveg",
+     "szoveg": "Ez pedig a karácsonyi ajándékom neked. 🎁"
+    },
+    {
+     "id": "dfb9cdde",
+     "tipus": "hazi",
+     "szoveg": "Írd le, melyik volt a legnehezebb házi. Januárban azzal kezdünk."
+    },
+    {
+     "id": "8c8a390c",
+     "tipus": "kupon",
+     "ertek": "−50%",
+     "mire": "a könyvem árából",
+     "kod": "KONYV50",
+     "feltetel": "A könyv megjelenése után, egy példányra",
+     "ervenyesIg": "2027-01-31"
+    },
+    {
+     "id": "c72f15b7",
+     "tipus": "link",
+     "felirat": "Szólok, amikor kijön – kövess Instán",
+     "url": "https://www.instagram.com/agukrisz/"
+    }
+   ]
+  }
+ ]
+}
