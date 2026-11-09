@@ -1415,6 +1415,23 @@
    "megjegyzes": "Shopify; saját márkás (Kossik Tea tasakos) teák és keverékek; Klaviyo-hírlevél, feliratkozásért 10% → e-mail-lista érv erős. Ingyenes szállítás 25 000 Ft felett, a szállítási kuponok ez alatti termékeken. 24 termék + 24 napi akció/kupon, Teavolution-demóból átdolgozva (2026-11-09).",
    "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (Teavolution-demó átdolgozása)",
    "weboldal": "https://kossiktea.hu"
+  },
+  {
+   "id": "chilicum",
+   "bolt": "Chilicum",
+   "kategoria": "Chili / csípős szószok és fűszerek",
+   "demo": "chilicum",
+   "allapot": "kuldheto",
+   "kinek": "unknown (Chilicum Europe Kft., adószám 29260447-2-07; az impresszumban nincs név)",
+   "email": "info@chilicum.hu",
+   "telefon": "+36 30 629 6637",
+   "kapcsolat_minoseg": "Céges info-cím, kis magyar chiliszósz-manufaktúra saját WooCommerce-webshoppal; a tulaj kezelheti",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (hajrá, rövid határidővel)",
+   "megjegyzes": "Hajrá 2026-11-09, chili párhuzamos levele (Dani: „nem baj, ha foglalt a kategória, szorít az idő”). Az egrichiliagok demó átdolgozása (füzér + hőtekerő), a forrásdemó változatlan. Saját gyártó (Demeter-mintázat), Mailchimp-hírlevél, ~68 termék, 20 000 Ft felett ingyenes szállítás. 24 nap a bolt saját 4 csípősségi kategóriája szerint: Corleone/Noir (enyhe) → Kalasnyikov/Zombie → 24.: Viaticum – Az utolsó kenet. Kódok: CHILICUM01–24. Levélhez: „Magyarország legőrültebb chilis termékei” – a fanatikus vevők 24 napig hozzájuk jönnek vissza, januárra e-mail-lista.",
+   "motivum": "chilifüzér + hőfokszabályzó felcsavarása (a hotchip jelenete)"
   }
  ]
 }
