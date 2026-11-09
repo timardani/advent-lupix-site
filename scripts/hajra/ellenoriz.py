@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ellenoriz.py – egy demó teljes gépi ellenőrzése egy futásban (stdlib only).
 
-Usage: python3 ellenoriz.py <slug> [<slug> ...] [--egeszseg] [--nincs-capture] [--nincs-build]
+Usage: python3 ellenoriz.py <slug> [<slug> ...] [--egeszseg] [--nincs-capture] [--nincs-build] [--nincs-ajanlat]
 
 Demónként sorban:
   1. ajanlat_ellenor.py (24 napos akciószabályok)
@@ -110,12 +110,15 @@ def check(slug, opts):
     lg = Log(slug)
     steps, ok = [], True
 
-    args = [sys.executable, "-I", str(HERE / "ajanlat_ellenor.py"), str(demo), "--quiet"]
-    if opts["egeszseg"]:
-        args.append("--egeszseg")
-    rc, msg = lg.run("ajanlat", args, HERE)
-    steps.append(("ajánlatok", rc == 0, msg))
-    ok &= rc == 0
+    if opts["noajanlat"]:  # nem webshop (pl. coach): nincs 5 akciótípusos offers.json
+        steps.append(("ajánlatok", True, "kihagyva (--nincs-ajanlat)"))
+    else:
+        args = [sys.executable, "-I", str(HERE / "ajanlat_ellenor.py"), str(demo), "--quiet"]
+        if opts["egeszseg"]:
+            args.append("--egeszseg")
+        rc, msg = lg.run("ajanlat", args, HERE)
+        steps.append(("ajánlatok", rc == 0, msg))
+        ok &= rc == 0
 
     rc, msg = lg.run("test", ["npm", "test", "--silent"], demo)
     steps.append(("unit", rc == 0, msg))
@@ -176,7 +179,7 @@ def main(argv):
         print(__doc__.strip().splitlines()[2])
         return 2
     opts = {"egeszseg": "--egeszseg" in argv, "nocapture": "--nincs-capture" in argv,
-            "nobuild": "--nincs-build" in argv}
+            "nobuild": "--nincs-build" in argv, "noajanlat": "--nincs-ajanlat" in argv}
     return max(check(s, opts) for s in slugs)
 
 
