@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-09T12:12:29+01:00",
+  "generalva": "2026-11-09T12:21:48+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -224,6 +224,11 @@
     },
     "mmm": {
       "frissitve": "2026-11-07T23:48+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "molnarmeheszet": {
+      "frissitve": "2026-11-09T12:20+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
