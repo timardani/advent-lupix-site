@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-09T12:37:45+01:00",
+  "generalva": "2026-11-09T17:19:13+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -10,6 +10,14 @@
       "frissitve": "2026-11-04T23:25+01:00",
       "demo2_kesz": true,
       "hianyok": []
+    },
+    "agukrisz": {
+      "frissitve": "2026-11-09T17:18+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon",
+        "nem szerepel mind az 5 akciótípus"
+      ]
     },
     "aseres": {
       "frissitve": "2026-11-08T16:46+01:00",

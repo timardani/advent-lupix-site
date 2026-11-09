@@ -161,6 +161,10 @@
   {
    "nev": "Dió / aszalt gyümölcs",
    "sor": "Balabons"
+  },
+  {
+   "nev": "Coach / szakértő",
+   "sor": "Agu Krisz (ismerős) → további coachok, oktatók, szerzők"
   }
  ],
  "boltok": [
@@ -1468,6 +1472,24 @@
    "megjegyzes": "2026-11-09: a Gémklub demó átdolgozása (hajrá, 4. társasjátékos megkeresés). Dedikált társasjáték-webshop, ShopRenter, ~1600 termék, hírlevél van, aktív Meta-hirdetés (Hirdetéstár, 2026-11-09). Átvételi pont: Budapest, Dohány u. 80. Cégnév nem nyilvános az oldalon. 24 termék, Mikulás dec. 1–4 (gyerek), dec. 22 utolsó biztos karácsonyi rendelés, 24. nap Odalent −24%. Ingyenes szállítási küszöb nincs (1190–2290 Ft).",
    "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)",
    "weboldal": "https://gamerunner.hu"
+  },
+  {
+   "id": "agukrisz",
+   "bolt": "AGUKRISZ. – Augusztini Krisztián",
+   "kategoria": "Coach / szakértő",
+   "demo": "agukrisz",
+   "allapot": "kuldheto",
+   "kinek": "Augusztini Krisztián (Agu Krisz), ismerkedési szakértő – Dani ismerőse",
+   "email": "",
+   "telefon": "",
+   "kapcsolat_minoseg": "Személyes ismerős – Dani mutatja meg neki",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani megmutatja Krisznek; ha kéri: valódi tippek a könyvből + kódok GHL-ben + e-mail-gyűjtés",
+   "megjegyzes": "Első nem webshopos demó. Kedvezményes ár (Dani). 24 kitalált tipp Krisz hangján; kupon a 6/12/18/24. napon (workshop −2000, konzultáció −3000, 2. jegy −50%, könyv −50%), screenshotolható, 2027-01-31-ig. TikTok 83k, Insta 38k.",
+   "motivum": "randiappos swipe right → Match → csetablak Krisztől",
+   "weboldal": "https://agukrisz.hu"
   }
  ]
 }

@@ -182,6 +182,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-09",
+   "demo": "agukrisz",
+   "munka": "új kategória (coach) első demó: koncepció, 24 kitalált tipp, swipe+cset, teszt, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 84,
+   "cache_iras": 165639,
+   "cache_olvasas": 4263690,
+   "output": 53917,
+   "osszes": 4483330,
+   "uj_token": 219640,
+   "munkamenet": "7af157c5",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
