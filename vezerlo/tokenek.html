@@ -37,7 +37,7 @@ const n=x=>Number(x||0).toLocaleString('hu-HU');
 const k=x=>{x=Number(x||0);return x>=1e6?(x/1e6).toLocaleString('hu-HU',{maximumFractionDigits:1})+' M':x>=1e3?Math.round(x/1e3).toLocaleString('hu-HU')+' e':String(x)};
 // Becsült költség API-listaáron (USD / 1M token), forintra váltva. Előfizetésen ezt nem fizetjük ki, csak összehasonlításnak.
 const USD_HUF=335;
-const AR={claude:{in:5,cw:6.25,cr:0.5,out:25},codex:{in:1.25,cw:1.25,cr:0.125,out:10}};
+const AR={claude:{in:4,cw:5,cr:0.2,out:20},codex:{in:1.25,cw:1.25,cr:0.125,out:10}};
 const ft=r=>{const p=/codex|gpt/i.test(String(r.modell))?AR.codex:AR.claude;const out=Number(r.output||0),cr=Number(r.cache_olvasas||0);
  let inp=Number(r.input||0),cw=Number(r.cache_iras||0);if(r.input==null&&r.cache_iras==null){cw=Math.max(0,Number(r.uj_token||0)-out)}
  return (inp*p.in+cw*p.cw+cr*p.cr+out*p.out)/1e6*USD_HUF};
@@ -71,7 +71,7 @@ function render(rows,nevek){_rows=rows;_nev=nevek;
  ${rows.filter(r=>showRegi||!r.regi).map(r=>`<tr class="${r.regi?'regi':''}"><td>${esc(r.datum)}</td><td><b>${esc(nev(r.demo))}</b></td><td>${esc(r.munka)}</td><td class="num uj">${n(r.uj_token)}</td><td class="barcell"><div class="bar" style="width:${(Number(r.uj_token||0)/max*100).toFixed(1)}%"></div></td><td class="num">${k(r.cache_olvasas)}</td><td class="num">${huf(ft(r))}</td><td>${esc(r.modell)}</td><td class="megj">${esc(r.megjegyzes)}</td></tr>`).join('')}
  </tbody></table></div>
  <p class="note">A tokenmérő előtti munkák (okt. 6 – nov. 8) utólagos összesítésből kerültek be; az okt. 15–22. közti és a Codexes munkák ott alulbecsültek. Az „Általános” sor a vezérlő, a kutatás és a levelek költsége. Új token = input + gyorsítótár-írás + output; ez mutatja a valódi költséget. A gyorsítótárból olvasott rész a korábbi szöveg olcsó újraolvasása. Forrás: tokenmero.py, minden kész kalendárium után.</p>
- <p class="note"><b>Kb. Ft:</b> mennyibe került volna, ha API-n, listaáron fizetjük (előfizetésen ezt nem fizetjük ki). Claude: input $5, gyorsítótár-írás $6,25, gyorsítótár-olvasás $0,50, output $25 / 1M token; Codex: $1,25 / $0,125 / $10. Árfolyam: ${USD_HUF} Ft/$. A korábbi (utólagos) soroknál az input a gyorsítótár-írás áron számolva.</p>`}
+ <p class="note"><b>Kb. Ft:</b> mennyibe került volna, ha API-n, listaáron fizetjük (előfizetésen ezt nem fizetjük ki). Claude Opus 5.5: input $4, gyorsítótár-írás $5, gyorsítótár-olvasás $0,20, output $20 / 1M token; Codex: $1,25 / $0,125 / $10. Árfolyam: ${USD_HUF} Ft/$. A korábbi (utólagos) soroknál az input a gyorsítótár-írás áron számolva.</p>`}
 document.addEventListener('change',e=>{if(e.target.id==='regi'){showRegi=e.target.checked;render(_rows,_nev)}});
 Promise.all([fetch('tokenmeres.json',{cache:'no-store'}).then(r=>{if(!r.ok||r.redirected){location.href='/belepes/';throw new Error('Nincs belépve')}return r.json()}),
  fetch('/api/vezerlo/adat',{cache:'no-store'}).then(r=>r.ok?r.json():{boltok:[]}).catch(()=>({boltok:[]})),
