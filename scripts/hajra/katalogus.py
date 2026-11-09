@@ -552,10 +552,15 @@ def select(cands, n):
     for c in cands:
         ik = (c.get("image_url") or "").split("?")[0] or c["url"]
         nk = name_key(c["name"]) if c.get("name") else c["url"]
-        if ik in seen_img or nk in seen_name:
+        # termékcsalád: a „ - ” / „:” előtti rész (pl. „Similo - Állatok” → similo)
+        fm = re.split(r"\s[-–]\s|:", c.get("name") or "", maxsplit=1)
+        fk = ("fam:" + slug(fm[0])) if len(fm) > 1 and fm[0].strip() else None
+        if ik in seen_img or nk in seen_name or (fk and fk in seen_name):
             continue
         seen_img.add(ik)
         seen_name.add(nk)
+        if fk:
+            seen_name.add(fk)
         groups.setdefault(c.get("category") or "egyéb", []).append(c)
     cats = sorted(groups, key=lambda g: -len(groups[g]))  # stable: bigger first, then first seen
     k = max(1, min(len(cats), n // PER_CAT_MIN))

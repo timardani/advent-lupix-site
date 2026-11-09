@@ -1450,6 +1450,24 @@
    "megjegyzes": "Hajrá 2026-11-09, méhészet 4. levele (Dani: „mehet valakinek, rád bízom”; a Chilicum párhuzamosan másik chatben). A simaimeheszet demó átdolgozása (csak márka + termék). ShopRenter, ~76 termék, BIO minősítés, méhpempő-specialista, hírlevél 10% üdvözlő kuponnal (→ érv: van saját listájuk, a kalendárium ezt hizlalja januárra). Meta-hirdetés aktív (kutatás 11-07). Szállítás: 30 000 Ft felett ingyenes, díj nem nyilvános, csomagpontra nem szállít → szállításos napok összeg nélkül. 24. nap: Prémium méhpempő csomag 34 990 Ft + Mézes felfedező ajándék. Ár/készlet: katalogus.py, 2026-11-09.",
    "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (simaimeheszet átdolgozás, Molnár méhsárga + szénfekete, matyós méhlogó)",
    "weboldal": "https://molnarmeheszet.hu/"
+  },
+  {
+   "id": "gamerunner",
+   "bolt": "Gamerunner",
+   "kategoria": "Társasjáték",
+   "demo": "gamerunner",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@gamerunner.hu",
+   "telefon": "+36 30 454 9928",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Dani: tulajdonos/döntéshozó neve + levél kiküldése (hajrá, rövid határidő)",
+   "megjegyzes": "2026-11-09: a Gémklub demó átdolgozása (hajrá, 4. társasjátékos megkeresés). Dedikált társasjáték-webshop, ShopRenter, ~1600 termék, hírlevél van, aktív Meta-hirdetés (Hirdetéstár, 2026-11-09). Átvételi pont: Budapest, Dohány u. 80. Cégnév nem nyilvános az oldalon. 24 termék, Mikulás dec. 1–4 (gyerek), dec. 22 utolsó biztos karácsonyi rendelés, 24. nap Odalent −24%. Ingyenes szállítási küszöb nincs (1190–2290 Ft).",
+   "motivum": "játékpolc + kockadobás (Gémklub-átdolgozás)",
+   "weboldal": "https://gamerunner.hu"
   }
  ]
 }
