@@ -2359,6 +2359,21 @@
    "uj_token": 191446,
    "megjegyzes": "Mehet valakinek egy méhész. Adventi kalendárium, de tartsd",
    "regi": true
+  },
+  {
+   "datum": "2026-11-11",
+   "demo": "zingburger",
+   "munka": "ZING Burger új demó: új kategória (burgerétterem, pultnál beváltás), kiadópult + zsemle-emelés, 24 tétel új étlapról",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 136,
+   "cache_iras": 222479,
+   "cache_olvasas": 8917989,
+   "output": 79905,
+   "osszes": 9220509,
+   "uj_token": 302520,
+   "munkamenet": "a68453df",
+   "megjegyzes": ""
   }
  ]
 }

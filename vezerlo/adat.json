@@ -165,6 +165,10 @@
   {
    "nev": "Coach / szakértő",
    "sor": "Agu Krisz (ismerős) → további coachok, oktatók, szerzők"
+  },
+  {
+   "nev": "Burgerétterem / street food (helyszíni beváltás)",
+   "sor": "ZING Burger&Co."
   }
  ],
  "boltok": [
@@ -1508,6 +1512,24 @@
    "megjegyzes": "Hajrá 2026-11-11, méhészet: Dani kérése („BeoBee-nek mehet egy mézes adventi kalendárium”). A molnarmeheszet demó átdolgozása (csak márka + termék). WooCommerce, ~148 termék, Klaviyo-hírlevél (→ érv: a kalendárium a listát hizlalja januárra), díjnyertes mézek, saját ajándékcsomagok. Ingyenes szállítás 19 990 Ft felett (házhoz/GLS automata/csomagpont) → szállításos napok összeg nélkül. Méhpempő szándékosan kimaradt (a boltban 'mehpempo-tiltas' kategória). 24. nap: Fa ajándékdoboz 3×250 g 13 190 Ft + Ajándéktorony ajándékba. Ár/készlet: katalogus.py --ids, 2026-11-11.",
    "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (molnarmeheszet átdolgozás, BeoBee méz-arany + zsályazöld, virágos lépsejt-logó)",
    "weboldal": "https://beobee.hu/"
+  },
+  {
+   "id": "zingburger",
+   "bolt": "ZING Burger&Co.",
+   "kategoria": "Burgerétterem / street food (helyszíni beváltás)",
+   "demo": "zingburger",
+   "allapot": "kuldheto",
+   "kinek": "ZING Burger&Co. marketing / franchise-központ (Burger Software Kft.) – döntéshozó neve pótolandó",
+   "email": "hello@zingburger.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Központi hello@ cím a weboldalról; 15 étterem, franchise-hálózat – a marketinges/tulaj közvetlen elérése jobb lenne",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél a hello@zingburger.hu-ra (vagy a marketingesnek): az új arculat + új étlap bevezetése mellé pultnál felmutatható adventi jegy, 24 napig visszahozza a vendéget az étterembe",
+   "megjegyzes": "Dani kérése 2026-11-11 (FB: új arculat + új étlap 2026 nov.). Éttermi átvétel: a kód pultnál felmutatva, helyben vagy elvitelre, kiszállításra nem. Burger Software Kft. (8095 Pákozd, Bella völgy 22., cg. 07-09-032977, adószám 26215015-2-07). 15 hely (11 Budapest, Győr, Fehérvár, Debrecen, Szeged), saját app is van. Méretkapu: közepes lánc/franchise – Dani kérte, nem zárjuk ki. Árak az új étlapról (790–3 990 Ft).",
+   "motivum": "kiadópult hőlámpák alatt 24 burgerrel + a felső zsemle felhúzása (nyúló sajt), a pogácsába égetett grillbélyeg a napi ajánlat; sárga ZING-jegy, pultnál élő órával, lapát-elhúzásos beváltás",
+   "weboldal": "https://www.zingburger.hu/"
   }
  ]
 }

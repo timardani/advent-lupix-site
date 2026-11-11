@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-09T17:19:13+01:00",
+  "generalva": "2026-11-11T19:03:46+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -31,6 +31,11 @@
     },
     "beerselection": {
       "frissitve": "2026-11-04T21:47+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "beobee": {
+      "frissitve": "2026-11-11T01:24+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -77,7 +82,7 @@
       "hianyok": []
     },
     "chilicum": {
-      "frissitve": "2026-11-09T12:10+01:00",
+      "frissitve": "2026-11-10T15:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -87,7 +92,7 @@
       "hianyok": []
     },
     "chillermanufaktura": {
-      "frissitve": "2026-11-08T22:23+01:00",
+      "frissitve": "2026-11-10T15:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -102,7 +107,7 @@
       "hianyok": []
     },
     "egrichiliagok": {
-      "frissitve": "2026-11-08T01:26+01:00",
+      "frissitve": "2026-11-10T15:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -184,7 +189,7 @@
       "hianyok": []
     },
     "hotchip": {
-      "frissitve": "2026-11-05T12:27+01:00",
+      "frissitve": "2026-11-10T15:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -400,6 +405,14 @@
       "frissitve": "2026-11-02T10:51+01:00",
       "demo2_kesz": true,
       "hianyok": []
+    },
+    "zingburger": {
+      "frissitve": "2026-11-11T19:01+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nem szerepel mind az 5 akciótípus",
+        "nincs kuponmásolás"
+      ]
     },
     "zki": {
       "frissitve": "2026-11-04T14:25+01:00",
