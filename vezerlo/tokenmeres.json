@@ -1,5 +1,5 @@
 {
- "frissitve": "2026-11-09",
+ "frissitve": "2026-11-11",
  "sorok": [
   {
    "datum": "2026-11-08",
@@ -209,6 +209,21 @@
    "osszes": 5115514,
    "uj_token": 276926,
    "munkamenet": "27467fb3",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-11",
+   "demo": "beobee",
+   "munka": "méhészet átdolgozás molnarmeheszet→beobee, kézi 24-es válogatás, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 62,
+   "cache_iras": 137466,
+   "cache_olvasas": 2654054,
+   "output": 31412,
+   "osszes": 2822994,
+   "uj_token": 168940,
+   "munkamenet": "fe3bc19d",
    "megjegyzes": ""
   },
   {
