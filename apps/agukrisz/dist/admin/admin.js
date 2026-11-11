@@ -161,7 +161,7 @@ function sortable(list, onEnd) {
 function napInfo(d) {
   const t = d.blokkok.map(b => b.tipus);
   const db = n => t.filter(x => x === n).length;
-  return [`${d.blokkok.length} üzenet`, db('kupon') ? '🎁 kupon' : '', db('kep') ? '🖼️' : '', db('link') ? '🔗' : ''].filter(Boolean).join(' · ');
+  return [`${d.blokkok.length} üzenet`, db('kupon') ? '🎁 kupon' : '', db('kep') ? '🖼️' : '', d.kep ? '📷 napkép' : '', db('link') ? '🔗' : ''].filter(Boolean).join(' · ');
 }
 function dayRow(d) {
   const st = S.ma > 24 || d.day < S.ma ? 'past' : d.day === S.ma ? 'today' : '';
@@ -269,6 +269,9 @@ function renderEditor() {
         <button type="button" data-act="save" ${dirty ? '' : 'disabled'}>Mentés</button></span></div>
     ${st === 'today' ? '<p class="note">Ez a <b>mai nap</b>: a mentés azonnal élesben látszik.</p>' : st === 'past' ? '<p class="note info">Ez a nap már lement, a látogatók nem látják újra. A változás csak archív.</p>' : ''}
     <div><label for="cim">A nap címe (a kártyán és a cset tetején)</label><input id="cim" data-k="cim" value="${esc(d.cim)}" maxlength="90"></div>
+    <div class="napkep-row"><img src="${esc(kepSrc(d.kep || S.tartalom.profil.avatar))}" alt="A nap képe">
+      <span><b>A nap képe</b> <span class="hint">${d.kep ? 'saját kép erre a napra' : 'most a profilkép látszik (alapértelmezés)'} – ez van a mai kártyán és a jobbra húzós kártyán.</span>
+      <span class="napkep-acts"><label class="filebtn">${d.kep ? 'Kép cseréje' : 'Saját kép feltöltése'}<input type="file" accept="image/*" data-act="napkep"></label>${d.kep ? '<button type="button" class="ghost sm" data-act="napkep-del">Vissza a profilképre</button>' : ''}</span></span></div>
     <p class="hint" style="margin-top:12px">Az üzenetek ebben a sorrendben, egymás után „gépelve” jelennek meg. Fogd meg a ⠿ jelet és húzd, vagy használd a ↑ ↓ gombokat.</p>
     <ol class="blocks" id="blocks">${d.blokkok.map(blokkHtml).join('')}</ol>
     <div class="add"><span>+ Új üzenet:</span>${Object.entries(TIPUS).map(([k, t]) => `<button type="button" class="sm" data-act="add" data-t="${k}" ${d.blokkok.length >= MAX_BLOKK ? 'disabled' : ''}>${t.ikon} ${t.nev}</button>`).join('')}</div>
@@ -336,6 +339,7 @@ document.addEventListener('click', async e => {
     if (b.dataset.t === 'kep') last?.querySelector('input[type=file]')?.click();
     else last?.querySelector('textarea, input:not([type=file])')?.focus({ preventScroll: true });
   }
+  if (act === 'napkep-del') { delete draft.kep; valtozott(true); return; }
   if (act === 'revert') { if (confirm('Elveted a mentetlen változásokat?')) { dirty = false; draft = structuredClone(S.tartalom.days[sel - 1]); renderEditor(); frissitLista(); } }
   if (act === 'save') await mentNap();
   if (act === 'preview') {
@@ -357,6 +361,10 @@ document.addEventListener('change', async e => {
       toast(`Áthelyezve a ${hova}. napra.`, { undo: r.mentesId });
     } catch (er) { toast(er.message, { err: true }); t.value = ''; }
   }
+  if (t.dataset.act === 'napkep' && t.closest('#editor') && t.files[0]) {
+    try { toast('Kép feltöltése…'); draft.kep = await feltolt(t.files[0]); valtozott(true); toast('Napkép feltöltve. Ne felejts el menteni.'); } catch (er) { toast(er.message, { err: true }); }
+    return;
+  }
   if (t.dataset.act === 'upload' && t.files[0]) {
     const i = Number(t.dataset.i);
     try {
@@ -371,7 +379,7 @@ document.addEventListener('change', async e => {
 async function mentNap() {
   const btn = document.querySelector('#editor [data-act="save"]'); if (btn) btn.disabled = true;
   try {
-    const r = await api(`/api/admin/nap/${sel}`, { method: 'PUT', body: { verzio: S.tartalom.verzio, cim: draft.cim, blokkok: draft.blokkok } });
+    const r = await api(`/api/admin/nap/${sel}`, { method: 'PUT', body: { verzio: S.tartalom.verzio, cim: draft.cim, kep: draft.kep || '', blokkok: draft.blokkok } });
     S.tartalom.days[sel - 1] = r.nap; S.tartalom.verzio = r.verzio;
     draft = structuredClone(r.nap); dirty = false;
     renderEditor(); frissitLista();

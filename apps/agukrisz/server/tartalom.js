@@ -88,7 +88,10 @@ export function ervenyesNap(b, n, days, ev, kepLetezik = () => true) {
     const utk = d.blokkok.find(x => x.tipus === 'kupon' && kodok.includes(x.kod));
     if (utk) return { hiba: `${n}. nap: a(z) ${utk.kod} kód már a(z) ${d.day}. napon szerepel.` };
   }
-  return { nap: { day: n, cim: t(b.cim), blokkok: out } };
+  // Napkép (opcionális): a mai kártyán és a jobbra húzós kártyán; üresen a profilkép látszik.
+  const kep = t(b.kep);
+  if (kep && (!KEP_RE.test(kep) || !kepLetezik(kep))) return { hiba: `${n}. nap: a napkép nem található, töltsd fel újra.` };
+  return { nap: { day: n, cim: t(b.cim), ...(kep ? { kep } : {}), blokkok: out } };
 }
 
 /** A napok új sorrendje: `sorrend` az eddigi napszámok új sorrendje (1..24 permutációja). */
@@ -168,7 +171,7 @@ export function nyilvanos(doc, nap, kepUrl) {
     if (nap > 24 || d.day < nap) return { day: d.day, allapot: 'past' };
     if (d.day > nap) return { day: d.day, allapot: 'future', ajandek };
     return {
-      day: d.day, allapot: 'today', ajandek, cim: d.cim,
+      day: d.day, allapot: 'today', ajandek, cim: d.cim, ...(d.kep ? { kep: kepUrl(d.kep) } : {}),
       blokkok: d.blokkok.map(b => (b.tipus === 'kep' ? { ...b, kep: kepUrl(b.kep) } : b)),
     };
   });
@@ -176,4 +179,4 @@ export function nyilvanos(doc, nap, kepUrl) {
 }
 
 /** Mely napokon szerepel egy kép (a napzárhoz). */
-export const kepNapjai = (doc, f) => doc.days.filter(d => d.blokkok.some(b => b.tipus === 'kep' && b.kep === f)).map(d => d.day);
+export const kepNapjai = (doc, f) => doc.days.filter(d => d.kep === f || d.blokkok.some(b => b.tipus === 'kep' && b.kep === f)).map(d => d.day);

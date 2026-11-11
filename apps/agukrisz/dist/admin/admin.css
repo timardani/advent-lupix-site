@@ -86,6 +86,10 @@ fieldset { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14p
 legend { font-weight: 700; padding: 0 6px; }
 .linkrow { display: grid; grid-template-columns: 22px 1fr 2fr auto; gap: 6px; align-items: center; margin-bottom: 6px; }
 .avatar-row { display: flex; gap: 12px; align-items: center; }
+.napkep-row { display: flex; gap: 12px; align-items: center; margin-top: 12px; }
+.napkep-row > img { width: 60px; height: 80px; border-radius: 10px; object-fit: cover; object-position: center 30%; flex: none; box-shadow: 0 0 0 2px var(--rose); }
+.napkep-row > span { display: flex; flex-direction: column; gap: 4px; }
+.napkep-acts { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .avatar-row img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px var(--rose); }
 .chk { display: flex; gap: 8px; align-items: center; font-weight: 600; color: var(--ink); font-size: 14px; }
 .savebar { position: sticky; bottom: 0; display: flex; justify-content: flex-end; gap: 10px; align-items: center; padding: 12px 0; background: linear-gradient(transparent, var(--bg) 30%); }
