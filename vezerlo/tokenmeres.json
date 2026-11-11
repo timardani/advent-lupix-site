@@ -2374,6 +2374,21 @@
    "uj_token": 302520,
    "munkamenet": "a68453df",
    "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-11",
+   "demo": "tibiker",
+   "munka": "CandyDaddy-automata átdolgozása: kulfoldiedessegek.hu (Tibiker) jelöltkutatás, 24 termék + ajánlat, márka, teszt, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 110,
+   "cache_iras": 152457,
+   "cache_olvasas": 4901423,
+   "output": 39067,
+   "osszes": 5093057,
+   "uj_token": 191634,
+   "munkamenet": "787533e4",
+   "megjegyzes": ""
   }
  ]
 }

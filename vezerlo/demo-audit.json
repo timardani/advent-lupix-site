@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-11T19:03:46+01:00",
+  "generalva": "2026-11-11T21:56:07+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -374,6 +374,11 @@
       "hianyok": [
         "nem szerepel mind az 5 akciótípus"
       ]
+    },
+    "tibiker": {
+      "frissitve": "2026-11-11T21:54+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "tiszafonal": {
       "frissitve": "2026-10-23T23:08+02:00",
