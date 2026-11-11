@@ -1490,6 +1490,24 @@
    "megjegyzes": "Első nem webshopos demó. Kedvezményes ár (Dani). 24 kitalált tipp Krisz hangján; kupon a 6/12/18/24. napon (workshop −2000, konzultáció −3000, 2. jegy −50%, könyv −50%), screenshotolható, 2027-01-31-ig. TikTok 83k, Insta 38k.",
    "motivum": "randiappos swipe right → Match → csetablak Krisztől",
    "weboldal": "https://agukrisz.hu"
+  },
+  {
+   "id": "beobee",
+   "bolt": "BeoBee Mézmanufaktúra",
+   "kategoria": "Méhészet / méz",
+   "demo": "beobee",
+   "allapot": "kuldheto",
+   "kinek": "Gál Attila, BeoBee Mézmanufaktúra (Gál Attila e.v., 4030 Debrecen, Fokos u. 7. – a termékcímke szerint)",
+   "email": "info@beobee.hu",
+   "telefon": "+36 30 125 4420",
+   "kapcsolat_minoseg": "Egyéni vállalkozó méhész-manufaktúra (e.v.), az info@ cím nagy valószínűséggel a tulajhoz fut",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (rövid határidő, kb. 2 munkanap)",
+   "megjegyzes": "Hajrá 2026-11-11, méhészet: Dani kérése („BeoBee-nek mehet egy mézes adventi kalendárium”). A molnarmeheszet demó átdolgozása (csak márka + termék). WooCommerce, ~148 termék, Klaviyo-hírlevél (→ érv: a kalendárium a listát hizlalja januárra), díjnyertes mézek, saját ajándékcsomagok. Ingyenes szállítás 19 990 Ft felett (házhoz/GLS automata/csomagpont) → szállításos napok összeg nélkül. Méhpempő szándékosan kimaradt (a boltban 'mehpempo-tiltas' kategória). 24. nap: Fa ajándékdoboz 3×250 g 13 190 Ft + Ajándéktorony ajándékba. Ár/készlet: katalogus.py --ids, 2026-11-11.",
+   "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz), mézcsepp-matrica, mézesüvegcímke-kupon kockás fedőkendővel (molnarmeheszet átdolgozás, BeoBee méz-arany + zsályazöld, virágos lépsejt-logó)",
+   "weboldal": "https://beobee.hu/"
   }
  ]
 }
