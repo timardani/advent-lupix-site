@@ -48,7 +48,7 @@
   },
   {
    "nev": "Baba / kisgyerek",
-   "sor": "Fakopáncs (demó kész) → Vesszőparipa → Vidám Játék (Artdea kizárva)"
+   "sor": "Fakopáncs (demó kész) → Vesszőparipa (demó kész, 2026-11-12) → Vidám Játék (Artdea kizárva)"
   },
   {
    "nev": "Sütőeszközök / cukrászkellékek",
@@ -1858,6 +1858,23 @@
    "megjegyzes": "Söröző-kör 11-12 (Dani: söröző is mehet). Átdolgozás a csakajosor demóból. Kisüzemi sörfőzde + sörbár, 9938 Nagyrákos, Alsószer 24. (Go & Help Zala Kft., 23956074-2-20). Unas webshop, hírlevél-űrlap, aktív Meta-hirdetés 1588928166336509. Csak 21 rendelhető termék (Spájz szörpök OutOfStock) → 20., 22., 23. nap korábbi sörből páros/1+1. Ingyenes szállítás 30 000 Ft felett (MyGLS); személyes átvétel a sörbárban.",
    "motivum": "Adventi csaplista: csapkar lehúzása, amíg megtelik a pohár; ŐriBird-logó krémtáblán, őrségi erdőzöld, madárnevű sörök",
    "weboldal": "https://oribird.hu/"
+  },
+  {
+   "id": "vesszoparipa",
+   "bolt": "Vesszőparipa",
+   "kategoria": "Baba / kisgyerek",
+   "demo": "vesszoparipa",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@vesszoparipa.hu",
+   "telefon": "+36 30 907 4129",
+   "kapcsolat_minoseg": "Központi cím (info@) és telefon; cég: FAFALU Kft. (vesszoparipa.hu, 2014 óta), tulaj/döntéshozó neve pótolandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése (rövid határidővel)",
+   "megjegyzes": "Játékbolt (ShopRenter, ~4500 termék, főleg fajáték: Goki, Small Foot, Cubika, Holztiger, Smart Games, Jáva). Hírlevél-feliratkozás van. Nincs ingyenesszállítás-küszöb (GLS 1290–1690 Ft), szállítás 1–10 munkanap → karácsonyi érkezés szövege csak dec. 14-ig. Átdolgozás a Fakopáncs-demóból (2026-11-12): valódi logó (logo2025.png), tangramszínek, Poppins, saját rajzú vesszőparipa-kabala. 24/24 termék rendelhető (lekérés 2026-11-12), kódok PARIPA01–24 javaslatok. Meta-hirdetés: nem ellenőrizve.",
+   "motivum": "fa formaberakó láda 24 formalyukkal + a mai festett fakocka bedobása a saját alakú lyukába (koppan, kicsúszik a fiók), festett fakocka-jel a fotón, puzzle-darab kupon"
   }
  ]
 }
