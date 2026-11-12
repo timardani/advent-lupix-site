@@ -332,6 +332,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "goosebumps",
+   "munka": "átdolgozás koffeinroasters → goosebumps (Casino Mocca kiesett: 15 termék)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 104,
+   "cache_iras": 167254,
+   "cache_olvasas": 6019062,
+   "output": 41875,
+   "osszes": 6228295,
+   "uj_token": 209233,
+   "munkamenet": "5239e944",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
