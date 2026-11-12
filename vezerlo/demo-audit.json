@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T15:32:59+01:00",
+  "generalva": "2026-11-12T15:43:58+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -18,6 +18,11 @@
         "nincs 24 teljes napi akció és egyedi kupon",
         "nem szerepel mind az 5 akciótípus"
       ]
+    },
+    "aldelena": {
+      "frissitve": "2026-11-12T15:43+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "aseres": {
       "frissitve": "2026-11-08T16:46+01:00",
@@ -200,6 +205,11 @@
     },
     "herbatea": {
       "frissitve": "2026-11-08T22:16+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "highlandsoap": {
+      "frissitve": "2026-11-12T15:38+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -452,7 +462,7 @@
       "hianyok": []
     },
     "vilagoklangja": {
-      "frissitve": "2026-11-12T15:32+01:00",
+      "frissitve": "2026-11-12T15:41+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
