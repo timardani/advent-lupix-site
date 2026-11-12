@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T12:10:00+01:00",
+  "generalva": "2026-11-12T13:37:23+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -320,6 +320,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "spektrum": {
+      "frissitve": "2026-11-12T13:35+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "spuri": {
       "frissitve": "2026-10-31T10:21+01:00",
       "demo2_kesz": true,
@@ -395,6 +400,11 @@
         "nincs kuponmásolás",
         "nincs igazolt nagy, vizuális akció és ár"
       ]
+    },
+    "tokyotaste": {
+      "frissitve": "2026-11-12T13:36+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "tropicalhome": {
       "frissitve": "2026-10-28T14:15+01:00",

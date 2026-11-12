@@ -1582,6 +1582,24 @@
    "megjegyzes": "Dani kérése (2026-11-12): a CandyDaddy-s snack-automata átdolgozása. katchy.hu – ON Smart Investment Group Kft. (adószám 27178977-2-41, Cg. 01-09-387311, 1131 Budapest, Topolya u. 4-8.). WooCommerce, ~700 termék, Mailchimp-hírlevél, hűségpont-program, személyes átvétel: 1066 Budapest, Zichy Jenő u. 25. Szállítás: Sameday 1 490 Ft, GLS 1 790 Ft, 39 000 Ft felett ingyenes. Meta-hirdetéstárban szerepel (Takis-keresés, 2026-11-11). A bolt ajándék-/party-/pajzán termékeket is árul; a demó csak finomságokat mutat. Telefonszám és tulajdonosnév még unknown.",
    "motivum": "retró snack-automata 24 spirálos rekesszel (A1–F4) + a mai kód beütése a billentyűzeten (a spirál elfordul, a csomag lepottyan a kiadótálcába), aranyérme-jel a fotón, hőpapír-blokk kupon",
    "weboldal": "https://katchy.hu/"
+  },
+  {
+   "id": "spektrum",
+   "bolt": "Spektrum Coffee Roastery",
+   "kategoria": "Kávé",
+   "demo": "spektrum",
+   "allapot": "kuldheto",
+   "kinek": "Spektrum Coffee Roastery Kft. (döntéshozó neve: unknown)",
+   "email": "hello@spektrum.coffee",
+   "telefon": "+36 70 505 9096",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél a sablonból (hajrá, rövid határidővel)",
+   "megjegyzes": "Koffein-demóból átdolgozva 2026-11-12 (kávéútlevél + pecsételés). Budapesti specialty pörkölő, Unas, ~46 termék, hírlevél-feliratkozás és Meta-hirdetés van. Alt. telefon: +36 30 982 2298. 24 nap: 10 saját kávé + csésze/mérleg/víz/szűrőkosár.",
+   "motivum": "kávéútlevél + pecsételés",
+   "weboldal": "https://www.spektrum.coffee"
   }
  ]
 }
