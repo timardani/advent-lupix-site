@@ -2071,6 +2071,24 @@
    "teendo": "Megkereső levél rövid határidővel; tulaj/ügyvezető nevének pótlása",
    "megjegyzes": "Söröző-kör 11-12 (Dani: söröző is mehet). Átdolgozás az ŐriBird (csakajósör-vonal) demóból. Budapesti kisüzemi sörfőzde, „Üreg” taproom eseményekkel; Fehér Nyúl Sörfőző Kft. (14922563-2-43), 1095 Budapest, Soroksári út 110–112. Unas webshop ~316 termék, Mailchimp-hírlevél, saját 18+ kapu. Ingyenes DPD-szállítás 25 000 Ft felett. 24 különböző termék, köztük 2 karácsonyfás IPA (12. és 20. nap), főzdetúra, Ízhiba workshop. A honlapon csak 100 px-es logó van → élesítéshez nagy felbontású logó kell.",
    "motivum": "Adventi csaplista: csapkar lehúzása, amíg megtelik a pohár; ŐriBird-logó krémtáblán, őrségi erdőzöld, madárnevű sörök"
+  },
+  {
+   "id": "hoptop",
+   "bolt": "HopTop Brewery (HopTop Sörfőző Zrt.)",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "hoptop",
+   "allapot": "kuldheto",
+   "kinek": "unknown (webshop@hoptop.hu)",
+   "email": "webshop@hoptop.hu",
+   "telefon": "+36 20 371 1787",
+   "kapcsolat_minoseg": "Webshop ügyfélszolgálati cím (lehet, hogy a tulaj kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó (tulaj/marketing) nevének ellenőrzése + Grt. 13. § ellenőrzés, majd megkereső levél",
+   "megjegyzes": "Dani 2026-11-12: „HopTop-nak mehet a MONYO-s” (a C-prioritás/méretkérdés felülbírálva). Átdolgozás a monyo demóból. Kőbányai sörfőzde, 1106 Budapest, Maglódi út 47.; UNAS (hoptop.hu), hírlevél-űrlap, Meta-hirdetés. 25 000 Ft felett ingyenes szállítás (Foxpost házhoz 3 000 Ft, automata 1 290 Ft). 24 termék: saját dobozos sörök (pils, IPA, gyümölcsös, stout, Eisbock), Hopsoda 0%, HopTop-poharak; a 24. nap Barrel Pig Gift Box + 2 pohár csomagban.",
+   "motivum": "felülnézeti kraft sörtálca 24 doboztetővel + a mai doboz nyitófülének felhúzása (pssszt, habkitörés), lime HopTop-jel a fotón, dobozcímke-kupon; fekete–lime HopTop-paletta, Poppins",
+   "weboldal": "https://hoptop.hu/"
   }
  ]
 }
