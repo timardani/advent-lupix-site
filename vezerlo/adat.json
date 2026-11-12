@@ -1929,6 +1929,24 @@
    "megjegyzes": "Elite Pet Kft. (25870927-2-17), WooCommerce, ~900 termék; saját márka: DaDo hipoallergén kutyatáp + Fresco BARF, van hírlevél. Demó a Gazdipro átdolgozása. Az ingyenes kiszállítás alapból jár náluk, ezért a szállítási nap helyett 'második darab féláron' akció szerepel. Az API scriptből 403-at ad, a katalógust böngészőből mentettük. 2026-11-12",
    "motivum": "24 havas mancsnyom; a hó lesöprése alól nyakörv-bilétás ajánlat (DADO01–24)",
    "weboldal": "https://dado-kutyatap.hu"
+  },
+  {
+   "id": "cukraszkellek",
+   "bolt": "CukrászKellék.hu",
+   "kategoria": "Sütőeszközök / cukrászkellékek",
+   "demo": "cukraszkellek",
+   "allapot": "kuldheto",
+   "kinek": "Hungary Export-Import Bt. (cukraszkellek.hu) – tulajdonos neve ismeretlen",
+   "email": "info@cukraszkellek.hu",
+   "telefon": "+36 20 441 9449",
+   "kapcsolat_minoseg": "Központi cím, kis családi bt. (a tulaj kezelheti)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (Dani) a sablonból",
+   "megjegyzes": "2026-11-12: Süss Velem demó átdolgozása. UNAS, ~1900 termék, hírlevél van; adószám 22115164-2-09. 24 karácsonyi sütőkellék, napi akció + kupon (5 típus), unit + capture zöld, képi review kész. Meta: facebook.com/ads/library/?q=cukraszkellek",
+   "motivum": "tepsi kinyújtott tésztával + szaggatás",
+   "weboldal": "https://cukraszkellek.hu"
   }
  ]
 }
