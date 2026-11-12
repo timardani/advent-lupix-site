@@ -127,6 +127,32 @@
      "status": "Hajrá 11-07 | WooCommerce | unknown | info@chilidise.hu | +36 70 320 0279 | termék 22 | hírlevél nem | Meta-hirdetés True | 22 termék, hírlevél nincs"
     }
    ]
+  },
+  {
+   "category": "Lekvár / borlekvár manufaktúra",
+   "notes": [
+    "Kutatás 2026-11-12 (Meta Hirdetéstár „lekvár manufaktúra”, „kézműves lekvár” + jelolt.py). Első demó: Borlekvár Manufaktúra (dunsztos láda). A soros boltok a borlekvar demó átdolgozását kapják."
+   ],
+   "shops": [
+    {
+     "name": "Borlekvár Manufaktúra",
+     "url": "https://borlekvar.com",
+     "priority": "A",
+     "status": "DEMÓ KÉSZ 11-12 | ShopRenter | Vino Manufaktúra & Medical Kft. | info@borlekvar.com | +36 30 399 5836 | termék ~72 | hírlevél form | Meta-hirdetés True (891750450627999)"
+    },
+    {
+     "name": "Pinky lekvár",
+     "url": "https://pinkylekvar.hu",
+     "priority": "A",
+     "status": "11-12 | Shopify | MESTER-GYÖNGY KFT. | pinky.lekvar@gmail.com (tulajdonosi gmail) | +36 30 341 7325 | termék 127 | hírlevél form | Meta-hirdetés True (28517993391156424)"
+    },
+    {
+     "name": "Kutyori konyha",
+     "url": "https://kutyorishop.hu",
+     "priority": "B",
+     "status": "11-12 | Unas | Kutyorikonyha Kft. | info@kutyorishop.hu | +36 30 437 5712 | termék ~153 | hírlevél form | Meta-hirdetés True (1441889067625201)"
+    }
+   ]
   }
  ]
 }

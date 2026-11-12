@@ -169,6 +169,10 @@
   {
    "nev": "Burgerétterem / street food (helyszíni beváltás)",
    "sor": "ZING Burger&Co."
+  },
+  {
+   "nev": "Lekvár / borlekvár manufaktúra",
+   "sor": "Borlekvár Manufaktúra → Pinky lekvár / Kutyori konyha"
   }
  ],
  "boltok": [
@@ -1636,6 +1640,24 @@
    "megjegyzes": "Átdolgozás a Koffein Roasters demóból (2026-11-12): kávéútlevél + pecsételés, Goosebumps logó, olajbarna/zsálya paletta, 24 termék a Store API-ból (kávé, kapszula, Blendsmiths, saját csészék, Solo). Ingyenes szállítás 25 000 Ft felett. Saját pörkölő + kávézó (Fekete Sas utca), hírlevél van. A sorban előtte álló Casino Mocca kiesett: saját motor, most csak kb. 15 rendelhető termék (nincs meg a 24).",
    "motivum": "kávéútlevél + pecsételés",
    "weboldal": "https://goosebumps.hu"
+  },
+  {
+   "id": "borlekvar",
+   "bolt": "Borlekvár Manufaktúra",
+   "kategoria": "Lekvár / borlekvár manufaktúra",
+   "demo": "borlekvar",
+   "allapot": "kuldheto",
+   "kinek": "Borlekvár Manufaktúra tulajdonosa (Vino Manufaktúra & Medical Kft., adószám 32115639-2-13)",
+   "email": "info@borlekvar.com",
+   "telefon": "+36 30 399 5836",
+   "kapcsolat_minoseg": "Kis villányi gyártó manufaktúra (saját receptek, kis széria); az info@ és a mobilszám nagy valószínűséggel a tulajhoz fut",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (rövid határidő, kb. 2 munkanap)",
+   "megjegyzes": "Új kategória 2026-11-12 (Dani: „rád bízom”). Indok: a nyertesek (Demeter csoki, Egri Chil(i)agok) kis élelmiszer-gyártók, ajándék-termékkel → lekvármanufaktúra. Aktív karácsonyi Meta-hirdetések (ID 891750450627999, 3129461374074437: „Karácsonyi Borlekvár Válogatás”, curd-ajándék az első 25 vevőnek) → már most kampányol decemberre. MagyarBrands 2026 díj. ShopRenter, ~72 termék, hírlevél-űrlap. 24 termék: borlekvárok, zselék, curd, szörp, sült tea, díszdobozok; a BOROK kategória palackos csomagjai (18+) szándékosan kimaradtak. Szállítási díj nincs a főoldalon → szállításos napok összeg nélkül. Mikulás (6.): Epervarázs + eper dzsem; 24.: fehérboros borlekvár + sült tea. Ár/készlet: katalogus.py --ids, 2026-11-12.",
+   "motivum": "három egymásra rakott gyümölcsösláda 24 kockás konyharuhába bugyolált befőttesüveggel (dunszt) + a ruha jobb alsó sarkának átlós felhajtása (lapfordulós hajtás, alatta a langyos, gőzölgő üveg), kockás fedőkendő-matrica, cakkos szélű kézírásos befőttcímke-kupon",
+   "weboldal": "https://borlekvar.com/"
   }
  ]
 }
