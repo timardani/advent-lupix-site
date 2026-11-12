@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T16:31:15+01:00",
+  "generalva": "2026-11-12T16:52:23+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -332,6 +332,11 @@
     },
     "pinkylekvar": {
       "frissitve": "2026-11-12T16:29+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "piperita": {
+      "frissitve": "2026-11-12T16:52+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

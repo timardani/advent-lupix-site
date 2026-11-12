@@ -1768,6 +1768,24 @@
    "teendo": "Megkereső levél kiküldése (rövid határidő, kb. 2 munkanap)",
    "megjegyzes": "2026-11-12, Dani: „rád bízom, meglévő kategóriát dolgozz át” → a Borlekvár-demó átdolgozása. Indok: a nyertesekhez (Demeter, Egri Chil(i)agok) hasonló kis élelmiszer-gyártó, ajándéktermékkel. Shopify, 127 termék, hírlevél-űrlap, 830 vásárlói értékelés, Othello szőlőszörp Szakmai Elit díj 2025, saját karácsonyi válogatások és Mikulás-doboz. Bolti szabály: minimum rendelés 4 990 Ft, 25 000 Ft felett ingyenes szállítás → ez a kuponfeltételekben benne van. 24 termék: lekvárok, dzsemek, szörpök, ajándékdobozok (fűszerolaj, aszalvány, levendulapárna kimaradt). Mikulás (6.): Pinky Mikulás Kincsei + eper dzsem; 24.: Különleges ízek válogatás + Othello szörp. Meta-hirdetés: unknown (nem néztük). Ár/készlet: katalogus.py --ids, 2026-11-12.",
    "motivum": "három egymásra rakott gyümölcsösláda 24 piros-fehér kockás konyharuhába bugyolált befőttesüveggel (dunszt) + a ruha sarkának felhajtása, alatta a nap üvege (a Borlekvár-demó átdolgozása, Pinky-piros)"
+  },
+  {
+   "id": "piperita",
+   "bolt": "Piperita Natúrkozmetikum",
+   "kategoria": "Natúrkozmetika / kézműves szappan",
+   "demo": "piperita",
+   "allapot": "kuldheto",
+   "kinek": "Piperita Skincare Kft. (tulajdonos neve nem nyilvános – Dani pótolja)",
+   "email": "info@piperita.hu",
+   "telefon": "+36 30 294 5527",
+   "kapcsolat_minoseg": "általános e-mail, de kis budapesti manufaktúra (saját műhely, workshopok) → várhatóan a tulaj olvassa",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (Dani) – rövid határidővel",
+   "megjegyzes": "Saját gyártó (Naturix-minősített natúr szappan, dezodor, ajakápoló), szappan- és dezodorkészítő workshopok, MailerLite-hírlevél – a Demeter-mintázat. WooCommerce, 42 rendelhető termék. Cég: Piperita Skincare Kft., 1039 Budapest, Zrínyi u. 32., adószám 27834488-2-41. Aldeléna-demó átdolgozása 2026-11-12: 24 nap (szappanok, dezodorok, ajakápolók, kerámia tartók, workshop, utalvány); nincs ingyenesszállítás-küszöb, ezért a szállítás-kupon a díjat engedi el; dec. 21-től jan. 31-ig beváltható kódok, Budapesten személyes átvétel.",
+   "motivum": "kraftcsomagok szárítópolcon + madzag kibontása",
+   "weboldal": "https://piperita.hu/"
   }
  ]
 }
