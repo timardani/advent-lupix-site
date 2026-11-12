@@ -527,6 +527,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "oribird",
+   "munka": "söröző-kör kutatás (4 jelölt) + ŐriBird átdolgozás csakajosorból, Unas build_data, kategóriaoldal-javítás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 3,
+   "input": 198,
+   "cache_iras": 171266,
+   "cache_olvasas": 11147355,
+   "output": 51401,
+   "osszes": 11370220,
+   "uj_token": 222865,
+   "munkamenet": "34328726",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
