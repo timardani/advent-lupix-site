@@ -56,7 +56,7 @@
   },
   {
    "nev": "Szeszes ital / prémium alkohol",
-   "sor": "iDrinks (Mr. Alkohol helyett, 2026-11-03)"
+   "sor": "iDrinks (Mr. Alkohol helyett, 2026-11-03) · Árpád Pálinka (új koncepció: gyümölcsfa + rázás, 2026-11-13)"
   },
   {
    "nev": "Kézműves / prémium sör",
@@ -2222,6 +2222,24 @@
    "megjegyzes": "Hajrá 2026-11-12, méhészet soros boltja Popovics után (a Popovics lépkeret átdolgozása). Családi méhészet budapesti bemutatóméhészettel, ShopRenter, kb. 110 termék (méz, ízesített akácméz, méhviasz gyertya, mézszappan, propolisz, gyerekjáték, nyílt napok). A 24 napban 9 méz/díszdobozos válogatás + gyertya, szappan, propolisz, memóriajáték, rovarhotel; a 24. nap a méhcsalád virtuális örökbefogadása (+ akácméz csomag). Szállítás: Foxpost/MPL csomagautomata, 20 000 Ft felett ingyenes. A jelolt.py e-mailje (salesautopilot/nmhh) hibás volt, a valódi a kapcsolat-oldalról. Az Édes harmónia és a Merész ízek válogatás a boltban ugyanazt a fotót használja, ezért csak az egyik került be. Ár/készlet: termékoldalak, 2026-11-12.",
    "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz); a mai sejt fölött a Mézerdő-logó zöld mézcsorgatója lebeg, mézcsepp-matrica, mézesüvegcímke-kupon",
    "weboldal": "https://www.mezerdo.hu/"
+  },
+  {
+   "id": "arpadpalinka",
+   "bolt": "Árpád Pálinka",
+   "kategoria": "Szeszes ital / prémium alkohol",
+   "demo": "arpadpalinka",
+   "allapot": "kuldheto",
+   "kinek": "Nagy Árpád",
+   "email": "ertekesites@arpadpalinka.hu",
+   "telefon": "+36 70 429 7228",
+   "kapcsolat_minoseg": "Tulajdonos vezette manufaktúra; értékesítési cím (a tulaj elérése a cégen át valószínű)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (sablon: Moai Kalenderáium/ADVENTI_MEGKERESO_EMAIL_SABLON.md); élesítés előtt Grt. 13. § ellenőrzés",
+   "megjegyzes": "Kisrét Manufaktúra Kft., 5600 Békéscsaba, Kisrét tanya 92/2; ShopRenter (shop.arpadpalinka.hu). Saját főzésű kézműves pálinka, tulaj Nagy Árpád (Év Vállalkozója, Békés vm.). Aktív Meta-hirdetés: 1158310719883156 (karácsonyi díszdobozok); BF −20% kupon + hírlevél-nyereményjáték fut. Ingyenes szállítási küszöb: unknown. Dani 2026-11-13: alkoholra teljesen új kalendárium a nulláról (nem a palackpolc átdolgozása). Jelöltek még: vardashop.hu (Drinker Kft.), pannonborbolt.hu.",
+   "motivum": "téli gyümölcsfa 24 papírba csavart gyümölccsel + az ág megrázása (a gyümölcs a kisüsti rézüstbe esik, arany csepp), szüreti cédula-kupon",
+   "weboldal": "https://shop.arpadpalinka.hu/"
   }
  ]
 }
