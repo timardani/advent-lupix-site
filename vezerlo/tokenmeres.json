@@ -677,6 +677,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "fonalparadicsom",
+   "munka": "fonalam átdolgozás: katalógus 24, 24 akció, rebrand befejezés, teszt, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 124,
+   "cache_iras": 163083,
+   "cache_olvasas": 7296191,
+   "output": 39488,
+   "osszes": 7498886,
+   "uj_token": 202695,
+   "munkamenet": "236eafa8",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

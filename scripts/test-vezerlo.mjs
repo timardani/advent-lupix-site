@@ -183,7 +183,8 @@ await page.keyboard.press('Escape');
 await page.keyboard.press('Meta+k');
 if (await page.evaluate(() => document.activeElement?.id) !== 'ugras') throw new Error('⌘K nem a gyorskeresőre ugrik');
 await page.locator('#kategoria-szuro').selectOption({ label: 'Fonal / kötés-horgolás' });
-if (await page.locator('.kanban-card').count() !== 2) throw new Error('tábla kategóriaszűrő hibás');
+{ const cards = await page.locator('.kanban-card').allInnerTexts();
+  if (cards.length < 2 || !cards.every(t => t.includes('Fonal / kötés-horgolás'))) throw new Error('tábla kategóriaszűrő hibás'); }
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
 await page.screenshot({ path: new URL('../screenshots/vezerlo-kanban.png', import.meta.url).pathname, fullPage: true });
 await page.goto('http://vez.test/vezerlo/kategoriak.html', { waitUntil: 'networkidle' });
