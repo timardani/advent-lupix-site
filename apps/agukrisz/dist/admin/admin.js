@@ -332,10 +332,11 @@ document.addEventListener('input', e => {
   b[t.dataset.k] = t.dataset.k === 'kod' ? t.value.toUpperCase().replace(/[^A-Z0-9]/g, '') : t.value;
   if (t.dataset.k === 'kod' && t.value !== b.kod) { const p = t.selectionStart; t.value = b.kod; t.setSelectionRange(p, p); }
   const cnt = document.querySelector(`[data-cnt="${t.id}"]`); if (cnt) cnt.textContent = `${t.value.length}/${t.maxLength}`;
-  const keep = t.id;
-  const was = dirty;
-  valtozott(t.dataset.k === 'ervenyesIg');
-  if (!was || t.dataset.k === 'ervenyesIg') { const n = document.getElementById(keep); if (n) { n.focus(); if (n.setSelectionRange && n.type !== 'date' && n.type !== 'url') n.setSelectionRange(n.value.length, n.value.length); } }
+  // Gépelés közben nem rajzolunk újra és nem nyúlunk a kurzorhoz (mondat közbeni javítás is menjen).
+  // Csak a dátummező rajzolja újra a szerkesztőt; akkor a fókuszt visszaadjuk.
+  const ujra = t.dataset.k === 'ervenyesIg';
+  valtozott(ujra);
+  if (ujra) document.getElementById(t.id)?.focus({ preventScroll: true });
 });
 
 function kodGen() {
@@ -660,9 +661,12 @@ const setTab = () => (tab === 'megjelenes' ? renderMegjelenes : renderBeallitaso
 function sDirty(ujra = false) {
   setDirty = true; setSzaml++;
   if (ujra) {
-    const a = document.activeElement?.id; const y = scrollY;
+    const ae = document.activeElement; const a = ae?.id; const y = scrollY;
+    let s0 = null; let s1 = null; try { s0 = ae?.selectionStart; s1 = ae?.selectionEnd; } catch { /* nem szövegmező */ }
     setTab()();
-    scrollTo(0, y); if (a) document.getElementById(a)?.focus({ preventScroll: true });
+    scrollTo(0, y);
+    const n = a && document.getElementById(a);
+    if (n) { n.focus({ preventScroll: true }); if (s0 != null) try { n.setSelectionRange(s0, s1); } catch { /* nem szövegmező */ } }
   } else { document.querySelectorAll('[data-sact="save"]').forEach(b => { b.disabled = false; }); }
   eloKuld();
   setUtemez();
