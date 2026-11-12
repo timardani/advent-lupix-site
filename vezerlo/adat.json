@@ -2036,6 +2036,24 @@
    "megjegyzes": "Fonalam-demó átdolgozása (2026-11-12): 24 rendelhető termék (fonal + addi eszközök), 24 napi akció kóddal (PIROS01…ADVENT24). Genver Kft. 13756749-2-13, ShopRenter, hírlevél-űrlap, saját kuponsáv (FPVBOGRE).",
    "motivum": "fonalfüzér kötött zoknikkal + szálhúzás",
    "weboldal": "https://www.fonalparadicsom.hu"
+  },
+  {
+   "id": "lolmarkt",
+   "bolt": "LOLmarkt (lolmarkt.hu)",
+   "kategoria": "Vicces póló / ajándékbögre",
+   "demo": "lolmarkt",
+   "allapot": "kuldheto",
+   "kinek": "unknown (Édes Éden Kft., döntéshozó neve nem nyilvános)",
+   "email": "hello@lolmarkt.hu",
+   "telefon": "+36 49 354 509",
+   "kapcsolat_minoseg": "Központi ügyfélszolgálat",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevének pótlása (ha van), majd mehet a levél",
+   "megjegyzes": "Édes Éden Kft. (impresszum); ShopRenter; ~7.600 termék (sok variáns), saját nyomtatott vicces pólók/bögrék, karácsonyi családi és páros szettek; hírlevél-feliratkozás a boltban; aktív Meta-hirdetés 1602081994252551 (2026-11-03). A PamutLabor-demó átdolgozása (2026-11-12): 24 saját karácsonyi termék; Grincs-, hírességarcos (Bud Spencer), mémes (Grumpy Cat), AC/DC-logós és trágár minták képi review után kihagyva. 20.000 Ft felett ingyen szállít.",
+   "motivum": "pólónyomda szita + rakli-húzás",
+   "weboldal": "https://lolmarkt.hu"
   }
  ]
 }
