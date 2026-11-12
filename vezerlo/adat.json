@@ -96,7 +96,7 @@
   },
   {
    "nev": "Natúrkozmetika / kézműves szappan",
-   "sor": "Napvirág → Highland Soap"
+   "sor": "Napvirág → Aldeléna → Highland Soap (csak forgalmazó)"
   },
   {
    "nev": "Fűszer / gourmet kamra",
@@ -1715,6 +1715,24 @@
    "megjegyzes": "Békéscsaba; Plot Twist Kft. 27950850-2-04; WooCommerce, ~463 termék, hírlevél-űrlap; aktív Meta-hirdetés 4698516137051139 (2026-11-05, téli illatok, „hazai kisvállalkozás, kézzel öntve, 7000+ vásárló”). Könyvmoly-témájú gyertyamanufaktúra (könyvjelző, könyvvédő tok is). A Little Harmony-demó átdolgozása (2026-11-12); fandomos/licenszes termék szándékosan kimaradt. Ingyenes szállítás 25 000 Ft felett, minden rendelés mellé ajándék minta. Saját fizikai adventi illatviasz-kalendáriumot is árul (9 990 Ft, előrendelés) → levélérv: a digitális naptár nem verseny, hanem 24 napig visszahozza a vevőt + e-mail-lista januárra.",
    "motivum": "gyertyák + gyufagyújtás",
    "weboldal": "https://vilagoklangja.hu"
+  },
+  {
+   "id": "aldelena",
+   "bolt": "Aldeléna Natúrkozmetikumok",
+   "kategoria": "Natúrkozmetika / kézműves szappan",
+   "demo": "aldelena",
+   "allapot": "kuldheto",
+   "kinek": "Gajáryné Kenyeres Viktória (e.v., tulajdonos)",
+   "email": "info@aldelena.hu",
+   "telefon": "+36 30 338 5935",
+   "kapcsolat_minoseg": "általános e-mail, de egyéni vállalkozó → várhatóan a tulaj olvassa",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (Dani) – rövid határidővel",
+   "megjegyzes": "Saját márkás gyártó (viszonteladókat toboroz), Unas, hírlevél-feliratkozás van, ~75 termék. Napvirág-demó átdolgozása 2026-11-12: 24 nap, 11 szappan, ingyenes szállítás 25 000 Ft felett; dec. 21-től jan. 31-ig beváltható kódok. A Highland Soap (highlandsoap.hu) csak a skót márka magyar forgalmazója (Lavishboutique Kft.), ezért nem ő lett.",
+   "motivum": "kraftcsomagok szárítópolcon + madzag kibontása",
+   "weboldal": "https://www.aldelena.hu/"
   }
  ]
 }

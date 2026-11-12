@@ -422,6 +422,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "aldelena",
+   "munka": "Napvirág → Aldeléna átdolgozás (kategóriaválasztás, jelöltszűrés, 24 nap, ajánlatok, logó, Nunito, review, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 118,
+   "cache_iras": 159147,
+   "cache_olvasas": 6807958,
+   "output": 38242,
+   "osszes": 7005465,
+   "uj_token": 197507,
+   "munkamenet": "1c8a83b5",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
