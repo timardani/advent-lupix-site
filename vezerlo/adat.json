@@ -2204,6 +2204,24 @@
    "megjegyzes": "2026-11-12, Dani: a Fűszerész után a soros bolt. A Finom Fűszerek-demó (fűszerpolc + borsőrlés) átdolgozása. Miskolczi Dávid e.v., Mohács (adószám 66714525-2-22, 2014 óta); aktív Meta-hirdetés 1083283610028781 (2026-11-03). UNAS, ~340 termék (belek, kések, gépek, fűszerek); a kalendárium a fűszer-alkategóriákból: kolbász-, szalámi-, hurka-, sonkapác- és grillkolbász-keverékek + alapfűszerek. Téma: december a disznóvágás és a kolbásztöltés hónapja. 1. nap: majoranna −20%; 24.: kilós édes paprika + Betyáros keverék + őrölt bors csomagáron (−13%). Kódok: MAJORANNA01 … BOLLER24. Ingyenes szállítás 60 000 Ft és max. 4 kg felett; minimum rendelés bruttó 5 000 Ft. Logó: a bolt 180 px-es emblémája (a fejléc-PNG csak 101×21). Levélhez: a böllérszezon most van, a hentes-hobbisták 24 napig visszajönnek, januárra e-mail-lista a következő disznóvágási szezonra.",
    "motivum": "fűszerpolc tasakokkal + borsőrlés (a fuszeresz/finomfuszerek jelenete), böllér-bőrrel",
    "weboldal": "https://bollershop.hu"
+  },
+  {
+   "id": "mezerdo",
+   "bolt": "Mézerdő Méhészet",
+   "kategoria": "Méhészet / méz",
+   "demo": "mezerdo",
+   "allapot": "kuldheto",
+   "kinek": "Mézerdő család (Méhek és Mézek Kft., Balatonszepezd) – a tulajdonos neve unknown",
+   "email": "mezerdomeheszet@gmail.com",
+   "telefon": "+36 70 341 2047",
+   "kapcsolat_minoseg": "Családi méhészet saját webshoppal; a gmail-cím valószínűleg közvetlenül a családhoz megy",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése",
+   "megjegyzes": "Hajrá 2026-11-12, méhészet soros boltja Popovics után (a Popovics lépkeret átdolgozása). Családi méhészet budapesti bemutatóméhészettel, ShopRenter, kb. 110 termék (méz, ízesített akácméz, méhviasz gyertya, mézszappan, propolisz, gyerekjáték, nyílt napok). A 24 napban 9 méz/díszdobozos válogatás + gyertya, szappan, propolisz, memóriajáték, rovarhotel; a 24. nap a méhcsalád virtuális örökbefogadása (+ akácméz csomag). Szállítás: Foxpost/MPL csomagautomata, 20 000 Ft felett ingyenes. A jelolt.py e-mailje (salesautopilot/nmhh) hibás volt, a valódi a kapcsolat-oldalról. Az Édes harmónia és a Merész ízek válogatás a boltban ugyanazt a fotót használja, ezért csak az egyik került be. Ár/készlet: termékoldalak, 2026-11-12.",
+   "motivum": "lépkeret 24 viaszfedeles hatszögű lépsejttel + mézcsorgató lehúzása (a viaszfedél kettéreped, csöpög a méz); a mai sejt fölött a Mézerdő-logó zöld mézcsorgatója lebeg, mézcsepp-matrica, mézesüvegcímke-kupon",
+   "weboldal": "https://www.mezerdo.hu/"
   }
  ]
 }

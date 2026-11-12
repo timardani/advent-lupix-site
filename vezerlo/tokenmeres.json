@@ -827,6 +827,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "mezerdo",
+   "munka": "Popovics lépkeret átdolgozása Mézerdőre (ShopRenter, saját build_data + rebrand, kiadás + vezérlő)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 146,
+   "cache_iras": 152614,
+   "cache_olvasas": 7665582,
+   "output": 46295,
+   "osszes": 7864637,
+   "uj_token": 199055,
+   "munkamenet": "fe926b12",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

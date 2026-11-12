@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T23:38:31+01:00",
+  "generalva": "2026-11-12T23:53:04+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -87,7 +87,7 @@
       ]
     },
     "bollershop": {
-      "frissitve": "2026-11-12T23:38+01:00",
+      "frissitve": "2026-11-12T23:45+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -370,6 +370,11 @@
     },
     "merce": {
       "frissitve": "2026-11-12T22:12+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "mezerdo": {
+      "frissitve": "2026-11-12T23:51+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
