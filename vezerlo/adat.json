@@ -1679,6 +1679,24 @@
    "teendo": "Megkereső levél kiküldése (rövid határidő, kb. 2 munkanap)",
    "megjegyzes": "Hajrá 2026-11-12, új kategória (Dani: „rád bízom”). Gyártó családi cég Szekszárdon, saját múzeummal és gyertyaműhellyel, terméke eleve ajándék. WooCommerce, 262 termék; hírlevél-űrlap nem látszott (→ érv: a kalendárium e-mail-listát épít januárra). Meta Hirdetéstár: mézeskalácsra kevés kis gyártó hirdet. Szállítási díj nem nyilvános → szállításos napok összeg nélkül. Tartalékjelölt: Mendula Bakery (mendula.hu, ShopRenter, ~166 termék).",
    "motivum": "vásári mézeskalácsos bódé (csíkos ponyva, deszkafal) 24 szögön lógó natúr szívvel + habzsák körbehúzása a szív szélén (piros cukormáz kirajzolódik, a tükörben megjelenik a termék), versikés papírcédula-kupon"
+  },
+  {
+   "id": "auroracandle",
+   "bolt": "Aurora Candle",
+   "kategoria": "Illatgyertya",
+   "demo": "auroracandle",
+   "allapot": "kuldheto",
+   "kinek": "Aurora Candle Kft. – családi cég (Lilla és Márk, szülők)",
+   "email": "info@auroracandle.hu",
+   "telefon": "+36 30 334 9446",
+   "kapcsolat_minoseg": "Céges info@ (családi manufaktúra)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Saját gyártás (fa kanócos szójaviasz, 150 000+ gyertya, 35 000 vásárló, 4,9★/9 200 értékelés); Klaviyo-hírlevél; most is fut kuponkampány (JOY2026DT, nov. 12–15); ingyenes szállítás 18 000 Ft felett; adószám 28758596-2-13. Viaszkuckó-demó átdolgozása (2026-11-12). Kiesett jelöltek: illatgyertya.hu (Yankee-viszonteladó), morelightcandle.hu (betegség miatt zárva).",
+   "motivum": "gyertyák + gyufagyújtás (Viaszkuckó átdolgozás)",
+   "weboldal": "https://auroracandle.hu"
   }
  ]
 }
