@@ -1549,6 +1549,23 @@
    "motivum": "retró snack-automata 24 spirálos rekesszel (A1–F4) + a mai kód beütése a billentyűzeten (a spirál elfordul, a csomag lepottyan a kiadótálcába), aranyérme-jel a fotón, hőpapír-blokk kupon"
   },
   {
+   "id": "usacandy",
+   "bolt": "USA Candy",
+   "kategoria": "Import édesség / amerikai snack",
+   "demo": "usacandy",
+   "allapot": "kuldheto",
+   "kinek": "HANSON-FOSTER KFT. (tulajdonos neve unknown)",
+   "email": "info@usacandy.hu",
+   "telefon": "+36 20 965 7116",
+   "kapcsolat_minoseg": "Kis Kft., saját budapesti bolttal (1053 Budapest, Királyi Pál utca 13b); az info@ cím valószínűleg a tulajhoz fut",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése a hajrában (a CandyDaddy-val és a Tibikerrel párhuzamosan mehet)",
+   "megjegyzes": "Dani kérése (2026-11-12): a CandyDaddy-s snack-automata átdolgozása egy újabb édességboltra. usacandy.hu, HANSON-FOSTER KFT., 2016 óta, budapesti bolt + webshop; WooCommerce, ~690 termék, Mailchimp-hírlevél. Foxpost 1 290 Ft, DPD 1 905 Ft, ingyenes küszöb és minimális rendelés nincs feltüntetve. 24 termék: amerikai/angol/japán édesség, snack, ital, boxok; Mikulás-termékek dec. 1–3. és 6., Kids Box dec. 14., dec. 24. USA Box XXL csomag (személyes átvétel a boltban). Navy/piros márka, Baloo 2 betű, a valódi „USA CANDY – 2016 ÓTA” logó a bolt fejlécéből.",
+   "motivum": "retró snack-automata 24 spirálos rekesszel (A1–F4) + a mai kód beütése a billentyűzeten (a spirál elfordul, a csomag lepottyan a kiadótálcába), aranyérme-jel a fotón, hőpapír-blokk kupon"
+  },
+  {
    "id": "katchy",
    "bolt": "Katchy (Fun Store)",
    "kategoria": "Import édesség / amerikai snack",

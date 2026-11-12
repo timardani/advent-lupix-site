@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-11T21:56:07+01:00",
+  "generalva": "2026-11-12T12:10:00+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -77,7 +77,7 @@
       "hianyok": []
     },
     "candydaddy": {
-      "frissitve": "2026-11-08T00:35+01:00",
+      "frissitve": "2026-11-11T22:11+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -195,6 +195,11 @@
     },
     "idrinks": {
       "frissitve": "2026-11-03T16:46+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "katchy": {
+      "frissitve": "2026-11-12T11:54+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -376,7 +381,7 @@
       ]
     },
     "tibiker": {
-      "frissitve": "2026-11-11T21:54+01:00",
+      "frissitve": "2026-11-11T22:11+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -401,6 +406,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "usacandy": {
+      "frissitve": "2026-11-12T12:08+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "viaszkucko": {
       "frissitve": "2026-10-30T00:45+01:00",
       "demo2_kesz": true,
@@ -421,11 +431,6 @@
     },
     "zki": {
       "frissitve": "2026-11-04T14:25+01:00",
-      "demo2_kesz": true,
-      "hianyok": []
-    },
-    "katchy": {
-      "frissitve": "2026-11-12T11:54+01:00",
       "demo2_kesz": true,
       "hianyok": []
     }
