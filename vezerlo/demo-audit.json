@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T19:32:58+01:00",
+  "generalva": "2026-11-12T19:56:21+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -74,7 +74,7 @@
       "hianyok": []
     },
     "bock": {
-      "frissitve": "2026-11-12T19:30+01:00",
+      "frissitve": "2026-11-12T19:36+01:00",
       "demo2_kesz": false,
       "hianyok": [
         "nincs 24 teljes napi akció és egyedi kupon",
@@ -144,6 +144,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "falatka": {
+      "frissitve": "2026-11-12T19:56+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "finomfuszerek": {
       "frissitve": "2026-11-12T19:31+01:00",
       "demo2_kesz": true,
@@ -193,6 +198,11 @@
     },
     "goosebumps": {
       "frissitve": "2026-11-12T14:02+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "gyorgytea": {
+      "frissitve": "2026-11-12T19:55+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -335,6 +345,11 @@
     },
     "novenybirodalom": {
       "frissitve": "2026-11-05T13:19+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "oribird": {
+      "frissitve": "2026-11-12T19:55+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -496,6 +511,11 @@
     },
     "usacandy": {
       "frissitve": "2026-11-12T12:08+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "vesszoparipa": {
+      "frissitve": "2026-11-12T19:56+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
