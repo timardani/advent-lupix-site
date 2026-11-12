@@ -662,6 +662,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "merce",
+   "munka": "HempHealth átdolgozás Merce-re (CBD/kender), Hill Vital kiszűrve",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 110,
+   "cache_iras": 139935,
+   "cache_olvasas": 5770673,
+   "output": 33191,
+   "osszes": 5943909,
+   "uj_token": 173236,
+   "munkamenet": "81d24414",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
