@@ -53,6 +53,10 @@ def audit_demo(path):
     combined = "\n".join(text)
     days = {day for day, _, _ in offers}
     types = {kind for _, kind, _ in offers}
+    # Same rule as hajra/ajanlat_ellenor.py: where shipping is already free,
+    # "masodik" (second item discounted) stands in for the shipping offer.
+    if "masodik" in types:
+        types.add("szallitas")
     codes = {code for _, _, code in offers}
     countdown = bool(re.search(r"secondsToMidnight|offerState|leftToday|remaining\s*\(|countdown\s*\(", combined, re.I))
     copy = bool(re.search(r"copyCode|clipboard|execCommand\s*\(", combined, re.I))
