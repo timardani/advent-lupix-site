@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T22:00:06+01:00",
+  "generalva": "2026-11-12T22:11:16+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -41,6 +41,11 @@
     },
     "beerselection": {
       "frissitve": "2026-11-04T21:47+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "bekesbotanika": {
+      "frissitve": "2026-11-12T22:10+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -181,6 +186,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "fonalparadicsom": {
+      "frissitve": "2026-11-12T22:11+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "fuszeresz": {
       "frissitve": "2026-10-30T11:18+01:00",
       "demo2_kesz": true,
@@ -243,6 +253,11 @@
     },
     "highlandsoap": {
       "frissitve": "2026-11-12T15:38+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "hillvital": {
+      "frissitve": "2026-11-12T22:05+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -320,6 +335,11 @@
     },
     "menedek": {
       "frissitve": "2026-11-12T19:13+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "merce": {
+      "frissitve": "2026-11-12T22:11+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

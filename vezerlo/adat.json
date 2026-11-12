@@ -1982,6 +1982,24 @@
    "teendo": "Megkereső levél kiküldése (Dani) – sablon: Moai Kalenderáium/ADVENTI_MEGKERESO_EMAIL_SABLON.md",
    "megjegyzes": "2026-11-12: BioBubi-demó átdolgozása (letekerhető kupak, szappanbuborék-napok). Saját gyártású magyar biotisztítószer (Bio-Cleaner Kft., Unas, ~82 termék, hírlevél van; 2007-ben elsőként kapott öko labelt itthon) – gyártó, a Demeter-mintához illik. 24 nap: 15 termék + 8 Orgalco-csomag, ORGALCO01–24 javasolt kódok (approved:false).",
    "motivum": "szappanbuborék-felhő (24 nap) + flakon kupakjának letekerése, buborékból kipattanó termék (BioBubi átdolgozás)"
+  },
+  {
+   "id": "bekesbotanika",
+   "bolt": "Békés Botanika",
+   "kategoria": "Vetőmag / kiskert",
+   "demo": "bekesbotanika",
+   "allapot": "kuldheto",
+   "kinek": "Békés Botanika Kft. (Békés Botanika Kertészet)",
+   "email": "bekesbotanikakft@gmail.com",
+   "telefon": "+36 30 588 3544",
+   "kapcsolat_minoseg": "Gmail-es cégcím a weboldal adataiban (valószínűleg a tulaj kezeli); döntéshozó neve pótlandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (sablon), rövid határidővel",
+   "megjegyzes": "A ZKI-demó (magosláda) átdolgozása, 2026-11-12. Aktív Meta-hirdetés 1412431563524146 (2026-11-03). WooCommerce, ~1500 termék: Rédei/Rocalba vetőmag + virághagyma. Az impresszumban Ruffnet Zrt. / +36 30 083 8277 is szerepel – ellenőrizendő, ki az üzemeltető.",
+   "motivum": "magosláda kraft magtasakokkal + tasak feltépése a perforáció mentén (ZKI átdolgozása); jácint-hajtatás nyit és zár",
+   "weboldal": "https://bekesbotanika.hu"
   }
  ]
 }
