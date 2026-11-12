@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T21:06:25+01:00",
+  "generalva": "2026-11-12T21:58:43+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -130,7 +130,7 @@
       "hianyok": []
     },
     "cukraszkellek": {
-      "frissitve": "2026-11-12T21:05+01:00",
+      "frissitve": "2026-11-12T21:09+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -358,6 +358,13 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "orgalco": {
+      "frissitve": "2026-11-12T21:59+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nem szerepel mind az 5 akciótípus"
+      ]
+    },
     "oribird": {
       "frissitve": "2026-11-12T19:55+01:00",
       "demo2_kesz": true,
@@ -420,6 +427,11 @@
     },
     "simaimeheszet": {
       "frissitve": "2026-11-08T01:51+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "simongyumolcs": {
+      "frissitve": "2026-11-12T21:57+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
