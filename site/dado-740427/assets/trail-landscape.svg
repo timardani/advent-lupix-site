@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e8f4ed"/><stop offset=".65" stop-color="#cce5e5"/><stop offset="1" stop-color="#bad7d8"/></linearGradient><pattern id="snowflakes" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="17" cy="13" r="2" fill="#fff" opacity=".65"/><circle cx="68" cy="57" r="3" fill="#fff" opacity=".45"/><path d="M94 18h6m-3-3v6" stroke="#fff" opacity=".55"/></pattern></defs>
+<rect width="1100" height="680" fill="url(#sky)"/><path d="M0 69Q244 9 525 65T1100 55V0H0Z" fill="#f4f9ea" opacity=".9"/><rect width="1100" height="680" fill="url(#snowflakes)"/>
+<!-- snowdrifts and fence behind the path -->
+<path d="M0 554Q215 526 379 570T759 536T1100 549V680H0Z" fill="#e3f1eb" opacity=".55"/><path d="M0 644Q220 595 442 639T908 617T1100 637V680H0Z" fill="#eff8ed" opacity=".65"/>
+<g fill="none" stroke="#83aba9" opacity=".45" stroke-width="5"><path d="M32 113v90m36-101v96m36-100v88M996 117v86m36-90v90m36-94v84"/><path d="M20 136h99m-99 43h99M982 138h107m-107 42h107"/></g><g stroke="#f7fff4" stroke-width="8" stroke-linecap="round"><path d="M28 115q45-14 78-14m890 15q40-13 76-10"/></g>
+<!-- pine trees on the edges, outside the prints -->
+<g fill="#78aaa8" opacity=".47"><path d="M0 336l28-92 31 92Z M6 283l21-77 22 77Z M1010 352l47-154 54 154Z M1025 280l33-119 37 119Z M0 608l37-109 40 109Z M12 541l25-86 31 86Z"/></g><g fill="none" stroke="#eef9ea" opacity=".85" stroke-width="8" stroke-linecap="round"><path d="M0 332q33-12 56-1M1018 345q47-15 84 0M2 605q30-13 70-1"/></g>
+<!-- roofline at the beginning and gentle lantern string -->
+<path d="M42 24l69 43 67-43" fill="none" stroke="#528687" opacity=".5" stroke-width="5" stroke-linecap="round"/><path d="M47 32q30-14 64-17t64 17" fill="none" stroke="#6e9b93" stroke-width="3"/><g fill="#ecc778"><circle cx="56" cy="31" r="5"/><circle cx="84" cy="20" r="5"/><circle cx="113" cy="19" r="5"/><circle cx="141" cy="21" r="5"/><circle cx="170" cy="33" r="5"/></g>
+<!-- warm star at the end of the winding trail -->
+<circle cx="101" cy="636" r="33" fill="#e8ca87" opacity=".2"/><path d="M100 603l8 23 23 8-23 8-8 23-8-23-23-8 23-8Z" fill="#d5ad6c" opacity=".8"/>
+</svg>

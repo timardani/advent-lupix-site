@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T20:09:51+01:00",
+  "generalva": "2026-11-12T20:29:41+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -126,6 +126,11 @@
     },
     "csakajosor": {
       "frissitve": "2026-10-29T12:45+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "dado": {
+      "frissitve": "2026-11-12T20:26+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -473,10 +478,8 @@
     },
     "termeszetesgumicukor": {
       "frissitve": "2026-10-31T22:42+01:00",
-      "demo2_kesz": false,
-      "hianyok": [
-        "nem szerepel mind az 5 akciótípus"
-      ]
+      "demo2_kesz": true,
+      "hianyok": []
     },
     "tibiker": {
       "frissitve": "2026-11-11T22:11+01:00",

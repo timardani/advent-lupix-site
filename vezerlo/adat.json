@@ -1911,6 +1911,24 @@
    "megjegyzes": "Több mint 20 éve működő, családi tulajdonú állateledel-bolt (WooCommerce, ~470 termék), saját jutalomfalat-termékcsalád: Mersjo; Brevo hírlevél. Ingyenes szállítás 20 000 Ft felett (Foxpost) → a szállítási napok termékei e határ alatt. 24/24 termék rendelhető (lekérés 2026-11-12): 11 jutalomfalat (főleg Mersjo), 5 játék, 2 hám/póráz, 2 tál/itató, 2 ápolás, 2 fekhely; 24. nap Siesta-fekhely csomag. A Pet Family szimatfa átdolgozása; a kódok javaslatok.",
    "motivum": "fa alakú szimatjáték 24 csúszófedeles rekesszel, fedél félretolása (kutyaorr szimatol), csontkeksz-jel a fotón és csontkeksz-kupon",
    "weboldal": "https://falatkawebshop.hu"
+  },
+  {
+   "id": "dado",
+   "bolt": "DaDo kutyatáp (dado-kutyatap.hu)",
+   "kategoria": "Kisállat / állategészségügy",
+   "demo": "dado",
+   "allapot": "kuldheto",
+   "kinek": "unknown",
+   "email": "info@dado.hu",
+   "telefon": "+36 1 802 0265",
+   "kapcsolat_minoseg": "Ügyfélszolgálati cím (info@), a tulajdonos nem igazolt; kis, szakosodott bolt",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (a sablonból), rövid határidővel",
+   "megjegyzes": "Elite Pet Kft. (25870927-2-17), WooCommerce, ~900 termék; saját márka: DaDo hipoallergén kutyatáp + Fresco BARF, van hírlevél. Demó a Gazdipro átdolgozása. Az ingyenes kiszállítás alapból jár náluk, ezért a szállítási nap helyett 'második darab féláron' akció szerepel. Az API scriptből 403-at ad, a katalógust böngészőből mentettük. 2026-11-12",
+   "motivum": "24 havas mancsnyom; a hó lesöprése alól nyakörv-bilétás ajánlat (DADO01–24)",
+   "weboldal": "https://dado-kutyatap.hu"
   }
  ]
 }
