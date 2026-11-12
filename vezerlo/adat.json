@@ -88,7 +88,7 @@
   },
   {
    "nev": "CBD / kender",
-   "sor": "HempHealth → BudsCartel → Hill Vital"
+   "sor": "HempHealth → Merce (demó kész, 2026-11-12) → BudsCartel"
   },
   {
    "nev": "Illatgyertya",
@@ -2000,6 +2000,24 @@
    "megjegyzes": "A ZKI-demó (magosláda) átdolgozása, 2026-11-12. Aktív Meta-hirdetés 1412431563524146 (2026-11-03). WooCommerce, ~1500 termék: Rédei/Rocalba vetőmag + virághagyma. Az impresszumban Ruffnet Zrt. / +36 30 083 8277 is szerepel – ellenőrizendő, ki az üzemeltető.",
    "motivum": "magosláda kraft magtasakokkal + tasak feltépése a perforáció mentén (ZKI átdolgozása); jácint-hajtatás nyit és zár",
    "weboldal": "https://bekesbotanika.hu"
+  },
+  {
+   "id": "merce",
+   "bolt": "Merce (merceonline.hu)",
+   "kategoria": "CBD / kender",
+   "demo": "merce",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@merceonline.com",
+   "telefon": "+36 20 434 7001",
+   "kapcsolat_minoseg": "Általános cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Merce Group Kft., adószám 23687167-2-15; ShopRenter; saját gyártás (100% hazai: CBD, kozmetikum, kollagénitalok), ~35 rendelhető termék; hírlevél van. Átdolgozva a HempHealth üvegházból (2026-11-12). A Hill Vital helyette kiesett: nagy márka, nem CBD.",
+   "motivum": "téli üvegház, terrakotta cserepek (HempHealth átdolgozás)",
+   "weboldal": "https://merceonline.hu"
   }
  ]
 }
