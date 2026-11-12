@@ -1618,6 +1618,24 @@
    "megjegyzes": "Dani kérése (2026-11-12): a CandyDaddy-s snack-automata átdolgozása egy újabb édességboltra (az előző kutatásból maradt jelölt). tokyotaste.hu – japán/koreai/kínai édesség és snack; Shopify, 333 termék, Klaviyo-hírlevél (feliratkozásért 10% kedvezmény, a napi kódok ezzel nem vonhatók össze). Foxpost-automata 0–2 kg 1 090 Ft, 25 000 Ft felett ingyenes szállítás, minimális rendelés nincs feltüntetve. 24 termék: Pocky, mochi, Sour Meow, Peelerz, Buldak, Lamian Fan, bubble tea kit, capybara-édességek dec. 6-ra, Kawaii Káosz válogatás dec. 14., dec. 24. „Egy csipet Tokió!” csomag. Türkiz/fekete márka, Montserrat betű, a valódi fekete macskás TokyoTaste-logó a bolt fejlécéből.",
    "motivum": "retró snack-automata 24 spirálos rekesszel (A1–F4) + a mai kód beütése a billentyűzeten (a spirál elfordul, a csomag lepottyan a kiadótálcába), aranyérme-jel a fotón, hőpapír-blokk kupon",
    "weboldal": "https://tokyotaste.hu/"
+  },
+  {
+   "id": "goosebumps",
+   "bolt": "Goosebumps",
+   "kategoria": "Kávé",
+   "demo": "goosebumps",
+   "allapot": "kuldheto",
+   "kinek": "Goosebumps Kft. (adószám 25826258-2-41)",
+   "email": "sales@goosebumps.hu",
+   "telefon": "+36 70 607 6065",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél a sablonból (hajrá, kávé-sor); a tulaj/döntéshozó nevét a levél előtt érdemes megnézni",
+   "megjegyzes": "Átdolgozás a Koffein Roasters demóból (2026-11-12): kávéútlevél + pecsételés, Goosebumps logó, olajbarna/zsálya paletta, 24 termék a Store API-ból (kávé, kapszula, Blendsmiths, saját csészék, Solo). Ingyenes szállítás 25 000 Ft felett. Saját pörkölő + kávézó (Fekete Sas utca), hírlevél van. A sorban előtte álló Casino Mocca kiesett: saját motor, most csak kb. 15 rendelhető termék (nincs meg a 24).",
+   "motivum": "kávéútlevél + pecsételés",
+   "weboldal": "https://goosebumps.hu"
   }
  ]
 }

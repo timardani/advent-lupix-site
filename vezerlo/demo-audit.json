@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T13:40:12+01:00",
+  "generalva": "2026-11-12T14:00:56+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -71,6 +71,11 @@
         "nem szerepel mind az 5 akciótípus"
       ]
     },
+    "borlekvar": {
+      "frissitve": "2026-11-12T13:59+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "buveszbolt": {
       "frissitve": "2026-10-29T22:24+01:00",
       "demo2_kesz": true,
@@ -78,6 +83,11 @@
     },
     "candydaddy": {
       "frissitve": "2026-11-11T22:11+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "casinomocca": {
+      "frissitve": "2026-11-12T13:49+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -155,6 +165,11 @@
     },
     "gemklub": {
       "frissitve": "2026-10-28T01:24+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "goosebumps": {
+      "frissitve": "2026-11-12T13:59+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
