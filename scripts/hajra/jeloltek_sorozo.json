@@ -1,0 +1,93 @@
+[
+ {
+  "input": "https://www.tapbudapest.com",
+  "domain": "tapbudapest.com",
+  "ok": true,
+  "base": "https://www.tapbudapest.com",
+  "platform": "egyéb",
+  "company": null,
+  "tax_id": null,
+  "emails": [],
+  "phones": [],
+  "newsletter": null,
+  "logo": "https://static.parastorage.com/client/pfavico.ico",
+  "legal_pages": [],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=tapbudapest&search_type=keyword_unordered",
+  "email": null,
+  "phone": null,
+  "products": "unknown",
+  "products_source": "-"
+ },
+ {
+  "input": "https://oribird.hu",
+  "domain": "oribird.hu",
+  "ok": true,
+  "base": "https://oribird.hu",
+  "platform": "Unas",
+  "company": "Go & Help Zala Kft.",
+  "tax_id": "23956074-2-18",
+  "emails": [
+   "info@oribird.hu"
+  ],
+  "phones": [
+   "+36 30 274 0030",
+   "+36 96 520 217"
+  ],
+  "newsletter": "form",
+  "logo": "https://oribird.hu/!common_design/custom/oribird.unas.hu/element/layout_hu_header_logo-260x60_1_default.png?time=1731947428",
+  "legal_pages": [
+   "200 https://oribird.hu/shop_help.php?tab=terms"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=oribird&search_type=keyword_unordered",
+  "email": "info@oribird.hu",
+  "phone": "+36 30 274 0030",
+  "products": "~60",
+  "products_source": "sitemap"
+ },
+ {
+  "input": "https://henrysszombathely.hu",
+  "domain": "henrysszombathely.hu",
+  "ok": true,
+  "base": "https://henrysszombathely.hu",
+  "platform": "egyéb",
+  "company": null,
+  "tax_id": null,
+  "emails": [
+   "info@henrysszombathely.hu"
+  ],
+  "phones": [
+   "+36 94 367 781"
+  ],
+  "newsletter": null,
+  "logo": "https://paqnhuzaygtxqbhshqfn.supabase.co/storage/v1/render/image/public/media/6/henrys-burger-and-beer-szombathely-logo-korabban-guri-serhaz-1ll1xl.png?width=560&quality=80&resize=contain",
+  "legal_pages": [
+   "200 https://henrysszombathely.hu/impresszum",
+   "200 https://henrysszombathely.hu/aszf",
+   "200 https://henrysszombathely.hu/kapcsolat"
+  ],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=henrysszombathely&search_type=keyword_unordered",
+  "email": "info@henrysszombathely.hu",
+  "phone": "+36 94 367 781",
+  "products": "unknown",
+  "products_source": "-"
+ },
+ {
+  "input": "https://sorozo.elesztohaz.hu",
+  "domain": "sorozo.elesztohaz.hu",
+  "ok": true,
+  "base": "https://sorozo.elesztohaz.hu",
+  "platform": "WordPress",
+  "company": null,
+  "tax_id": null,
+  "emails": [],
+  "phones": [],
+  "newsletter": null,
+  "logo": "https://sorozo.elesztohaz.hu/wp-content/uploads/2026/07/elesztologo-1.png",
+  "legal_pages": [],
+  "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HU&q=sorozo.elesztohaz&search_type=keyword_unordered",
+  "email": null,
+  "phone": null,
+  "products": "unknown",
+  "products_source": "-"
+ }
+]

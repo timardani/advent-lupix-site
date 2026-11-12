@@ -2089,7 +2089,7 @@
   },
   {
    "nev": "Kézműves / prémium sör",
-   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár",
+   "megj": "Hajrá-kutatás 2026-11-07 (Meta Hirdetéstár + jelolt.py); A = Dani választására vár; Söröző-kör 2026-11-12 (Dani: söröző is mehet). Webshop nélküli sörözőnél a napi ajánlat helyben váltható (pultnál felmutatva); demó a Csakajósör „Adventi csaplista” átdolgozásából.",
    "jeloltek": [
     {
      "name": "Helka Sörfőzde",
@@ -2114,6 +2114,30 @@
      "url": "https://hoptop.hu/",
      "priority": "C",
      "status": "Hajrá 11-07 | Unas | Nap Fair Kft. | webshop@hoptop.hu | +36 20 371 1787 | termék ~188 | hírlevél form | Meta-hirdetés True | nagyobb (Zrt?), sok termék – valószínű viszonteladó"
+    },
+    {
+     "name": "Őribird Sörbár és Sörfőzde (Go & Help Zala Kft.)",
+     "url": "https://oribird.hu/",
+     "priority": "A",
+     "status": "Kutatás 11-12 | Unas webshop | Go & Help Zala Kft. 23956074-2-18 | info@oribird.hu | +36 30 274 0030 | termék ~60 | hírlevél: űrlap | Meta-hirdetés 1588928166336509 (aktív) | sörfőzde + sörbár, webshopos akcióval mehet"
+    },
+    {
+     "name": "The Tap Burger&Beer",
+     "url": "https://www.tapbudapest.com/",
+     "priority": "B",
+     "status": "Kutatás 11-12 | söröző, webshop nincs | cég/e-mail unknown | +36 30 507 7307 (hirdetésből) | 24 csap kézműves sör (pont 24 nap!) | Meta-hirdetés 1060075659481055 (aktív, asztalfoglalás) | ajánlat helyben váltható"
+    },
+    {
+     "name": "Henry's Szombathely / Sopron",
+     "url": "https://henrysszombathely.hu/",
+     "priority": "B",
+     "status": "Kutatás 11-12 | söröző, 2 hely, webshop nincs | cég unknown | info@henrysszombathely.hu | +36 94 367 781 | aktív Meta-hirdetés (kulcsszó: kézműves söröző) | méretkapu: 2 egység, tulaj ellenőrizendő"
+    },
+    {
+     "name": "Élesztőház",
+     "url": "https://sorozo.elesztohaz.hu/",
+     "priority": "C",
+     "status": "Kutatás 11-12 | söröző 30 csappal, webshop nincs | cég/e-mail unknown | Meta-hirdetés 1052187684403611 (aktív) | valószínűleg nagyobb (Élesztő-csoport) → méretkapu kérdéses"
     }
    ]
   },
