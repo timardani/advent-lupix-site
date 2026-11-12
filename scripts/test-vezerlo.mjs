@@ -72,7 +72,7 @@ if (!await page.getByText(`${seedData.kategoriak.length} kategória`).isVisible(
 if (!await page.getByText(`${seedData.boltok.length} ügyfél/jelölt`).isVisible()) throw new Error('ügyfélszám hiányzik');
 if (await page.locator('.cat').count() !== seedData.kategoriak.length) throw new Error('nem látszik minden kategória');
 for (const name of ['BioKiskert','Demeter Chocolate','Csakajósör','Chilimánia','Gazdipro','Damien White Bűvészbolt']) {
-  if (!await page.locator('.shop', { hasText: name }).isVisible()) throw new Error(`új ügyfél hiányzik: ${name}`);
+  if (!await page.locator('.shop', { has: page.locator('.name', { hasText: name }) }).first().isVisible()) throw new Error(`új ügyfél hiányzik: ${name}`);
 }
 if (!await page.locator('.shop', { hasText: 'Makettshop' }).getByText('név pótolható').isVisible()) throw new Error('hiányos kontakt jelzése nem látszik');
 const horgaszCard = page.locator('.shop', { has: page.locator('.name', { hasText: 'Horgász-Zóna' }) });
@@ -190,7 +190,7 @@ await page.goto('http://vez.test/vezerlo/kategoriak.html', { waitUntil: 'network
 for (const sec of ['Szabad kategóriák', 'Csak kutatás']) if (!await page.locator('h2.sec', { hasText: sec }).isVisible()) throw new Error(`kategóriaoldal szakasz hiányzik: ${sec}`);
 const catCount = await page.locator('.cat').count();
 if (catCount < seedData.kategoriak.length) throw new Error('kategóriaoldalon hiányzik kategória');
-if (!await page.locator('.cat', { hasText: 'Makett / miniatűr' }).getByRole('link', { name: 'megnyitás' }).isVisible()) throw new Error('élő link hiányzik a kategóriaoldalon');
+if (!await page.locator('.cat', { hasText: 'Makett / miniatűr' }).getByRole('link', { name: 'megnyitás' }).first().isVisible()) throw new Error('élő link hiányzik a kategóriaoldalon');
 await page.locator('.cat', { hasText: 'Puzzle' }).getByRole('button').click();
 await page.waitForFunction(() => document.body.textContent.includes('Kimásolva ✓'));
 if (errors.length) throw new Error('oldalhiba: ' + errors.join('; '));
