@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T14:06:26+01:00",
+  "generalva": "2026-11-12T15:04:47+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -72,7 +72,7 @@
       ]
     },
     "borlekvar": {
-      "frissitve": "2026-11-12T14:05+01:00",
+      "frissitve": "2026-11-12T14:13+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -302,6 +302,11 @@
     },
     "petfamily": {
       "frissitve": "2026-10-30T19:13+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "petrits": {
+      "frissitve": "2026-11-12T15:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

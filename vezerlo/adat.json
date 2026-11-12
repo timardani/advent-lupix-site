@@ -173,6 +173,10 @@
   {
    "nev": "Lekvár / borlekvár manufaktúra",
    "sor": "Borlekvár Manufaktúra → Pinky lekvár / Kutyori konyha"
+  },
+  {
+   "nev": "Mézeskalács / kézműves mézes sütemény",
+   "sor": "Petrits Mézeskalács → tartalék: Mendula Bakery"
   }
  ],
  "boltok": [
@@ -1658,6 +1662,23 @@
    "megjegyzes": "Új kategória 2026-11-12 (Dani: „rád bízom”). Indok: a nyertesek (Demeter csoki, Egri Chil(i)agok) kis élelmiszer-gyártók, ajándék-termékkel → lekvármanufaktúra. Aktív karácsonyi Meta-hirdetések (ID 891750450627999, 3129461374074437: „Karácsonyi Borlekvár Válogatás”, curd-ajándék az első 25 vevőnek) → már most kampányol decemberre. MagyarBrands 2026 díj. ShopRenter, ~72 termék, hírlevél-űrlap. 24 termék: borlekvárok, zselék, curd, szörp, sült tea, díszdobozok; a BOROK kategória palackos csomagjai (18+) szándékosan kimaradtak. Szállítási díj nincs a főoldalon → szállításos napok összeg nélkül. Mikulás (6.): Epervarázs + eper dzsem; 24.: fehérboros borlekvár + sült tea. Ár/készlet: katalogus.py --ids, 2026-11-12.",
    "motivum": "három egymásra rakott gyümölcsösláda 24 kockás konyharuhába bugyolált befőttesüveggel (dunszt) + a ruha jobb alsó sarkának átlós felhajtása (lapfordulós hajtás, alatta a langyos, gőzölgő üveg), kockás fedőkendő-matrica, cakkos szélű kézírásos befőttcímke-kupon",
    "weboldal": "https://borlekvar.com/"
+  },
+  {
+   "id": "petrits",
+   "bolt": "Petrits Mézeskalács (mezeskalacs.hu)",
+   "kategoria": "Mézeskalács / kézműves mézes sütemény",
+   "demo": "petrits",
+   "allapot": "kuldheto",
+   "kinek": "Petrits Mézeskalács Kereskedelmi és Szolgáltató Kft. (adószám 14878134-2-17), 7100 Szekszárd, Munkácsy u. 9/b – családi mézeskalácsos műhely + Mézeskalács Múzeum",
+   "email": "info@mezeskalacs.hu",
+   "telefon": "+36 30 598 7210",
+   "kapcsolat_minoseg": "Családi manufaktúra (gyártó, nem viszonteladó), az info@ nagy valószínűséggel a családhoz fut – a Demeter-mintázat",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (rövid határidő, kb. 2 munkanap)",
+   "megjegyzes": "Hajrá 2026-11-12, új kategória (Dani: „rád bízom”). Gyártó családi cég Szekszárdon, saját múzeummal és gyertyaműhellyel, terméke eleve ajándék. WooCommerce, 262 termék; hírlevél-űrlap nem látszott (→ érv: a kalendárium e-mail-listát épít januárra). Meta Hirdetéstár: mézeskalácsra kevés kis gyártó hirdet. Szállítási díj nem nyilvános → szállításos napok összeg nélkül. Tartalékjelölt: Mendula Bakery (mendula.hu, ShopRenter, ~166 termék).",
+   "motivum": "vásári mézeskalácsos bódé (csíkos ponyva, deszkafal) 24 szögön lógó natúr szívvel + habzsák körbehúzása a szív szélén (piros cukormáz kirajzolódik, a tükörben megjelenik a termék), versikés papírcédula-kupon"
   }
  ]
 }

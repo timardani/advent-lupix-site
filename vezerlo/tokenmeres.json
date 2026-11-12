@@ -377,6 +377,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "petrits",
+   "munka": "új kategória első demója: mézeskalács (Petrits), vásári bódé + habzsákos díszítés, jelöltkutatás + katalógus + akciók + kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 100,
+   "cache_iras": 196578,
+   "cache_olvasas": 6007184,
+   "output": 69866,
+   "osszes": 6273728,
+   "uj_token": 266544,
+   "munkamenet": "7bdb5fb2",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
