@@ -452,6 +452,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "pinkylekvar",
+   "munka": "Lekvár kategória: Borlekvár-demó átdolgozása a Pinky Lekvárra (jelölt, 24 termék, akciók, márka, teszt, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 134,
+   "cache_iras": 129508,
+   "cache_olvasas": 6582822,
+   "output": 39069,
+   "osszes": 6751533,
+   "uj_token": 168711,
+   "munkamenet": "c443f37b",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
