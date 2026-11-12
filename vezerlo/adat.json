@@ -80,7 +80,7 @@
   },
   {
    "nev": "Kisállat / állategészségügy",
-   "sor": "Gazdipro"
+   "sor": "Petnet"
   },
   {
    "nev": "Bűvészet / bűvésztrükkök",
@@ -2168,6 +2168,24 @@
    "megjegyzes": "Gémklub-demó átdolgozása (2026-11-12): 24 raktáron lévő társasjáték compaya.hu-ról, 9 társtermék, napi akció+kód (javaslat). UNAS, Ezit Kft., ~2250 termék. Logó csak 233×61 px-es a weboldalon (nagyobbat kérni, ha nyer).",
    "motivum": "játékpolc + kockadobás",
    "weboldal": "https://compaya.hu"
+  },
+  {
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "id": "petnet",
+   "bolt": "Petnet",
+   "kategoria": "Kisállat / állategészségügy",
+   "demo": "petnet",
+   "allapot": "kuldheto",
+   "kinek": "unknown",
+   "email": "info@petnet.hu",
+   "telefon": "+36 70 932 6336",
+   "kapcsolat_minoseg": "Központi info@ cím (Petnet Kft.), tulajdonos nem igazolt",
+   "teendo": "Levél kiküldése (Dani)",
+   "megjegyzes": "Gazdipro után a sor következő boltja (Dani, 2026-11-12) – a kutatásban „valószínűleg túl nagy”, Dani felülbírálta. Aktív Meta-hirdetés 26961933246800546 (2026-11-03). Saját vmit motor; 24 kutya/macska termék, PETNET01–24, kuponok még nem léteznek a boltban.",
+   "weboldal": "https://petnet.hu",
+   "motivum": "24 havas mancsnyom a téli udvaron – a mai nyomról lesöpört hó alatt nyakörv-biléta a napi ajánlattal"
   }
  ]
 }

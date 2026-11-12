@@ -431,6 +431,10 @@
     {
       "demo": "compaya",
       "slug": "compaya-d517f8"
+    },
+    {
+      "demo": "petnet",
+      "slug": "petnet-e9e000"
     }
   ]
 }
