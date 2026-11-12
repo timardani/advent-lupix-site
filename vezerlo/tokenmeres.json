@@ -752,6 +752,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "hillvital",
+   "munka": "HempHealth üvegház átdolgozás HillVitalra (logólevél, 24 termék, 24 akció)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 74,
+   "cache_iras": 127491,
+   "cache_olvasas": 3764577,
+   "output": 29422,
+   "osszes": 3921564,
+   "uj_token": 156987,
+   "munkamenet": "98f398b5",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
