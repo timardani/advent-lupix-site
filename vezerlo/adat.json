@@ -1875,6 +1875,24 @@
    "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése (rövid határidővel)",
    "megjegyzes": "Játékbolt (ShopRenter, ~4500 termék, főleg fajáték: Goki, Small Foot, Cubika, Holztiger, Smart Games, Jáva). Hírlevél-feliratkozás van. Nincs ingyenesszállítás-küszöb (GLS 1290–1690 Ft), szállítás 1–10 munkanap → karácsonyi érkezés szövege csak dec. 14-ig. Átdolgozás a Fakopáncs-demóból (2026-11-12): valódi logó (logo2025.png), tangramszínek, Poppins, saját rajzú vesszőparipa-kabala. 24/24 termék rendelhető (lekérés 2026-11-12), kódok PARIPA01–24 javaslatok. Meta-hirdetés: nem ellenőrizve.",
    "motivum": "fa formaberakó láda 24 formalyukkal + a mai festett fakocka bedobása a saját alakú lyukába (koppan, kicsúszik a fiók), festett fakocka-jel a fotón, puzzle-darab kupon"
+  },
+  {
+   "id": "gyorgytea",
+   "bolt": "Györgytea (gyorgyteabolt.hu)",
+   "kategoria": "Tea – gyógynövényes / funkcionális",
+   "demo": "gyorgytea",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "rendeles@gyorgytea.hu",
+   "telefon": "+36 30 208 0839",
+   "kapcsolat_minoseg": "Rendelési központi cím; döntéshozó név szerint: unknown (családi cég, bükki füvesember-család)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (hajrá, rövid határidő)",
+   "megjegyzes": "Pharmaherb Kft., adószám 13324632-2-41. Saját gyártó, családi gyógynövényes manufaktúra (Bükk) – Demeter-mintázat. Shopify, 304 termék, Klaviyo-hírlevél. Átdolgozás az UKKO-vonalból (herbatea-demó), 2026-11-12. 24 nap: filteres és szálas teák, esti keverékek, üvegszűrős csésze, teaszűrő, füvesember-könyvek, karácsonyi díszcsomagok; kapszulák, kivonatok, betegségnevű teák és hatásállítás kihagyva. Ingyenes szállítási küszöb: unknown.",
+   "motivum": "teafilterek zsinegen + leakasztás és bögrébe mártás; függőcímkés 1+1/kupon (UKKO-átdolgozás)",
+   "weboldal": "https://gyorgyteabolt.hu/"
   }
  ]
 }

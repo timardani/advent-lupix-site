@@ -557,6 +557,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "gyorgytea",
+   "munka": "UKKO/herbatea-átdolgozás György Teára (Shopify ingest, 24 nap kézi válogatás, akciók, márka, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 94,
+   "cache_iras": 135200,
+   "cache_olvasas": 5244973,
+   "output": 32844,
+   "osszes": 5413111,
+   "uj_token": 168138,
+   "munkamenet": "164b676b",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
