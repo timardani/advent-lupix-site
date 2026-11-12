@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T19:12:45+01:00",
+  "generalva": "2026-11-12T19:30:16+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -73,6 +73,14 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "bock": {
+      "frissitve": "2026-11-12T19:30+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon",
+        "nem szerepel mind az 5 akciótípus"
+      ]
+    },
     "bonuszbrigad": {
       "frissitve": "2026-11-07T15:07+01:00",
       "demo2_kesz": false,
@@ -137,7 +145,7 @@
       "hianyok": []
     },
     "finomfuszerek": {
-      "frissitve": "2026-11-12T19:12+01:00",
+      "frissitve": "2026-11-12T19:29+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -291,7 +299,7 @@
       "hianyok": []
     },
     "menedek": {
-      "frissitve": "2026-11-12T19:10+01:00",
+      "frissitve": "2026-11-12T19:13+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -372,6 +380,11 @@
     },
     "roastcoffee": {
       "frissitve": "2026-11-05T14:44+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "sappusztai": {
+      "frissitve": "2026-11-12T19:28+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

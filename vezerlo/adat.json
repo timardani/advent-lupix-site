@@ -894,6 +894,24 @@
    "weboldal": "https://idrinks.hu"
   },
   {
+   "id": "sappusztai",
+   "bolt": "Sáppusztai Pálinkafőzde",
+   "kategoria": "Szeszes ital / prémium alkohol",
+   "demo": "sappusztai",
+   "allapot": "kuldheto",
+   "kinek": "Trixon-B Kft. (tulajdonos neve még nem azonosított)",
+   "email": "palinka@sappusztai.hu",
+   "telefon": "+36 70 588 8999",
+   "kapcsolat_minoseg": "Saját főzde, palinka@ cím (valószínűleg a tulaj/kis csapat kezeli)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Levél kiküldése (Dani) + Grt. 13. § alkoholreklám-jogi ellenőrzés élesítés előtt",
+   "megjegyzes": "Hajrá, 2026-11-12. Gyártó (Demeter-minta): saját pálinkafőzde, díjnyertes (Magyarország Itala 2026), aktív Meta-hirdetés 1644066723966770 (2026-10-05, viszonteladó-toborzás). ShopRenter, ~69 termék, hírlevél-űrlap, pálinkapanzió és üzemlátogatás. Szállítás 1.490/2.990 Ft, 40.000 Ft felett ingyenes. Az iDrinks-demó átdolgozása; kódok SAP01–SAP24.",
+   "motivum": "palacksor + dugóhúzás, nyakcímke (az iDrinks-demó átdolgozása)",
+   "weboldal": "https://sappusztai.hu"
+  },
+  {
    "id": "teavolution",
    "bolt": "Teavolution",
    "kategoria": "Tea – szálas / specialty",
