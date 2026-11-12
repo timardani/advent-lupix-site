@@ -177,6 +177,10 @@
   {
    "nev": "Mézeskalács / kézműves mézes sütemény",
    "sor": "Petrits Mézeskalács → tartalék: Mendula Bakery"
+  },
+  {
+   "nev": "Gyógynövényes balzsam / natúr egészség",
+   "sor": "HillVital"
   }
  ],
  "boltok": [
@@ -2107,6 +2111,24 @@
    "megjegyzes": "A Békés Botanika magosláda-demó átdolgozása, 2026-11-12. Aktív Meta-hirdetés 1148856827588166 (2026-11-03). UNAS, ~100 termék, Pilisszentlászló. Mezőgazdasági vetőmag (AKG-keverékek, méhlegelő, lucerna, here, silócirok), takarmány-kiegészítő, talajjavító – gazdáknak. Az árak bruttó Ft/kg-ban vannak, min. 1 zsák (15–25 kg), ezért a naptár zsákárat mutat (7–133 ezer Ft). A kuponok javaslatok; az 1+1-et a legolcsóbb zsákokra tettük.",
    "motivum": "magosláda kraft magzsákokkal + zsák feltépése a varrás mentén (Békés Botanika átdolgozása); legelő-/méhlegelő-keverék nyit és zár",
    "weboldal": "https://sersiafarm.hu"
+  },
+  {
+   "id": "hillvital",
+   "bolt": "HillVital (hillvital.hu)",
+   "kategoria": "Gyógynövényes balzsam / natúr egészség",
+   "demo": "hillvital",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@hillvital.com",
+   "telefon": "+36 42 783 718",
+   "kapcsolat_minoseg": "Általános cím",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Nyíregyházi gyógynövényes balzsam- és natúrkozmetikum-gyártó (4432 Nyíregyháza, Nyírszőlősi út 124.; 2. tel.: +36 30 838 4363). ShopRenter, kb. 100 termék, Klaviyo-hírlevél. Cégnév/adószám: unknown. Figyelem: viszonylag nagy márka (viszonteladói hálózat, 3 nyelv, hillvitalusa.com), Dani kérésére mégis elkészült (2026-11-12). Átdolgozás a HempHealth üvegházból: a kenderlevél helyett a HillVital logólevele bomlik ki. 24 nap: balzsamok (Maximum, Mesterbalzsam, Fekete nadálytő, Körömvirág, Varikoflex, Kapsamax…), arckrémek, gyógynövényes samponok, vitaminok, fürdősó, aroma diffúzor; szezon végén a Mozgáskönnyítő csomag. Hatásállítás kihagyva; betegségnevű termék (Psorisoft) nincs benne. Ingyenes szállítási küszöb: unknown.",
+   "motivum": "téli gyógynövény-üvegház, terrakotta cserepek, locsolás → HillVital-levél (HempHealth átdolgozás)",
+   "weboldal": "https://hillvital.hu"
   }
  ]
 }
