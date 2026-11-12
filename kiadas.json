@@ -435,6 +435,10 @@
     {
       "demo": "petnet",
       "slug": "petnet-e9e000"
+    },
+    {
+      "demo": "bollershop",
+      "slug": "bollershop-60d49a"
     }
   ]
 }
