@@ -1,5 +1,5 @@
 {
- "frissitve": "2026-11-12",
+ "frissitve": "2026-11-13",
  "sorok": [
   {
    "datum": "2026-11-08",
@@ -839,6 +839,21 @@
    "osszes": 7864637,
    "uj_token": 199055,
    "munkamenet": "fe926b12",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-13",
+   "demo": "arpadpalinka",
+   "munka": "új kategória-koncepció a nulláról (alkohol): jelöltkutatás + gyümölcsfa/ágrázás jelenet + kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 162,
+   "cache_iras": 269462,
+   "cache_olvasas": 13430605,
+   "output": 109577,
+   "osszes": 13809806,
+   "uj_token": 379201,
+   "munkamenet": "d6aa9915",
    "megjegyzes": ""
   },
   {
