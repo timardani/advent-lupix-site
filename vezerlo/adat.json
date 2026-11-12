@@ -1717,6 +1717,24 @@
    "weboldal": "https://vilagoklangja.hu"
   },
   {
+   "id": "menedek",
+   "bolt": "Menedék Kézműves Gyertya",
+   "kategoria": "Illatgyertya",
+   "demo": "menedek",
+   "allapot": "kuldheto",
+   "kinek": "Menedék Kézműves Gyertya – tulajdonos (név unknown; az impresszumban Sybell Informatika Kft. / 48281414-1-36 áll, ellenőrizendő)",
+   "email": "info@menedekkezmuvesgyertya.hu",
+   "telefon": "+36 30 161 4371",
+   "kapcsolat_minoseg": "Céges info@ (kis manufaktúra, egyszemélyes hangú bolt)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Saját gyártás: fakanócos szójaviasz gyertyák, illatviaszok, diffúzorok; WooCommerce, ~103 termék, erős karácsonyi kollekció; Brevo-hírlevél; workshopot is tart; aktív Meta-hirdetés (könyvtári ID 1818111649401933, „kézműves gyertya”); ingyenes szállítás 20 000 Ft felett. Az Aurora Candle-demó (Viaszkuckó-vonal) átdolgozása, 2026-11-12. Fandomos tételek (Heated Rivalry, Bagolyposta, Bridgerton) szándékosan kimaradtak.",
+   "motivum": "gyertyák + gyufagyújtás (Viaszkuckó átdolgozás)",
+   "weboldal": "https://menedekkezmuvesgyertya.hu"
+  },
+  {
    "id": "aldelena",
    "bolt": "Aldeléna Natúrkozmetikumok",
    "kategoria": "Natúrkozmetika / kézműves szappan",
