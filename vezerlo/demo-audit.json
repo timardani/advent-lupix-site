@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T23:06:13+01:00",
+  "generalva": "2026-11-12T23:34:07+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -86,6 +86,11 @@
         "nem szerepel mind az 5 akciótípus"
       ]
     },
+    "bollershop": {
+      "frissitve": "2026-11-12T23:33+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "bonuszbrigad": {
       "frissitve": "2026-11-07T15:07+01:00",
       "demo2_kesz": false,
@@ -126,6 +131,11 @@
     },
     "chillermanufaktura": {
       "frissitve": "2026-11-10T15:03+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "compaya": {
+      "frissitve": "2026-11-12T23:32+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -262,7 +272,7 @@
       "hianyok": []
     },
     "hillvital": {
-      "frissitve": "2026-11-12T22:05+01:00",
+      "frissitve": "2026-11-12T23:33+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -318,6 +328,11 @@
     },
     "littleharmony": {
       "frissitve": "2026-11-05T21:10+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "lolkashop": {
+      "frissitve": "2026-11-12T23:29+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -412,6 +427,11 @@
     },
     "petfamily": {
       "frissitve": "2026-10-30T19:13+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "petnet": {
+      "frissitve": "2026-11-12T23:34+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
