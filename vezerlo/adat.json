@@ -175,6 +175,10 @@
    "sor": "Borlekvár Manufaktúra → Pinky lekvár / Kutyori konyha"
   },
   {
+   "nev": "Baba-mama / babaruha",
+   "sor": "Lolka Shop (demó kész, 2026-11-12) → Sleepee (hálózsák, Lash Design Kft., info@sleepee.hu, Klaviyo) · Baby Forest"
+  },
+  {
    "nev": "Mézeskalács / kézműves mézes sütemény",
    "sor": "Petrits Mézeskalács → tartalék: Mendula Bakery"
   },
@@ -2129,6 +2133,23 @@
    "megjegyzes": "Nyíregyházi gyógynövényes balzsam- és natúrkozmetikum-gyártó (4432 Nyíregyháza, Nyírszőlősi út 124.; 2. tel.: +36 30 838 4363). ShopRenter, kb. 100 termék, Klaviyo-hírlevél. Cégnév/adószám: unknown. Figyelem: viszonylag nagy márka (viszonteladói hálózat, 3 nyelv, hillvitalusa.com), Dani kérésére mégis elkészült (2026-11-12). Átdolgozás a HempHealth üvegházból: a kenderlevél helyett a HillVital logólevele bomlik ki. 24 nap: balzsamok (Maximum, Mesterbalzsam, Fekete nadálytő, Körömvirág, Varikoflex, Kapsamax…), arckrémek, gyógynövényes samponok, vitaminok, fürdősó, aroma diffúzor; szezon végén a Mozgáskönnyítő csomag. Hatásállítás kihagyva; betegségnevű termék (Psorisoft) nincs benne. Ingyenes szállítási küszöb: unknown.",
    "motivum": "téli gyógynövény-üvegház, terrakotta cserepek, locsolás → HillVital-levél (HempHealth átdolgozás)",
    "weboldal": "https://hillvital.hu"
+  },
+  {
+   "id": "lolkashop",
+   "bolt": "Lolka Shop (lolkashop.hu)",
+   "kategoria": "Baba-mama / babaruha",
+   "demo": "lolkashop",
+   "allapot": "kuldheto",
+   "kinek": "Czaga Judit",
+   "email": "hello@lolkashop.hu",
+   "telefon": "+36 70 774 2609",
+   "kapcsolat_minoseg": "Tulajdonos (egyéni vállalkozó)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Saját tervezésű, vicces feliratos baba bodyk, tütü szettek, családi egyenpólók (Czaga Judit e.v., adószám 66057460-1-29). ShopRenter, kb. 1900 termék, hírlevél-űrlap, aktív Meta-hirdetés (Hirdetéstár, 'babaruha'). Új kategória első demója: kelengyedoboz 24 összehajtott bodyval; a mai masnis body pántjának 3 patentját kell kipattintani, alóla előcsúszik a címke. 24 nap: Mikulás-bodyk dec. 1–5, utána karácsonyi bodyk, tütü, wellsoft takaró, első karácsony családi csomagok; dec. 20-tól a kódok jan. 31-ig beválthatók. Ingyenesszállítás-küszöb a boltnál nem található. Kódok javaslatok (approved:false). Következő jelölt a kategóriában: Sleepee (sleepee.hu).",
+   "motivum": "kelengyedoboz 24 összehajtott bodyval + a mai masnis body pántján a 3 patent kipattintása (patt, patt, patt), a pánt alól előcsúszik a címke; varrott márkacímke a fotón, mosási címke-kupon"
   }
  ]
 }
