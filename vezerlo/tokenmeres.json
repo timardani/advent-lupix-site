@@ -707,6 +707,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "fehernyul",
+   "munka": "átdolgozás ŐriBird→Fehér Nyúl (söröző), 24 termék, ajánlatok, márka, review, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 108,
+   "cache_iras": 151285,
+   "cache_olvasas": 5572216,
+   "output": 37172,
+   "osszes": 5760781,
+   "uj_token": 188565,
+   "munkamenet": "6cd5942f",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

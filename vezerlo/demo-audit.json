@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-12T22:47:26+01:00",
+  "generalva": "2026-11-12T23:01:36+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -164,6 +164,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "fehernyul": {
+      "frissitve": "2026-11-12T23:01+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "finomfuszerek": {
       "frissitve": "2026-11-12T19:31+01:00",
       "demo2_kesz": true,
@@ -258,6 +263,11 @@
     },
     "hillvital": {
       "frissitve": "2026-11-12T22:05+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "hoptop": {
+      "frissitve": "2026-11-12T23:01+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -447,6 +457,11 @@
     },
     "sarretichilifarm": {
       "frissitve": "2026-10-30T14:52+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "sersiafarm": {
+      "frissitve": "2026-11-12T23:02+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

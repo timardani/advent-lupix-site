@@ -2054,6 +2054,23 @@
    "megjegyzes": "Édes Éden Kft. (impresszum); ShopRenter; ~7.600 termék (sok variáns), saját nyomtatott vicces pólók/bögrék, karácsonyi családi és páros szettek; hírlevél-feliratkozás a boltban; aktív Meta-hirdetés 1602081994252551 (2026-11-03). A PamutLabor-demó átdolgozása (2026-11-12): 24 saját karácsonyi termék; Grincs-, hírességarcos (Bud Spencer), mémes (Grumpy Cat), AC/DC-logós és trágár minták képi review után kihagyva. 20.000 Ft felett ingyen szállít.",
    "motivum": "pólónyomda szita + rakli-húzás",
    "weboldal": "https://lolmarkt.hu"
+  },
+  {
+   "id": "fehernyul",
+   "bolt": "Fehér Nyúl Brewery (fehernyul.hu)",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "fehernyul",
+   "allapot": "kuldheto",
+   "kinek": "unknown (info@fehernyul.hu)",
+   "email": "info@fehernyul.hu",
+   "telefon": "+36 1 391 1400",
+   "kapcsolat_minoseg": "általános info cím (webshop: shop@fehernyul.hu, +36 30 429 8667)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél rövid határidővel; tulaj/ügyvezető nevének pótlása",
+   "megjegyzes": "Söröző-kör 11-12 (Dani: söröző is mehet). Átdolgozás az ŐriBird (csakajósör-vonal) demóból. Budapesti kisüzemi sörfőzde, „Üreg” taproom eseményekkel; Fehér Nyúl Sörfőző Kft. (14922563-2-43), 1095 Budapest, Soroksári út 110–112. Unas webshop ~316 termék, Mailchimp-hírlevél, saját 18+ kapu. Ingyenes DPD-szállítás 25 000 Ft felett. 24 különböző termék, köztük 2 karácsonyfás IPA (12. és 20. nap), főzdetúra, Ízhiba workshop. A honlapon csak 100 px-es logó van → élesítéshez nagy felbontású logó kell.",
+   "motivum": "Adventi csaplista: csapkar lehúzása, amíg megtelik a pohár; ŐriBird-logó krémtáblán, őrségi erdőzöld, madárnevű sörök"
   }
  ]
 }
