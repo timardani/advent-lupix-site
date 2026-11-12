@@ -317,6 +317,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-12",
+   "demo": "tokyotaste",
+   "munka": "CandyDaddy snack-automata átdolgozása TokyoTaste-re (jelölt, katalógus böngészőből 429 miatt, logó-ikon, Montserrat, 24 ajánlat, review, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 120,
+   "cache_iras": 151336,
+   "cache_olvasas": 6512889,
+   "output": 40686,
+   "osszes": 6705031,
+   "uj_token": 192142,
+   "munkamenet": "a8fca102",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
