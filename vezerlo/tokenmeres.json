@@ -1,5 +1,5 @@
 {
- "frissitve": "2026-11-11",
+ "frissitve": "2026-11-12",
  "sorok": [
   {
    "datum": "2026-11-08",
@@ -2388,6 +2388,21 @@
    "osszes": 5093057,
    "uj_token": 191634,
    "munkamenet": "787533e4",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-12",
+   "demo": "katchy",
+   "munka": "Átdolgozás: Tibiker snack-automata → Katchy (jelölt, katalógus, 24 ajánlat, márka, teszt, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 46,
+   "cache_iras": 133167,
+   "cache_olvasas": 3220086,
+   "output": 22475,
+   "osszes": 3375774,
+   "uj_token": 155688,
+   "munkamenet": "4994f84b",
    "megjegyzes": ""
   }
  ]
