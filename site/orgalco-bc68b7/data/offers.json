@@ -1,0 +1,295 @@
+{
+ "note": "Javasolt ajánlatok és kódok (approved:false). A valódi kuponokat élesítés előtt az Orgalco hozza létre a saját rendszerében.",
+ "offers": [
+  {
+   "day": 1,
+   "type": "percent",
+   "title": "Csillogó ablakok −10%",
+   "detail": "Ma 10% kedvezmény az Orgalco üvegtisztítóra.",
+   "code": "ORGALCO01",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 10,
+   "was": 1750,
+   "price": 1575
+  },
+  {
+   "day": 2,
+   "type": "bundle",
+   "title": "Mosogatós páros",
+   "detail": "Mosogatószer + kender mosogatószivacs együtt, csomagáron.",
+   "code": "ORGALCO02",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    14
+   ],
+   "was": 2530,
+   "price": 2190
+  },
+  {
+   "day": 3,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás, ha a kosárban ott a bio mosógél.",
+   "code": "ORGALCO03",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 4,
+   "type": "gift",
+   "title": "Univerzális + ajándék kendő",
+   "detail": "Az univerzális tisztítószer mellé mikroszálas törlőkendőt adunk.",
+   "code": "ORGALCO04",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    20
+   ],
+   "giftValue": 550
+  },
+  {
+   "day": 5,
+   "type": "one_plus_one",
+   "title": "1+1 zsíroldó",
+   "detail": "Két flakon zsíroldó egy áráért – a karácsonyi sütés után jól jön.",
+   "code": "ORGALCO05",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 3980,
+   "price": 1990
+  },
+  {
+   "day": 6,
+   "type": "percent",
+   "title": "Mikulásnapi −15%",
+   "detail": "Bababarát csomag 15% kedvezménnyel, Mikulás napjára.",
+   "code": "ORGALCO06",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 15,
+   "was": 5440,
+   "price": 4624
+  },
+  {
+   "day": 7,
+   "type": "bundle",
+   "title": "Fürdőszobai páros",
+   "detail": "Toalett olaj + erős vízkőoldó együtt, csomagáron.",
+   "code": "ORGALCO07",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    11
+   ],
+   "was": 3765,
+   "price": 3290
+  },
+  {
+   "day": 8,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás, ha a kosárban ott a Sellő öblítő.",
+   "code": "ORGALCO08",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 9,
+   "type": "gift",
+   "title": "Fertőtlenítő + kisflakon",
+   "detail": "Az Aseptica mellé ajándék 0,25 literes szórófejes flakon a táskába.",
+   "code": "ORGALCO09",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    15
+   ],
+   "giftValue": 550
+  },
+  {
+   "day": 10,
+   "type": "one_plus_one",
+   "title": "1+1 autótisztító",
+   "detail": "Két liter autótisztító egy áráért – téli sár ellen.",
+   "code": "ORGALCO10",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 3500,
+   "price": 1750
+  },
+  {
+   "day": 11,
+   "type": "percent",
+   "title": "Vízkő ellen −12%",
+   "detail": "Ma 12% kedvezmény az erős vízkőoldóra.",
+   "code": "ORGALCO11",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 12,
+   "was": 2390,
+   "price": 2103
+  },
+  {
+   "day": 12,
+   "type": "bundle",
+   "title": "Illatos páros",
+   "detail": "Sweet Dreams + Blue Ocean otthoni parfüm együtt, csomagáron.",
+   "code": "ORGALCO12",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    21
+   ],
+   "was": 8380,
+   "price": 7290
+  },
+  {
+   "day": 13,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás az Utazó csomaggal – az ünnepi útra.",
+   "code": "ORGALCO13",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 14,
+   "type": "gift",
+   "title": "Szivacs + ajándék kendő",
+   "detail": "A kender mosogatószivacsok mellé mikroszálas kendőt adunk.",
+   "code": "ORGALCO14",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    20
+   ],
+   "giftValue": 550
+  },
+  {
+   "day": 15,
+   "type": "one_plus_one",
+   "title": "1+1 utántöltő flakon",
+   "detail": "Két újratölthető szórófejes flakon egy áráért.",
+   "code": "ORGALCO15",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 1100,
+   "price": 550
+  },
+  {
+   "day": 16,
+   "type": "percent",
+   "title": "Illatos otthon −10%",
+   "detail": "Otthoni parfüm & textilfrissítő csomag 10% kedvezménnyel.",
+   "code": "ORGALCO16",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 10,
+   "was": 7540,
+   "price": 6786
+  },
+  {
+   "day": 17,
+   "type": "bundle",
+   "title": "Havi alap + univerzális",
+   "detail": "A Havi alap csomag mellé egy univerzális tisztítószer, csomagáron.",
+   "code": "ORGALCO17",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    4
+   ],
+   "was": 13440,
+   "price": 11990
+  },
+  {
+   "day": 18,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás a Hölgyek kedvence csomaggal – ajándéknak is.",
+   "code": "ORGALCO18",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 19,
+   "type": "gift",
+   "title": "Konyhatündér + szivacs",
+   "detail": "A Konyhatündér csomag mellé ajándék kender mosogatószivacs-szett.",
+   "code": "ORGALCO19",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    14
+   ],
+   "giftValue": 1080
+  },
+  {
+   "day": 20,
+   "type": "one_plus_one",
+   "title": "1+1 mikroszálas kendő",
+   "detail": "Két mikroszálas törlőkendő egy áráért.",
+   "code": "ORGALCO20",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 1100,
+   "price": 550
+  },
+  {
+   "day": 21,
+   "type": "percent",
+   "title": "Ünnepi illat −20%",
+   "detail": "Ma 20% kedvezmény a Blue Ocean otthoni parfümre.",
+   "code": "ORGALCO21",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 20,
+   "was": 4190,
+   "price": 3352
+  },
+  {
+   "day": 22,
+   "type": "bundle",
+   "title": "5 liter + öblítő",
+   "detail": "Az 5 literes mosószer csomag mellé Sellő öblítő, csomagáron.",
+   "code": "ORGALCO22",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    8
+   ],
+   "was": 21580,
+   "price": 18990
+  },
+  {
+   "day": 23,
+   "type": "gift",
+   "title": "Apa kedvencei + ajándék",
+   "detail": "Az Apa kedvencei csomag mellé ajándék autótisztító.",
+   "code": "ORGALCO23",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    10
+   ],
+   "giftValue": 1750
+  },
+  {
+   "day": 24,
+   "type": "bundle",
+   "title": "Karácsonyi nagytakarítás",
+   "detail": "Kezdő csomag + üvegtisztító + toalett olaj, ünnepi csomagáron.",
+   "code": "ORGALCO24",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    1,
+    7
+   ],
+   "was": 14185,
+   "price": 12490
+  }
+ ]
+}

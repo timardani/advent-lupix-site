@@ -1965,6 +1965,23 @@
    "megjegyzes": "Simon Gyümölcs Kft. (24651710-2-10), családi gazdaság 1992 óta (indulás 20 ha), Sastelek, Hatvan mellett: saját alma/körte, 100%-os préselt levek, almafröccs, aszalvány és magvak (dió, mandula, datolya stb.). WooCommerce, Mailchimp-hírlevél, hűségprogram + partnerprogram. Gyártó, nem viszonteladó (Demeter-minta). Átdolgozás a Balabons diótörő demóból, 2026-11-12. Szállítási díj irányítószám-függő, ezért a szállításos napok összeg nélkül. 24. nap: almafröccs-tálca + dióbél csomag.",
    "motivum": "vágódeszka 24 dióval + emelőkaros diótörő (kar lehúzása, a héj kettéválik, kigördül a cetli), aranydió-medál a fotón, papírcetli-kupon – Simon-logóval, almapiros/levélzöld",
    "weboldal": "https://simongyumolcs.hu/"
+  },
+  {
+   "id": "orgalco",
+   "bolt": "Orgalco (Bio-Cleaner Kft.)",
+   "kategoria": "Hulladékmentes háztartás és öko tisztítás",
+   "demo": "orgalco",
+   "allapot": "kuldheto",
+   "kinek": "unknown – tulajdonos/ügyvezető ellenőrizendő (Bio-Cleaner Kft.)",
+   "email": "info@orgalco.hu",
+   "telefon": "+36 30 941 3541",
+   "kapcsolat_minoseg": "általános bolti kapcsolat",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (Dani) – sablon: Moai Kalenderáium/ADVENTI_MEGKERESO_EMAIL_SABLON.md",
+   "megjegyzes": "2026-11-12: BioBubi-demó átdolgozása (letekerhető kupak, szappanbuborék-napok). Saját gyártású magyar biotisztítószer (Bio-Cleaner Kft., Unas, ~82 termék, hírlevél van; 2007-ben elsőként kapott öko labelt itthon) – gyártó, a Demeter-mintához illik. 24 nap: 15 termék + 8 Orgalco-csomag, ORGALCO01–24 javasolt kódok (approved:false).",
+   "motivum": "szappanbuborék-felhő (24 nap) + flakon kupakjának letekerése, buborékból kipattanó termék (BioBubi átdolgozás)"
   }
  ]
 }
