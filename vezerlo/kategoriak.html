@@ -54,7 +54,7 @@ const tok=s=>new Set(norm(s).split(/[^a-z0-9]+/).filter(w=>w.length>=5));
 const dom=u=>{try{return new URL(u).hostname.replace(/^www\./,'')}catch{return ''}};
 let adat,linkek={},kut=[];
 function badge(a){const[t,c]=S[a]||[a||'?','#888'];return `<span class="badge" style="background:${c}">${esc(t)}</span>`}
-function matchKut(nev,used){const ex=kut.findIndex((k,i)=>!used.has(i)&&k.nev===nev);if(ex>=0)return[ex];const t=tok(nev);return kut.map((k,i)=>i).filter(i=>!used.has(i)&&[...tok(kut[i].nev)].some(w=>t.has(w)))}
+function matchKut(nev,used){const ex=kut.map((k,i)=>i).filter(i=>!used.has(i)&&kut[i].nev===nev);if(ex.length)return ex;const t=tok(nev);return kut.map((k,i)=>i).filter(i=>!used.has(i)&&[...tok(kut[i].nev)].some(w=>t.has(w)))}
 function build(){const used=new Set(),out=[];
  for(const k of adat.kategoriak){const shops=adat.boltok.filter(b=>b.kategoria===k.nev);const idx=matchKut(k.nev,used);idx.forEach(i=>used.add(i));
   const known=new Set(shops.flatMap(b=>[norm(b.bolt),norm(b.id)]));
