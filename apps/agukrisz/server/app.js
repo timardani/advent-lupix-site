@@ -5,18 +5,20 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { budapestToUtc, masodpercEjfelig } from './ido.js';
 import { createStore } from './tarolo.js';
-import { aktualis, ervenyesNap, ervenyesProfil, atrendez, kuponHatarido, nyilvanos, kepNapjai, KEP_RE } from './tartalom.js';
+import { aktualis, ervenyesNap, ervenyesProfil, atrendez, kuponHatarido, nyilvanos, kepNapjai, normalizal, ujNap, KEP_RE } from './tartalom.js';
 
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.woff2': 'font/woff2', '.png': 'image/png', '.jpg': 'image/jpeg',
   '.json': 'application/json; charset=utf-8', '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8',
 };
+// A GoHighLevel-űrlap (opcionális feliratkozás) iframe-ben fut; a méretező szkriptje a link.msgsndr.com-ról jön.
+const GHL = 'https://api.leadconnectorhq.com https://*.leadconnectorhq.com https://link.msgsndr.com https://*.msgsndr.com';
 const SEC = {
   'X-Content-Type-Options': 'nosniff',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'X-Frame-Options': 'SAMEORIGIN',
-  'Content-Security-Policy': "default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+  'Content-Security-Policy': `default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' https://link.msgsndr.com; connect-src 'self'; font-src 'self'; frame-src 'self' ${GHL}; frame-ancestors 'self'; base-uri 'self'; form-action 'self'`,
 };
 const EMAIL_RE = /^[^\s@"<>,;]+@[^\s@"<>,;]+\.[^\s@"<>,;]{2,}$/;
 const COOKIE = 'wk_admin';
@@ -51,7 +53,7 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
   if (BASE && !/^(\/[a-z0-9-]+)+$/.test(BASE)) throw new Error('Hibás BASE_PATH');
   // Bemutató mód (csak demóhoz): kampányon kívül is látszik egy nap, és ?nap=N-nel bármelyik nap megnézhető.
   const bemutato = env.BEMUTATO === '1';
-  const bemutatoNap = Math.min(24, Math.max(1, Number(env.BEMUTATO_NAP) || 7));
+  const bemutatoNap = Math.max(1, Number(env.BEMUTATO_NAP) || 7);
   // Munkamenet-kulcs: env, különben /data-ban tartósan tárolt, hogy redeploy után se kelljen újra belépni.
   let secret = env.SESSION_SECRET;
   if (!secret) {
@@ -70,13 +72,14 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
     kep: limiter(120, 60 * 60e3),
   };
 
-  const doc = () => store.read('tartalom.json');
+  const doc = () => normalizal(store.read('tartalom.json'));
   const most = () => {
     const d = doc();
-    const a = aktualis(d.profil.ev, d.profil.nyitasOra, now());
-    if (bemutato && (a.nap === 0 || a.nap > 24)) return { d, nap: bemutatoNap, hatraMs: masodpercEjfelig(now()) * 1000 };
+    const a = aktualis(d.profil.kezdet, d.days.length, d.profil.nyitasOra, now());
+    if (bemutato && (a.nap === 0 || a.nap > d.days.length)) return { d, nap: Math.min(bemutatoNap, d.days.length), hatraMs: masodpercEjfelig(now()) * 1000 };
     return { d, ...a };
   };
+  const ervNap = (d, n) => Number.isInteger(n) && n >= 1 && n <= d.days.length;
   const kepPath = f => {
     if (!KEP_RE.test(f || '')) return null;
     for (const dir of [path.join(dataDir, 'kepek'), path.join(configDir, 'kepek')]) {
@@ -134,12 +137,14 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
   function profilPublikus(d) {
     const p = d.profil; const f = d.feliratkozas;
     return {
-      profil: { ...p, avatar: kepUrl(p.avatar), gyorsLinkek: undefined },
-      feliratkozas: f.aktiv ? { aktiv: true, cim: f.cim, szoveg: f.szoveg, gomb: f.gomb, koszono: f.koszono, reszvetelSzoveg: f.reszvetelSzoveg, reszvetelUrl: f.reszvetelUrl, hirlevelSzoveg: f.hirlevelSzoveg, adatkezelesUrl: f.adatkezelesUrl } : { aktiv: false },
+      profil: { ...p, avatar: kepUrl(p.avatar), hero: { ...p.hero, kep: p.hero.kep ? kepUrl(p.hero.kep) : '' }, gyorsLinkek: undefined },
+      feliratkozas: !f.aktiv ? { aktiv: false }
+        : f.mod === 'ghl' ? { aktiv: true, mod: 'ghl', cim: f.cim, szoveg: f.szoveg, ghlUrl: f.ghlUrl }
+          : { aktiv: true, mod: 'sajat', cim: f.cim, szoveg: f.szoveg, gomb: f.gomb, koszono: f.koszono, reszvetelSzoveg: f.reszvetelSzoveg, reszvetelUrl: f.reszvetelUrl, hirlevelSzoveg: f.hirlevelSzoveg, adatkezelesUrl: f.adatkezelesUrl },
     };
   }
   function naptar(d, nap, hatraMs, elonezet = false) {
-    return { ev: d.profil.ev, ma: nap, hatraMs, elonezet, bemutato, ...profilPublikus(d), napok: nyilvanos(d, nap, kepUrl) };
+    return { ev: d.profil.ev, kezdet: d.profil.kezdet, ma: nap, hatraMs, elonezet, bemutato, ...profilPublikus(d), napok: nyilvanos(d, nap, kepUrl) };
   }
 
   /* ---------- feliratkozás (GoHighLevel bejövő webhook, opcionális) ---------- */
@@ -167,7 +172,7 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
   }
   async function feliratkozas(req, res) {
     const d = doc(); const f = d.feliratkozas;
-    if (!f.aktiv) return send(res, 403, { hiba: 'A feliratkozás most nem elérhető.' });
+    if (!f.aktiv || f.mod === 'ghl') return send(res, 403, { hiba: 'A feliratkozás most nem elérhető.' });
     const ip = ipOf(req);
     if (!lim.subAll('all') || !lim.subIp(ip)) return send(res, 429, { hiba: 'Túl sok próbálkozás, kérlek, próbáld újra később.' });
     const b = await readBody(req, 4096);
@@ -219,12 +224,18 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
   }
 
   /* ---------- írás: verzióőr + mentés + napló ---------- */
+  // Automatikus (gépelés közbeni) mentésnél ugyanarra a szerkesztésre 10 percenként csak egy visszaállítási pont készül,
+  // hogy a 40 mentés ne teljen meg pár perc gépeléssel.
+  let utolsoAuto = { ok: '', t: 0, id: null };
   function ment(req, res, b, ok, valtoztat) {
     const d = doc();
     if (b.verzio !== undefined && b.verzio !== d.verzio) return send(res, 409, { hiba: 'Közben máshol is módosították a naptárat. Frissítsd az oldalt (a módosításaidat másold ki előtte).', verzio: d.verzio });
     const uj = valtoztat(structuredClone(d));
     if (uj.hiba) return send(res, 400, { hiba: uj.hiba });
-    const mentesId = store.mentes(d, ok);
+    const t = Date.now();
+    let mentesId;
+    if (b.auto === true && utolsoAuto.ok === ok && t - utolsoAuto.t < 10 * 60e3) mentesId = utolsoAuto.id;
+    else { mentesId = store.mentes(d, ok); utolsoAuto = b.auto === true ? { ok, t, id: mentesId } : { ok: '', t: 0, id: null }; }
     uj.doc.verzio = d.verzio + 1;
     store.write('tartalom.json', uj.doc);
     store.append('valtozasok.jsonl', { ido: now().toISOString(), ok, verzio: uj.doc.verzio });
@@ -240,7 +251,7 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
     if (p === '/api/naptar' && m === 'GET') {
       const { d, nap, hatraMs } = most();
       const kert = Number(url.searchParams.get('nap'));
-      if (bemutato && Number.isInteger(kert) && kert >= 1 && kert <= 24) return send(res, 200, naptar(d, kert, masodpercEjfelig(now()) * 1000));
+      if (bemutato && ervNap(d, kert)) return send(res, 200, naptar(d, kert, masodpercEjfelig(now()) * 1000));
       return send(res, 200, naptar(d, nap, hatraMs));
     }
     if ((r = p.match(/^\/api\/kep\/([\w.%-]+)$/)) && m === 'GET') {
@@ -249,7 +260,7 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
       if (!fp) return send(res, 404, { hiba: 'nincs' });
       const { d, nap } = most();
       const napjai = kepNapjai(d, f);
-      const publikus = f === d.profil.avatar || bemutato || napjai.some(n => n <= nap);
+      const publikus = f === d.profil.avatar || f === d.profil.hero.kep || bemutato || napjai.some(n => n <= nap);
       if (!publikus && !isAdmin(req)) return send(res, 404, { hiba: 'nincs' });
       const buf = fs.readFileSync(fp);
       res.writeHead(200, { ...SEC, 'Content-Type': MIME[path.extname(f)], 'Content-Length': buf.length, 'Cache-Control': publikus ? 'public, max-age=3600' : 'private, no-store' });
@@ -257,8 +268,8 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
     }
     if (p === '/api/esemeny' && m === 'POST') {
       const b = await readBody(req, 512);
-      const { nap } = most();
-      if (!ESEMENYEK.includes(b.tipus) || b.nap !== nap || nap < 1 || nap > 24) return send(res, 200, { ok: false });
+      const { d, nap } = most();
+      if (!ESEMENYEK.includes(b.tipus) || b.nap !== nap || !ervNap(d, nap)) return send(res, 200, { ok: false });
       if (lim.esemeny(ipOf(req))) esemeny(nap, b.tipus);
       return send(res, 200, { ok: true });
     }
@@ -290,18 +301,18 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
         feliratkozok: fel.length, hirlevel: fel.filter(x => x.hirlevel?.elfogadva).length, webhookSor: store.read('webhook-sor.json', []).length,
       });
     }
-    if ((r = p.match(/^\/api\/admin\/elonezet\/(\d{1,2})$/)) && m === 'GET') {
+    if ((r = p.match(/^\/api\/admin\/elonezet\/(\d{1,3})$/)) && m === 'GET') {
       const n = Number(r[1]);
-      if (n < 1 || n > 24) return send(res, 404, { hiba: 'nincs' });
       const d = doc();
+      if (!ervNap(d, n)) return send(res, 404, { hiba: 'nincs' });
       return send(res, 200, naptar(d, n, 12 * 3600e3, true));
     }
-    if ((r = p.match(/^\/api\/admin\/nap\/(\d{1,2})$/)) && m === 'PUT') {
+    if ((r = p.match(/^\/api\/admin\/nap\/(\d{1,3})$/)) && m === 'PUT') {
       const n = Number(r[1]);
-      if (n < 1 || n > 24) return send(res, 404, { hiba: 'nincs' });
+      if (!ervNap(doc(), n)) return send(res, 404, { hiba: 'nincs' });
       const b = await readBody(req, 128 * 1024);
       return ment(req, res, b, `${n}. nap szerkesztése`, d => {
-        const v = ervenyesNap(b, n, d.days, d.profil.ev, f => !!kepPath(f));
+        const v = ervenyesNap(b, n, d.days, d.profil.kezdet, f => !!kepPath(f));
         if (v.hiba) return v;
         d.days[n - 1] = v.nap;
         return { doc: d, valasz: { nap: v.nap } };
@@ -312,14 +323,14 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
       return ment(req, res, b, 'napok sorrendje', d => {
         const v = atrendez(d.days, b.sorrend);
         if (v.hiba) return v;
-        d.days = kuponHatarido(v.days, d.profil.ev);
+        d.days = kuponHatarido(v.days, d.profil.kezdet);
         return { doc: d };
       });
     }
     if (p === '/api/admin/athelyez' && m === 'POST') {
       const b = await readBody(req, 2048);
       const honnan = Number(b.honnan); const hova = Number(b.hova);
-      if (![honnan, hova].every(n => Number.isInteger(n) && n >= 1 && n <= 24) || honnan === hova) return send(res, 400, { hiba: 'Hibás nap.' });
+      if (![honnan, hova].every(n => ervNap(doc(), n)) || honnan === hova) return send(res, 400, { hiba: 'Hibás nap.' });
       return ment(req, res, b, `üzenet áthelyezése: ${honnan}. → ${hova}. nap`, d => {
         const src = d.days[honnan - 1];
         const i = src.blokkok.findIndex(x => x.id === b.id);
@@ -328,8 +339,8 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
         const [bl] = src.blokkok.splice(i, 1);
         const cel = d.days[hova - 1];
         cel.blokkok.push(bl);
-        kuponHatarido([cel], d.profil.ev);
-        const v = ervenyesNap(cel, hova, d.days, d.profil.ev, f => !!kepPath(f));
+        kuponHatarido([cel], d.profil.kezdet);
+        const v = ervenyesNap(cel, hova, d.days, d.profil.kezdet, f => !!kepPath(f));
         if (v.hiba) return v;
         d.days[hova - 1] = v.nap;
         return { doc: d };
@@ -341,8 +352,13 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
         const v = ervenyesProfil(b, d);
         if (v.hiba) return v;
         if (!kepPath(v.profil.avatar)) return { hiba: 'A profilkép nem található, töltsd fel újra.' };
+        if (v.profil.hero.kep && !kepPath(v.profil.hero.kep)) return { hiba: 'A háttérkép nem található, töltsd fel újra.' };
         d.profil = v.profil; d.feliratkozas = v.feliratkozas;
-        return { doc: d };
+        // A napok száma: új napok a végére kerülnek (kitöltendő jelöléssel); csökkentéskor a végéről esnek le (a mentésből visszahozható).
+        while (d.days.length < v.napokSzama) d.days.push(ujNap(d.days.length + 1));
+        if (d.days.length > v.napokSzama) d.days = d.days.slice(0, v.napokSzama);
+        d.days = kuponHatarido(d.days, d.profil.kezdet);
+        return { doc: d, valasz: { profil: d.profil, feliratkozas: d.feliratkozas, napok: d.days.length } };
       });
     }
     if (p === '/api/admin/kep' && m === 'POST') {
@@ -360,7 +376,7 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
       const b = await readBody(req, 1024);
       const regi = store.mentesBetolt(String(b.id || ''));
       if (!regi) return send(res, 404, { hiba: 'Nincs ilyen mentés.' });
-      return ment(req, res, b, `visszaállítás: ${b.id}`, () => ({ doc: regi }));
+      return ment(req, res, b, `visszaállítás: ${b.id}`, () => ({ doc: normalizal(regi) }));
     }
     if (p === '/api/admin/export' && m === 'GET') {
       const body = Buffer.from(JSON.stringify(doc(), null, 1));

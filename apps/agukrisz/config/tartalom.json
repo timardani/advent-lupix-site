@@ -15,6 +15,7 @@
    "url": "https://www.tiktok.com/@agukrisz"
   },
   "szovegek": {
+   "heroGomb": "Mai üzenet megnyitása",
    "kicker": "Advent · 24 üzenet Krisztől",
    "cim": "Decemberben\nminden reggel *írok neked.*",
    "lead": "Egy tipp a készülő könyvemből, egy mai házi, és néhány napon ajándék, amit januárban is beválthatsz.",
@@ -57,7 +58,38 @@
     "felirat": "Közösség (Skool)",
     "url": "https://www.skool.com/csajozo-kozosseg-7553"
    }
-  ]
+  ],
+  "kezdet": "2026-12-01",
+  "szinek": {
+   "hatter1": "#0a1629",
+   "hatter2": "#1e1322",
+   "kiemeles": "#bd8a7a",
+   "masodik": "#c9a84c",
+   "szoveg": "#f5ebe8"
+  },
+  "fenyfuzer": true,
+  "hero": {
+   "kep": "hero.jpg",
+   "fokusz": 30,
+   "cimkek": [
+    {
+     "szoveg": "📅 December 1–24."
+    },
+    {
+     "szoveg": "💬 Minden nap új üzenet"
+    },
+    {
+     "szoveg": "🎁 Ajándéknapok"
+    }
+   ]
+  },
+  "alsoGomb": {
+   "aktiv": true,
+   "cim": "Nem akarsz januárig várni?",
+   "szoveg": "Beszéljük át a te helyzetedet egy egyéni konzultáción.",
+   "felirat": "Konzultációt foglalok",
+   "url": "https://agukrisz.hu/ferfi-egyeni-konzultacio"
+  }
  },
  "feliratkozas": {
   "aktiv": false,
@@ -69,7 +101,9 @@
   "reszvetelUrl": "",
   "hirlevelSzoveg": "Kérem Krisz hírlevelét (bármikor leiratkozhatok).",
   "adatkezelesUrl": "",
-  "verzio": "1"
+  "verzio": "1",
+  "mod": "sajat",
+  "ghlUrl": ""
  },
  "days": [
   {
