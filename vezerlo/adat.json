@@ -185,6 +185,10 @@
   {
    "nev": "Gyógynövényes balzsam / natúr egészség",
    "sor": "HillVital"
+  },
+  {
+   "nev": "Edény / konyhafelszerelés",
+   "sor": "Netedény"
   }
  ],
  "boltok": [
@@ -2275,6 +2279,23 @@
    "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése (rövid határidővel)",
    "megjegyzes": "Fejlesztőjáték- és waldorf-webáruház (Unas, ~5500 termék: Djeco, GOKI, Sentosphere, Kabi, BE, LYRA). Hírlevél-feliratkozás van. 25 000 Ft felett ingyenes szállítás (alatta 1190–1890 Ft). Átdolgozás a Vesszőparipa-demóból (2026-11-13, Dani: „mehet”): valódi logó (az OG-képből kivágva, átlátszó), Katica-piros/zöld, Inter, saját rajzú katicabogár-kabala. 24/24 termék rendelhető (lekérés 2026-11-13), kódok (LOTTO01 … KONYHA24) javaslatok. Meta-hirdetés: nem ellenőrizve.",
    "motivum": "fa formaberakó láda 24 formalyukkal + a mai festett fakocka bedobása a saját alakú lyukába (koppan, kicsúszik a fiók), festett fakocka-jel a fotón, puzzle-darab kupon"
+  },
+  {
+   "id": "netedeny",
+   "bolt": "Netedény",
+   "kategoria": "Edény / konyhafelszerelés",
+   "demo": "netedeny",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@netedeny.hu",
+   "telefon": "+36 70 949 7789",
+   "kapcsolat_minoseg": "Általános info@ cím és telefon; cég: BestOn-Otthon Kft. (adószám nem található), tulaj/döntéshozó neve pótolandó",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése (rövid határidővel)",
+   "megjegyzes": "Konyhafelszerelési webáruház (ShopRenter, ~3700 termék: Tescoma, Tefal, Berlinger Haus, Blaumann, Brabantia, Bialetti) + személyes átvétel a VASEDÉNY kisáruházban (1211 Budapest, Kossuth L. u. 70.). Viszonteladó, nem gyártó. Hírlevél-feliratkozás van, aktív Meta-hirdetés (2026-11-13-i kutatás). Nincs ingyenes szállítási küszöb (MPL/DPD 1290–1990 Ft). Új kategória, új koncepció (2026-11-13, Dani: „mehet”): valódi logó (pirosfeherjo.png), Netedény-zöld + logópiros, Barlow. 24/24 termék rendelhető (lekérés 2026-11-12/13), kódok (FOGO01 … KARACSONY24) javaslatok.",
+   "motivum": "lyukacsos konyhai edényfal 24 kampóval + a mai piros serpenyő felrántása (a palacsinta megfordul, másik oldalán az ajánlat), sült palacsinta-jel a fotón, vonalas receptkártya-kupon"
   }
  ]
 }
