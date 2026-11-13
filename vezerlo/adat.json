@@ -2296,6 +2296,24 @@
    "teendo": "Döntéshozó nevét kideríteni, majd a levél kiküldése (rövid határidővel)",
    "megjegyzes": "Konyhafelszerelési webáruház (ShopRenter, ~3700 termék: Tescoma, Tefal, Berlinger Haus, Blaumann, Brabantia, Bialetti) + személyes átvétel a VASEDÉNY kisáruházban (1211 Budapest, Kossuth L. u. 70.). Viszonteladó, nem gyártó. Hírlevél-feliratkozás van, aktív Meta-hirdetés (2026-11-13-i kutatás). Nincs ingyenes szállítási küszöb (MPL/DPD 1290–1990 Ft). Új kategória, új koncepció (2026-11-13, Dani: „mehet”): valódi logó (pirosfeherjo.png), Netedény-zöld + logópiros, Barlow. 24/24 termék rendelhető (lekérés 2026-11-12/13), kódok (FOGO01 … KARACSONY24) javaslatok.",
    "motivum": "lyukacsos konyhai edényfal 24 kampóval + a mai piros serpenyő felrántása (a palacsinta megfordul, másik oldalán az ajánlat), sült palacsinta-jel a fotón, vonalas receptkártya-kupon"
+  },
+  {
+   "id": "ebenica",
+   "bolt": "Ebenica Coffee (EBENICA COFFEE s.r.o.)",
+   "kategoria": "Kávé",
+   "demo": "ebenica",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "ebenica@ebenica.com",
+   "telefon": "",
+   "kapcsolat_minoseg": "Céges általános cím (lehet, hogy a tulaj kezeli); hírlevél-feliratkozást a főoldalon nem találtunk",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó nevének/telefonnak ellenőrzése, majd megkereső levél (hajrá, rövid határidővel)",
+   "megjegyzes": "Dani kérésére (2026-11-13), hajrá: a Koffein Roasters kávéútlevél átdolgozása. Saját pörkölő (szlovák s.r.o., magyar webshop: ebenica.hu), WooCommerce, 97 termék. 24 nap: eredetkávék (Kolumbia, Etiópia, Kenya, Peru…) 220 g árral + házi keverékek, eszköz- és ajándékszettek; napi akció + kód (approved:false). Levélérv: már árul fizikai 'Adventi kávéválasztó naptár'-t (most nincs készleten) – a digitális 24 napig visszahozza a vevőt + e-mail-lista januárra.",
+   "motivum": "kávéútlevél + pecsételés (átdolgozás a koffeinroasters-ből)",
+   "weboldal": "https://ebenica.hu"
   }
  ]
 }
