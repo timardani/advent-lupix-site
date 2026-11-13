@@ -2314,6 +2314,24 @@
    "megjegyzes": "Dani kérésére (2026-11-13), hajrá: a Koffein Roasters kávéútlevél átdolgozása. Saját pörkölő (szlovák s.r.o., magyar webshop: ebenica.hu), WooCommerce, 97 termék. 24 nap: eredetkávék (Kolumbia, Etiópia, Kenya, Peru…) 220 g árral + házi keverékek, eszköz- és ajándékszettek; napi akció + kód (approved:false). Levélérv: már árul fizikai 'Adventi kávéválasztó naptár'-t (most nincs készleten) – a digitális 24 napig visszahozza a vevőt + e-mail-lista januárra.",
    "motivum": "kávéútlevél + pecsételés (átdolgozás a koffeinroasters-ből)",
    "weboldal": "https://ebenica.hu"
+  },
+  {
+   "id": "hayejin",
+   "bolt": "Hayejin Cosmetics (Immedex Europe Kft.)",
+   "kategoria": "Kozmetika / bőrápolás",
+   "demo": "hayejin",
+   "allapot": "kuldheto",
+   "kinek": "Tulajdonos / marketing (név még nem ismert)",
+   "email": "hello@hayejincosmetics.hu",
+   "telefon": "+36 70 413 3918",
+   "kapcsolat_minoseg": "Bolti általános cím (kis saját márka, valószínűleg a tulaj kezeli); Mailchimp-hírlevél van",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél (hajrá, rövid határidővel)",
+   "megjegyzes": "Dani kérésére (2026-11-13): teljesen új koncepció, természet: fehér alap, a szél zöld leveleket fúj. Saját koreai natúrkozmetikai márka (RiceFila, Blessing of Sprout), Shopify, 18 rendelhető termék → 24 nap a változatokkal (karácsonyi csomag ×3, díszdoboz ×3, Gua Sha ×2) + 1 szett (olaj+hab). Fátyolmaszkok most nem rendelhetők. Ingyenes szállítás 20 000 Ft felett. Napi akció + kód (approved:false). Levélérv: a logóban is hópelyhes levél van, 'A természet érintése'.",
+   "weboldal": "https://hayejincosmetics.hu",
+   "motivum": "fehér lapon szétszórt 24 zöld levél a szélben + a mai levél megfújása jobbra söpréssel (felkapja a szél, megfordul) → préselt levél-szelvény kupon, múlt napok préselve, washi-szalaggal"
   }
  ]
 }

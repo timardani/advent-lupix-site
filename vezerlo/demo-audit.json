@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-13T09:22:47+01:00",
+  "generalva": "2026-11-13T10:17:54+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -251,6 +251,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "hayejin": {
+      "frissitve": "2026-11-13T10:16+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "heliad": {
       "frissitve": "2026-10-23T16:29+02:00",
       "demo2_kesz": false,
@@ -439,7 +444,7 @@
       "hianyok": []
     },
     "orgalco": {
-      "frissitve": "2026-11-12T22:00+01:00",
+      "frissitve": "2026-11-13T10:13+01:00",
       "demo2_kesz": false,
       "hianyok": [
         "nem szerepel mind az 5 akciótípus"
