@@ -548,14 +548,20 @@ def ok(c):
 def select(cands, n):
     """Deterministic order: round robin over categories (2 first, then up to 5,
     then relax). Returns the full ranked list (chosen first, then spares)."""
-    seen_img, seen_name, groups = set(), set(), OrderedDict()
+    seen_img, seen_name, groups, loose = set(), set(), OrderedDict(), []
     for c in cands:
         ik = (c.get("image_url") or "").split("?")[0] or c["url"]
         nk = name_key(c["name"]) if c.get("name") else c["url"]
         # termékcsalád: a „ - ” / „:” előtti rész (pl. „Similo - Állatok” → similo)
         fm = re.split(r"\s[-–]\s|:", c.get("name") or "", maxsplit=1)
         fk = ("fam:" + slug(fm[0])) if len(fm) > 1 and fm[0].strip() else None
-        if ik in seen_img or nk in seen_name or (fk and fk in seen_name):
+        if ik in seen_img:
+            continue  # ugyanaz a kép = valódi duplikátum/variáns, ez szigorú marad
+        if nk in seen_name or (fk and fk in seen_name):
+            # kis boltnál (pl. sok „Chili szósz - …”) a családszűrő túl sokat dobna ki:
+            # nem dobjuk el, tartalék lesz, és csak hiány esetén kerül be (lásd lent)
+            seen_img.add(ik)
+            loose.append(c)
             continue
         seen_img.add(ik)
         seen_name.add(nk)
@@ -599,6 +605,21 @@ def select(cands, n):
             for g in extra:  # small categories before exceeding the 5 cap
                 while taken[g] < PER_CAT_MAX and len(ranked) < n + 3 * SPARES and take(g):
                     pass
+    need = n + 3 * SPARES - len(ranked)
+    if need > 0 and loose:
+        # családonkénti szűrő lazítása: a változatos válogatás marad elöl, a hiányt
+        # a család/név miatt kihagyott (de eltérő képű) termékek töltik ki, kategóriánként felváltva
+        lg = OrderedDict()
+        for c in loose:
+            lg.setdefault(c.get("category") or "egyéb", []).append(c)
+        add = []
+        while len(add) < need and any(lg.values()):
+            for g in list(lg):
+                if lg[g] and len(add) < need:
+                    add.append(lg[g].pop(0))
+        if len(ranked) < n:
+            warn(f"kevés eltérő termékcsalád ({len(ranked)}), a családszűrő lazítva: +{len(add)} azonos családú termék")
+        ranked += add
     return ranked
 
 
