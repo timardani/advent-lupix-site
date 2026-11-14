@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-14T20:13:07+01:00",
+  "generalva": "2026-11-14T20:19:26+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -372,7 +372,7 @@
       "hianyok": []
     },
     "kreativhobby": {
-      "frissitve": "2026-11-14T20:13+01:00",
+      "frissitve": "2026-11-14T20:18+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -470,6 +470,11 @@
     },
     "novenybirodalom": {
       "frissitve": "2026-11-05T13:19+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "orchideasziget": {
+      "frissitve": "2026-11-14T20:19+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
