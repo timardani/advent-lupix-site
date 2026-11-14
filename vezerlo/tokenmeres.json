@@ -962,6 +962,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-14",
+   "demo": "bojlibolt",
+   "munka": "Horgászat: FishingTime → BojliBolt átdolgozás (build+rebrand szkript, logó-jelvény, olívás paletta), kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 120,
+   "cache_iras": 146144,
+   "cache_olvasas": 6645251,
+   "output": 42077,
+   "osszes": 6833592,
+   "uj_token": 188341,
+   "munkamenet": "b1d28f29",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",
