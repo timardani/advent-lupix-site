@@ -1037,6 +1037,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-14",
+   "demo": "orchideasziget",
+   "munka": "Bernikert-átdolgozás Orchidea Szigetre (jelöltválasztás, katalógus, build+rebrand, teszt, review, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 92,
+   "cache_iras": 128096,
+   "cache_olvasas": 4598721,
+   "output": 31863,
+   "osszes": 4758772,
+   "uj_token": 160051,
+   "munkamenet": "488c3ee6",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

@@ -4,7 +4,7 @@
  "kategoriak": [
   {
    "nev": "Szobanövény",
-   "sor": "Tropical Home → Növénybirodalom → Best Plants and Decor → Bernikert"
+   "sor": "Tropical Home → Növénybirodalom → Best Plants and Decor → Bernikert → Orchidea Sziget"
   },
   {
    "nev": "Tea – gyógynövényes / funkcionális",
@@ -2458,6 +2458,24 @@
    "megjegyzes": "Kreatív Hobby 2001 Kft. (12346251-2-43), ShopRenter, ~5800 termék, hírlevél-űrlap van, 30 éves bolt. Átdolgozás a Művészellátó festékdobozából (2026-11-14); 24 karácsonyi kreatív termék, mind raktáron a lekéréskor.",
    "motivum": "adventi festékdoboz: 24 festékcsésze, a nap lapját ecsettel befested → termék + kupon (Kreatív Hobby magenta, valódi logó)",
    "weboldal": "https://kreativhobby.hu/"
+  },
+  {
+   "id": "orchideasziget",
+   "bolt": "Orchidea Sziget",
+   "kategoria": "Szobanövény",
+   "demo": "orchideasziget",
+   "allapot": "kuldheto",
+   "kinek": "Csányi Renáta",
+   "email": "orchideaszigetinfo@gmail.com",
+   "telefon": "+36 30 400 1077",
+   "kapcsolat_minoseg": "Ellenőrzendő",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Mehet a levél",
+   "megjegyzes": "Csányi Renáta őstermelő (a fizetési oldalon ő a kedvezményezett) – tulajdonos vezette, kis bolt, saját orchideaház (személyes átvétel). ShopRenter, kb. 40 rendelhető termék, főleg Thaiföldről hozott melegházi orchideák (Vanda, Cattleya, Aerides, Rhynchostylis, Oncidium); hírlevél-feliratkozás van. A Bernikert-demó átdolgozása (2026-11-14): a párás üvegház-ablak letörlése, itt orchideaházként („Odakint hó. Idebent Thaiföld.”), a bolt piros vonalas orchidea-logójával és szlogenjével („Mert Te is különleges vagy!”). 24 orchidea; társtermék: fűtőtasak (550 Ft, téli növényszállításhoz – 6 napon ajándék), Tolumnia Firm Lion, Maxillaria. 24. nap: piros Chiloschista lunifera csomag. A 1+1 napok csak hibrideken (2. darab −30/−50%); készletet darabra nem néztem. Ingyenes szállítási küszöb nincs (GLS 1939 Ft nettó).",
+   "motivum": "párás orchideaház-ablak + letörlés (a tropicalhome/bernikert jelenete)",
+   "weboldal": "https://www.orchideasziget.hu"
   }
  ]
 }

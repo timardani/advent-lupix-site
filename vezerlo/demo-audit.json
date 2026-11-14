@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-14T20:19:26+01:00",
+  "generalva": "2026-11-14T20:24:21+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -75,6 +75,13 @@
       "frissitve": "2026-11-08T16:55+01:00",
       "demo2_kesz": true,
       "hianyok": []
+    },
+    "biobarat": {
+      "frissitve": "2026-11-14T20:23+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nem szerepel mind az 5 akciótípus"
+      ]
     },
     "biobubi": {
       "frissitve": "2026-11-04T13:33+01:00",
@@ -372,7 +379,7 @@
       "hianyok": []
     },
     "kreativhobby": {
-      "frissitve": "2026-11-14T20:18+01:00",
+      "frissitve": "2026-11-14T20:23+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -474,9 +481,11 @@
       "hianyok": []
     },
     "orchideasziget": {
-      "frissitve": "2026-11-14T20:19+01:00",
-      "demo2_kesz": true,
-      "hianyok": []
+      "frissitve": "2026-11-14T20:24+01:00",
+      "demo2_kesz": false,
+      "hianyok": [
+        "nincs 24 teljes napi akció és egyedi kupon"
+      ]
     },
     "orgalco": {
       "frissitve": "2026-11-13T10:13+01:00",
