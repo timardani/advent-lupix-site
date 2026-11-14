@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-14T19:30:28+01:00",
+  "generalva": "2026-11-14T19:54:17+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -60,7 +60,7 @@
       "hianyok": []
     },
     "bernikert": {
-      "frissitve": "2026-11-14T19:28+01:00",
+      "frissitve": "2026-11-14T19:31+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -343,6 +343,11 @@
     },
     "koffeinroasters": {
       "frissitve": "2026-10-28T12:24+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "konzorciumteahaz": {
+      "frissitve": "2026-11-14T19:53+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

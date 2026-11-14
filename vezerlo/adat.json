@@ -2350,6 +2350,24 @@
    "megjegyzes": "Prima Fort Kft. (14587492-2-43), 1188 Budapest, Rákóczi u. 30/A – „nincs bolt”, otthonról működő webshop; UNAS, kb. 1390 termék, hírlevél-feliratkozás van, saját blog és videók. Profil: florárium, minikert/tündérkert, pozsgás, Tillandsia, Haworthia, tündérházak, C. M. Barker virágtündérek. A Best Plants-demó átdolgozása (2026-11-14): párás florárium-üveg letörlése. Decemberi kapocs: LED-es florárium-üveg, havas fenyők, kézműves házikók, 24. nap LED-es mézeskalács házikó csomag. Szállítási küszöböt nem néztem, a 0 Ft-os napok semlegesen fogalmazva.",
    "motivum": "párás florárium-üveg + letörlés (a tropicalhome/bestplants jelenete)",
    "weboldal": "https://bernikertwebshop.hu"
+  },
+  {
+   "id": "konzorciumteahaz",
+   "bolt": "Konzorcium Teaház",
+   "kategoria": "Tea – szálas / specialty",
+   "demo": "konzorciumteahaz",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@konzorciumteahaz.hu",
+   "telefon": "+36 20 319 8757",
+   "kapcsolat_minoseg": "Központi cím; kis családi méretű betéti társaság (IVANA Bt., Gödöllő, adószám 21129274-2-13), tulajdonos neve nem nyilvános",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (rövid határidővel)",
+   "megjegyzes": "WooCommerce; 83 szálas tea (100/250/500 g), 8 karácsonyi tea; Mailchimp-hírlevél → e-mail-lista érv erős. Ingyenes szállítás 25 000 Ft felett. 24 tea + 24 napi akció/kupon (ár: 100 g), ajándéknapokon 100 g tea 250 g-os rendeléshez. Kossik-demóból átdolgozva (2026-11-14).",
+   "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (Kossik/Teavolution-demó átdolgozása)",
+   "weboldal": "https://konzorciumteahaz.hu"
   }
  ]
 }
