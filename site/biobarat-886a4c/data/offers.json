@@ -1,0 +1,295 @@
+{
+ "note": "Javasolt ajánlatok és kódok (approved:false). A valódi kuponokat élesítés előtt a Bio-Barát hozza létre a saját Shopify-rendszerében.",
+ "offers": [
+  {
+   "day": 1,
+   "type": "percent",
+   "title": "Mézeskalács-illat −15%",
+   "detail": "Az első adventi sütéshez: bio mézeskalács-fűszerkeverék 15% kedvezménnyel.",
+   "code": "BIOBARAT01",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 15,
+   "was": 1692,
+   "price": 1438
+  },
+  {
+   "day": 2,
+   "type": "bundle",
+   "title": "Téli teás páros",
+   "detail": "Téli esték gyümölcstea + Fahéjas varázslat tea együtt, csomagáron.",
+   "code": "BIOBARAT02",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    15
+   ],
+   "was": 4829,
+   "price": 4290
+  },
+  {
+   "day": 3,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás, ha a kosárban ott a gesztenyeméz.",
+   "code": "BIOBARAT03",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 4,
+   "type": "gift",
+   "title": "Granola + sült gesztenye",
+   "detail": "A karácsonyi granola mellé egy csomag hámozott sült gesztenyét adunk.",
+   "code": "BIOBARAT04",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    10
+   ],
+   "giftValue": 672
+  },
+  {
+   "day": 5,
+   "type": "one_plus_one",
+   "title": "1+1 fahéjas szappan",
+   "detail": "Két citrusos-fahéjas szappan egy áráért – egy neked, egy ajándékba.",
+   "code": "BIOBARAT05",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 2874,
+   "price": 1437
+  },
+  {
+   "day": 6,
+   "type": "percent",
+   "title": "Mikulásnapi −20%",
+   "detail": "Cukor nélküli Mikulás-figura a csizmába, ma 20% kedvezménnyel.",
+   "code": "BIOBARAT06",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 20,
+   "was": 1012,
+   "price": 810
+  },
+  {
+   "day": 7,
+   "type": "bundle",
+   "title": "Gluténmentes sütős páros",
+   "detail": "Gluténmentes mézeskalács-lisztkeverék + holland kakaópor, csomagáron.",
+   "code": "BIOBARAT07",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    22
+   ],
+   "was": 5450,
+   "price": 4790
+  },
+  {
+   "day": 8,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás a fűszeres mogyorós-kakaós krémmel.",
+   "code": "BIOBARAT08",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 9,
+   "type": "gift",
+   "title": "Forralt bor + ajándék tea",
+   "detail": "A bio forraltbor-fűszer mellé ajándék Diótörő teát adunk.",
+   "code": "BIOBARAT09",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    17
+   ],
+   "giftValue": 1607
+  },
+  {
+   "day": 10,
+   "type": "one_plus_one",
+   "title": "1+1 sült gesztenye",
+   "detail": "Két csomag hámozott sült gesztenye egy áráért – mint a téli vásárban.",
+   "code": "BIOBARAT10",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 1344,
+   "price": 672
+  },
+  {
+   "day": 11,
+   "type": "percent",
+   "title": "Téli keksz −10%",
+   "detail": "Bio téli mini kekszválogatás ma 10% kedvezménnyel.",
+   "code": "BIOBARAT11",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 10,
+   "was": 3392,
+   "price": 3053
+  },
+  {
+   "day": 12,
+   "type": "bundle",
+   "title": "Szaloncukor + datolya",
+   "detail": "Datolyás zserbó-szaloncukor + fél kiló friss datolya, csomagáron.",
+   "code": "BIOBARAT12",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    20
+   ],
+   "was": 4999,
+   "price": 4390
+  },
+  {
+   "day": 13,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás a bio kókuszolajos kézbalzsammal.",
+   "code": "BIOBARAT13",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 14,
+   "type": "gift",
+   "title": "Magkrém + ajándék gesztenye",
+   "detail": "A karácsonyi magkrém mellé ajándék hámozott sült gesztenyét adunk.",
+   "code": "BIOBARAT14",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    10
+   ],
+   "giftValue": 672
+  },
+  {
+   "day": 15,
+   "type": "one_plus_one",
+   "title": "1+1 fahéjas tea",
+   "detail": "Két doboz Fahéjas varázslat bio tea egy áráért.",
+   "code": "BIOBARAT15",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 4744,
+   "price": 2372
+  },
+  {
+   "day": 16,
+   "type": "percent",
+   "title": "Ünnepi illat −15%",
+   "detail": "Bio ceyloni fahéj illóolaj ma 15% kedvezménnyel – a lakás karácsonyi illatához.",
+   "code": "BIOBARAT16",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 15,
+   "was": 2032,
+   "price": 1727
+  },
+  {
+   "day": 17,
+   "type": "bundle",
+   "title": "Tea és keksz",
+   "detail": "Diótörős bio tea + téli mini kekszválogatás együtt, csomagáron.",
+   "code": "BIOBARAT17",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    11
+   ],
+   "was": 4999,
+   "price": 4390
+  },
+  {
+   "day": 18,
+   "type": "shipping",
+   "title": "0 Ft-os szállítás",
+   "detail": "Ingyenes házhozszállítás a Melira mézes ajándékcsomaggal.",
+   "code": "BIOBARAT18",
+   "conditions": "A napi terméket tartalmazó rendelésre, belföldre.",
+   "approved": false
+  },
+  {
+   "day": 19,
+   "type": "gift",
+   "title": "Szaloncukor + ajándék tea",
+   "detail": "A Prana mandulás szaloncukor mellé ajándék Diótörő teát adunk.",
+   "code": "BIOBARAT19",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    17
+   ],
+   "giftValue": 1607
+  },
+  {
+   "day": 20,
+   "type": "one_plus_one",
+   "title": "1+1 friss datolya",
+   "detail": "Két csomag friss natúr datolya egy áráért – a bejgli mellé.",
+   "code": "BIOBARAT20",
+   "conditions": "Két darab napi termékkel a kosárban, ma éjfélig.",
+   "approved": false,
+   "was": 3724,
+   "price": 1862
+  },
+  {
+   "day": 21,
+   "type": "percent",
+   "title": "Kényeztető −20%",
+   "detail": "Bio vanília-eper cukros testradír ma 20% kedvezménnyel.",
+   "code": "BIOBARAT21",
+   "conditions": "A napi termékre, csak ma éjfélig.",
+   "approved": false,
+   "percent": 20,
+   "was": 1692,
+   "price": 1354
+  },
+  {
+   "day": 22,
+   "type": "bundle",
+   "title": "Forró csoki páros",
+   "detail": "Holland kakaópor + Mikulás csokifigura együtt, csomagáron.",
+   "code": "BIOBARAT22",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    6
+   ],
+   "was": 4005,
+   "price": 3490
+  },
+  {
+   "day": 23,
+   "type": "gift",
+   "title": "Málna + ajándék gesztenye",
+   "detail": "A kakaós málnához ajándék sült gesztenye jár – ünnepi nassolnivaló.",
+   "code": "BIOBARAT23",
+   "conditions": "A napi termék mellé, amíg a készlet tart, ma éjfélig.",
+   "approved": false,
+   "related": [
+    10
+   ],
+   "giftValue": 672
+  },
+  {
+   "day": 24,
+   "type": "bundle",
+   "title": "Szentesti bio csomag",
+   "detail": "Karácsonyi teaválogatás + mézeskalács-fűszer + gesztenyeméz, ünnepi csomagáron.",
+   "code": "BIOBARAT24",
+   "conditions": "A csomag összes termékével a kosárban, ma éjfélig.",
+   "approved": false,
+   "related": [
+    1,
+    3
+   ],
+   "was": 13576,
+   "price": 11890
+  }
+ ]
+}

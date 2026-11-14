@@ -189,6 +189,10 @@
   {
    "nev": "Edény / konyhafelszerelés",
    "sor": "Netedény"
+  },
+  {
+   "nev": "Biobolt / bio élelmiszer",
+   "sor": "Bio-Barát"
   }
  ],
  "boltok": [
@@ -2476,6 +2480,23 @@
    "megjegyzes": "Csányi Renáta őstermelő (a fizetési oldalon ő a kedvezményezett) – tulajdonos vezette, kis bolt, saját orchideaház (személyes átvétel). ShopRenter, kb. 40 rendelhető termék, főleg Thaiföldről hozott melegházi orchideák (Vanda, Cattleya, Aerides, Rhynchostylis, Oncidium); hírlevél-feliratkozás van. A Bernikert-demó átdolgozása (2026-11-14): a párás üvegház-ablak letörlése, itt orchideaházként („Odakint hó. Idebent Thaiföld.”), a bolt piros vonalas orchidea-logójával és szlogenjével („Mert Te is különleges vagy!”). 24 orchidea; társtermék: fűtőtasak (550 Ft, téli növényszállításhoz – 6 napon ajándék), Tolumnia Firm Lion, Maxillaria. 24. nap: piros Chiloschista lunifera csomag. A 1+1 napok csak hibrideken (2. darab −30/−50%); készletet darabra nem néztem. Ingyenes szállítási küszöb nincs (GLS 1939 Ft nettó).",
    "motivum": "párás orchideaház-ablak + letörlés (a tropicalhome/bernikert jelenete)",
    "weboldal": "https://www.orchideasziget.hu"
+  },
+  {
+   "id": "biobarat",
+   "bolt": "Bio-Barát Biobolt (Gorky és Zentai Kft.)",
+   "kategoria": "Biobolt / bio élelmiszer",
+   "demo": "biobarat",
+   "allapot": "kuldheto",
+   "kinek": "unknown – tulajdonos/ügyvezető ellenőrizendő (Gorky és Zentai Kft.)",
+   "email": "webshop@bio-barat.hu",
+   "telefon": "+36 30 018 4020",
+   "kapcsolat_minoseg": "általános webshop-kapcsolat",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (Dani) – sablon: Moai Kalenderáium/ADVENTI_MEGKERESO_EMAIL_SABLON.md",
+   "megjegyzes": "2026-11-14: Dani javasolta. Biobolt-kategória első demója, új koncepció. Shopify, ~4800 rendelhető termék, több budapesti üzlet, Klaviyo-hírlevél; már árul adventi naptárakat (ETS, Bett'r). 24 adventi bio termék (mézeskalács-fűszer, gesztenyeméz, datolya-szaloncukor, Mikulás-csoki, karácsonyi teák…), BIOBARAT01–24 javasolt kódok (approved:false).",
+   "motivum": "téli magaságyás 24 zöldséggel (répa/cékla/retek/paszternák, szalma, hó) + a mai zöldség kihúzása a levelénél fogva felfelé (a föld háromszor enged, földrögök), a gyökéren kraft címke a termékkel; kraft piaci cédula kupon"
   }
  ]
 }
