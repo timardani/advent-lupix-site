@@ -1,5 +1,5 @@
 {
- "frissitve": "2026-11-13",
+ "frissitve": "2026-11-14",
  "sorok": [
   {
    "datum": "2026-11-08",
@@ -929,6 +929,21 @@
    "osszes": 143504,
    "uj_token": 118947,
    "munkamenet": "a74e2886",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-14",
+   "demo": "bernikert",
+   "munka": "Átdolgozás bestplants→bernikert (florárium, UNAS), 24 nap + ajánlat, rebrand, ellenőrzés, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 116,
+   "cache_iras": 163577,
+   "cache_olvasas": 6242782,
+   "output": 34500,
+   "osszes": 6440975,
+   "uj_token": 198193,
+   "munkamenet": "648ae0d9",
    "megjegyzes": ""
   },
   {
