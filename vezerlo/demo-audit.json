@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-14T19:54:17+01:00",
+  "generalva": "2026-11-14T20:03:54+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -96,6 +96,11 @@
         "nem szerepel mind az 5 akciótípus"
       ]
     },
+    "bojlibolt": {
+      "frissitve": "2026-11-14T20:03+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "bollershop": {
       "frissitve": "2026-11-12T23:45+01:00",
       "demo2_kesz": true,
@@ -179,6 +184,11 @@
       "demo2_kesz": true,
       "hianyok": []
     },
+    "epicarium": {
+      "frissitve": "2026-11-14T20:04+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
     "fakopancs": {
       "frissitve": "2026-11-04T23:35+01:00",
       "demo2_kesz": true,
@@ -196,6 +206,11 @@
     },
     "finomfuszerek": {
       "frissitve": "2026-11-12T19:31+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "firstcraftbeer": {
+      "frissitve": "2026-11-14T20:03+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },

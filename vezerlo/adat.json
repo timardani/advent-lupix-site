@@ -2368,6 +2368,24 @@
    "megjegyzes": "WooCommerce; 83 szálas tea (100/250/500 g), 8 karácsonyi tea; Mailchimp-hírlevél → e-mail-lista érv erős. Ingyenes szállítás 25 000 Ft felett. 24 tea + 24 napi akció/kupon (ár: 100 g), ajándéknapokon 100 g tea 250 g-os rendeléshez. Kossik-demóból átdolgozva (2026-11-14).",
    "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (Kossik/Teavolution-demó átdolgozása)",
    "weboldal": "https://konzorciumteahaz.hu"
+  },
+  {
+   "id": "bojlibolt",
+   "bolt": "BojliBolt",
+   "kategoria": "Horgászat",
+   "demo": "bojlibolt",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@bojlibolt.hu",
+   "telefon": "+36 30 232 5764",
+   "kapcsolat_minoseg": "Központi kapu",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Kiküldés (Dani); cégnév és tulajdonos neve hiányzik (nincs impresszum a webshopon)",
+   "megjegyzes": "Kis, szakosodott bojli-webshop (WooCommerce, ~100 termék): 100% magyar gyártók csalijai (Perfect Baits, Mázli Fish, Feedermánia, BaitBait, PD), „sajátkezűleg próbáltuk”. Klaviyo-hírlevél feliratkozási kuponnal → a kalendárium e-mail-gyűjtése illik hozzá. A FishingTime-demó átdolgozása, 2026-11-14.",
+   "motivum": "úszók a téli pontyos tavon + bedobás",
+   "weboldal": "https://bojlibolt.hu"
   }
  ]
 }
