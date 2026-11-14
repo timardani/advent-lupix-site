@@ -977,6 +977,21 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-14",
+   "demo": "firstcraftbeer",
+   "munka": "átdolgozás hoptop→firstcraftbeer (új jelölt, kurált 24, rebrand, 2 review-kör, kiadás)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 2,
+   "input": 130,
+   "cache_iras": 154772,
+   "cache_olvasas": 6969345,
+   "output": 43002,
+   "osszes": 7167249,
+   "uj_token": 197904,
+   "munkamenet": "8f74d554",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

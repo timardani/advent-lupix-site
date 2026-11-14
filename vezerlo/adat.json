@@ -2386,6 +2386,24 @@
    "megjegyzes": "Kis, szakosodott bojli-webshop (WooCommerce, ~100 termék): 100% magyar gyártók csalijai (Perfect Baits, Mázli Fish, Feedermánia, BaitBait, PD), „sajátkezűleg próbáltuk”. Klaviyo-hírlevél feliratkozási kuponnal → a kalendárium e-mail-gyűjtése illik hozzá. A FishingTime-demó átdolgozása, 2026-11-14.",
    "motivum": "úszók a téli pontyos tavon + bedobás",
    "weboldal": "https://bojlibolt.hu"
+  },
+  {
+   "id": "firstcraftbeer",
+   "bolt": "FIRST Craft Beer (shop.firstcraftbeer.com)",
+   "kategoria": "Kézműves / prémium sör",
+   "demo": "firstcraftbeer",
+   "allapot": "kuldheto",
+   "kinek": "Sipos Ádám (webshop-kapcsolattartó)",
+   "email": "shop@firstcraftbeer.com",
+   "telefon": "+36 70 555 9582",
+   "kapcsolat_minoseg": "Webshop-kapcsolattartó neve ismert (shop_contact); tulaj/marketing döntéshozó ellenőrizendő",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Döntéshozó (tulaj/marketing) ellenőrzése + Grt. 13. § ellenőrzés, majd megkereső levél",
+   "megjegyzes": "2026-11-14: Dani „csinálj valakinek” → hajrá sörkategória, A-jelölt a kutatásból (aktív Meta-hirdetés 2757270761270937, 11-03). Saját sörfőzde + FIRST Taproom, 1044 Budapest, Váci út 83.; UNAS, hírlevél-űrlap, BeerBox-előfizetés, főzdetúra. Átdolgozás a hoptop (←monyo) sörtálcából. Szállítás: Foxpost házhoz 1 500 Ft 10 000 Ft alatt, 15 000 Ft felett ingyenes. 24 nap: saját sörök, téli Cinnamon & Plum / Santamasa, alkoholmentes Ohne Csirip, csomagok, főzdetúra- és Taproom-kóstolójegy, merch, BeerBox; 24. nap Whiskyhordóérlelt Sörcsomag + Nachtwacht. A boltban ~1200 tétel (vendégsörök is), de gyártó.",
+   "motivum": "felülnézeti kraft sörtálca 24 doboztetővel + a mai doboz nyitófülének felhúzása (pssszt, habkitörés), borostyán FIRST-jel a fotón, dobozcímke-kupon; fekete–borostyán FIRST-paletta, Space Grotesk",
+   "weboldal": "https://shop.firstcraftbeer.com/"
   }
  ]
 }
