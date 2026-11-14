@@ -992,6 +992,36 @@
    "megjegyzes": ""
   },
   {
+   "datum": "2026-11-14",
+   "demo": "epicarium",
+   "munka": "Megamakett-átdolgozás új boltra (Epicarium, Astro+Medusa saját motor: lista+build+rebrand szkript)",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 140,
+   "cache_iras": 193857,
+   "cache_olvasas": 9003896,
+   "output": 57450,
+   "osszes": 9255343,
+   "uj_token": 251447,
+   "munkamenet": "00f7ec8e",
+   "megjegyzes": ""
+  },
+  {
+   "datum": "2026-11-14",
+   "demo": "teazz",
+   "munka": "Teázz tea-demó: Konzorcium átdolgozás, saját motoros katalóguslista (mikroadat), 24 napos terv, rebrand, ellenőrzés, kiadás",
+   "modell": "claude-opus-5-5",
+   "kerdesek": 1,
+   "input": 68,
+   "cache_iras": 104637,
+   "cache_olvasas": 2899832,
+   "output": 23531,
+   "osszes": 3028068,
+   "uj_token": 128236,
+   "munkamenet": "dfaa252c",
+   "megjegyzes": ""
+  },
+  {
    "datum": "2026-10-27",
    "demo": "1000TEA",
    "munka": "korábbi (utólag)",

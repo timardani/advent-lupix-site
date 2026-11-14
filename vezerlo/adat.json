@@ -2422,6 +2422,24 @@
    "megjegyzes": "Epicarium Kft. (33075512-2-07), 8000 Székesfehérvár, Budai út 68. (üzlet + közösségi tér), korábban Főnixcsarnok. Kis csapat: Boldán Dávid üzletvezető, Vajdics Ágnes marketing. Wargame/Warhammer, festék, társas; Astro+Medusa saját motor, hírlevél van, BF-kampány fut. Megamakett-demó átdolgozása (2026-11-14), 24. nap Combat Patrol.",
    "motivum": "öntőkeret (sprue) + alkatrész lecsípése",
    "weboldal": "https://epicarium.eu"
+  },
+  {
+   "id": "teazz",
+   "bolt": "Teázz (Hollagora Kft.)",
+   "kategoria": "Tea – szálas / specialty",
+   "demo": "teazz",
+   "allapot": "kuldheto",
+   "kinek": "",
+   "email": "info@teazz.hu",
+   "telefon": "+36 70 743 9575",
+   "kapcsolat_minoseg": "Központi cím; kis cég (Hollagora Kft., adószám 29304846-2-02), tulajdonos neve nem nyilvános",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Megkereső levél kiküldése (rövid határidővel)",
+   "megjegyzes": "Saját webshopmotor, kb. 113 termék: szálas gyümölcs-/zöld-/fekete teák (100 g), matcha, SAARA bögrék, Tea for One szettek, karácsonyi ajándékdobozok. Aktív Meta-hirdetés 2500115100489784 (2026-11-03). Hírlevél-feliratkozás nem látszik → e-mail-lista érv erős. 24 nap: teák + kellékek + karácsonyi dobozok, napi akció/kupon. Konzorcium Teaház-demóból átdolgozva (2026-11-14).",
+   "motivum": "teaházi fiókos szekrény + fiókhúzás, pecsét (Konzorcium-demó átdolgozása)",
+   "weboldal": "https://teazz.hu"
   }
  ]
 }

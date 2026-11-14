@@ -1,5 +1,5 @@
 {
-  "generalva": "2026-11-14T20:03:54+01:00",
+  "generalva": "2026-11-14T20:13:07+01:00",
   "demok": {
     "1000tea": {
       "frissitve": "2026-11-03T16:26+01:00",
@@ -185,7 +185,7 @@
       "hianyok": []
     },
     "epicarium": {
-      "frissitve": "2026-11-14T20:04+01:00",
+      "frissitve": "2026-11-14T20:12+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -210,7 +210,7 @@
       "hianyok": []
     },
     "firstcraftbeer": {
-      "frissitve": "2026-11-14T20:03+01:00",
+      "frissitve": "2026-11-14T20:07+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -368,6 +368,11 @@
     },
     "kossiktea": {
       "frissitve": "2026-11-09T00:11+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "kreativhobby": {
+      "frissitve": "2026-11-14T20:13+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
@@ -610,6 +615,11 @@
     },
     "teavolution": {
       "frissitve": "2026-11-03T12:45+01:00",
+      "demo2_kesz": true,
+      "hianyok": []
+    },
+    "teazz": {
+      "frissitve": "2026-11-14T20:12+01:00",
       "demo2_kesz": true,
       "hianyok": []
     },
