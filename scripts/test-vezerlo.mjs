@@ -226,5 +226,13 @@ if (!await page.locator('#blur').isChecked()) throw new Error('bemutató mód ne
 await page.locator('#blur').uncheck();
 if (await page.evaluate(() => document.documentElement.dataset.blur)) throw new Error('bemutató mód nem kapcsol ki');
 console.log('✓ bemutató mód (blur) + Elkészített demó számláló');
+// Utánkövetés oszlop tömeges lezárása (kétlépéses megerősítés).
+{ const n = await page.locator('.col-most .kanban-card').count();
+  await page.locator('#close-all').click();
+  if (!(await page.locator('#close-all').innerText()).includes('Biztos?')) throw new Error('tömeges lezárás nem kér megerősítést');
+  await page.locator('#close-all').click();
+  await page.waitForFunction(() => /bolt lezárva/.test(document.getElementById('save').textContent));
+  if (await page.locator('.col-most .kanban-card').count() !== 0 || n < 1) throw new Error('tömeges lezárás után maradt bolt az Utánkövetésben');
+  console.log(`✓ tömeges lezárás: ${n} bolt`); }
 await browser.close();
 console.log(`✓ vezérlő: ${seedData.kategoriak.length} kategória, ${seedData.boltok.length} ügyfél, Gazdipro és Bűvészbolt elérhető, formázott e-mail-másolás, dátumszerkesztés, mobil, automatikus teendő tábla folyamatsorrendben, „Időt kért” oszlop, oldalpanel és gyorskereső rendben (${patches.length} mentés)`);
