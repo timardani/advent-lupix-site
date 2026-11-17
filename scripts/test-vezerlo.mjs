@@ -219,6 +219,14 @@ await page.locator('#blur').check();
 { const f = await page.evaluate(() => getComputedStyle(document.querySelector('.kc-name, .name')).filter);
   if (!f.includes('blur')) throw new Error('bemutató módban a boltnév nincs elhomályosítva: ' + f); }
 await page.screenshot({ path: new URL('../screenshots/vezerlo-bemutato.png', import.meta.url).pathname });
+await page.locator('.kanban-card').first().click();
+{ const f = await page.evaluate(() => ['email','teendo'].map(k => getComputedStyle(document.querySelector(`#drawer .ed[data-field=${k}]`)).filter));
+  if (!f[0].includes('blur')) throw new Error('panelben az e-mail nincs elhomályosítva');
+  const tv = await page.locator('#drawer .ed[data-field=teendo]').inputValue();
+  if (/fonalam/i.test(tv) !== f[1].includes('blur')) throw new Error('teendő-blur nem a cégnévtől függ: ' + tv + ' | ' + f[1]);
+  if ((await page.evaluate(() => getComputedStyle(document.querySelector('#drawer .dl dd')).filter)).includes('blur')) throw new Error('nem érzékeny mező is elhomályosodott'); }
+await page.screenshot({ path: new URL('../screenshots/vezerlo-bemutato-panel.png', import.meta.url).pathname });
+await page.keyboard.press('Escape');
 await page.goto('http://vez.test/vezerlo/kategoriak.html', { waitUntil: 'networkidle' });
 if (!(await page.evaluate(() => getComputedStyle(document.querySelector('.n')).filter)).includes('blur')) throw new Error('kategóriaoldalon nincs blur');
 await page.goto('http://vez.test/vezerlo/', { waitUntil: 'networkidle' });
