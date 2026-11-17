@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<script>(function(){try{if(localStorage.getItem("vezerlo-blur")==="1")document.documentElement.dataset.blur="1"}catch(e){}})()</script>
 <script>(function(){try{var t=localStorage.getItem("vezerlo-tema");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})()</script>
 <title>Kategóriák – Adventi vezérlő</title>
 <style>
@@ -36,6 +37,7 @@ html[data-theme=dark] .recovery{background:#2a1a08;border-color:#b45309;color:#f
 html[data-theme=dark] .kanban-col{background:#111114;border-color:#25252b}html[data-theme=dark] .count{background:#26262d}html[data-theme=dark] .kanban-card{background:var(--card)}
 html[data-theme=dark] .cat.otlet{border-left-color:#475569}html[data-theme=dark] .shop.done{opacity:.5}
 .theme-btn{white-space:nowrap}
+html[data-blur] :is(.n,.sor,li a[href^="http"]){filter:blur(6px);user-select:none}
 </style>
 </head>
 <body>
