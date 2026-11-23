@@ -807,8 +807,25 @@ async function renderMentesek() {
   try { l = (await api('/api/admin/mentesek')).mentesek; } catch (er) { toast(er.message, { err: true }); return; }
   $('#tab-mentesek').innerHTML = `<div class="card"><h2>Korábbi állapotok</h2>
     <p class="hint">Minden mentés előtt automatikusan eltesszük az addigi állapotot (az utolsó 40-et). Ha valami elromlott, innen bármikor visszaállíthatod.</p></div>
+    <div class="card"><h2>Teljes mentés fájlba</h2>
+    <p class="hint">A teljes naptár (szövegek, beállítások és a feltöltött képek) egyetlen fájlban. Biztonsági mentésnek vagy költözéshez: ezt a fájlt egy másik kalendárium-felületen visszatöltve minden ugyanúgy megjelenik. A feliratkozókat ez nem tartalmazza (azokat a Statisztika fülön töltheted le).</p>
+    <div class="row"><a class="btn" href="/api/admin/teljes-mentes" data-dl>⬇ Teljes mentés letöltése</a>
+    <label class="btn ghost" style="cursor:pointer">⬆ Teljes mentés visszatöltése<input type="file" id="teljes-be" accept="application/json,.json" hidden></label></div></div>
     ${l.length ? `<table><thead><tr><th>Mikor</th><th>Ami utána változott</th><th></th></tr></thead><tbody>${l.map(m => `<tr><td>${esc(mentesIdo(m.id))}</td><td>${esc(m.ok)}</td><td class="num"><button type="button" class="ghost sm" data-restore="${esc(m.id)}">Visszaállítás erre</button></td></tr>`).join('')}</tbody></table>` : '<p>Még nincs mentés.</p>'}`;
   document.querySelectorAll('[data-restore]').forEach(b => { b.onclick = () => visszaallit(b.dataset.restore); });
+  $('#teljes-be').onchange = e => teljesVissza(e.target);
+}
+async function teljesVissza(input) {
+  const f = input.files?.[0]; input.value = '';
+  if (!f) return;
+  if (!confirm(`Visszatöltöd a teljes naptárat ebből a fájlból: ${f.name}?\nA mostani állapotot előtte elmentjük, így ez is visszavonható.`)) return;
+  try {
+    const r = await api('/api/admin/teljes-mentes', { method: 'POST', raw: await f.text(), type: 'application/json' });
+    dirty = false; setDirty = false; setDraft = null;
+    await frissit(); if (sel > N()) sel = N(); draft = structuredClone(S.tartalom.days[sel - 1]);
+    renderStatus(); renderTab();
+    toast(r.hianyzoKepek?.length ? `Visszatöltve, de ${r.hianyzoKepek.length} kép hiányzik: ${r.hianyzoKepek.join(', ')}` : `Visszatöltve (${r.kepek} kép).`, { undo: r.mentesId, err: !!r.hianyzoKepek?.length });
+  } catch (er) { toast(er.message, { err: true }); }
 }
 async function visszaallit(id, gyors = false) {
   if (!gyors && !confirm('Visszaállítod a teljes naptárat erre az állapotra? (A mostani állapotot is elmentjük, így ez is visszavonható.)')) return;

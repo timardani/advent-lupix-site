@@ -24,6 +24,19 @@ const EMAIL_RE = /^[^\s@"<>,;]+@[^\s@"<>,;]+\.[^\s@"<>,;]{2,}$/;
 const COOKIE = 'wk_admin';
 const SESSION_MS = 30 * 24 * 3600 * 1000;
 const KEP_MAX = 5 * 1024 * 1024;
+const TELJES_MAX = 120 * 1024 * 1024;
+const TELJES_FORMATUM = 'webkalendarium-teljes-mentes/1';
+/** A tartalomban hivatkozott képfájlnevek (profilkép, háttér, napi képek, blokkok). */
+export function hivatkozottKepek(d) {
+  const ki = new Set();
+  const jar = v => {
+    if (typeof v === 'string') { if (KEP_RE.test(v)) ki.add(v); }
+    else if (Array.isArray(v)) v.forEach(jar);
+    else if (v && typeof v === 'object') Object.values(v).forEach(jar);
+  };
+  jar(d);
+  return [...ki];
+}
 const ESEMENYEK = ['megnyitas', 'kupon', 'link'];
 
 export function limiter(max, windowMs) {
@@ -382,6 +395,39 @@ export function createApp({ dataDir, configDir, distDir, env = process.env, now 
       const body = Buffer.from(JSON.stringify(doc(), null, 1));
       res.writeHead(200, { ...SEC, 'Content-Type': 'application/json; charset=utf-8', 'Content-Disposition': 'attachment; filename="kalendarium-tartalom.json"', 'Cache-Control': 'no-store', 'Content-Length': body.length });
       return res.end(body);
+    }
+    // Teljes mentés (tartalom + a hivatkozott feltöltött képek) – költözéshez és biztonsági mentéshez.
+    if (p === '/api/admin/teljes-mentes' && m === 'GET') {
+      const d = doc();
+      const kepek = {};
+      for (const f of hivatkozottKepek(d)) {
+        const fp = path.join(dataDir, 'kepek', f);
+        if (fs.existsSync(fp)) kepek[f] = fs.readFileSync(fp).toString('base64');
+      }
+      const body = Buffer.from(JSON.stringify({ formatum: TELJES_FORMATUM, keszult: now().toISOString(), tartalom: d, kepek }));
+      const nap = now().toISOString().slice(0, 10);
+      res.writeHead(200, { ...SEC, 'Content-Type': 'application/json; charset=utf-8', 'Content-Disposition': `attachment; filename="kalendarium-teljes-mentes-${nap}.json"`, 'Cache-Control': 'no-store', 'Content-Length': body.length });
+      return res.end(body);
+    }
+    if (p === '/api/admin/teljes-mentes' && m === 'POST') {
+      const b = await readBody(req, TELJES_MAX);
+      if (b.formatum !== TELJES_FORMATUM || !b.tartalom?.profil || !Array.isArray(b.tartalom.days)) return send(res, 400, { hiba: 'Ez nem a kalendárium teljes mentése.' });
+      const kepek = Object.entries(b.kepek && typeof b.kepek === 'object' ? b.kepek : {});
+      const bufs = [];
+      for (const [nev, b64] of kepek) {
+        const buf = Buffer.from(String(b64), 'base64');
+        const tip = kepTipus(buf);
+        if (!KEP_RE.test(nev) || !tip || !nev.endsWith(`.${tip}`) || buf.length > KEP_MAX) return send(res, 400, { hiba: `Hibás kép a mentésben: ${String(nev).slice(0, 80)}` });
+        bufs.push([nev, buf]);
+      }
+      let uj;
+      try { uj = normalizal(structuredClone(b.tartalom)); } catch { return send(res, 400, { hiba: 'A mentés tartalma sérült.' }); }
+      for (const [nev, buf] of bufs) {
+        const fp = path.join(dataDir, 'kepek', nev);
+        if (!fs.existsSync(fp)) fs.writeFileSync(fp, buf);
+      }
+      const hianyzik = hivatkozottKepek(uj).filter(f => !kepPath(f));
+      return ment(req, res, {}, 'teljes mentés visszatöltése', () => ({ doc: uj, valasz: { kepek: bufs.length, hianyzoKepek: hianyzik } }));
     }
     if (p === '/api/admin/feliratkozok.csv' && m === 'GET') {
       const body = Buffer.from(csv());
