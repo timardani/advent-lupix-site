@@ -193,7 +193,8 @@
   {
    "nev": "Biobolt / bio élelmiszer",
    "sor": "Bio-Barát"
-  }
+  },
+  "Szerszám / barkács"
  ],
  "boltok": [
   {
@@ -2497,6 +2498,24 @@
    "teendo": "Megkereső levél kiküldése (Dani) – sablon: Moai Kalenderáium/ADVENTI_MEGKERESO_EMAIL_SABLON.md",
    "megjegyzes": "2026-11-14: Dani javasolta. Biobolt-kategória első demója, új koncepció. Shopify, ~4800 rendelhető termék, több budapesti üzlet, Klaviyo-hírlevél; már árul adventi naptárakat (ETS, Bett'r). 24 adventi bio termék (mézeskalács-fűszer, gesztenyeméz, datolya-szaloncukor, Mikulás-csoki, karácsonyi teák…), BIOBARAT01–24 javasolt kódok (approved:false).",
    "motivum": "téli magaságyás 24 zöldséggel (répa/cékla/retek/paszternák, szalma, hó) + a mai zöldség kihúzása a levelénél fogva felfelé (a föld háromszor enged, földrögök), a gyökéren kraft címke a termékkel; kraft piaci cédula kupon"
+  },
+  {
+   "id": "szekelyszerszam",
+   "bolt": "SzékelySzerszám",
+   "kategoria": "Szerszám / barkács",
+   "demo": "",
+   "allapot": "nyert",
+   "kinek": "SzékelySzerszám Kft.",
+   "email": "info@szekelyszerszam.hu",
+   "telefon": "",
+   "kapcsolat_minoseg": "Fizető ügyfél (megrendelte a 2026-os webkalendáriumot)",
+   "kikuldve": "",
+   "hatarido": "",
+   "valasz_datum": "",
+   "teendo": "Ügyféltől: végleges kuponfeltételek (LADA24 −10% ideiglenes), logó/fotó-engedély, adatkezelési linkek e-mail-gyűjtéshez",
+   "megjegyzes": "ÉLES 2026-11-24: https://szekelyszerszam.webkalendarium.hu (admin: /admin/). Repó: timardani/webkalendarium-szekelyszerszam, Coolify projekt „Székey Szerszám Kalendár”, /data kötet. Indulás 2026-12-01. Link kiküldve az ügyfélnek 11-24.",
+   "motivum": "műhelyi lyukfal: a napi szerszám a ládából a festett körvonalára kerül",
+   "weboldal": "https://szekelyszerszam.hu"
   }
  ]
 }
